@@ -78,13 +78,10 @@ LXDAO & ETHStorage Host 的 Web3 URL 残酷共学将邀请 [Qi Zhou](https://twi
 - **项目 Grants 激励：** 评估以创新性、技术实施、用户体验和市场潜力作为综合参考。
   - **优秀项目奖（ 5 名 ）：** 通过评估展示出色项目或原型的 5 位参与者将获得由 ETHStorage 提供的奖励。
   - **特别贡献奖：** 发现并解决 Web3 URL 相关技术难点等显著贡献的参与者将额外获得 ETHStorage 奖励。
-- **非常残酷：** 学习任务重，收获「项目 Grants 」是成果证明，学到知识是最大的奖励。
 
 ### 如何报名和打卡？
 
-因为残酷共学的报名和打卡是基于 GitHub 进行开展的：
-
-- 免费报名，直接 Fork 这个仓库。
+- 直接 Fork 这个仓库，免费报名。
 
 - 复制 Template_WICL1st.md （这个非常重要！）创建你的个人笔记，按照文档内提示要求填写你的信息，并且重命名为你的名字：YourName_WICL1st.md。
 
@@ -92,7 +89,7 @@ LXDAO & ETHStorage Host 的 Web3 URL 残酷共学将邀请 [Qi Zhou](https://twi
 
 - 创建一个 PR 到当前仓库，本残酷共学助教会对你的 PR 进行 review，review 通过后，你的 PR 会被 merge 到 main 分支，这个时候你会收到邀请加入这个仓库 contribution 的邮件，接受邀请后，你会自动获得 main 分支的 push 权限，这个时候表示你报名成功了，后续就可以将你的学习记录直接 push 到 main 分支进行更新。
 
-- 加入 微信/Telegram 群组保持交流：<XXXX>。请加入群组并且在群里报到一下方便助教记录。
+- 请加入微信/Telegram 群组保持交流：<XXXX>。请加入群组并且在群里报到一下方便助教记录。
 
 ---
 
@@ -140,7 +137,7 @@ LXDAO & ETHStorage Host 的 Web3 URL 残酷共学将邀请 [Qi Zhou](https://twi
 
 <!-- END_COMMIT_TABLE -->
 
-总之希望频率相同的人在 LXDAO & ETHStorage  残酷氛围之下相互鼓励与学习交流，找到适合自己的 Web3 URL 精进节奏，加入进来试试吧。
+总之，学习到知识是最大的奖励。希望频率相同的人在 LXDAO & ETHStorage  残酷氛围之下相互鼓励与学习交流，找到适合自己的 Web3 URL 精进节奏，加入进来试试吧。
 
 
 
