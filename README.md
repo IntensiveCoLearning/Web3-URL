@@ -18,7 +18,7 @@
 
 在 Web3 的世界里，我们如何更好的冲浪，如何迎接更多 Web2 用户的进入，未来的 Web3 更偏账本赌场还是一个世界计算机？如何达成早期互联网的平等的访问方式？Web3 上的天涯论坛、维基百科会是什么样的？**[Web3 URL](https://docs.google.com/presentation/d/1egJUKJrjC9wjkmOF9sLBkTSwHpd6hl8FXkWehPW7kFk/edit#slide=id.g1754f50a55c_0_11) 可能会给到我们一部分答案。**
 
-为此，LXDAO 联合 ETHStorage 共同发起「残酷 Web3 URL 共学」，想持续召集一群想在 Web3 世界 Buidling 的建设者和 LX 道友，**以开源方式的进行 web3:// 协议共学，通过「有计划地系统学习」+「项目式组队实践」+「核心开发者带领与指导」，共同探索未来世界计算机的可能性。**
+为此，LXDAO 联合 ETHStorage 共同发起「残酷 Web3 URL 共学」，想持续召集一群想在 Web3 世界 Buidling 的建设者和 LX 道友，**以开源方式的进行 web3:// 协议共学，通过有计划地「系统学习」+「项目式组队实践」+「核心开发者带领与指导」，共同探索未来世界计算机的可能性。**
 
 ### 2.1 面向人群
 
