@@ -41,7 +41,7 @@ Web3 URL 残酷共学将基于自愿自主建立「Web3 URL 残酷共学开源�
 - **自由组队：** 报名成功即可开启提前自学，进残酷共学群后即可开始自由项目组队。
 - **线上讨论：** 随时可以在群里发起讨论，共学笔记分享交流。
 - **固定公开课：** 预定共学期间每周一晚 8 - 9 点（北京时间）进行线上公开课实践分享。
-- **结营分享：** 预在 2024 年 8 月 4 号后举办第一期「**Web3 URL 残酷共学分享及项目展示**」活动，具体时间信息请关注[电报共学频道](https://t.me/LXDAO/8748)通知。
+- **结营分享：** 预在 2024 年 8 月 4 号后举办第一期「**Web3 URL 残酷共学分享及项目展示**」活动，具体时间信息请关注[Web3 URL 残酷共学频道](https://t.me/LXDAO/8748)通知。
 
 ### 共学时间与地点
 
@@ -54,14 +54,11 @@ Web3 URL 残酷共学将基于自愿自主建立「Web3 URL 残酷共学开源�
 LXDAO & ETHStorage Host 的 Web3 URL 残酷共学将邀请 [Qi Zhou](https://twitter.com/qc_qizhou) 老师进行 Web3 URL 协议演进历史和 Dapps 开发实践进行分享，重点共学内容如下：
 
 - **第一阶段：理论基础（ 两周）**
-  
-  - **7 月 8 - 7 月 14 日：** 了解残酷共学流程，GitHub 协作共学基础，Web3:// 协议课前学习。
-    
+  - **7 月 8 日 - 7 月 14 日：** 了解残酷共学流程，GitHub 协作共学基础，Web3:// 协议课前学习。
     - [On the Future of Web3 — Paving the Way to End-to-End Fully-Decentralized Web by Qi Zhou](https://www.youtube.com/watch?v=rRI-3RV_JHw)
     - [Introducing web3:// - Decentralized Access Protocol for EVM](https://www.youtube.com/watch?v=h31q2ZMwHkQ)
     
-  - **7 月 15 - 7 月 21 日：** Web3:// 协议基础知识和高级开发工具操作教学指导，互动答疑，边学边用。
-    
+  - **7 月 15 日 - 7 月 21 日：** Web3:// 协议基础知识和高级开发工具操作教学指导，互动答疑，边学边用。
     - [Introduction to Web3:// Access Protocol (CoLearning 2024)](https://docs.google.com/presentation/d/1egJUKJrjC9wjkmOF9sLBkTSwHpd6hl8FXkWehPW7kFk/edit#slide=id.g1754f50a55c_0_11) 
     
     - https://web3url.io/#/ 
@@ -70,11 +67,10 @@ LXDAO & ETHStorage Host 的 Web3 URL 残酷共学将邀请 [Qi Zhou](https://twi
     - https://github.com/ethstorage/awesome-web3 
   
 - **第二阶段：边学边用实战开发（ 两周）**
-  
-  - **7 月 22 - 8 月 4 日：** 一边学习理论，一边结合具体应用实践开发。
+  - **7 月 22 日 - 8 月 4 日：** 一边学习理论，一边结合具体应用场景实践开发。
     - 掌握 web3:// 高级开发工具。
     - 以兴趣或解决实际问题为导向，个人/ 组队完成 web3:// 协议应用项目产出。
-    - 结营分享，具体时间另在共学电报频道通知。
+    - 结营分享，具体时间另在「Web3 URL 残酷共学频道」通知。
 
 ### 残酷规则与项目 Grants 激励
 
