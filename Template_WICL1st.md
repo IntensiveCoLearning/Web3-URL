@@ -39,14 +39,14 @@
   - **Homework1：** 见[课程 PPT](https://docs.google.com/presentation/d/1egJUKJrjC9wjkmOF9sLBkTSwHpd6hl8FXkWehPW7kFk/edit#slide=id.g1754f50a55c_0_11)。
 
 - **7 月 22 日 - 7 月 28 日**
-  - **7 月 22 日 周一晚 8 点- 9 点（北京时间）：**第 2 次公开课分享
+  - **7 月 22 日 周一晚 8 点- 9 点（北京时间）：** 第 2 次公开课分享
 
   - **本周共学内容：** 涉及 web3：// 高级开发工具，包括：在命令行通过 web3curl 来通过 web3：// 协议下载数据，通过 ethfs-uploader 批量上传网页数据，通过 manual 模式来搭建去中心化多人交互全链网站等。
   - **边学边用实战开发：** 根据组队情况自由安排。
   - **Homework2：** 见[课程 PPT](https://docs.google.com/presentation/d/1egJUKJrjC9wjkmOF9sLBkTSwHpd6hl8FXkWehPW7kFk/edit#slide=id.g1754f50a55c_0_11)。
 
 - **7 月 29 日 - 8 月 4 日**
-  - **7 月 22 日 周一晚 8 点- 9 点（北京时间）：** 第 3 次公开课分享
+  - **7 月 29 日 周一晚 8 点- 9 点（北京时间）：** 第 3 次公开课分享
   - **本周共学内容：** 涉及实际应用案例分享及未来以太坊基础设施在 web3：// 的重要作用及开发方向等。
   - **边学边用实战开发：** 根据组队情况自由安排。
   - **结营分享：** 具体时间及详情另在「Web3 URL 残酷共学频道」通知。
