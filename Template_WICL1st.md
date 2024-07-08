@@ -34,7 +34,7 @@
 
 - **7 月 15 日 - 7 月 21 日**：
 
-  - **7 月 15 日 周一晚 8 点- 9 点（北京时间）：** 第一次公开课分享
+  - **7 月 15 日 周一晚 8 点- 9 点（北京时间）：** 第 1 次公开课分享
   - **本周共学内容：** 涉及 web3：// 的背景和演进历史；支持 web3：// 协议的访问方式 (gateway 和 EVM browser)来浏览以太坊上面的数据；熟悉使用 web3：// 和 EthStorage 早期测试网来部署简单的去中心化网站。
   - **Homework1：** 见[课程 PPT](https://docs.google.com/presentation/d/1egJUKJrjC9wjkmOF9sLBkTSwHpd6hl8FXkWehPW7kFk/edit#slide=id.g1754f50a55c_0_11)。
 
