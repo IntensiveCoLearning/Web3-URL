@@ -5,8 +5,10 @@ import pytz
 import logging
 
 # Constants
-START_DATE = datetime.fromisoformat(os.environ.get('START_DATE', '2024-07-15T00:00:00+00:00')).replace(tzinfo=pytz.UTC)
-END_DATE = datetime.fromisoformat(os.environ.get('END_DATE', '2024-08-04T23:59:59+00:00')).replace(tzinfo=pytz.UTC)
+START_DATE = datetime.fromisoformat(os.environ.get(
+    'START_DATE', '2024-07-15T00:00:00+00:00')).replace(tzinfo=pytz.UTC)
+END_DATE = datetime.fromisoformat(os.environ.get(
+    'END_DATE', '2024-08-04T23:59:59+00:00')).replace(tzinfo=pytz.UTC)
 DEFAULT_TIMEZONE = 'Asia/Shanghai'
 FILE_SUFFIX = os.environ.get('FILE_SUFFIX', '_WICL1st.md')
 README_FILE = 'README.md'
@@ -152,7 +154,8 @@ def check_weekly_status(user_status, date, user_tz):
 
 
 def get_all_user_files():
-    return [f.split('_')[0] for f in os.listdir('.') if f.endswith(FILE_SUFFIX)]
+    return [f.split('_')[0] for f in os.listdir('.')
+            if f.endswith(FILE_SUFFIX) and not f.startswith('Template')]
 
 
 def update_readme(content):
@@ -177,25 +180,32 @@ def update_readme(content):
         table_rows = content[start_index +
                              len(TABLE_START_MARKER):end_index].strip().split('\n')[2:]
 
+    
         for row in table_rows:
             match = re.match(r'\|\s*([^|]+)\s*\|', row)
-            if match:
-                display_name = match.group(1).strip()
+        if match:
+            display_name = match.group(1).strip()
+            if display_name:  # 检查 display_name 是否为非空
                 existing_users.add(display_name)
                 new_table.append(generate_user_row(display_name))
             else:
-                logging.warning(f"Skipping invalid row: {row}")
+                logging.warning(f"Skipping empty display name in row: {row}")
+        else:
+            logging.warning(f"Skipping invalid row: {row}")
 
         new_users = set(get_all_user_files()) - existing_users
         for user in new_users:
-            new_table.append(generate_user_row(user))
-            logging.info(f"Added new user: {user}")
-
+            if user.strip():  # 确保用户名不是空的或只包含空格
+                new_table.append(generate_user_row(user))
+                logging.info(f"Added new user: {user}")
+            else:
+                logging.warning(f"Skipping empty user: '{user}'")
         new_table.append(f'{TABLE_END_MARKER}\n')
         return content[:start_index] + ''.join(new_table) + content[end_index + len(TABLE_END_MARKER):]
     except Exception as e:
         logging.error(f"Error in update_readme: {str(e)}")
         return content
+
 
 def generate_user_row(user):
     user_status = get_user_study_status(user)
