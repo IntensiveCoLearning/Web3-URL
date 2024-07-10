@@ -23,6 +23,21 @@ logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 
+def print_env():
+    print(f"""
+            START_DATE: {START_DATE}
+            END_DATE: {END_DATE}
+            DEFAULT_TIMEZONE: {DEFAULT_TIMEZONE}
+            FILE_SUFFIX: {FILE_SUFFIX}
+            README_FILE: {README_FILE}
+            FIELD_NAME: {FIELD_NAME}
+            Content_START_MARKER: {Content_START_MARKER}
+            Content_END_MARKER: {Content_END_MARKER}
+            TABLE_START_MARKER: {TABLE_START_MARKER}
+            TABLE_END_MARKER: {TABLE_END_MARKER}
+            """)
+
+
 def get_date_range():
     return [START_DATE + timedelta(days=x) for x in range((END_DATE - START_DATE).days + 1)]
 
@@ -180,7 +195,20 @@ def update_readme(content):
         table_rows = content[start_index +
                              len(TABLE_START_MARKER):end_index].strip().split('\n')[2:]
 
-    
+        # for row in table_rows:
+        #     match = re.match(r'\|\s*([^|]+)\s*\|', row)
+        #     if match:
+        #         display_name = match.group(1).strip()
+        #         existing_users.add(display_name)
+        #         new_table.append(generate_user_row(display_name))
+        #     else:
+        #         logging.warning(f"Skipping invalid row: {row}")
+
+        # new_users = set(get_all_user_files()) - existing_users
+        # for user in new_users:
+        #     new_table.append(generate_user_row(user))
+        #     logging.info(f"Added new user: {user}")
+
         for row in table_rows:
             match = re.match(r'\|\s*([^|]+)\s*\|', row)
         if match:
@@ -250,6 +278,7 @@ def generate_user_row(user):
 
 def main():
     try:
+        print_env()
         with open(README_FILE, 'r', encoding='utf-8') as file:
             content = file.read()
         new_content = update_readme(content)
