@@ -112,9 +112,6 @@ LXDAO & ETHStorage Host 的 Web3 URL 残酷共学将邀请 [Qi Zhou](https://twi
 
 
 
-
-
-
 总之，学习到知识是最大的奖励。希望频率相同的人在 LXDAO & ETHStorage  残酷氛围之下相互鼓励与学习交流，找到适合自己的 Web3 URL 精进节奏，加入进来试试吧。
 
 
