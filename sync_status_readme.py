@@ -38,6 +38,29 @@ def print_env():
             """)
 
 
+def print_variables(*args, **kwargs):
+    def format_value(value):
+        if isinstance(value, str) and ('\n' in value or '\r' in value):
+            return f'"""\n{value}\n"""'
+        return repr(value)
+
+    variables = {}
+
+    # 处理位置参数
+    for arg in args:
+        if isinstance(arg, dict):
+            variables.update(arg)
+        else:
+            variables[arg] = eval(arg)
+
+    # 处理关键字参数
+    variables.update(kwargs)
+
+    # 打印变量
+    for name, value in variables.items():
+        print(f"{name}: {format_value(value)}")
+
+
 def get_date_range():
     return [START_DATE + timedelta(days=x) for x in range((END_DATE - START_DATE).days + 1)]
 
@@ -278,7 +301,16 @@ def generate_user_row(user):
 
 def main():
     try:
-        print_env()
+        print_variables(
+            'START_DATE', 'END_DATE', 'DEFAULT_TIMEZONE',
+            FILE_SUFFIX=FILE_SUFFIX,
+            README_FILE=README_FILE,
+            FIELD_NAME=FIELD_NAME,
+            Content_START_MARKER=Content_START_MARKER,
+            Content_END_MARKER=Content_END_MARKER,
+            TABLE_START_MARKER=TABLE_START_MARKER,
+            TABLE_END_MARKER=TABLE_END_MARKER
+        )
         with open(README_FILE, 'r', encoding='utf-8') as file:
             content = file.read()
         new_content = update_readme(content)
