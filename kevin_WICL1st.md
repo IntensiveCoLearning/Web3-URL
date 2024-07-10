@@ -10,15 +10,15 @@
 
 1. **自我介绍：**
 
-   Hi, 我叫kevin，是一名学生（网络与新媒体专业），对许多新事物都有兴趣，在编程领域是纯小白。期待在这次共学中增加基础的开发知识。 [ 包括你的昵称、职业、擅长方向以及残酷共学 Web3 URL 的原因或期待，以确保大家都能清楚地理解你的情况，同时增进大家的互相了解 ]
+   Hi, 我叫kevin，是一名学生（网络与新媒体专业），对许多新事物都有兴趣，在编程领域是纯小白。期待在这次共学中增加基础的开发知识。 
 
 2. **组队期待：**
 
-   暂时不计划组队。 [ 包括你想预计的项目参与或开发方向、需要什么角色的小伙伴、其它你想在这里分享的想法，具体组队可在电报频道群沟通 ]
+   暂时不计划组队。 
 
 3. **你认为你会完成本次 Web3 URL 的残酷学习吗？**
 
-   Maybe 50% [ Yes 100% or Maybe xx% ]
+   Maybe 50% 
 
 ---
 
@@ -55,16 +55,29 @@
 
 ## 笔记证明 Notes Proof
 <!-- Content_START --> 
-### 07.15
+
 
 举例示范：
-
-- 今日学习时间：XXXX
-- 学习内容小结：XXXX
+### 07.11
+- 今日学习时间：02:00-02:30
+- 学习内容小结：大致了解了旧有的https协议的缺陷（即使上链了，依然需要传统的DNS服务器解析，解析失败可能导致无法连接），需要尝试web3url这个解决方案。
 - Homework 部分（如果有安排需要填写证明完成）
-- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+  1. Find the ownership of an your favor NFT  
+     [Address](https://www.okx.com/zh-hans/web3/marketplace/nft/asset/eth/0x495f947276749ce646f68ac8c248420045cb7b5e/66715350905427708617977118345690940547009007228083230062133529391249007575050): 0x495f947276749ce646f68ac8c248420045cb7b5e
+  3. Find the balance of ERC-20 contract (USDC / USDT)  
+     [余额为0🤣](https://etherscan.io/address/0x0d96bda6c20fc9b29f3e9289f09a58465ec52946)
+  5. Deploy a contract in auto model and say “hello world”。
+     don't know
+  7. Deploy a contract in manual model and say “hello world”
+     don't know
 
 
+
+- Question and Ideas
+   - [GPT-4o 对于 URL和URI的通俗解释](https://chatgpt.com/share/57a16d97-3ac3-4798-a10d-cc58eebb12d2)
+   - 合约地址、钱包地址傻傻分不清楚
+
+### 07.15
 
 ### 07.16
 
