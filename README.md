@@ -138,6 +138,7 @@ LXDAO & ETHStorage Host 的 Web3 URL 残酷共学将邀请 [Qi Zhou](https://twi
 | monnaliya | | | | | | | | | | | | | | | | | |   |   |   |   |
 | Simon | | | | | | | | | | | | | | | | | |   |   |   |   |
 | Box | | | | | | | | | | | | | | | | | |   |   |   |   |
+| Junhua | | | | | | | | | | | | | | | | | |   |   |   |   |
 <!-- END_COMMIT_TABLE -->
 
 
