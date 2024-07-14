@@ -6,9 +6,9 @@
 
 ---
 
-# [ 你的名字 ]
+# Loxia
 
-1. **Loxia**
+1. **自我介绍**
 
  loxia.eth here
 
