@@ -61,8 +61,14 @@
 
 举例示范：
 
-- 今日学习时间：XXXX
-- 学习内容小结：XXXX
+- 今日学习时间：1h
+- 学习内容小结：
+  * 阅读 eip-4804 和 web3 url docs
+    - web3 url 为以太坊上的资源定义唯一标识，类似亚马逊的 arn 定义唯一标识 aws 资源
+    - 提供 http 的兼容，以方便现有 web2 用户最低成本迁移，类似于一种 web 2.5 的方案
+    - 缺乏对安全性的考虑
+    - 工作原理
+      ![img](https://web3url.io/img/work.e14cc70c.png)
 - Homework 部分（如果有安排需要填写证明完成）
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 
