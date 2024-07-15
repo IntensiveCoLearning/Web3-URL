@@ -1,27 +1,80 @@
+--
+timezone: Asia/Shanghai
+---
+
+> ⚠️本打卡表默认为北京时间 UTC+8 时区，正确格式如下：
+>
+> timezone: Asia/Shanghai
+>
+> ⚠️如果你所在地区非北京时间，请根据你所在时区自行更改，请注意填写的正确格式。
+>
+> 时区请参考以下列表：
+>
+> timezone: Asia/Shanghai # 中国标准时间 (UTC+8)
+>
+> timezone: Asia/Tokyo # 日本标准时间 (UTC+9)
+>
+> timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
+>
+> timezone: Australia/Sydney # 澳大利亚东部标准时间 (UTC+10)
+>
+> timezone: Pacific/Honolulu # 夏威夷-阿留申标准时间 (UTC-10)
+>
+> timezone: America/Anchorage # 阿拉斯加标准时间 (UTC-9)
+>
+> timezone: America/Los_Angeles # 太平洋标准时间 (UTC-8)
+>
+> timezone: America/Denver # 山地标准时间 (UTC-7)
+>
+> timezone: America/Chicago # 中部标准时间 (UTC-6)
+>
+> timezone: America/New_York # 东部标准时间 (UTC-5)
+>
+> timezone: America/Halifax # 大西洋标准时间 (UTC-4)
+>
+> timezone: America/St_Johns # 纽芬兰标准时间 (UTC-3:30)
+>
+> timezone: America/Sao_Paulo # 巴西利亚时间 (UTC-3)
+>
+> timezone: Atlantic/Azores # 亚速尔群岛时间 (UTC-1)
+>
+> timezone: Europe/London # 格林威治标准时间 (UTC+0)
+>
+> timezone: Europe/Berlin # 中欧标准时间 (UTC+1)
+>
+> timezone: Europe/Helsinki # 东欧标准时间 (UTC+2)
+>
+> timezone: Europe/Moscow # 莫斯科标准时间 (UTC+3)
+>
+> timezone: Asia/Dubai # 海湾标准时间 (UTC+4)
+>
+> timezone: Asia/Kolkata # 印度标准时间 (UTC+5:30)
+>
+> timezone: Asia/Dhaka # 孟加拉国标准时间 (UTC+6)
+>
+> timezone: Asia/Bangkok # 中南半岛时间 (UTC+7)
+>
+
+
 # Web3 URL 残酷共学第 1 期残酷指引
 
 > ⚠️ 正式开始前请确保你在身体上和精神上都处于合适的状态，请刻意练习，残酷面对 🆒。为方便检索 The First Web3 URL Intensive CoLearning 简写为 WICL1st，第 2 期即为WICL2nd，第 3 期即为 WICL3rd，以此类推。
-
 > ⚠️ 报名需要按要求认真填写下面 [ XXX ] 部分，方可通过报名审核，通过审核即可开始自主学习。
-
 ---
 
 # [ 你的名字 ]
 
 1. **自我介绍：**
 
-   Jacqueese：
-   之前研究方向做人工智能AI相关深度学习方向,研究方向为时空序列预测。但是工作找的是Web前端工程师，也会向全栈方向靠。
-   主要想了解 Web3 相关的开发，区块链相关技术。
+  Ache: LXDAO 运营小组的成员，参与 Web3 URL 的残酷共学是想在学一些 Web3 的技术，目前有一些 Javascript、Soldity 和 Python 的基础
 
 2. **组队期待：**
 
-   感兴趣一起组队的可以拉我一个
+  目前没有期待，有人愿意带带最好
 
 3. **你认为你会完成本次 Web3 URL 的残酷学习吗？**
 
-   Yes 100%
-
+英语完成了 18/21 所以我认为 Web3 URL 我争取20/21
 
 ---
 
@@ -62,11 +115,10 @@
 
 举例示范：
 
-- 今日学习时间：2h
-- 学习内容小结：web3协议相关
+- 今日学习时间：XXXX
+- 学习内容小结：XXXX
 - Homework 部分（如果有安排需要填写证明完成）
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
-
 
 
 
