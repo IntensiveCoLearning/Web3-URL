@@ -10,7 +10,7 @@
 
 1. **自我介绍：**
 
-   我是Antigone,cuit区块链准大三学生，想通过共学计划进一步，学习并参与到web3://这样新兴的协议中。
+   我是Antigone,cuit区块链准大三学生，想通过共学计划进一步，学习并参与到web3://这样新兴的协议中。本次共学的笔记会发在[我的博客](https://antigone4224.github.io/)
 
    **组队期待：**
 
@@ -55,14 +55,8 @@
 <!-- Content_START --> 
 ### 07.15
 
-举例示范：
-
-- 今日学习时间：XXXX
-- 学习内容小结：XXXX
-- Homework 部分（如果有安排需要填写证明完成）
-- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
-
-
+- 今日学习时间：2h
+- 学习内容小结：详情见[我的博客](https://antigone4224.github.io/web3-url-colearing-day1),预习了一下slides里的内容，对于web3-url有了一个大致的了解。
 
 ### 07.16
 
