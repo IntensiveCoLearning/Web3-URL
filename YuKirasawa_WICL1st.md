@@ -133,7 +133,56 @@ npx web3curl -v 'web3://w3url.eth'
 
 ### 07.16
 
-XXX
+- 今日学习时间：1 h
+- 学习内容小结：进一步了解 web3 url 访问合约的接口
+
+当合约没有专门实现 `web3://` 协议的接口时，`web3://` 协议的路径表示了对合约方法的调用，这种模式称为 auto mode. Auto mode 中路径的格式为
+
+```
+/<methodName>/<methodArg1>/<methodArg2>/...[?returns=(<type1>,<type2>,...)]
+```
+
+例如 `web3://0x4e1f41613c9084fdb9e34e11fae9412427480e56/tokenHTML/9352` 表示访问 `0x4e1f41613c9084fdb9e34e11fae9412427480e56` 合约的 `tokenHTML` 方法，参数为 `9352`. 使用 web3curl 也可以看出解析该地址的过程
+
+```
+* Resolve mode: auto
+*
+* Path parsing... 
+* Contract call mode: method
+* Method name: tokenHTML
+* Method arguments types: [{"type":"uint256"}]
+* Method arguments values: ["0x2488"]
+* Contract return processing: decodeABIEncodedBytes
+* Contract return processing: decodeABIEncodedBytes: MIME type: (not set)
+```
+
+对于合约方法的参数，可以使用 `[<type>!]<value>` 的方式指定参数类型，比如 `web3://0x36f379400de6c6bcdf4408b282f8b685c56adc60/getIdToSVG/uint8!42` 表示参数的类型为 `uint8`，值为 42。使用 web3curl 可以看出参数类型确实是 `uint8`
+
+```
+* Resolve mode: auto
+*
+* Path parsing... 
+* Contract call mode: method
+* Method name: getIdToSVG
+* Method arguments types: [{"type":"uint8"}]
+* Method arguments values: ["0x2a"]
+* Contract return processing: decodeABIEncodedBytes
+* Contract return processing: decodeABIEncodedBytes: MIME type: (not set)
+```
+
+默认情况下，合约方法的返回值会被解析为 bytes，如果合约方法使用了其他类型的返回值，则需要设置 `?returns=` 字段，例如 `web3://0xA5aFC9fE76a28fB12C60954Ed6e2e5f8ceF64Ff2/levelAndTile/2/50?returns=(uint256,uint256)`
+
+合约也可以专门实现 `web3://` 协议的接口，通过 `resolveMode` 方法来声明
+
+```
+function resolveMode() external pure returns (bytes32) {
+    return "manual";
+}
+```
+
+这种模式就是 manual mode.
+
+在 Manual mode 中，路径信息会传入合约的 `fallback(bytes)` 方法，从而允许合约使用自定义的方式处理请求。这种模式和 web2 的 url 路由是一致的。
 
 ### 07.17
 
