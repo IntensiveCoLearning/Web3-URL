@@ -74,7 +74,25 @@
 
 ### 07.16
 
-XXX
+- 今日学习时间：1h
+- 学习内容小结:
+  *  阅读 eip-6860 和 web3 url docs
+    - web3 url 的基本形式 `web3URL         = schema "://" [ userinfo "@" ] contractName [ ":" chainid ] pathQuery`
+        - userinfo 表示调用 EVM 的用户，即 EVM 调用消息中的“From”字段
+        - contractName 表示要调用的合约，即 EVM 调用消息中的“To”字段
+            - 如果是一个地址，则将其用于“To”字段
+            - 否则则是来自域名服务的域名，必须解析为一个地址才能用于“To”字段
+        - chainid 指示要解析 contractName 并调用消息的链
+        - 自动模式下的 path 格式:  `/<methodName>/<methodArg1>/<methodArg2>/...[?returns=(<type1>,<type2>,...)]`
+            - `<methodName>` 是要调用的函数方法的名称
+            - `methodArg` 是具有 `[<type>!]<value>` 语法的方法的一个参数
+            - `?returns=` 指定方法返回签名
+    - web3 客户端
+        - https 网关
+        - evm 浏览器
+        - chrome 插件
+        - web3 沙箱
+        - web3curl 类似 curl 的命令行
 
 ### 07.17
 

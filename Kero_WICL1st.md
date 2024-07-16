@@ -72,7 +72,24 @@ Maybe 80%
 
 ### 07.16
 
-XXX
+- 今日学习时间：0.5 hour
+- 学习内容小结：What/Why/How to web3://
+
+#### Question and Ideas
+
+  - web3:// scheme 没有包含 gateway 信息，也就是说 gateway 是固定的，这引出了几个疑问：
+    - 能够粗浅地理解 gateway service 为一个用于翻译 `web2<->web3` 的 HTTP middleware service？Gateway 需要做到去中心化吗？如果要做到去中心化，web3:// scheme 不包含 gateway 的信息的话要怎么样做到去中心化呢？
+    - 用户能否自建 web3:// gateway 呢？如果可以，那 web3 url 应该如何指向自建的 gateway？
+    - Web2 世界里有没有类似 web3:// gateway service 这样的存在呢？
+  - 对于 render，web3:// 想要扮演什么角色呢？
+
+#### Note
+
+ETHStorage 主要带来了两个产品，ETHStorage 和 Web3-URL。暂时不知道二者之间的联系，比如 Web3-URL 能否不基于 ETHStorage 来使用？
+
+ETHStorage 是一个 L2，Proof of Storage 是 Dynamic Sharding with Proof of Random Access.
+
+Web3-URL is an Access Protocol, defines URL to EVM Call Message Translation - an IANA registered URI scheme, also defines how to render Web objects hosted by smart contracts.
 
 ### 07.17
 

@@ -90,8 +90,12 @@
    - [Testnet Faucets](https://faucets.chain.link)，中文名“测试网水龙头”🚰，它可以为开发者提供源源不断的代币用于测试（不具有实际的经济价值，不可以转移到主网）
 
 ### 07.16
-
-XXX
+- 今日学习时间：18:00-18:30
+- 学习内容小结：观看了freeCodeCamp出品的[30分钟区块链基础课程](https://www.youtube.com/watch?v=gyMwXuJrbJQ)（剩余30.5小时🫡）
+- Question and Ideas
+   - 每一笔交易都会产生Gas费用，需要支付给矿工
+   - 分布式账本，不仅限于记账，任何需要记录的、需要共识的东西都可以用分布式的理念，一旦有人恶意篡改，就将他剔除
+   - ETH使用的是Keccak-256算法
 
 ### 07.17
 
