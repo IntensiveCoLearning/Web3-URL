@@ -152,9 +152,20 @@ timezone: Asia/Shanghai
 
 ### 07.16
 
-XXX
+- 今日学习时间：1.5h
+- 学习内容小结：
+  Find the balance of ERC-20 contract (USDC / USDT)
+    
+    contract: 0xdAC17F958D2ee523a2206206994597C13D831ec7 
+    0x83a9DF865268DF58B9521A87316a36C0f467835B
+    balanceOf: 0
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 
 ### 07.17
 
 XXX
+
+
+
 <!-- Content_END -->
