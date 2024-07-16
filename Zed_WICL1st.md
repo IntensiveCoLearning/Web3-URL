@@ -365,48 +365,33 @@ Token URI是一个非常灵活的工具，可以用来展示和访问各种类�
 - Introduction to Web3:// Access Protocol (CoLearning 2024)
 - Homework1
 - 1. Find the ownership of an your favor NFT
-    the NFT I found：https://opensea.io/collection/castile-tarot
-    the creator: 0x5293050b1682F72718386B0Ed98D2Db9D4609Ec7
-    the contract: 0x89B8D549feA2eBd2aA0b375ce0DCaBba79e7e636
-    the owner: 
-      搞不太明白，好像这个是一个集合，里面有很多NFT，每张塔罗牌都是一个独立的NFT。
-      这个页面里面显示的是库存的Owner：https://etherscan.io/token/0x89b8d549fea2ebd2aa0b375ce0dcabba79e7e636#inventory
-      这个页面里面显示的是Holder：https://etherscan.io/token/0x89b8d549fea2ebd2aa0b375ce0dcabba79e7e636#balances
+    - the NFT I found：https://opensea.io/collection/castile-tarot
+    - the creator: 0x5293050b1682F72718386B0Ed98D2Db9D4609Ec7
+    - the contract: 0x89B8D549feA2eBd2aA0b375ce0DCaBba79e7e636
+    - the owner: 
+      - 搞不太明白，好像这个是一个集合，里面有很多NFT，每张塔罗牌都是一个独立的NFT。
+      - 这个页面里面显示的是库存的Owner：https://etherscan.io/token/0x89b8d549fea2ebd2aa0b375ce0dcabba79e7e636#inventory
+      - 这个页面里面显示的是Holder：https://etherscan.io/token/0x89b8d549fea2ebd2aa0b375ce0dcabba79e7e636#balances
 
 - 2. Find the balance of an account in an ERC-20 contract (USDC / USDT)
-    the creator above：0x5293050b1682F72718386B0Ed98D2Db9D4609Ec7
-    the balance：
-      ETH BALANCE：3.296356412928525309 ETH
-      ETH VALUE：$11,085.47 (@ $3,362.95/ETH)
-      TOKEN HOLDINGS：ERC-20 Tokens：0.2133 Blur Pool：$716.28
+    - the creator above：0x5293050b1682F72718386B0Ed98D2Db9D4609Ec7
+    - the balance：
+      - ETH BALANCE：3.296356412928525309 ETH
+      - ETH VALUE：$11,085.47 (@ $3,362.95/ETH)
+      - TOKEN HOLDINGS：ERC-20 Tokens：0.2133 Blur Pool：$716.28
 
 - 3. Deploy a contract in auto model and say “hello world”
 - 4. Deploy a contract in manual model and say “hello world”
-    完全没有接触过，在ChatGPT的帮助下尝试了一下，用ChatGPT写的代码使用remix vm部署了一下，IDE返回信息：
-      [vm]from: 0x5B3...eddC4to: HelloWorld.(constructor)value: 0 weidata: 0x608...a0033logs: 0hash: 0x13e...3d135
-          status  0x1 Transaction mined and execution succeed
-          transaction hash  0x13ea65accfa2f7d9a738d9762b75db70d1f80038248f5fae48d62c82ce23d135
-          block hash  0xb3bfc9981384ae1752614b62cf373bf2d414ee35d10d7c7752b80a75aa89110a
-          block number  2
-          contract address  0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8
-          from  0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
-          to  HelloWorld.(constructor)
-          gas 272860 gas
-          transaction cost  237269 gas 
-          execution cost  160751 gas 
-          input 0x608...a0033
-          decoded input {}
-          decoded output   - 
-          logs  []
-    好像在这个里面部署的不是真的部署了，只是在虚拟环境中部署了。这里面返回的合约地址在 https://etherscan.io/ 这里面查询到的不是一个新合约的样子
-    后来又看了一眼：https://web3url.io/#/ 里面有介绍auto model和manual model，怀疑自己是不是整个方向搞错了？
+    - 完全没有接触过，在ChatGPT的帮助下尝试了一下，用ChatGPT写的代码使用remix vm部署了一下。：
+    - 好像在这个里面部署的不是真的部署了，只是在虚拟环境中部署了。这里面返回的合约地址在 https://etherscan.io/ 这里面查询到的不是一个新合约的样子
+    - 后来又看了一眼：https://web3url.io/#/ 里面有介绍auto model和manual model，怀疑自己是不是整个方向搞错了？
     ### 希望有人可以帮助告诉一下正确的方法是什么？
 
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
-  暂时感觉对这些感念还是模模糊糊的状态，好像明白好像不太明白。看大家在telegram中的聊天也不太看得懂。
+- 暂时感觉对这些感念还是模模糊糊的状态，好像明白好像不太明白。看大家在telegram中的聊天也不太看得懂。
 - TODO
-  需要进一步查看：https://docs.web3url.io/
-  想要进一步了解：Native web3:// Clients：https://github.com/web3-protocol/evm-browser or https://github.com/web3-protocol/web3curl-js 打开看了不会用
+- 需要进一步查看：https://docs.web3url.io/
+- 想要进一步了解：Native web3:// Clients：https://github.com/web3-protocol/evm-browser or https://github.com/web3-protocol/web3curl-js 打开看了不会用
 - Mark：https://w3-box.w3eth.io/#/ 这个好像是hw2用得到的一个地址
 
 ### 07.17
