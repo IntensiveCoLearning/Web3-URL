@@ -61,8 +61,6 @@ timezone: Asia/Shanghai
 <!-- Content_START -->
 ### 07.15
 
-举例示范：
-
 - 今日学习时间：2h
 - 学习内容小结：
   - 简单了解什么是web3://协议
@@ -71,6 +69,8 @@ timezone: Asia/Shanghai
     例如：web3://qizhou.eth@xxx.eth:4804/balanceOf/zuck.eth?returns=(unit256)
   - 为什么使用web3:// ，提供一种去中心化的方式直接访问需要资源，目前还需要特定的浏览器支持，例如：[evm-broweser](https://github.com/nand2/evm-browser)。
   - 应用场景：NFT图片资源、blog
+
+- [第一期公开课程视频](https://youtu.be/hmN77o-ex8I)
 
 - 其他资源：
   - [web3://](https://web3url.io/#/)
@@ -82,7 +82,10 @@ timezone: Asia/Shanghai
 
 ### 07.16
 
-XXX
+- 今日学习时间：1h
+- 学习内容小结：
+  - 体验gateway的访问方式体验web3 url定位的资源
+  - 研究Web3URL Docs中 ***Fetch an USDC balance 案例*** 中的只能合约（0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48）。
 
 ### 07.17
 
