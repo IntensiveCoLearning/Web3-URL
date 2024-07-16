@@ -382,17 +382,19 @@ Token URI是一个非常灵活的工具，可以用来展示和访问各种类�
 
 - 3. Deploy a contract in auto model and say “hello world”
 - 4. Deploy a contract in manual model and say “hello world”
-    - 完全没有接触过，在ChatGPT的帮助下尝试了一下，用ChatGPT写的代码使用remix vm部署了一下。：
-    - 好像在这个里面部署的不是真的部署了，只是在虚拟环境中部署了。这里面返回的合约地址在 https://etherscan.io/ 这里面查询到的不是一个新合约的样子
-    - 后来又看了一眼：https://web3url.io/#/ 里面有介绍auto model和manual model，怀疑自己是不是整个方向搞错了？
+    - 完全没有接触过，在ChatGPT的帮助下尝试了一下，用ChatGPT写的代码使用remix vm部署了一下。
+    - 在这个里面部署的不是真的部署了，只是在虚拟环境中部署了。
+    - 后来又看了一眼：https://web3url.io/#/ 里面有介绍auto model和manual model，怀疑自己是不是还是搞错了？
     ### 希望有人可以帮助告诉一下正确的方法是什么？
 
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
-- 暂时感觉对这些感念还是模模糊糊的状态，好像明白好像不太明白。看大家在telegram中的聊天也不太看得懂。
-- TODO
-- 需要进一步查看：https://docs.web3url.io/
-- 想要进一步了解：Native web3:// Clients：https://github.com/web3-protocol/evm-browser or https://github.com/web3-protocol/web3curl-js 打开看了不会用
-- Mark：https://w3-box.w3eth.io/#/ 这个好像是hw2用得到的一个地址
+   -  暂时感觉对这些感念还是模模糊糊的状态，好像明白好像不太明白。看大家在telegram中的聊天也不太看得懂。
+- TODO：
+   - 需要进一步查看：https://docs.web3url.io/
+   - 想要进一步了解：
+      - Native web3:// Clients：https://github.com/web3-protocol/evm-browser or https://github.com/web3-protocol/web3curl-js 打开看了不会用
+- Mark：
+   - https://w3-box.w3eth.io/#/ 这个好像是hw2用得到的一个地址
 
 ### 07.17
 
