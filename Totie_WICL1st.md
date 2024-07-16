@@ -133,7 +133,7 @@ timezone: Asia/Shanghai
     - dApp 服务器/NSP 是中心化的，去中心化区块链的初衷和优点容易被打破；Web2 -> Web3的转变，如完全去中心化的交易所和社交网络；HTTP:// -> WEB3://
     - WEB3的基本结构：web3://\<contract\>\[:\<chainId\>\]/\<path\>
     - 解析模式：auto，manual，source request
-    - 了解ethfs-uploader
+    - 了解ethfs-uploader 
 - Homework 部分（如果有安排需要填写证明完成）
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 
