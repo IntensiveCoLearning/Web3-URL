@@ -55,8 +55,6 @@
 
 ## 笔记证明 Notes Proof
 <!-- Content_START --> 
-### 07.15
-
 举例示范：
 
 - 今日学习时间：XXXX
@@ -64,11 +62,15 @@
 - Homework 部分（如果有安排需要填写证明完成）
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 
+### 07.15
+- 今日学习时间：60 min
+- 学习内容小结：WEB3 URL 介绍和结构、测试例子[笔记](https://pinto-zinnia-ba1.notion.site/Web-URL-9120a5e5456f48d1be74c5b33166d5a1)
+
 
 
 ### 07.16
-
-XXX
+- 今日学习时间：40 min
+- 学习内容小结：WEB3 URL 解析模式 [笔记](https://pinto-zinnia-ba1.notion.site/9e311050da8844cdb081483cd8249f0e?pvs=25)
 
 ### 07.17
 

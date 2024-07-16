@@ -10,15 +10,17 @@
 
 1. **自我介绍：**
 
-   coconal 学生 熟悉 go，solidity，React 想了解更多 Web3 技术
+   Cora, 前端技术经理，研发 tiktok 数据分析平台。
+
+   参加的主要目的是学习 Web3 相关知识。
 
 2. **组队期待：**
 
-   没有想法，有 idea 可以一起
+   感兴趣一起组队的可以拉我~
 
 3. **你认为你会完成本次 Web3 URL 的残酷学习吗？**
 
-   Yes 100%
+   YES
 
 ---
 
@@ -62,70 +64,14 @@
 
 举例示范：
 
-- 今日学习时间：1h
-- 学习内容小结：什么是 Web3 url 协议，简单使用 web3 url ,简单了解了 ERC-4804
-- Homework 部分（如果有安排需要填写证明完成）
-- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+- 今日学习时间：2h
+- 学习内容小结：了解 ppt 内容 Introduction to Web3:// Access Protocol (CoLearning 2024)
 
 ### 07.16
 
-- 今日学习时间：40min
-- 小结 :
-  时间较少，简单调用示例
-  结构
-
-```
-web3://<contract>[:<chainId>]/<path>
-```
-
-自动模式
-
-```
-/<methodName>/<methodArg1>/<methodArg2>/...[?returns=(<type1>,<type2>,...)]
-```
-
-returns 指定返回
-
-```
- npx web3curl -v "web3://0xA5aFC9fE76a28fB12C60954Ed6e2e5f8ceF64Ff2/levelAndTile/2/50?returns=(uint256,uint256)"
-npm info using npm@10.2.4
-npm info using node@v20.11.0
-npm info ok
-npm info using npm@10.2.4
-npm info using node@v20.11.0
-* Fetching URL web3://0xA5aFC9fE76a28fB12C60954Ed6e2e5f8ceF64Ff2/levelAndTile/2/50?returns=(uint256,uint256)
-* Parsing URL ...
-* Host domain name resolver: (none)
-* Contract address: 0xA5aFC9fE76a28fB12C60954Ed6e2e5f8ceF64Ff2
-* Contract chain id: 1
-* Configured RPCs for chain 1 (fallback mode) : https://ethereum.publicnode.com https://cloudflare-eth.com
-*
-* Resolve mode determination...
-> 0xdd473fae
-* RPC provider used: https://ethereum.publicnode.com
-< 0x
-* Resolve mode: auto
-*
-* Path parsing...
-* Contract call mode: method
-* Method name: levelAndTile
-* Method arguments types: [{"type":"uint256"},{"type":"uint256"}]
-* Method arguments values: ["0x2","0x32"]
-* Contract return processing: jsonEncodeValues
-* Contract return processing: jsonEncodeValues: Types of values to encode: [{"type":"uint256"},{"type":"uint256"}]
-*
-* Calling contract ...
-* Contract address: 0xA5aFC9fE76a28fB12C60954Ed6e2e5f8ceF64Ff2
-> 0xd55dd04300000000000000000000000000000000000000000000000000000000...0000000000000000000000000000000000000000000000000000000000000032
-* RPC provider used: https://ethereum.publicnode.com
-< 0x00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000024
-*
-* Decoding contract return ...
-* HTTP Status code: 200
-* HTTP Headers:
-*   Content-Type: application/json
-["0x1","0x24"]
-```
+- 今日学习时间：2h
+- 学习内容小结：学习[Web3URL 文档](https://docs.web3url.io)部分章节，介绍，背景等。
+- web3:// 是一种新协议，用于访问与 EVM 兼容的区块链中智能合约返回的内容。
 
 ### 07.17
 

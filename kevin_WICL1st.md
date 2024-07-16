@@ -18,7 +18,7 @@
 
 3. **你认为你会完成本次 Web3 URL 的残酷学习吗？**
 
-   Maybe 50% 
+   Maybe 70% 
 
 ---
 
@@ -70,18 +70,32 @@
      don't know
   7. Deploy a contract in manual model and say “hello world”
      don't know
-
-
-
 - Question and Ideas
    - [GPT-4o 对于 URL和URI的通俗解释](https://chatgpt.com/share/57a16d97-3ac3-4798-a10d-cc58eebb12d2)
-   - 合约地址、钱包地址傻傻分不清楚
+   - 合约地址、钱包地址傻傻分不清楚（7.15知道了：钱包实际上没有地址，定位钱包的只有助记词，定位交易的是交易哈希）
 
 ### 07.15
+- 今日学习时间：02:00-03:00
+- 学习内容小结：观看了freeCodeCamp出品的[1小时区块链基础课程](https://www.youtube.com/watch?v=gyMwXuJrbJQ)（剩余31小时🫡）
+- Question and Ideas
+   - BTC的初衷似乎与ETH略有差别
+   - 认识了一个新词：Decentralized Oracle Network，[GPT-4o](https://chatgpt.com/share/cc16bea3-04a3-4fec-a86d-2ac9f12c6f16)解释为一种帮助区块链与外部世界数据交互的技术
+   - 理论上来说，我们之所以要构建智能合约，是因为它可以实现牢不可破的承诺，保持高效与透明（我想用智能合约构建彩票系统🤣）
+      - 人们向我支付以购买某个服务
+      - 支付成功的所有人都将获得一次抽奖券
+      - 活动时间结束公布中奖结果，所有过程全透明、快速、不可篡改、可验证（但我细想了一下，好像现在的中心化抽奖方式大家也没啥意见hh）
+   - Optimism和Polygon服务于Ethereum Mainnet（Layer 2），而Solana是ETH之外的、单独的区块链平台？ not sure
+   - 一个人可以有多个钱包（而钱包 Wallet 里又可以包含多个账户 Account），开发时最好单独新建钱包并且不存放任何真实资金💰
+   - 账户地址是公开的，任何人都可以查询，钱包本身没有地址，Metamask里显示的是默认账户的地址；钱包助记词（seed phrase）和账户密钥（private key）是私密的，[不应分享给任何人](https://support.metamask.io/zh-cn/getting-started/user-guide-secret-recovery-phrase-password-and-private-keys/)。
+   - [Testnet Faucets](https://faucets.chain.link)，中文名“测试网水龙头”🚰，它可以为开发者提供源源不断的代币用于测试（不具有实际的经济价值，不可以转移到主网）
 
 ### 07.16
-
-XXX
+- 今日学习时间：18:00-18:30
+- 学习内容小结：观看了freeCodeCamp出品的[30分钟区块链基础课程](https://www.youtube.com/watch?v=gyMwXuJrbJQ)（剩余30.5小时🫡）
+- Question and Ideas
+   - 每一笔交易都会产生Gas费用，需要支付给矿工
+   - 分布式账本，不仅限于记账，任何需要记录的、需要共识的东西都可以用分布式的理念，一旦有人恶意篡改，就将他剔除
+   - ETH使用的是Keccak-256算法
 
 ### 07.17
 

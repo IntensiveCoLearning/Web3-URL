@@ -6,7 +6,7 @@
 
 ---
 
-# [ 你的名字 ]
+# [ Punkcan ]
 
 1. **自我介绍：**
    
@@ -19,8 +19,6 @@
    年纪有点大，还有严重老花，可能不适合长时间编程。
    
    INTP
-   
-   
 
 2. **组队期待：**
    
@@ -75,17 +73,155 @@
 
 举例示范：
 
-- 今日学习时间：XXXX
-- 学习内容小结：XXXX
+- 今日学习时间：1h
+
+- 学习内容小结：
+  
+  - EIP-4804，主要是能够透过协议定位EVM内部的资源
+  - 现在的Firefox的addon ，是直接转换网关的网址
+  - 最直观的理解就是透过URL的方式直接呼叫智能合约Read 所Response的内容
+  - ![](https://web3url.io/img/auto-mode.02a3a3cc.svg)
+  - 上面这张图，白话解释就是：从333这个chain上，呼叫example.eth这个合约或地址的BalanceOf（Arg0是要传入的参数）
+  - 目前Web3URL的网站的合约：0xEbcA4860ebBe969E9Bc42643fcb437879dBDa9C6 @ Web3Q Galileo (id 3334)，可以参考
+  - 可以跨链，内容可以储存在便宜的L2或是其他侧链上，也可以布署在测试网上
+  - EVM读取速度很快，所以用户读取速度不影响（EVM是写的慢）
+
+- Homework 部分（如果有安排需要填写证明完成）
+
+- Question and Ideas
+  
+  - 如果有js framework支持，就可以让一般网站也可以混合使用？现在有吗？
+  - 如何让浏览者产生交互？如果写留言板，意味着操作界面要做到「呼叫钱包写入数据EVM」对吗？
+    - 应该是的
+  - 网关如何搭建？
+    - [GitHub - ethstorage/web3url-gateway: A gateway implementation of the web3 access protocol (web3://) that can serve HTTP-style Web3 URL for blockchain resource access.](https://github.com/ethstorage/web3url-gateway)
+
+- ### 07.16
+
+- 今日学习时间：1h
+
+- 学习内容小结：
+  
+  - 今天看到网关的架设，似乎有一个支援的Chainlist，也就是说并不是随便架设一个chain 就可以支援，衍生出：如果要架设一个Chain来专门处理，要如何申请Chain ID的问题，查了一下EIP155的资料，流程如下
+    
+    - 查询 Chain ID
+      
+      1. **访问 GitHub 仓库**： 打开 [ethereum-lists/chains](https://github.com/ethereum-lists/chains) 仓库。
+      
+      2. **查看 chains.json 文件**：在查看已经登记的 Chain ID 列表。
+      
+      3. **Fork 仓库**
+      
+      4. **修改 chains.json 文件**
+         
+         - 在fork 仓库中，编辑 `chains.json` 文件，添加您选择的 Chain ID 及其详细信息。
+         
+         例如：
+         
+         ```json
+         {
+           "name": "My Custom Network",
+           "chainId": 12345,
+           "networkId": 12345,
+           "rpc": ["https://my-custom-network.rpc.url"],
+           "faucets": [],
+           "explorers": [{"name": "my-explorer", "url": "https://my-explorer.url"}],
+           "nativeCurrency": {"name": "MyToken", "symbol": "MTK", "decimals": 18}
+         }
+         ```
+      
+      5. **提交 Pull Request**：
+         
+         - 提交修改，并创建一个 Pull Request 将您的更改提交回 `ethereum-lists/chains` 仓库。
+         - 在 Pull Request 中，详细描述您的链和 Chain ID 的用途，解释为什么选择该 ID。
+      
+      6. **等待审核和合并**：
+         
+         - 社区维护者会审核您的 Pull Request。如果没有问题，他们会将您的更改合并到主仓库中。
+         - 一旦合并，您的 Chain ID 就正式登记在案，其他开发者可以看到并避免选择相同的 ID。
+  
+  - 格式理解：
+    
+    - web3://0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/balanceOf/nemorino.eth?returns=(uint256) 
+    
+    - 如果换成现在网关的URL 就会变成https://0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.w3eth.io/balanceOf/nemorino.eth?returns=%28uint256%29
+    
+    - 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48 就是读取的合约，现在使用的是USDC的合约，如果要换成USDT合约，就是0xdAC17F958D2ee523a2206206994597C13D831ec7
+    
+    - balanceOf 就是要读取哪个方法
+    
+    - nemorino.eth 就是要输入的值（Arg0)
+    
+    - returns=(uint256)，回传值，如果这个没有指定，会发生错误
+    
+    - 如果要换到类似Polygon上，格式变成  web3://0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48:**137**/balanceOf/nemorino.eth?returns=(uint256)
+    
+    - http 变成https://0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48 **.137.** w3eth.io/balanceOf/nemorino.eth?returns=%28uint256%29
+    
+    - 但是在这时候要注意一个问题，就是ENS在Polygon上是无法解析的，所以要打完整的个网址名称
+    
+    - 以下网址就可以读取到我在Polygon上的USDT https://0xc2132d05d31c914a87c6611c10748aeb04b58e8f.137.w3eth.io/balanceOf/0x1d41D6B1091C1a8A334096771bd1776019243d5e?returns=(uint256)
+    
+    - 另一个小问题就是SSL无法支援 0xc2132d05d31c914a87c6611c10748aeb04b58e8f.137.w3eth.io 会报安全错误
+    -  web3://0xe42cad6fc883877a76a26a16ed92444ab177e306/owner?returns=(address) ，这个案例中owner并没有需要输入的arg0，因此returns直接接在owner即可
+  
+
+
+- Homework 部分
+  
+  - Find the ownership of an your favor NFT
+    - 测试了https://etherscan.io/address/0xe42cad6fc883877a76a26a16ed92444ab177e306#readContract
+    - https 的格式 https://0xe42cad6fc883877a76a26a16ed92444ab177e306.w3eth.io/owner?returns=(address)
+    - web3URL 的格式 web3://0xe42cad6fc883877a76a26a16ed92444ab177e306/owner?returns=(address)
+    - 正确显示 "0xAB9e1DDf806a20C9B06A94c655a59C3eDF495Ca5"
+    - 
+    ![[Pasted image 20240716173459.png]]
+  -  Find the balance of an account in an ERC-20 contract (USDC / USDT)
+	  - 查我自己在Polygon上的
+	  - https://0xc2132d05d31c914a87c6611c10748aeb04b58e8f.137.w3eth.io/balanceOf/0x1d41D6B1091C1a8A334096771bd1776019243d5e?returns=(uint256)
+	  - ![[Pasted image 20240716173742.png]]
+  - 
+
+	
+
+
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+  
+  - 一个用来储存的EVM，会面临什么问题？要如何解决？
+- TODO：搞懂自动模式跟手动模式的差异，尝试布署合约做下两个Homework
+### 07.17
+
+- 今日学习时间：
+- 学习内容小结：
 - Homework 部分（如果有安排需要填写证明完成）
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 
-### 07.16
+### 07.18
 
-XXX
+- 今日学习时间：
+- 学习内容小结：
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 
-### 07.17
+### 07.19
 
-XXX
+- 今日学习时间：
+- 学习内容小结：
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+
+### 07.20
+
+- 今日学习时间：
+- 学习内容小结：
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+
+### 07.21
+
+- 今日学习时间：
+- 学习内容小结：
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 
 <!-- Content_END -->

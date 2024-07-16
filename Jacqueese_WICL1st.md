@@ -62,16 +62,176 @@
 
 举例示范：
 
-- 今日学习时间：XXXX
-- 学习内容小结：XXXX
+- 今日学习时间：2h
+- 学习内容小结：web3协议相关
 - Homework 部分（如果有安排需要填写证明完成）
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 
 
 
+
 ### 07.16
 
-XXX
+完成了hw1
+
+# hw1:
+
+## 使用 ethfs-uploader 上传文件/文件夹
+步骤 1: 安装 ethfs-uploader
+你可以通过以下命令安装 ethfs-uploader：
+
+```
+npm i ethfs-uploader
+```
+ethfs-uploader 的 npm 页面可以在这里找到。
+
+步骤 2: 创建 FlatDirectory 合约
+使用私钥 0x112233... 在默认链（Galileo Testnet）上创建 FlatDirectory。
+
+```
+npx ethfs-uploader --create --privateKey 0x112233...
+```
+如果在其他支持 EVM 的链上创建 FlatDirectory，则需要添加 chainId，例如 Goerli。
+
+```
+npx ethfs-uploader --create --privateKey 0x112233... --chainId 5
+```
+还可以指定链的 RPC URL。
+
+```
+npx ethfs-uploader --create --privateKey 0x112233... --chainId 5 --RPC https://...
+```
+交易确认后，将获得一个 FlatDirectory 地址，例如 0x37DF32c7a3c30D352453dadACc838461d8629016。
+
+步骤 3: 上传文件
+在这一部分，将把文件夹上传到刚刚创建的 FlatDirectory 中。
+
+为了识别 FlatDirectory 合约所在的链，需要在合约地址前添加链的短名称。详细信息请参见 EIP-3770 地址。
+
+短名称:地址
+
+例如，创建的地址在 Galileo 网络上是：
+
+```
+w3q-g:0x37DF32c7a3c30D352453dadACc838461d8629016
+```
+运行命令来上传文件。
+
+```
+npx ethfs-uploader <directory|file> <address> --privateKey <private-key>
+将 "dist" 文件夹的内容上传到地址 0x37DF32c7a3c30D352453dadACc838461d8629016 的命令是：
+```
+```
+npx ethfs-uploader /Users/.../dist w3q-g:0x37DF32c7a3c30D352453dadACc838461d8629016 --privateKey 0x112233...
+```
+
+步骤 4: 设置默认文件
+还可以使用 default 命令设置 FlatDirectory 的默认文件。
+
+运行命令来设置默认文件。
+
+```
+npx ethfs-uploader --default --address <address> --file <name> --privateKey <private-key>
+```
+将默认文件 "hello.txt" 设置为 "0x37DF32c7a3c30D352453dadACc838461d8629016" 的命令是：
+
+```
+npx ethfs-uploader --default w3q-g:0x37DF32c7a3c30D352453dadACc838461d8629016 --file hello.txt --privateKey 0x112233...
+```
+步骤 5: 浏览的文件！
+现在，应该能够通过以下链接浏览刚刚上传的文件：
+
+https://${address}.w3q-g.w3link.io/${filename}
+
+我们两个文件的访问地址是：
+
+https://0x37df32c7a3c30d352453dadacc838461d8629016.w3q-g.w3link.io/hello.txt
+
+https://0x37df32c7a3c30d352453dadacc838461d8629016.w3q-g.w3link.io/img/1.jpeg
+
+因为默认文件已经设置为 "hello.txt"，所以可以通过以下链接访问它。
+
+https://0x37df32c7a3c30d352453dadacc838461d8629016.w3q-g.w3link.io/
+
+步骤 6: 使用 js 代码读取和写入 FlatDirectory
+获取 FlatDirectory 合约的 ABI。
+
+```
+const flatDirectoryAbi = [
+  "function write(bytes memory name, bytes memory data) external payable",
+  "function read(bytes memory name) external view returns (bytes memory, bool)",
+  "function writeChunk(bytes memory name, uint256 chunkId, bytes memory data) external payable",
+  "function readChunk(bytes memory name, uint256 chunkId) external view returns (bytes memory, bool)"
+];
+```
+使用 ethers 创建合约对象。
+
+```
+export const FlatDirectoryContract = (address) => {
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
+    const contract = new ethers.Contract(address, flatDirectoryAbi, provider);
+    return contract.connect(provider.getSigner());
+};
+```
+读取文件
+
+```
+const contract = FlatDirectoryContract('0x37DF32c7a3c30D352453dadACc838461d8629016');
+const hexName = '0x' + Buffer.from('hello.txt', 'utf8').toString('hex');
+const content = contract.read(hexName);
+console.log(content);
+```
+写入文件
+
+```
+const filePath = '';
+let fileSize = ;
+const hexName = '0x' + Buffer.from('img/1.jpeg', 'utf8').toString('hex');
+const contract = FlatDirectoryContract('0x37DF32c7a3c30D352453dadACc838461d8629016');
+const content = fs.readFileSync(filePath);
+
+// 如果文件大于 475K，需要分块
+let chunks = [];
+if (fileSize > 475 * 1024) {
+  const chunkSize = Math.ceil(fileSize / (475 * 1024));
+  chunks = bufferChunk(content, chunkSize);
+  fileSize = fileSize / chunkSize;
+} else {
+  chunks.push(content);
+}
+// 大于 24K 的文件需要额外的 staking 代币
+let cost = 0;
+if (fileSize > 24 * 1024 - 326) {
+  cost = Math.floor((fileSize + 326) / 1024 / 24);
+}
+
+for (const index in chunks) {
+  const chunk = chunks[index];
+  const hexData = '0x' + chunk.toString('hex');
+
+  const estimatedGas = await contract.estimateGas.writeChunk(hexName, index, hexData, {
+    value: ethers.utils.parseEther(cost.toString())
+  });
+  // 上传文件
+  const option = {
+    gasLimit: estimatedGas.mul(6).div(5).toString(),
+    value: ethers.utils.parseEther(cost.toString())
+  };
+  const tx = await fileContract.writeChunk(hexName, index, hexData, option);
+  console.log(`Transaction Id: ${tx.hash}`);
+  
+  // 获取结果
+  const receipt = await tx.wait();
+  if (receipt.status) {
+    console.log(`文件 ${fileName} chunkId: ${index} 已上传！`);
+  }
+}
+```
+
+
+
+
+
 
 ### 07.17
 
