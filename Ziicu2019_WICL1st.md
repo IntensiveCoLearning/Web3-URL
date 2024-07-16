@@ -2,61 +2,6 @@
 timezone: Asia/Shanghai
 ---
 
-> ⚠️本打卡表默认为北京时间 UTC+8 时区，正确格式如下：
->
-> timezone: Asia/Shanghai
->
-> ⚠️如果你所在地区非北京时间，请根据你所在时区自行更改，请注意填写的正确格式。
->
-> 时区请参考以下列表：
->
-> timezone: Asia/Shanghai # 中国标准时间 (UTC+8)
->
-> timezone: Asia/Tokyo # 日本标准时间 (UTC+9)
->
-> timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
->
-> timezone: Australia/Sydney # 澳大利亚东部标准时间 (UTC+10)
->
-> timezone: Pacific/Honolulu # 夏威夷-阿留申标准时间 (UTC-10)
->
-> timezone: America/Anchorage # 阿拉斯加标准时间 (UTC-9)
->
-> timezone: America/Los_Angeles # 太平洋标准时间 (UTC-8)
->
-> timezone: America/Denver # 山地标准时间 (UTC-7)
->
-> timezone: America/Chicago # 中部标准时间 (UTC-6)
->
-> timezone: America/New_York # 东部标准时间 (UTC-5)
->
-> timezone: America/Halifax # 大西洋标准时间 (UTC-4)
->
-> timezone: America/St_Johns # 纽芬兰标准时间 (UTC-3:30)
->
-> timezone: America/Sao_Paulo # 巴西利亚时间 (UTC-3)
->
-> timezone: Atlantic/Azores # 亚速尔群岛时间 (UTC-1)
->
-> timezone: Europe/London # 格林威治标准时间 (UTC+0)
->
-> timezone: Europe/Berlin # 中欧标准时间 (UTC+1)
->
-> timezone: Europe/Helsinki # 东欧标准时间 (UTC+2)
->
-> timezone: Europe/Moscow # 莫斯科标准时间 (UTC+3)
->
-> timezone: Asia/Dubai # 海湾标准时间 (UTC+4)
->
-> timezone: Asia/Kolkata # 印度标准时间 (UTC+5:30)
->
-> timezone: Asia/Dhaka # 孟加拉国标准时间 (UTC+6)
->
-> timezone: Asia/Bangkok # 中南半岛时间 (UTC+7)
->
-
-
-
 # Web3 URL 残酷共学第 1 期残酷指引
 
 > ⚠️ 正式开始前请确保你在身体上和精神上都处于合适的状态，请刻意练习，残酷面对 🆒。为方便检索 The First Web3 URL Intensive CoLearning 简写为 WICL1st，第 2 期即为WICL2nd，第 3 期即为 WICL3rd，以此类推。
@@ -65,19 +10,19 @@ timezone: Asia/Shanghai
 
 ---
 
-# [ 你的名字 ]
+# [ Ziicu Tang ]
 
 1. **自我介绍：**
 
-   XXX [ 包括你的昵称、职业、擅长方向以及残酷共学 Web3 URL 的原因或期待，以确保大家都能清楚地理解你的情况，同时增进大家的互相了解 ]
+   Ziicu，擅长前端和产品，目前带团队做企业内部应用，对web3比较感兴趣，这次参加是因为去年一起合作一个ordinals项目的朋友推荐的，希望能借此对web3更为了解。
 
 2. **组队期待：**
 
-   XXX [ 包括你想预计的项目参与或开发方向、需要什么角色的小伙伴、其它你想在这里分享的想法，具体组队可在电报频道群沟通 ]
+   目前web3没有组队，暂时没有太多想法，希望能被其他团队需要。
 
 3. **你认为你会完成本次 Web3 URL 的残酷学习吗？**
 
-   XXX [ Yes 100% or Maybe xx% ]
+   目标完成70%，争取100%完成
 
 ---
 
@@ -87,7 +32,7 @@ timezone: Asia/Shanghai
 
   - 自我介绍：大家按要求更新上方自我介绍，方面大家互相了解，及后续自由组队方向。
 
-  -  [Web3 URL 残酷共学频道](https://t.me/LXDAO/8748)报道：大家可以自由在残酷共学群里交流分享，互动答疑，根据自身学习阶段情况随时开启自由组队。
+  - [Web3 URL 残酷共学频道](https://t.me/LXDAO/8748)报道：大家可以自由在残酷共学群里交流分享，互动答疑，根据自身学习阶段情况随时开启自由组队。
 
   - 课前学习：了解残酷共学流程，GitHub 协作共学基础；Web3:// 协议课前学习。
 
@@ -113,17 +58,27 @@ timezone: Asia/Shanghai
 ---
 
 ## 笔记证明 Notes Proof
-<!-- Content_START --> 
+<!-- Content_START -->
 ### 07.15
 
 举例示范：
 
-- 今日学习时间：XXXX
-- 学习内容小结：XXXX
+- 今日学习时间：2h
+- 学习内容小结：
+  - 简单了解什么是web3://协议
+  - web3://协议对应的ERC-4804、ERC-6860(进行中)
+  - 标准格式：scheme://userinfo@contract:chainid/methodId/arg0?query
+    例如：web3://qizhou.eth@xxx.eth:4804/balanceOf/zuck.eth?returns=(unit256)
+  - 为什么使用web3:// ，提供一种去中心化的方式直接访问需要资源，目前还需要特定的浏览器支持，例如：[evm-broweser](https://github.com/nand2/evm-browser)。
+  - 应用场景：NFT图片资源、blog
+
+- 其他资源：
+  - [web3://](https://web3url.io/#/)
+  - [realtime token price](https://0xccd58c48f12dd1d08250197cb0d8b865bda02064.3333.w3link.io/index.html)
+  - [web3url doc](https://docs.web3url.io/)
+
 - Homework 部分（如果有安排需要填写证明完成）
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
-
-
 
 ### 07.16
 

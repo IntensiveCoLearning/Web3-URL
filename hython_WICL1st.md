@@ -1,5 +1,5 @@
 ---
-timezone: Asia/Shanghai
+timezone: Asia/Tokyo
 ---
 
 > ⚠️本打卡表默认为北京时间 UTC+8 时区，正确格式如下：
@@ -69,15 +69,15 @@ timezone: Asia/Shanghai
 
 1. **自我介绍：**
 
-   XXX [ 包括你的昵称、职业、擅长方向以及残酷共学 Web3 URL 的原因或期待，以确保大家都能清楚地理解你的情况，同时增进大家的互相了解 ]
+   hython web3自由职业者，量化交易员，希望通过学习知识开发提供好用的dapps，达到结识良友，共建web3良好生态的目的。
 
 2. **组队期待：**
 
-   XXX [ 包括你想预计的项目参与或开发方向、需要什么角色的小伙伴、其它你想在这里分享的想法，具体组队可在电报频道群沟通 ]
+   有5年以上项目管理经验，5年以上开发经验。期待参与有意思的应用开发。
 
 3. **你认为你会完成本次 Web3 URL 的残酷学习吗？**
 
-   XXX [ Yes 100% or Maybe xx% ]
+   尽力完成70%及以上，最不济也要达成50%
 
 ---
 
@@ -116,13 +116,13 @@ timezone: Asia/Shanghai
 <!-- Content_START --> 
 ### 07.15
 
-举例示范：
-
-- 今日学习时间：XXXX
-- 学习内容小结：XXXX
+- 今日学习时间：19:30～20:10 共40分钟
+- 学习内容小结：youtube上俩个创始人的演讲视频
+  - Introducing web3:// - Decentralized Access Protocol for EVM | ETHDenver 2023
+  - On the Future of Web3 — Paving the Way to End-to-End Fully-Decentralized Web by Qi Zhou
 - Homework 部分（如果有安排需要填写证明完成）
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
-
+  - web3 网关转换的插件目前只有 Firefox 有 chrome 还没有，为什么？
 
 
 ### 07.16
