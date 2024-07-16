@@ -64,14 +64,14 @@
 
 举例示范：
 
-- 今日学习时间：XXXX
-- 学习内容小结：XXXX
-- Homework 部分（如果有安排需要填写证明完成）
-- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+- 今日学习时间：2h
+- 学习内容小结：了解 ppt 内容 Introduction to Web3:// Access Protocol (CoLearning 2024)
 
 ### 07.16
 
-XXX
+- 今日学习时间：2h
+- 学习内容小结：学习[Web3URL 文档](https://docs.web3url.io)部分章节，介绍，背景等。
+- web3:// 是一种新协议，用于访问与 EVM 兼容的区块链中智能合约返回的内容。
 
 ### 07.17
 
