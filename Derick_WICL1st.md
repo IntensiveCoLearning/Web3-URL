@@ -65,14 +65,44 @@ timezone: Asia/Shanghai
 <!-- Content_START --> 
 ### 07.15
 
-举例示范：
+#### EIP-4804
+- ERC-4804, also known as "Web3 URL to EVM Call Message Translation," is an Ethereum Improvement Proposal that defines a standard for a new type of URL specifically designed for the Ethereum network. It's important to clarify that ERC-4804 has actually been merged into the EIPs as EIP-4804.
 
-- 今日学习时间：XXXX
-- 学习内容小结：XXXX
-- Homework 部分（如果有安排需要填写证明完成）
-- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+- Here's a breakdown of EIP-4804:
 
+**Goal**: Create a decentralized equivalent to the familiar HTTP protocol used on the web. EIP-4804 aims to enable users to directly access content stored on the Ethereum blockchain and compatible blockchains (like Polygon) through user-friendly URLs.
+**Web3 URLs**: EIP-4804 introduces the concept of Web3 URLs. These URLs follow a similar format to standard web URLs (http://) but use the prefix "web3://". They can also leverage readable names from ENS (Ethereum Name Service) instead of complex wallet addresses for improved readability.
+**Translation to EVM Calls**: The core function of EIP-4804 is to translate a Web3 URL into an EVM call message. This message specifies the smart contract address and the function (method) to be called on the blockchain to retrieve the desired content.
+**Benefits**: EIP-4804 offers several advantages:
+**Direct Interaction**: Users can directly interact with on-chain content without relying on centralized servers or proxies.
+Improved User Experience: Web3 URLs provide a familiar and user-friendly way to access blockchain data.
+**Interoperability**: The standard is designed to work with other URI-compatible technologies like SVG.
+Decentralized Presentation Layer: EIP-4804 lays the groundwork for a decentralized presentation layer on Ethereum. This could allow for on-chain rendering of web content in the future.
+Current Status:
 
+- EIP-4804 is still under development, but it has been merged into the official EIPs.  While not yet fully implemented in all wallets and applications, it represents a significant step towards a more user-friendly and accessible Ethereum ecosystem.
+#### EIP-6860
+
+- EIP-6860, or ERC-6860, is an Ethereum Improvement Proposal that aims to introduce a decentralized presentation layer for the Ethereum Virtual Machine (EVM) Base 4804. This essentially means it creates a way to show human-readable content on the blockchain.
+
+- Here's how it works:
+
+**Web3 URLs**: ERC-6860 utilizes Web3 URLs, which are similar to regular web URLs (like http://) but specifically designed for the Ethereum network. These URLs can use readable names from naming services instead of complex wallet addresses for better user experience.
+**EVM as a backend**: With ERC-6860, any web content, including HTML, CSS, images, and more, can be translated into EVM (Ethereum Virtual Machine) compatible messages. This allows the EVM to act as a decentralized backend for web applications.
+**Decentralized Presentation**: By enabling on-chain rendering of web content, ERC-6860 facilitates a decentralized presentation layer. This means the content isn't reliant on any centralized servers and can potentially be more resistant to censorship.
+
+- 一种在http/https协议之外的一种新的协议，web3://协议，这个协议是为了让用户可以直接访问以太坊区块链上的内容，而不是通过中心化的服务器或代理。要重写dns为ens，将数据内容存储在便宜的l2，回调协议，将web3://协议转换为evm调用消息，这个消息指定了智能合约地址和要在区块链上调用的函数（方法）来检索所需的内容。
+- 学习了这两个协议，就看web3://的具体实现
+- 做了一个专用的浏览器，希望其他主流浏览器能兼容这个协议
+- 将vb的个人博客40m上传到L2，存储费用为0.13E
+
+[官网](https://web3url.io/#/)
+[测试合约](https://etherscan.io/token/0x892848074ddea461a15f337250da3ce55580ca85#readContract)
+[分享PPT](https://docs.google.com/presentation/d/1egJUKJrjC9wjkmOF9sLBkTSwHpd6hl8FXkWehPW7kFk/edit#slide=id.g26637866a4a_0_10)
+[现有Demo](https://github.com/ethstorage/awesome-web3)
+- 作业是进行一些技术上的探索
+* 直接感觉是如果存储无法降到普通人能接受的价格，那这个将不可能推广成功
+- 
 
 ### 07.16
 

@@ -1,7 +1,3 @@
----
-timezone: Pacific/Auckland
----
-
 # Web3 URL 残酷共学第 1 期残酷指引
 
 > ⚠️ 正式开始前请确保你在身体上和精神上都处于合适的状态，请刻意练习，残酷面对 🆒。为方便检索 The First Web3 URL Intensive CoLearning 简写为 WICL1st，第 2 期即为 WICL2nd，第 3 期即为 WICL3rd，以此类推。
@@ -64,12 +60,16 @@ Hello，我是 Muxin，是 LXDAO 的一名核心 buidler，本职是一名程序
 
 ### 07.15
 
-举例示范：
+今天时间有点紧，先看了一下 PPT 以及 ERC-4804 的介绍，简单的了解了一下 Web3 URL 是什么，解决了什么问题等，今晚的公开课明天补上：
 
-- 今日学习时间：XXXX
-- 学习内容小结：XXXX
-- Homework 部分（如果有安排需要填写证明完成）
-- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+- https://docs.google.com/presentation/d/1egJUKJrjC9wjkmOF9sLBkTSwHpd6hl8FXkWehPW7kFk/edit#slide=id.p
+- https://eips.ethereum.org/EIPS/eip-4804
+
+1. `web3://` 是什么：
+   `web3://` 是一个新的协议，它可以直接访问 EVM 兼容的区块链，并将链上内容返回回来，不需要通过第三方服务，比如 DNS、HTTP 服务、IPFS。
+
+2. 为什么需要 `web3://`：
+   目前获取 Web3 数据的方式通常是依赖于 Web2 代理到 Web3 区块链的转换，主要是由 dApp website、节点服务提供商以及 etherscan 等代理完成，但这些都不受用户控制。所以 `web3://` 是想要创建一个标准的协议可以直接访问 Web3 的内容，特别是链上 Web 内容，比如 SVG、HTML。并且，现在越来越多的 NFT 都是 fully on-chain 的，但却没有一种方式可以直接访问到链上的 NFT 数据，只能通过 `http://` 或 `ipfs://`。
 
 ### 07.16
 

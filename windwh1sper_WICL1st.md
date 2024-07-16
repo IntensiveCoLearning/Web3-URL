@@ -63,11 +63,14 @@ timezone: Asia/Shanghai
 
 举例示范：
 
-- 今日学习时间：XXXX
-- 学习内容小结：XXXX
-- Homework 部分（如果有安排需要填写证明完成）
-- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
-
+- 今日学习时间：21:00-22:30
+- 学习内容小结：
+  1.了解了ERC4804的工作方式，能为 Web2 用户提供一种直接访问 Web3 内容的简单方式；
+  2.尝试访问链上网站并使用Dapps，例如W3Box、W3Drive、vitalikblog等；
+  3.了解了如何使用HTTP 网关访问 web3：//，如何使用 web3：// ，并尝试构建自己的 Dapp。
+- Homework 
+- Question and Ideas
+  在ERC4804中大量使用Web3 URL是否会增加链上的负载；如何确保用户输入的URL不会被恶意利用进行攻击？
 
 
 ### 07.16
