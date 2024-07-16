@@ -69,13 +69,23 @@
 - Homework 部分 
   - 暂无
 
-- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+- Question and Ideas
   - 在想基于web3:// 哪些应用场景是当前最需要的或频率最高的？
-
 
 ### 07.16
 
-XXX
+- 今日学习时间：2 小时
+- 学习内容小结：
+  - 学习了解以太坊改进提案 [EIP-4804](https://eips.ethereum.org/EIPS/eip-4804) 和  [EIP-6860](https://eips.ethereum.org/EIPS/eip-6860)：
+    - ERC-4804，也称为“Web3 URL到EVM调用消息转换”，旨在为以太坊网络定义一种新的URL类型的标准。
+    -  EIP-6860，旨在为以太坊虚拟机（EVM）Base 4804引入一个去中心化的呈现层。
+  - 通过访问 https://cyberbrokers-meta.w3eth.io/renderBroker/5 学习了解背后数据是如何被调用及被呈现。 如何定位，Gateway 通过调用 ENS 把 cyberbrokers 所映射的合约地址来去定位。🤔![cyberbrokers](img/cyberbrokers.png)
+  - 回顾 [公开课](https://www.youtube.com/watch?v=hmN77o-ex8I) 学习，尤其是 QA 环节。我们需要一个协议保证「去中心定位去中心化的资源」。一个是如何定位的问题，一个是如何访问的问题。
+  - 对目前具体的 **Application** 方向进行了了解，面临一些具体问题：目前很多浏览器不兼容，存储费用过高等。
+- Homework 部分 
+  - 暂无
+- Question and Ideas
+  - 并不是所有的东西都需要去中心化，去中心和中心化如何平衡？
 
 ### 07.17
 
