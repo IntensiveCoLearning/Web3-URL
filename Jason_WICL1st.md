@@ -62,7 +62,7 @@
 
 举例示范：
 
-- 今日学习时间：XXXX
+- 今日学习时间：20240715
 - 学习内容小结：XXXX
 - Homework 部分（如果有安排需要填写证明完成）
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
@@ -70,10 +70,101 @@
 
 
 ### 07.16
+- 今日学习时间：20240716 
 
-XXX
+- 学习内容小结：
+    - On the Future of Web3 — Paving the Way to End-to-End Fully-Decentralized Web by Qi Zhou
+        - State of the Art of dWeb
+            - ipfs://（decentralized access protocol）：
+            - libp2p（decentralized networking layer）：which to retrieve the data
+            - filecoin（decentralized incentivized Storage layer）：helps to keep the data consistency
+        - limitation of current solutions
+            - limited storage semantics(语义学)
+            - steep(陡峭的) learning cure
+        - futures needed in future web3
+            - rich storage semantics
+            - simple user onboarding
+            - end-to-end fully decentralized
+        - solutions to future web3
+            - proof of publication via data availability
+            - ethstorage: external data retenion(保持) l2 network
+                - instead of computation that most l2 work on
+                - support both ethereum mainnet and our stoarge-specific sidechain
+            - web3:// access protocol
+                - ERC-4804: web3 url standard - an IANA Registered Scheme
+                    - web3://qizhou.eth@example.eth:333/balanceOf/zuck.eth?returns=(uint256)
+                    - scheme: web3
+                    - userinfo: qizhou.eth
+                    - contract: example.eth
+                    - chainid: 333
+                    - authority: qizhou.eth@example.eth:333
+                    - methodId: balanceOf
+                    - arg0: zuck.eth
+                    - query: returns=(uint256)
+        - applications
+            - nft等
+    - Introducing web3:// - Decentralized Access Protocol for EVM | ETHDenver 2023
+        - web3:// access protocol？
+        - why need web3:// access protocol?
+            - more and more nfts are moving on chain
+                - cyberbrokes
+                - nouns
+                - moonbirds
+                - artbooks
+            - narrative(叙事技巧): own both token and image on-chain
+            - a missing part of ethereum: no way to render(提供) the object directly.
+            - web3:// allows user to browse the images content directly
+        - how to use web3://？
+            - Inherit most features of http://
+                - a decentralized authority(a contract by address or name)
+                - a way to call the contract(calldata)
+                - (optional) a format to return data
+            - check web3url.io for more 
+        - how to access evm with web3://?
+            - w3eth.io is current gateway for ethereum
+            - firefox extension
+            - native integration(融合) with modern browsers is underway!
+            - w3link.io is the current gateway for multi-chain
+            - support networks
+                - mainnet(1)
+                - goerli
+                - sepolia
+                - optimism/testnet
+                - arbitrum/testnet
+        - application: on-chain nft images
+            - on-chain nfts - cyberbrokers
+        - application: personal website
+            - vitalik's blog
+            - use ERC5018: filesystem-like interface
+            - ethfs-uploader to synchronize folder/files
+        - more applications
+            - dynamic website with multi-user interactions
+                - decentralized blogger、dropbox、email、git、craigslist
+            - checkout web3url io
+        - storage issue on evm
+            - storage cost is super expensive on mainnet
+                - 1GB costs ~ 10M dollars 
+            - solution with low cost - arbitrum nova with DAC
+            - solution with lower cost - ethstorage.io
+                - scaling ethereum storage to ~ PB with 1/1000x cost
+        - vision on future web3
+            - ethereum drives most innovations(创新)
+            - omnipresent(无所不在的) to everyone 
+            - fully decentralized
+
+- Homework 部分（如果有安排需要填写证明完成）
+
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+
+
 
 ### 07.17
+- 今日学习时间：20240717 
 
-XXX
+- 学习内容小结：
+
+- Homework 部分（如果有安排需要填写证明完成）
+
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+
 <!-- Content_END -->
