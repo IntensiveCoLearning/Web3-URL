@@ -97,6 +97,22 @@ timezone: Asia/Shanghai
 
 - **7 月 15 日 - 7 月 21 日**：
 
+- 0715:
+  gateway 访问方式：
+    https://cyberbrokers-meta.w3eth.io/renderBroker/8
+  Find the ownership of an your favor NFT
+    favor NFT: https://cyberbrokers-meta.w3eth.io/renderBroker/1
+    contract_address: 0x8bb9A8BaeEc177aE55Ac410c429CbBBBb9198caC
+    Non `ownerOf` function
+
+  Find the balance of ERC-20 contract (USDC / USDT)
+
+  Deploy a contract in auto model and say “hello world”
+
+  Deploy a contract in manual model and say “hello world”
+
+  
+
   - **7 月 15 日 周一晚 8 点- 9 点（北京时间）：** 第 1 次公开课分享
   - **本周共学内容：** 涉及 Web3://  的背景和演进历史；支持 Web3://  协议的访问方式 (gateway 和 EVM browser)来浏览以太坊上面的数据；熟悉使用 Web3://  和 EthStorage 早期测试网来部署简单的去中心化网站。
   - **Homework1：** 见[课程 PPT](https://docs.google.com/presentation/d/1egJUKJrjC9wjkmOF9sLBkTSwHpd6hl8FXkWehPW7kFk/edit#slide=id.g1754f50a55c_0_11)。

@@ -71,10 +71,27 @@ timezone: Asia/Shanghai
 
 ### 07.16
 
-XXX
+-   今日学习时间：1 小时（看 Telegram 群内消息并提问，查看资料，完成部分作业）
+-   学习内容小结：学习资料，了解 Auto Mode 和 Manual Mode
+-   Homework 部分：
+
+            Find the ownership of an your favor NFT
+
+    web3://0x7bc5d353663c4c94fd022d3df0642b56c174b45c/ownerOf/1?returns=(uint256)
+    http://0x7bc5d353663c4c94fd022d3df0642b56c174b45c.w3eth.io/ownerOf/1?returns=(uint256)
+
+-   Question and Ideas：Manual Mode 的合约怎么写
 
 ### 07.17
 
-XXX
+-   今日学习时间：
+-   学习内容小结：
+-   Homework 部分：
+
+            Find the balance of ERC-20 contract (USDC / USDT)
+            Deploy a contract in auto model and say “hello world”
+            Deploy a contract in manual model and say “hello world”
+
+-   Question and Ideas：
 
 <!-- Content_END -->
