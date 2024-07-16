@@ -59,16 +59,20 @@
 
 举例示范：
 
-- 今日学习时间：XXXX
-- 学习内容小结：XXXX
+- 今日学习时间：1h
+- 学习内容小结：b站网课：《java语言从0开始编写一个区块链》
+- <img width="164" alt="image" src="https://github.com/user-attachments/assets/5742745a-65c8-45c5-8b68-e9af65fe055c">
+
 - Homework 部分（如果有安排需要填写证明完成）
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 
 
 
 ### 07.16
-- 今日学习时间：XXXX
-- 学习内容小结：XXXX
+- 今日学习时间：1h
+- 学习内容小结：b站网课：《java语言从0开始编写一个区块链》、
+- <img width="197" alt="image" src="https://github.com/user-attachments/assets/9c841370-f4c3-48c5-a2cc-c6512af51cfe">
+
 - Homework 部分（如果有安排需要填写证明完成）
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 ### 07.17
