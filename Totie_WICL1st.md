@@ -118,6 +118,15 @@ timezone: Asia/Shanghai
 
 举例示范：
 
+- 今日学习时间：
+- 学习内容小结：
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+
+
+
+### 07.16
+
 - 今日学习时间：1h
 - 学习内容小结：
   - 根据 docs.web3url.io 进行学习
@@ -127,12 +136,6 @@ timezone: Asia/Shanghai
     - 了解ethfs-uploader
 - Homework 部分（如果有安排需要填写证明完成）
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
-
-
-
-### 07.16
-
-XXX
 
 ### 07.17
 
