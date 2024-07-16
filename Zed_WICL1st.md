@@ -236,6 +236,8 @@ timezone: Asia/Shanghai
 ### 总结
 以太坊虚拟机（EVM）是以太坊网络的核心，它就像一个神奇的厨房，能够自动执行各种智能合约。它的通用性、独立性、确定性和隔离性使得它成为去中心化应用的理想平台。尽管面临可扩展性、安全性、用户体验和开发工具等挑战，但 EVM 的未来发展前景广阔。
 
+---
+
 ### URI、URL 和 URN
 
 1. **URI（统一资源标识符）**：
@@ -361,9 +363,14 @@ Token URI可以用来跟踪供应链中的产品信息。每个产品可以有�
 
 Token URI是一个非常灵活的工具，可以用来展示和访问各种类型的数据。无论是数字身份、认证证书、版权信息还是物联网设备的数据，Token URI都能提供一种去中心化、安全和透明的方式来管理和展示这些信息。通过Token URI，我们可以确保数据的真实性和完整性，同时方便地访问和使用这些数据。
 
+---
+
 - Homework 部分（如果有安排需要填写证明完成）
+
 - Introduction to Web3:// Access Protocol (CoLearning 2024)
+
 - Homework1
+
 - 1. Find the ownership of an your favor NFT
     - the NFT I found：https://opensea.io/collection/castile-tarot
     - the creator: 0x5293050b1682F72718386B0Ed98D2Db9D4609Ec7
@@ -387,14 +394,20 @@ Token URI是一个非常灵活的工具，可以用来展示和访问各种类�
     - 后来又看了一眼：https://web3url.io/#/ 里面有介绍auto model和manual model，怀疑自己是不是还是搞错了？
     ### 希望有人可以帮助告诉一下正确的方法是什么？
 
+---
+
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
    -  暂时感觉对这些感念还是模模糊糊的状态，好像明白好像不太明白。看大家在telegram中的聊天也不太看得懂。
+
+---
+
 - TODO：
    - 需要进一步查看：https://docs.web3url.io/
    - 想要进一步了解：
       - Native web3:// Clients：https://github.com/web3-protocol/evm-browser or https://github.com/web3-protocol/web3curl-js 打开看了不会用
 - Mark：
    - https://w3-box.w3eth.io/#/ 这个好像是hw2用得到的一个地址
+
 
 ### 07.17
 
