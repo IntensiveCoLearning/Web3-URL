@@ -61,7 +61,7 @@ timezone: Asia/Shanghai
 <!-- Content_START --> 
 ### 07.15
 
-举例示范：
+
 
 - 今日学习时间：21:00-22:30
 - 学习内容小结：
@@ -75,7 +75,13 @@ timezone: Asia/Shanghai
 
 ### 07.16
 
-XXX
+- 今日学习时间：21:00-22:00
+- 学习内容小结：
+  1.了解了传统 HTTPS URL 的基础结构以及标准，学习搭建dweb程序的方法
+  2.按照https://tutorial.w3q.w3q-g.w3link.io/#/的教程构建了一个自己的dWeb程序并进行浏览，目前在尝试增加新的功能，但遇到了一些代码上的困难，正在尝试解决
+- Question and Ideas
+  
+
 
 ### 07.17
 
