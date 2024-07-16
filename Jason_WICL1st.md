@@ -70,7 +70,7 @@
 
 
 ### 07.16
-- 今日学习时间：20240716 
+- 今日学习时间：20240716 11：00
 
 - 学习内容小结：
     - On the Future of Web3 — Paving the Way to End-to-End Fully-Decentralized Web by Qi Zhou
