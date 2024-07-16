@@ -59,8 +59,8 @@ Happy DAO实践者 0技术基础小白 希望能听懂～
 
 举例示范：
 
-- 今日学习时间：XXXX
-- 学习内容小结：XXXX
+- 今日学习时间：1h
+- 学习内容小结：听课
 - Homework 部分（如果有安排需要填写证明完成）
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 
@@ -68,7 +68,32 @@ Happy DAO实践者 0技术基础小白 希望能听懂～
 
 ### 07.16
 
-XXX
+今日学习时间：2h
+- 学习内容小结：
+  
+1.今日回顾昨晚的公开课内容，查询听不懂的技术词汇，完成初步的技术词汇扫盲，以及尝试自述对web3://的理解
+
+2.什么是gateway？   
+gateway是网关的意思，网关只是一种访问方式，不涉及任何数据存储，常见的网关：API
+
+3.What is web3:// Access Protocol?   
+以web3://开头的网址是一个可以通过调用合约访问链上数据的网站，核心是定位链上资源，无需以第三方中心化访问协议如DNS/HTTP/IPFS为中介.
+
+4.why web3:// Access Protocol?   
+目前我们访问协议仍然是中心化的，数据有被篡改和丢失的风险存在，web3://协议可以帮助我们实现全链网站，直接访问链上数据。
+
+5.How to Access EVM with web3://?   
+用w3eth.io网关访问以太网资源；
+用w3link.io网关访问多链资源；
+在主流浏览器上装插件；
+开发专属浏览器（例如：evm-browser）
+
+- Homework 部分    
+Find the ownership of an your favor NFT    
+Find the balance of an account in an ERC-20 contract (USDC / USDT)    
+Deploy a contract in auto model and say “hello world”    
+Deploy a contract in manual model and say “hello world”    
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 
 ### 07.17
 
