@@ -69,7 +69,63 @@
 
 ### 07.16
 
-XXX
+- 今日学习时间：40min
+- 小结 :
+  时间较少，简单调用示例
+  结构
+
+```
+web3://<contract>[:<chainId>]/<path>
+```
+
+自动模式
+
+```
+/<methodName>/<methodArg1>/<methodArg2>/...[?returns=(<type1>,<type2>,...)]
+```
+
+returns 指定返回
+
+```
+ npx web3curl -v "web3://0xA5aFC9fE76a28fB12C60954Ed6e2e5f8ceF64Ff2/levelAndTile/2/50?returns=(uint256,uint256)"
+npm info using npm@10.2.4
+npm info using node@v20.11.0
+npm info ok
+npm info using npm@10.2.4
+npm info using node@v20.11.0
+* Fetching URL web3://0xA5aFC9fE76a28fB12C60954Ed6e2e5f8ceF64Ff2/levelAndTile/2/50?returns=(uint256,uint256)
+* Parsing URL ...
+* Host domain name resolver: (none)
+* Contract address: 0xA5aFC9fE76a28fB12C60954Ed6e2e5f8ceF64Ff2
+* Contract chain id: 1
+* Configured RPCs for chain 1 (fallback mode) : https://ethereum.publicnode.com https://cloudflare-eth.com
+*
+* Resolve mode determination...
+> 0xdd473fae
+* RPC provider used: https://ethereum.publicnode.com
+< 0x
+* Resolve mode: auto
+*
+* Path parsing...
+* Contract call mode: method
+* Method name: levelAndTile
+* Method arguments types: [{"type":"uint256"},{"type":"uint256"}]
+* Method arguments values: ["0x2","0x32"]
+* Contract return processing: jsonEncodeValues
+* Contract return processing: jsonEncodeValues: Types of values to encode: [{"type":"uint256"},{"type":"uint256"}]
+*
+* Calling contract ...
+* Contract address: 0xA5aFC9fE76a28fB12C60954Ed6e2e5f8ceF64Ff2
+> 0xd55dd04300000000000000000000000000000000000000000000000000000000...0000000000000000000000000000000000000000000000000000000000000032
+* RPC provider used: https://ethereum.publicnode.com
+< 0x00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000024
+*
+* Decoding contract return ...
+* HTTP Status code: 200
+* HTTP Headers:
+*   Content-Type: application/json
+["0x1","0x24"]
+```
 
 ### 07.17
 
