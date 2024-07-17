@@ -186,5 +186,36 @@ function resolveMode() external pure returns (bytes32) {
 
 ### 07.17
 
-XXX
+- 今日学习时间：0.5 h
+- 学习内容小结：完成 Homework 1 的前两项
+- Homework 部分
+
+1. 查询 `0x08ba8cbbefa64aaf9df25e57fe3f15ecc277af74` id 为 46 的 NFT 的所有者，调用其 ownerOf 方法即可，参数为 tokenId=46。Web3 url 为
+
+   ```
+   web3://0x08BA8CBbefa64Aaf9DF25e57fE3f15eCC277Af74/ownerOf/46?returns=(address)
+   ```
+
+   返回结果为
+
+   ```
+   ["0xEf0b29B14C735505D181eaa613909345A964927D"]
+   ```
+
+2. 查询 Bitget 地址 `0x1AB4973a48dc892Cd9971ECE8e01DcC7688f8F23 `的 USDT 持有量，调用其 balanceOf 函数即可，参数为 who=0x1AB4973a48dc892Cd9971ECE8e01DcC7688f8F23。Web3 url 为
+
+   ```
+   web3://0xdac17f958d2ee523a2206206994597c13d831ec7/balanceOf/0x1AB4973a48dc892Cd9971ECE8e01DcC7688f8F23?returns=(uint256)
+   ```
+
+   返回结果为
+   
+   ```
+   ["0x1210389c1388"]
+   ```
+   
+   
+
+
+
 <!-- Content_END -->
