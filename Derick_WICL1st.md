@@ -65,12 +65,106 @@ timezone: Asia/Shanghai
 <!-- Content_START --> 
 ### 07.15
 
+#### EIP-4804
+- ERC-4804, also known as "Web3 URL to EVM Call Message Translation," is an Ethereum Improvement Proposal that defines a standard for a new type of URL specifically designed for the Ethereum network. It's important to clarify that ERC-4804 has actually been merged into the EIPs as EIP-4804.
 
+- Here's a breakdown of EIP-4804:
 
+**Goal**: Create a decentralized equivalent to the familiar HTTP protocol used on the web. EIP-4804 aims to enable users to directly access content stored on the Ethereum blockchain and compatible blockchains (like Polygon) through user-friendly URLs.
+**Web3 URLs**: EIP-4804 introduces the concept of Web3 URLs. These URLs follow a similar format to standard web URLs (http://) but use the prefix "web3://". They can also leverage readable names from ENS (Ethereum Name Service) instead of complex wallet addresses for improved readability.
+**Translation to EVM Calls**: The core function of EIP-4804 is to translate a Web3 URL into an EVM call message. This message specifies the smart contract address and the function (method) to be called on the blockchain to retrieve the desired content.
+**Benefits**: EIP-4804 offers several advantages:
+**Direct Interaction**: Users can directly interact with on-chain content without relying on centralized servers or proxies.
+Improved User Experience: Web3 URLs provide a familiar and user-friendly way to access blockchain data.
+**Interoperability**: The standard is designed to work with other URI-compatible technologies like SVG.
+Decentralized Presentation Layer: EIP-4804 lays the groundwork for a decentralized presentation layer on Ethereum. This could allow for on-chain rendering of web content in the future.
+Current Status:
+
+- EIP-4804 is still under development, but it has been merged into the official EIPs.  While not yet fully implemented in all wallets and applications, it represents a significant step towards a more user-friendly and accessible Ethereum ecosystem.
+#### EIP-6860
+
+- EIP-6860, or ERC-6860, is an Ethereum Improvement Proposal that aims to introduce a decentralized presentation layer for the Ethereum Virtual Machine (EVM) Base 4804. This essentially means it creates a way to show human-readable content on the blockchain.
+
+- Here's how it works:
+
+**Web3 URLs**: ERC-6860 utilizes Web3 URLs, which are similar to regular web URLs (like http://) but specifically designed for the Ethereum network. These URLs can use readable names from naming services instead of complex wallet addresses for better user experience.
+**EVM as a backend**: With ERC-6860, any web content, including HTML, CSS, images, and more, can be translated into EVM (Ethereum Virtual Machine) compatible messages. This allows the EVM to act as a decentralized backend for web applications.
+**Decentralized Presentation**: By enabling on-chain rendering of web content, ERC-6860 facilitates a decentralized presentation layer. This means the content isn't reliant on any centralized servers and can potentially be more resistant to censorship.
+
+- 一种在http/https协议之外的一种新的协议，web3://协议，这个协议是为了让用户可以直接访问以太坊区块链上的内容，而不是通过中心化的服务器或代理。要重写dns为ens，将数据内容存储在便宜的l2，回调协议，将web3://协议转换为evm调用消息，这个消息指定了智能合约地址和要在区块链上调用的函数（方法）来检索所需的内容。
+- 学习了这两个协议，就看web3://的具体实现
+- 做了一个专用的浏览器，希望其他主流浏览器能兼容这个协议
+- 将vb的个人博客40m上传到L2，存储费用为0.13E
+
+[官网](https://web3url.io/#/)
+[测试合约](https://etherscan.io/token/0x892848074ddea461a15f337250da3ce55580ca85#readContract)
+[分享PPT](https://docs.google.com/presentation/d/1egJUKJrjC9wjkmOF9sLBkTSwHpd6hl8FXkWehPW7kFk/edit#slide=id.g26637866a4a_0_10)
+[现有Demo](https://github.com/ethstorage/awesome-web3)
+- 作业是进行一些技术上的探索
+* 直接感觉是如果存储无法降到普通人能接受的价格，那这个将不可能推广成功
+- 
 
 ### 07.16
+- 学习时间：1h
+- 学习内容小结：看[文档](https://docs.web3url.io/web3-url-structure/resolve-mode)
+- 总结
+#### 总结 Web3 URL 结构中的解析模式
 
-XXX
+##### 概述
+
+Web3 URL 的解析模式（Resolve Mode）是 Web3 URL 结构的一部分，用于确定如何解析和访问资源。解析模式定义了在不同环境下如何处理和解释 Web3 URL，以确保资源的正确定位和访问。
+
+###### 解析模式的定义
+
+解析模式主要包括以下几种：
+
+1. **自动模式（Auto Mode）**：
+   - **描述**：自动模式根据上下文环境自动选择最合适的解析方法。
+   - **应用场景**：适用于用户不需要或不希望手动选择解析方法的情况。
+
+2. **手动模式（Manual Mode）**：
+   - **描述**：手动模式允许用户明确指定解析方法。
+   - **应用场景**：适用于高级用户或特定应用场景，需要精确控制解析过程。
+
+3. **特定模式（Specific Mode）**：
+   - **描述**：特定模式根据特定的协议或标准进行解析。
+   - **应用场景**：适用于需要遵循特定协议或标准的应用场景。
+
+##### 解析模式的选择依据
+
+选择解析模式时，需要考虑以下因素：
+
+1. **用户需求**：
+   - 自动模式适合一般用户，提供简化和自动化的体验。
+   - 手动模式适合高级用户，提供更高的控制和灵活性。
+
+2. **应用场景**：
+   - 在需要遵循特定协议或标准的场景下，特定模式是最佳选择。
+   - 在不确定的环境或需要灵活应对的场景下，自动模式更为适用。
+
+3. **技术环境**：
+   - 不同的技术环境可能对解析模式有不同的要求，选择适合当前环境的解析模式可以提高效率和准确性。
+
+##### 解析模式的实现
+
+解析模式的实现需要考虑以下技术细节：
+
+1. **上下文感知**：
+   - 自动模式需要具备上下文感知能力，能够根据环境自动调整解析方法。
+   - 这需要对环境信息进行实时分析和判断。
+
+2. **用户交互**：
+   - 手动模式需要提供用户友好的界面，允许用户方便地选择和切换解析方法。
+   - 这需要设计直观的用户界面和交互流程。
+
+3. **协议支持**：
+   - 特定模式需要支持多种协议和标准，确保在不同协议下都能正确解析和访问资源。
+   - 这需要对各种协议的深入理解和实现。
+
+##### 结论
+
+Web3 URL 结构中的解析模式提供了灵活和多样的资源解析方法，满足了不同用户和应用场景的需求。通过合理选择和实现解析模式，可以确保资源的正确定位和高效访问。自动模式适合一般用户和不确定环境，手动模式适合高级用户和特定需求，特定模式适合遵循特定协议的应用场景。理解和应用这些解析模式，可以提升 Web3 应用的用户体验和技术性能。
+
 
 ### 07.17
 

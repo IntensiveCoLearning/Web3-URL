@@ -116,18 +116,19 @@ timezone: Asia/Tokyo
 <!-- Content_START --> 
 ### 07.15
 
-举例示范：
-
-- 今日学习时间：XXXX
-- 学习内容小结：XXXX
+- 今日学习时间：19:30～20:10 共40分钟
+- 学习内容小结：youtube上俩个创始人的演讲视频
+  - Introducing web3:// - Decentralized Access Protocol for EVM | ETHDenver 2023
+  - On the Future of Web3 — Paving the Way to End-to-End Fully-Decentralized Web by Qi Zhou
 - Homework 部分（如果有安排需要填写证明完成）
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
-
+  - web3 网关转换的插件目前只有 Firefox 有 chrome 还没有，为什么？
 
 
 ### 07.16
 
-XXX
+- 今日学习时间：20:00～21:00 共60分钟
+- 学习内容小结：补习昨天公开课视频
 
 ### 07.17
 

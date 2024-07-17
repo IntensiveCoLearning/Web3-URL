@@ -57,18 +57,21 @@
 <!-- Content_START --> 
 ### 07.15
 
-举例示范：
 
-- 今日学习时间：XXXX
-- 学习内容小结：XXXX
+- 今日学习时间：1h
+- 学习内容小结：
+  学习web3 url 和 基础的业务场景
 - Homework 部分（如果有安排需要填写证明完成）
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 
 
 
 ### 07.16
+- 今日学习时间：1h
+- 学习内容小结：
+  基础协议学习
+https://precious-lemming-5db.notion.site/web3URL7-16-3ad00039f6c845309b60138c5896375d
 
-XXX
 
 ### 07.17
 

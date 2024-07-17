@@ -64,19 +64,34 @@ timezone: Asia/Shanghai
 
 ### 07.15
 
-举例示范：
-
--   今日学习时间：XXXX
--   学习内容小结：XXXX
--   Homework 部分（如果有安排需要填写证明完成）
--   Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+-   今日学习时间：1 小时（公开课）+ 半小时（看 Telegram 群内消息并提问）
+-   学习内容小结：参加 2100-2200 的公开课，对 web3:// 有基础的了解
+-   Homework 部分：待完成
+-   Question and Ideas：存储的费用必须降下来，否则没有实用价值。
 
 ### 07.16
 
-XXX
+-   今日学习时间：1 小时（看 Telegram 群内消息并提问，查看资料，完成部分作业）
+-   学习内容小结：学习资料，了解 Auto Mode 和 Manual Mode
+-   Homework 部分：
+
+            Find the ownership of an your favor NFT
+
+    web3://0x7bc5d353663c4c94fd022d3df0642b56c174b45c/ownerOf/1?returns=(uint256)
+    http://0x7bc5d353663c4c94fd022d3df0642b56c174b45c.w3eth.io/ownerOf/1?returns=(uint256)
+
+-   Question and Ideas：Manual Mode 的合约怎么写
 
 ### 07.17
 
-XXX
+-   今日学习时间：
+-   学习内容小结：
+-   Homework 部分：
+
+            Find the balance of ERC-20 contract (USDC / USDT)
+            Deploy a contract in auto model and say “hello world”
+            Deploy a contract in manual model and say “hello world”
+
+-   Question and Ideas：
 
 <!-- Content_END -->

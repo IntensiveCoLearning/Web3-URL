@@ -97,6 +97,27 @@ timezone: Asia/Shanghai
 
 - **7 月 15 日 - 7 月 21 日**：
 
+- 0715:
+  gateway 访问方式：
+    https://cyberbrokers-meta.w3eth.io/renderBroker/8
+  Find the ownership of an your favor NFT
+    favor NFT: https://cyberbrokers-meta.w3eth.io/renderBroker/1
+    contract_address: 0x8bb9A8BaeEc177aE55Ac410c429CbBBBb9198caC
+    
+- 0716:
+  Find the balance of ERC-20 contract (USDC / USDT)
+    
+    contract: 0xdAC17F958D2ee523a2206206994597C13D831ec7 
+    0x83a9DF865268DF58B9521A87316a36C0f467835B
+    balanceOf: 0
+
+  Deploy a contract in auto model and say “hello world”
+
+
+  Deploy a contract in manual model and say “hello world”
+
+  
+
   - **7 月 15 日 周一晚 8 点- 9 点（北京时间）：** 第 1 次公开课分享
   - **本周共学内容：** 涉及 Web3://  的背景和演进历史；支持 Web3://  协议的访问方式 (gateway 和 EVM browser)来浏览以太坊上面的数据；熟悉使用 Web3://  和 EthStorage 早期测试网来部署简单的去中心化网站。
   - **Homework1：** 见[课程 PPT](https://docs.google.com/presentation/d/1egJUKJrjC9wjkmOF9sLBkTSwHpd6hl8FXkWehPW7kFk/edit#slide=id.g1754f50a55c_0_11)。
@@ -131,9 +152,20 @@ timezone: Asia/Shanghai
 
 ### 07.16
 
-XXX
+- 今日学习时间：1.5h
+- 学习内容小结：
+  Find the balance of ERC-20 contract (USDC / USDT)
+    
+    contract: 0xdAC17F958D2ee523a2206206994597C13D831ec7 
+    0x83a9DF865268DF58B9521A87316a36C0f467835B
+    balanceOf: 0
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 
 ### 07.17
 
 XXX
+
+
+
 <!-- Content_END -->

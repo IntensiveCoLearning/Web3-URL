@@ -69,8 +69,8 @@
 
 
 ### 07.16
-
-XXX
+- 今日学习时间：40 min
+- 学习内容小结：WEB3 URL 解析模式 [笔记](https://pinto-zinnia-ba1.notion.site/9e311050da8844cdb081483cd8249f0e?pvs=25)
 
 ### 07.17
 
