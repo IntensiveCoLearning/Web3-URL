@@ -57,11 +57,17 @@
 <!-- Content_START --> 
 ### 07.15
 
-举例示范：
+- 今日学习时间：2024/07/15
+- 学习内容小结：
 
-- 今日学习时间：XXXX
-- 学习内容小结：XXXX
-- Homework 部分（如果有安排需要填写证明完成）
+What is web3:// Access Protocol?
+<img width="979" alt="image" src="https://github.com/user-attachments/assets/d5f5b549-c600-4585-bcf8-c72b695d025a">
+
+
+
+- Homework 部分
+
+
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 
 
