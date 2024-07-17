@@ -77,28 +77,23 @@ timezone: Asia/Shanghai
 - 学习内容小结：
 - 1. 通过ChatGPT学习视频：Introducing web3:// - Decentralized Access Protocol for EVM | ETHDenver 2023
 - 2. 通过比喻和打比方的形式了解其中感兴趣的点
----
-- [视频总结](https://www.notion.so/13ed3dfd5c6043178d44edea7cd38b79?pvs=4)
-- [什么是分散访问协议（DAP）](https://www.notion.so/DAP-30fa98bfe1064feabfae750adbad9909?pvs=4)
-- [什么是以太坊虚拟机（EVM）](https://www.notion.so/EVM-27837e98edd74479977da1f9c5e8644d?pvs=4)
-- [URI、URL 和 URN](https://www.notion.so/URI-URL-URN-0236801b6bc04e57b47403573540265b?pvs=4)
-- [什么是Token URI](https://www.notion.so/Token-URI-94ebd64cd65449a48eb922532ab16fb4?pvs=4)
-- [Token URI除了展示NFT的数据，还可以展示其他多种类型的数据](https://www.notion.so/Token-URI-67fbfd9b959c4ff8a367b7b08a445e3d?pvs=4)
----
+   - [视频总结](https://www.notion.so/13ed3dfd5c6043178d44edea7cd38b79?pvs=4)
+   - [什么是分散访问协议（DAP）](https://www.notion.so/DAP-30fa98bfe1064feabfae750adbad9909?pvs=4)
+   - [什么是以太坊虚拟机（EVM）](https://www.notion.so/EVM-27837e98edd74479977da1f9c5e8644d?pvs=4)
+   - [URI、URL 和 URN](https://www.notion.so/URI-URL-URN-0236801b6bc04e57b47403573540265b?pvs=4)
+   - [什么是Token URI](https://www.notion.so/Token-URI-94ebd64cd65449a48eb922532ab16fb4?pvs=4)
+   - [Token URI除了展示NFT的数据，还可以展示其他多种类型的数据](https://www.notion.so/Token-URI-67fbfd9b959c4ff8a367b7b08a445e3d?pvs=4)
 - Homework 部分（如果有安排需要填写证明完成）
-- Introduction to Web3:// Access Protocol (CoLearning 2024)
-   - [homework 1 first try](https://www.notion.so/hw-1-first-try-e70eb2727a2a4bf5b56bbc1f4f0634f9?pvs=4)
----
+   - Introduction to Web3:// Access Protocol (CoLearning 2024)
+      - [homework 1 first try](https://www.notion.so/hw-1-first-try-e70eb2727a2a4bf5b56bbc1f4f0634f9?pvs=4)
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
-   -  暂时感觉对这些感念还是模模糊糊的状态，好像明白好像不太明白。看大家在telegram中的聊天也不太看得懂。
----
+      -  暂时感觉对这些感念还是模模糊糊的状态，好像明白好像不太明白。看大家在telegram中的聊天也不太看得懂。
 - TODO：
    - 需要进一步查看：https://docs.web3url.io/
    - 想要进一步了解：
       - Native web3:// Clients：https://github.com/web3-protocol/evm-browser or https://github.com/web3-protocol/web3curl-js 打开看了不会用
 - Mark：
    - https://w3-box.w3eth.io/#/ 这个好像是hw2用得到的一个地址
-
 
 ### 07.17
 
