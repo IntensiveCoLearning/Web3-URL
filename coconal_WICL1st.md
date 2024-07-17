@@ -152,4 +152,8 @@ Vitalik 的 USDT 余额
 https://0xdac17f958d2ee523a2206206994597c13d831ec7.eth.w3link.io/balances/0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045?returns=(uint256)
 ```
 
+```
+web3://0xdac17f958d2ee523a2206206994597c13d831ec7/balances/0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045?returns=(uint256)
+```
+
 <!-- Content_END -->
