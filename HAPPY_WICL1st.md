@@ -69,20 +69,18 @@ Happy DAO实践者 0技术基础小白 希望能听懂～
 ### 07.16
 
 今日学习时间：2h
-- 学习内容小结：
-  
-1.今日回顾昨晚的公开课内容，查询听不懂的技术词汇，完成初步的技术词汇扫盲，以及尝试自述对web3://的理解
+- 学习内容小结：今日回顾昨晚的公开课ppt内容，查询听不懂的技术词汇，完成初步的技术词汇扫盲，以及尝试自述对web3://的理解
 
-2.什么是gateway？   
+ - 什么是gateway？   
 gateway是网关的意思，网关只是一种访问方式，不涉及任何数据存储，常见的网关：API
 
-3.What is web3:// Access Protocol?   
+ - What is web3:// Access Protocol?   
 以web3://开头的网址是一个可以通过调用合约访问链上数据的网站，核心是定位链上资源，无需以第三方中心化访问协议如DNS/HTTP/IPFS为中介.
 
-4.why web3:// Access Protocol?   
+ - why web3:// Access Protocol?   
 目前我们访问协议仍然是中心化的，数据有被篡改和丢失的风险存在，web3://协议可以帮助我们实现全链网站，直接访问链上数据。
 
-5.How to Access EVM with web3://?   
+ - How to Access EVM with web3://?   
 用w3eth.io网关访问以太网资源；
 用w3link.io网关访问多链资源；
 在主流浏览器上装插件；
@@ -97,5 +95,8 @@ Deploy a contract in manual model and say “hello world”
 
 ### 07.17
 
-XXX
+今日学习时间：2h
+
+学习内容小结：回看公开课视频：https://www.youtube.com/watch?v=hmN77o-ex8I
+
 <!-- Content_END -->
