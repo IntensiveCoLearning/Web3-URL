@@ -189,12 +189,73 @@
   
   - 一个用来储存的EVM，会面临什么问题？要如何解决？
 - TODO：搞懂自动模式跟手动模式的差异，尝试布署合约做下两个Homework
+
+
 ### 07.17
 
-- 今日学习时间：
+- 今日学习时间：1h
 - 学习内容小结：
+	- \/\<methodName\>\/\<methodArg1\>\/\<methodArg2\>\/...[?returns=(\<type1\>,<type2>,...)]
+	- URL一次只会对一个方法进行呼叫，因此URL第一格一定是方法
+	- 如果该方法有多个输入（Arg），就依序列出，returns也依序列出他们的类型（type，如果多个值要列出多个）
+	- Arguments 的格式是自动辨识的，辨识顺序如下
+	- uint256，bytes32，address，bytes，bytes
+	- ?returns=如果没有指定，预设为bytes（但如果回传不是bytes，就会发生错误）
+	- 回传的整个内容是JSON
+	- 也就是说如果用来储存网页内容，可以将合约写成一次输出多个值，回传就一个JSON，我们在用parse去取值，这样速度也快
+	- 如果returns有()但填入任何值，就会返回十六进制字符串，例如  ["0xAB9e1DDf806a20C9B06A94c655a59C3eDF495Ca5"]就会变成["0x000000000000000000000000ab9e1ddf806a20c9b06a94c655a59c3edf495ca5"]，通常解析原始数据时会用到
+	- 最后一个参数是媒体类型
+	- web3://0x4e1f41613c9084fdb9e34e11fae9412427480e56/tokenSVG/9352?mime.type=svg，这样可以指定输出成SVG格式
+	- 换成https 就是 https://0x4e1f41613c9084fdb9e34e11fae9412427480e56.w3eth.io/tokenSVG/9352?mime.type=svg
+	- Auto mode 跟 manual mode的差异
+		-  这两个模式是合约上设定的，一般来说，合约并没有考量到Web3URL的需求，就不会开manual模式，大多数状况下采用auto
+		- 要采用manual模式，智能合约要打开接口
+
+			```js
+				function resolveMode() external pure returns (bytes32) {
+		        return "manual";
+			    }
+			```
+
+		- 我们可以这样理解，如果要读取出图片或是页面，manual可以有比较多的操作空间
+		- manual模式，预设回传的是text/html 的MIME
+		- 另外要写上一个fallback，fallback是一个包罗万象的函数，当没有适配函数时，就会调用他，但是fallback的gas价格更高，最好避免做写入的行为，另一种类似的函数是receive，当收到eth但是什么要求都没有的时候就会调动receive，专门用来设计例如收到钱就给代币之类的功能，Gas较低
+		- fallback是用来作为一个路由，也就是说当有人对这个合约作出calldata的动作，就会吐出fallback的内容，用来将合约当成一个网页特别适用，以下是DOC的范例
+		```js
+		    fallback(bytes calldata cdata) external returns (bytes memory) {
+        if(cdata.length == 0 || cdata[0] != 0x2f) {
+            return bytes("");
+        }
+
+        // Frontpage call
+        if (cdata.length == 1) {
+          return bytes(abi.encode(indexHTML(1)));
+        }
+        // /index/[uint]
+        else if(cdata.length >= 6 && ToString.compare(string(cdata[1:6]), "index")) {
+            uint page = 1;
+            if(cdata.length >= 8) {
+                page = ToString.stringToUint(string(cdata[7:]));
+            }
+            if(page == 0) {
+                return abi.encode("Not found");
+            }
+            return abi.encode(indexHTML(page));
+        }
+
+        // Default
+        return abi.encode("Not found");
+    }
+		```
+		- 如此一来只需要呼叫页面的index，就可以叫出页面内容，并完成encode
+	- 重要参考：  **https://etherscan.io/address/0x2b51A751d3c7d3554E28DC72C3b032E5f56Aa656#code**
+
+
 - Homework 部分（如果有安排需要填写证明完成）
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+	- 如果回传的是JSON，要如何将JSON变成网页呢？
+
+TODO：研究0x2b51A751d3c7d3554E28DC72C3b032E5f56Aa656的架构
 
 ### 07.18
 
