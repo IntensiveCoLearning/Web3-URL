@@ -389,7 +389,7 @@ contract AutomationTask is AutomationCompatible {
 }
 ```
 
-![](C:\Users\ASUS\Desktop/52972384335b95a37f058d889f0fa89.png)
+小结：通过对Automation的学习，初步了解了chainlink的Autoation合约的用法和具体实现
 
 <!-- Content_END -->
 
