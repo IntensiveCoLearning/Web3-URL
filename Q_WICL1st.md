@@ -71,4 +71,7 @@ web3:// 是一个新的协议，它可以直接访问 EVM 兼容的区块链，�
 
 ### 07.17
 
-XXX
+今日主要查看了 eip-6860 的介绍的
+https://eip.fun/eips/eip-6860
+
+查看官网 https://web3url.io/的一些内容
