@@ -85,7 +85,10 @@
   ![Contract](https://pic.wenjunjiang.com/202407171151121.png)
   - Find the balance of an account in an ERC-20 contract (USDC / USDT)
   ![erc20](https://pic.wenjunjiang.com/202407171212941.png)
-  获取 [0x48c04ed5691981C42154C6167398f95e8f38a7fF](https://0xdac17f958d2ee523a2206206994597c13d831ec7.w3eth.io/balanceOf/0x48c04ed5691981C42154C6167398f95e8f38a7fF?returnTypes=(uint))的剩余 usdc 数量
+  获取 [0x48c04ed5691981C42154C6167398f95e8f38a7fF](https://0xdac17f958d2ee523a2206206994597c13d831ec7.w3eth.io/balanceOf/0x48c04ed5691981C42154C6167398f95e8f38a7fF?returnTypes=(uint)) 的剩余 usdc 数量
+
+  ![usdt](https://pic.wenjunjiang.com/202407171216536.png)
+  
   > etherscan 里面的地址：[0x48c04ed5691981C42154C6167398f95e8f38a7fF](https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7?a=0x48c04ed5691981C42154C6167398f95e8f38a7fF)
 
   
