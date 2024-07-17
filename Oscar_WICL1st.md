@@ -75,21 +75,56 @@
 ### 07.16
 
 - 今日学习时间：2 小时
+
 - 学习内容小结：
   - 学习了解以太坊改进提案 [EIP-4804](https://eips.ethereum.org/EIPS/eip-4804) 和  [EIP-6860](https://eips.ethereum.org/EIPS/eip-6860)：
-    - ERC-4804，也称为“Web3 URL到EVM调用消息转换”，旨在为以太坊网络定义一种新的URL类型的标准。
-    -  EIP-6860，旨在为以太坊虚拟机（EVM）Base 4804引入一个去中心化的呈现层。
-  - 通过访问 https://cyberbrokers-meta.w3eth.io/renderBroker/5 学习了解背后数据是如何被调用及被呈现。 如何定位，Gateway 通过调用 ENS 把 cyberbrokers 所映射的合约地址来去定位。🤔![cyberbrokers](img/cyberbrokers.png)
+    - ERC-4804，也称为“Web3 URL到EVM调用消息转换”，旨在为以太坊网络定义一种新的 URL 类型的标准。
+    -  EIP-6860，旨在为以太坊虚拟机（EVM）Base 4804 引入一个去中心化的呈现层。
+    
+  - 通过访问 `web3://cyberbrokers-meta.eth/renderBroker/5`跳转 https://cyberbrokers-meta.w3eth.io/renderBroker/5 学习了解背后数据是如何被调用及被呈现。
+  
+    - 根据请求的网络对象位置（如以太坊或其他区块链）将请求分发到不同的 Gateway
+  
+    - Gateway 通过调用 ENS 把 cyberbrokers 所映射的合约地址来去定位。🤔
+  
+      ![cyberbrokers](img/cyberbrokers.png)
+  
   - 回顾 [公开课](https://www.youtube.com/watch?v=hmN77o-ex8I) 学习，尤其是 QA 环节。我们需要一个协议保证「去中心定位去中心化的资源」。一个是如何定位的问题，一个是如何访问的问题。
-  - 对目前具体的 **Application** 方向进行了了解，面临一些具体问题：目前很多浏览器不兼容，存储费用过高等。
+  
+  - 对目前具体的 Application 方向进行了了解，面临一些具体问题：目前很多浏览器不兼容，存储费用过高等。
+  
 - Homework 部分 
   - 暂无
+  
 - Question and Ideas
   - 并不是所有的东西都需要去中心化，去中心和中心化如何平衡？
 
 ### 07.17
 
-XXX
+- 今日学习时间：1 小时
+- 学习内容小结：
+- Homework 部分 完成前 2 个
+  - Find the ownership of an your favor NFT
+    - 使用Firefox Extension访问：web3://moon-birds-xyz.eth/render/108
+      - 跳转到：https://moon-birds-xyz.w3eth.io/render/108
+        - web3-chain-id: 1
+        - web3-cname: moon-birds-xyz.w3eth.io
+        - web3-contract-address：0x56B9308EFd014f10423B42B3aDE7eeCFe128B1BD
+          - ENS Name Tag：[web3url.eth](https://etherscan.io/address/0xbff45643d3af697a178ac671212e284a7f86cdae)
+          - Contract Source Code (Solidity):  查看 render 方法
+  - Find the balance of an account in an ERC-20 contract (USDC / USDT)
+    - 使用Firefox Extension访问：web3://usdc.eth/balanceOf/vitalik.eth?returns=(uint256)
+      - 跳转到：https://usdc.w3eth.io/balanceOf/vitalik.eth?returns=(uint256)
+        - web3-chain-id：1
+        - web3-cname：usdc.w3eth.io.
+        - web3-contract-address：0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48
+        - web3-host-domain-name-resolver：ens
+        - web3-mode-auto-method：balanceOf
+        - ![web3-mode-auto-method](/Users/luffythinker/Web3-URL/img/web3-mode-auto-method.png)
+
+
+- Question and Ideas
+  - token-address：`0x52284158e02425290f6b627aeb5fff65edf058ad` 和contract-address：`0x56B9308EFd014f10423B42B3aDE7eeCFe128B1BD` 之间的连接关系🤔
 
 
 
