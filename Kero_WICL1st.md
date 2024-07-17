@@ -75,13 +75,13 @@ Maybe 80%
 - 今日学习时间：0.5 hour
 - 学习内容小结：What/Why/How to web3://
 
-#### Question and Ideas
+#### Questions and Ideas
 
-  - web3:// scheme 没有包含 gateway 信息，也就是说 gateway 是固定的，这引出了几个疑问：
-    - 能够粗浅地理解 gateway service 为一个用于翻译 `web2<->web3` 的 HTTP middleware service？Gateway 需要做到去中心化吗？如果要做到去中心化，web3:// scheme 不包含 gateway 的信息的话要怎么样做到去中心化呢？
-    - 用户能否自建 web3:// gateway 呢？如果可以，那 web3 url 应该如何指向自建的 gateway？
-    - Web2 世界里有没有类似 web3:// gateway service 这样的存在呢？
-  - 对于 render，web3:// 想要扮演什么角色呢？
+- web3:// scheme 没有包含 gateway 信息，也就是说 gateway 是固定的，这引出了几个疑问：
+  - 能够粗浅地理解 gateway service 为一个用于翻译 `web2<->web3` 的 HTTP middleware service？Gateway 需要做到去中心化吗？如果要做到去中心化，web3:// scheme 不包含 gateway 的信息的话要怎么样做到去中心化呢？
+  - 用户能否自建 web3:// gateway 呢？如果可以，那 web3 url 应该如何指向自建的 gateway？
+  - Web2 世界里有没有类似 web3:// gateway service 这样的存在呢？
+- 对于 render，web3:// 想要扮演什么角色呢？
 
 #### Note
 
@@ -93,5 +93,26 @@ Web3-URL is an Access Protocol, defines URL to EVM Call Message Translation - an
 
 ### 07.17
 
-XXX
+- 今日学习时间：1 hour
+- 学习内容小结：
+  - How to maintain my blog using ETHStorage and Web3-URL?
+  - Read https://docs.web3url.io/
+
+#### Note: How to Maintain My Blog using ETHStorage and Web3-URL?
+
+Access via HTTPS gateway: https://docs.web3url.io/web3-clients/https-gateway#w3link.io-all-blockchains-public-gateway
+
+Debubg Web3-URL using `web3curl`: https://docs.web3url.io/web3-clients/web3curl
+
+Faucet of Web3Q Galileo Chain: https://faucet.w3q.w3q-g.w3link.io/
+
+How to upload files or folders using the ethfs-uploader tool:
+1. `npx ethfs-uploader --create --privateKey 0x112233... --chainId 5 --RPC https://...`
+2. `npx ethfs-uploader /Users/.../dist w3q-g:0x37DF32c7... --privateKey 0x112233...`
+3. `npx ethfs-uploader --default w3q-g:0x37D... --file hello.txt. --privateKey 0x1122..`
+4. `https://${address}.w3q-g.w3link.io/${filename}`
+
+
+The Web3Q Galileo Chain seems suspended to produce new blocks for already 23 hours. Waiting for reply...
+
 <!-- Content_END -->

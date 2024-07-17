@@ -69,7 +69,7 @@ timezone: Asia/Shanghai
 
 1. **自我介绍：**
 
-  开发者，持续关注WEB3动态，见解略知一二
+    开发者，持续关注WEB3动态，见解略知一二
 
 2. **组队期待：**
 
@@ -118,8 +118,8 @@ timezone: Asia/Shanghai
 
 举例示范：
 
-- 今日学习时间：XXXX
-- 学习内容小结：XXXX
+- 今日学习时间：
+- 学习内容小结：
 - Homework 部分（如果有安排需要填写证明完成）
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 
@@ -127,7 +127,15 @@ timezone: Asia/Shanghai
 
 ### 07.16
 
-XXX
+- 今日学习时间：1h
+- 学习内容小结：
+  - 根据 docs.web3url.io 进行学习
+    - dApp 服务器/NSP 是中心化的，去中心化区块链的初衷和优点容易被打破；Web2 -> Web3的转变，如完全去中心化的交易所和社交网络；HTTP:// -> WEB3://
+    - WEB3的基本结构：web3://\<contract\>\[:\<chainId\>\]/\<path\>
+    - 解析模式：auto，manual，source request
+    - 了解ethfs-uploader 
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流） 
 
 ### 07.17
 

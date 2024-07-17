@@ -129,6 +129,31 @@ npm info using node@v20.11.0
 
 ### 07.17
 
-XXX
+- 今日学习时间：30min
+- Homework 1
+  Find the ownership of an your favor NFT
+  https:
+
+```
+https://0x60e4d786628fea6478f785a6d7e704777c86a7c6.eth.w3link.io/ownerOf/458?returns=(address)
+```
+
+web3url
+
+```
+web3://0x60e4d786628fea6478f785a6d7e704777c86a7c6/ownerOf/458?returns=(address)
+```
+
+- Find the balance of an account in an ERC-20 contract (USDC / USDT)
+
+Vitalik 的 USDT 余额
+
+```
+https://0xdac17f958d2ee523a2206206994597c13d831ec7.eth.w3link.io/balances/0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045?returns=(uint256)
+```
+
+```
+web3://0xdac17f958d2ee523a2206206994597c13d831ec7/balances/0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045?returns=(uint256)
+```
 
 <!-- Content_END -->
