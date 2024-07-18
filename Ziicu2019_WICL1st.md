@@ -61,8 +61,6 @@ timezone: Asia/Shanghai
 <!-- Content_START -->
 ### 07.15
 
-举例示范：
-
 - 今日学习时间：2h
 - 学习内容小结：
   - 简单了解什么是web3://协议
@@ -71,6 +69,8 @@ timezone: Asia/Shanghai
     例如：web3://qizhou.eth@xxx.eth:4804/balanceOf/zuck.eth?returns=(unit256)
   - 为什么使用web3:// ，提供一种去中心化的方式直接访问需要资源，目前还需要特定的浏览器支持，例如：[evm-broweser](https://github.com/nand2/evm-browser)。
   - 应用场景：NFT图片资源、blog
+
+- [第一期公开课程视频](https://youtu.be/hmN77o-ex8I)
 
 - 其他资源：
   - [web3://](https://web3url.io/#/)
@@ -82,9 +82,51 @@ timezone: Asia/Shanghai
 
 ### 07.16
 
-XXX
+- 今日学习时间：1h
+- 学习内容小结：
+  - 体验gateway的访问方式体验web3 url定位的资源
+  - 研究Web3URL Docs中 ***Fetch an USDC balance 案例*** 中的智能合约（0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48）。
 
 ### 07.17
 
-XXX
+- 今日学习时间：1h
+- 学习内容小结：
+  - 阅读Web3URL Docs中 客户端部分的介绍
+
+支持五种方式：[Https网关](https://github.com/ethstorage/web3url-gateway)、[EVM浏览器](https://github.com/nand2/evm-browser)、[Chrome插件](https://github.com/ComfyGummy/chrome-web3)、[Web3Url沙箱](https://github.com/ComfyGummy/chrome-web3)以及[web3curl](https://github.com/web3-protocol/web3curl-js)
+
+其中个人觉得[web3curl](https://github.com/web3-protocol/web3curl-js)方便开发者调试（It can be very useful to help debugging URLs.）
+
+#### 安装
+
+***（我这安装时会报3个严重错误，不知道项目方是否注意到了）***
+
+```bash
+npm install -g web3curl
+```
+
+#### 使用
+
+```bash
+web3curl "web3://w3url.eth"
+```
+
+使用 -v 选项可以获取更多执行细节。 使用 -vv 和 -vvv 可以获得更多输出。 -vvv 将添加有关名称解析过程的信息，而 -vvvv 将添加智能合约发送和接收的全部字节。
+
+```bash
+web3curl -v "web3://w3url.eth"
+web3curl -vv "web3://w3url.eth"
+web3curl -vvv "web3://w3url.eth"
+```
+
+按官网提供的两个例子分别获取NFT信息和USDC余额时，感觉NFT这类文件信息用web3curl还是不太方便，如果调试返回的是字符串之类的资源，还是方便，自己可以试一下：
+
+```bash
+# Get a NFT
+web3curl 'web3://0x4e1f41613c9084fdb9e34e11fae9412427480e56/tokenHTML/9352'
+
+# Fetch an USDC balance
+web3curl 'web3://0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/balanceOf/nemorino.eth?returns=(uint256)'
+```
+
 <!-- Content_END -->

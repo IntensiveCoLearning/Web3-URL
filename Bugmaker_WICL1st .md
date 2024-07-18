@@ -119,7 +119,31 @@ modifier demo() {
 接口不能定义构造函数；  
 接口不能定义状态变量；
 
-### 07.17
+### 07.16
+- 今日学习时间：7.16  8 p.m.--10 p.m.
+- 学习内容小结：Solidity 语法复习 +ether.js了解
+#### receive  
+用于合约接受ether，必须为`external`和`payable`属性。  
+receive属于solidity默认的逻辑。  
+receive不接受任何参数传入，且没有返回值。如果有参数传入，则会调用fallback函数。
+*如果合约中既没有receive(),又没有fallback(),向合约中传入ether则会显示交易失败。*  
+`receive() external payable{}`
+#### fallback
+fallback函数会在三种情况下被调用：
+1. 调用者尝试调用一个合约中不存在的函数时
+2. 用户给合约发Ether但是receive函数不存在
+3. 用户发Ether，receive存在，但是同时用户还发了别的数据（msg.data不为空）  
+`fallback（）external{}`
+#### 数据编码
+`abi.encode(data)`,将数据编码为字节码，以规范编程。data的数据类型可以为string，uint256等等  
+`abi.decode(data,(uint256...))`，解码，data为要解码的数据，后面为要解码成的数据类型，可以解码为多种数据类型。  
+`abi.encodePacked(data)`,这是一个与 abi.encode 类似但有所不同的全局函数。它也用于将参数编码为符合 ABI 标准的字节数组，但不会为每个参数添加其类型的长度信息，也不会在参数之间添加分隔符，结果是一个紧密打包的字节数组.
+#### FAQ
+>什么是ethers.js  
+Ethers.js 是一个使用Typescript编写的库，用于构建去中心化应用程序（DApps）的前端，或者与以太坊网络进行交互。它抽象了许多复杂性，使开发人员能够简单直观地构建DApp。
 
+### 07.17
+- 今日学习时间：7.17  4 p.m.--6 p.m.
+- 学习内容小结：完成 筹集合约
 XXX
 <!-- Content_END -->

@@ -2,60 +2,6 @@
 timezone: Asia/Shanghai
 ---
 
-> ⚠️本打卡表默认为北京时间 UTC+8 时区，正确格式如下：
->
-> timezone: Asia/Shanghai
->
-> ⚠️如果你所在地区非北京时间，请根据你所在时区自行更改，请注意填写的正确格式。
->
-> 时区请参考以下列表：
->
-> timezone: Asia/Shanghai # 中国标准时间 (UTC+8)
->
-> timezone: Asia/Tokyo # 日本标准时间 (UTC+9)
->
-> timezone: Pacific/Auckland # 新西兰标准时间 (UTC+12)
->
-> timezone: Australia/Sydney # 澳大利亚东部标准时间 (UTC+10)
->
-> timezone: Pacific/Honolulu # 夏威夷-阿留申标准时间 (UTC-10)
->
-> timezone: America/Anchorage # 阿拉斯加标准时间 (UTC-9)
->
-> timezone: America/Los_Angeles # 太平洋标准时间 (UTC-8)
->
-> timezone: America/Denver # 山地标准时间 (UTC-7)
->
-> timezone: America/Chicago # 中部标准时间 (UTC-6)
->
-> timezone: America/New_York # 东部标准时间 (UTC-5)
->
-> timezone: America/Halifax # 大西洋标准时间 (UTC-4)
->
-> timezone: America/St_Johns # 纽芬兰标准时间 (UTC-3:30)
->
-> timezone: America/Sao_Paulo # 巴西利亚时间 (UTC-3)
->
-> timezone: Atlantic/Azores # 亚速尔群岛时间 (UTC-1)
->
-> timezone: Europe/London # 格林威治标准时间 (UTC+0)
->
-> timezone: Europe/Berlin # 中欧标准时间 (UTC+1)
->
-> timezone: Europe/Helsinki # 东欧标准时间 (UTC+2)
->
-> timezone: Europe/Moscow # 莫斯科标准时间 (UTC+3)
->
-> timezone: Asia/Dubai # 海湾标准时间 (UTC+4)
->
-> timezone: Asia/Kolkata # 印度标准时间 (UTC+5:30)
->
-> timezone: Asia/Dhaka # 孟加拉国标准时间 (UTC+6)
->
-> timezone: Asia/Bangkok # 中南半岛时间 (UTC+7)
->
-
-
 
 # Web3 URL 残酷共学第 1 期残酷指引
 
@@ -118,18 +64,59 @@ timezone: Asia/Shanghai
 
 举例示范：
 
-- 今日学习时间：XXXX
-- 学习内容小结：XXXX
+- 今日学习时间：0.5h
+- 学习内容小结：稍微看了一下：On the Future of Web3 — Paving the Way to End-to-End Fully-Decentralized Web by Qi Zhou
 - Homework 部分（如果有安排需要填写证明完成）
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
-
+  晚上公开课的时候感觉听不太明白。
 
 
 ### 07.16
 
-XXX
+- 今日学习时间：可能3h左右？
+- 学习内容小结：
+- 1. 通过ChatGPT学习视频：Introducing web3:// - Decentralized Access Protocol for EVM | ETHDenver 2023
+- 2. 通过比喻和打比方的形式了解其中感兴趣的点
+   - [视频总结](https://www.notion.so/13ed3dfd5c6043178d44edea7cd38b79?pvs=4)
+   - [什么是分散访问协议（DAP）](https://www.notion.so/DAP-30fa98bfe1064feabfae750adbad9909?pvs=4)
+   - [什么是以太坊虚拟机（EVM）](https://www.notion.so/EVM-27837e98edd74479977da1f9c5e8644d?pvs=4)
+   - [URI、URL 和 URN](https://www.notion.so/URI-URL-URN-0236801b6bc04e57b47403573540265b?pvs=4)
+   - [什么是Token URI](https://www.notion.so/Token-URI-94ebd64cd65449a48eb922532ab16fb4?pvs=4)
+   - [Token URI除了展示NFT的数据，还可以展示其他多种类型的数据](https://www.notion.so/Token-URI-67fbfd9b959c4ff8a367b7b08a445e3d?pvs=4)
+- Homework 部分（如果有安排需要填写证明完成）
+   - Introduction to Web3:// Access Protocol (CoLearning 2024)
+      - [homework 1 first try](https://www.notion.so/hw-1-first-try-e70eb2727a2a4bf5b56bbc1f4f0634f9?pvs=4)
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+      -  暂时感觉对这些感念还是模模糊糊的状态，好像明白好像不太明白。看大家在telegram中的聊天也不太看得懂。
+- TODO：
+   - 需要进一步查看：https://docs.web3url.io/
+   - 想要进一步了解：
+      - Native web3:// Clients：https://github.com/web3-protocol/evm-browser or https://github.com/web3-protocol/web3curl-js 打开看了不会用
+- Mark：
+   - https://w3-box.w3eth.io/#/ 这个好像是hw2用得到的一个地址
 
 ### 07.17
 
-XXX
+- 今日学习时间：1.5h
+- 学习内容小结：
+   - 稍微参考了一下共学同学的作业
+   - 重做自己的作业
+- Homework 部分（如果有安排需要填写证明完成）
+   - 好像自己的hw1不太对
+   - [homework 1 second try](https://www.notion.so/hw2-second-try-8ae614ee9b4d4bea92d5a5a36da8ad40?pvs=4)
+   - 有问题的部分打上了checkbox，如果有人能指导一下就好了
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+   - 慢慢摸索,自己摸索感觉好慢，能不能有一带一之类的？
+
+### 07.18
+
+- 今日学习时间：2h
+- 学习内容小结：阅读docs.web3url.io
+- [Part 1 - Vision 阅读笔记](https://www.notion.so/Day-7-18-docs-web3url-io-5e5264c51bc243ec9d6e7f30137ea006?pvs=4)
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+   - 之前碎片化的看了以下这个docs，感觉理解了之后更清晰一些，比之前清除了一些模模糊糊的感觉
+- TODO
+   - 明天继续按顺序阅读这个docs文档
+
 <!-- Content_END -->

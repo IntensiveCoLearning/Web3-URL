@@ -68,10 +68,28 @@ timezone: Asia/Bangkok
 
 ### 07.16
 
-XXX
+- 今日学习时间：30min
+- 今日学习内容小结：通过视频转图文回看了公开课内容。
+
+可通过下面链接查看图文：
+https://l3ob.notion.site/Web3-URL-1-0cdfdb7041d94b6eab6b64d43b9a511c
+
+部分识别不够准确，不过不影响主要意思。
 
 ### 07.17
 
-XXX
+- 今日学习时间：30min
+- 学习内容小结：尝试做一下作业。
+- Homework 
+  - Find the ownership of an your favor NFT
+    - CryptoPunks ID 为 1 的 NFT 
+    - https://0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb.w3eth.io/punkIndexToAddress/1?returns=(address)
+  - Find the balance of an account in an ERC-20 contract (USDC / USDT)
+    - 看看 Vitalik 有多少 USDT
+    - https://0xdac17f958d2ee523a2206206994597c13d831ec7.w3eth.io/balanceOf/vitalik.eth?returns=(uint256)
+
+剩下两个留着明天再做。
+
+### 07.18
 
 <!-- Content_END -->

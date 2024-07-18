@@ -65,9 +65,34 @@
 
 ### 07.16
 
-XXX
+- 今日学习时间：15:00~15:40
+- 学习内容小结：阅读学习了 https://docs.web3url.io/ 里面的 vision、web3:// clients 相关的部分。 
+  - 清晰的知道了的 web3 协议的背景和需要解决的问题
+  - 目前都有哪些方式来体验 web3 协议
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+  - 怎么参与贡献 比如：web3protocol-go，写完后怎么在生态中进行部署 验证测试
 
 ### 07.17
+
+- 今日学习时间：10:00~11:00
+- 学习内容小结：
+  - 阅读学习了 https://docs.web3url.io/ 里面的 https gateway 的部分 以及 web3:// url structure
+  - 完成 hw1 的前个问题
+- Homework 部分（如果有安排需要填写证明完成）
+  - Find the ownership of an your favor NFT
+  ![NFT](https://pic.wenjunjiang.com/20240717112154.png)
+  ![Contract](https://pic.wenjunjiang.com/202407171151121.png)
+  - Find the balance of an account in an ERC-20 contract (USDC / USDT)
+  ![erc20](https://pic.wenjunjiang.com/202407171212941.png)
+  获取 [0x48c04ed5691981C42154C6167398f95e8f38a7fF](https://0xdac17f958d2ee523a2206206994597c13d831ec7.w3eth.io/balanceOf/0x48c04ed5691981C42154C6167398f95e8f38a7fF?returnTypes=(uint)) 的剩余 usdc 数量
+
+  ![usdt](https://pic.wenjunjiang.com/202407171216536.png)
+  
+  > etherscan 里面的地址：[0x48c04ed5691981C42154C6167398f95e8f38a7fF](https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7?a=0x48c04ed5691981C42154C6167398f95e8f38a7fF)
+
+  
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 
 XXX
 <!-- Content_END -->

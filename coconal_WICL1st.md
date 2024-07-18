@@ -69,10 +69,91 @@
 
 ### 07.16
 
-XXX
+- 今日学习时间：40min
+- 小结 :
+  时间较少，简单调用示例
+  结构
+
+```
+web3://<contract>[:<chainId>]/<path>
+```
+
+自动模式
+
+```
+/<methodName>/<methodArg1>/<methodArg2>/...[?returns=(<type1>,<type2>,...)]
+```
+
+returns 指定返回
+
+```
+ npx web3curl -v "web3://0xA5aFC9fE76a28fB12C60954Ed6e2e5f8ceF64Ff2/levelAndTile/2/50?returns=(uint256,uint256)"
+npm info using npm@10.2.4
+npm info using node@v20.11.0
+npm info ok
+npm info using npm@10.2.4
+npm info using node@v20.11.0
+* Fetching URL web3://0xA5aFC9fE76a28fB12C60954Ed6e2e5f8ceF64Ff2/levelAndTile/2/50?returns=(uint256,uint256)
+* Parsing URL ...
+* Host domain name resolver: (none)
+* Contract address: 0xA5aFC9fE76a28fB12C60954Ed6e2e5f8ceF64Ff2
+* Contract chain id: 1
+* Configured RPCs for chain 1 (fallback mode) : https://ethereum.publicnode.com https://cloudflare-eth.com
+*
+* Resolve mode determination...
+> 0xdd473fae
+* RPC provider used: https://ethereum.publicnode.com
+< 0x
+* Resolve mode: auto
+*
+* Path parsing...
+* Contract call mode: method
+* Method name: levelAndTile
+* Method arguments types: [{"type":"uint256"},{"type":"uint256"}]
+* Method arguments values: ["0x2","0x32"]
+* Contract return processing: jsonEncodeValues
+* Contract return processing: jsonEncodeValues: Types of values to encode: [{"type":"uint256"},{"type":"uint256"}]
+*
+* Calling contract ...
+* Contract address: 0xA5aFC9fE76a28fB12C60954Ed6e2e5f8ceF64Ff2
+> 0xd55dd04300000000000000000000000000000000000000000000000000000000...0000000000000000000000000000000000000000000000000000000000000032
+* RPC provider used: https://ethereum.publicnode.com
+< 0x00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000024
+*
+* Decoding contract return ...
+* HTTP Status code: 200
+* HTTP Headers:
+*   Content-Type: application/json
+["0x1","0x24"]
+```
 
 ### 07.17
 
-XXX
+- 今日学习时间：30min
+- Homework 1
+  Find the ownership of an your favor NFT
+  https:
+
+```
+https://0x60e4d786628fea6478f785a6d7e704777c86a7c6.eth.w3link.io/ownerOf/458?returns=(address)
+```
+
+web3url
+
+```
+web3://0x60e4d786628fea6478f785a6d7e704777c86a7c6/ownerOf/458?returns=(address)
+```
+
+- Find the balance of an account in an ERC-20 contract (USDC / USDT)
+
+Vitalik 的 USDT 余额
+
+```
+https://0xdac17f958d2ee523a2206206994597c13d831ec7.eth.w3link.io/balances/0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045?returns=(uint256)
+```
+
+```
+web3://0xdac17f958d2ee523a2206206994597c13d831ec7/balances/0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045?returns=(uint256)
+```
 
 <!-- Content_END -->

@@ -54,23 +54,43 @@
 ---
 
 ## 笔记证明 Notes Proof
-<!-- Content_START --> 
+<!-- Content_START -->
 ### 07.15
-
-举例示范：
-
-- 今日学习时间：XXXX
-- 学习内容小结：XXXX
-- Homework 部分（如果有安排需要填写证明完成）
-- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+今日听了 zhouqi 博士的分享内容。站在产品的角度上，目前的 URL 产品化还非常的任重而道远。
+而且以目前的方式，还需要第三方的web2 DNS 进行解析才可以。
+所以基础设施非常的急缺。
+明日将继续学习相关知识。
 
 
 
 ### 07.16
 
-XXX
+今日主要学习了 ERC-4804 的介绍
+https://eips.ethereum.org/EIPS/eip-4804
+web3:// 是一个新的协议，它可以直接访问 EVM 兼容的区块链，比如 ARB OP 等一些 L2 都可以支持。
 
 ### 07.17
 
-XXX
+今日主要查看了 eip-6860 的介绍的
+https://eip.fun/eips/eip-6860
+
+查看官网 https://web3url.io/的一些内容
+### 07.18
+
+### 07.19
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- Content_END -->

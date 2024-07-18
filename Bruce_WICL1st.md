@@ -88,10 +88,47 @@ timezone: Asia/Shanghai
     - web3://eth-store.eth/ => https://eth-store.w3eth.io/
     - w3link.io is the current gateway for multi-chain: web3://w3url.eth:11155111/ => https://w3url.11155111.w3link.io/
 
--
-
 - Homework 部分（如果有安排需要填写证明完成）
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+
+### 07.16
+
+- 今日学习时间：0.5h
+- 学习内容小结：
+
+  - 可能的一些应用
+    - 去中心化的博客、Dropbox、邮件、git 等
+  - 目前需要的帮助
+
+    - 浏览器原生支持和 EF 的帮助
+    - gateway 因为一些原因，被举报封禁了
+    - 存储费用太高了，放在主网上面
+
+  - 第一节课 https://youtu.be/hmN77o-ex8I
+
+    - 需要有很多应用，这样应用驱动协议落地到主流浏览器上
+    - 相比传统应用开发，其实可能更简单，只需要支付部署一次的 gas，然后就可以永久上线了
+    - shisui 是一个 Portal Network 的轻客户端，这样就可以从前到后都包括了
+    - 欢迎创建 Solana 的版本
+    - 以太坊适合读的应用，性能和节点都不错，但是写的应用就不太行了
+
+### 07.17
+
+- 第一节课 https://youtu.be/hmN77o-ex8I
+  - 不是所有 Web2 的应用都应该或者适合转成 Web3，什么时候放在 Web3 做是需要思考的
+  - 6860 是进行中的标准，更加严谨和完善，4808 是比较简单的
+  - 整个 https://w3url.w3eth.io/#/ 就是基于 Web3 URL 和存储在 Web3Q Galileo 上面
+    - TODO 这个链是怎么运转的？存储成本怎么样？
+      - Note：这是他们维护的一个测试网，将会迁移到 EthStorage 上面
+    - TODO 这个合约是怎么实现的？代码在哪里？
+    - TODO 每个图片对应的 calldata 是不一样的，访问 URL 的时候，如何映射到合约对应的文件？比如访问 https://w3url.w3eth.io/img/browser.e3be7910.svg
+      如何知道 calldata 是 0x2f696d672f62726f777365722e65336265373931302e737667？
+  - 目前 Web3 URL 只是读合约和数据，写还是需要自己去调用合约
+  - 读取和渲染性能跟客户端比较相关，比如 rust 的就更加快
+  - TODO Vitalik 博客的合约是怎么实现的？代码在哪里
+  - 所有数据都在链上，Web3 URL 网关只负责读取和组装展示
+  - ES 要做的就是一条 L2 可以把存储的费用降低
+  -
 
 TODO：
 
@@ -100,17 +137,17 @@ TODO：
   - https://eip.fun/eips/eip-6860
 - 查看官网 https://web3url.io/
 - 原生支持的浏览器实现 https://github.com/web3-protocol/evm-browser
-
-### 07.16
-
-- 今日学习时间：0.5h
-- 学习内容小结：
-
-- Homework 部分（如果有安排需要填写证明完成）
-- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
-
-### 07.17
-
-XXX
+- 第一节课 https://youtu.be/hmN77o-ex8I
+- 查看 https://github.com/ethstorage/awesome-web3
+- EthStorage 是怎么扩容以太坊的，通过很低的 costs
+- ERC5018: Filesystem-Like Interface https://eips.ethereum.org/EIPS/eip-5018 ethfs-uploader to synchronize folder/files https://www.npmjs.com/package/ethfs-uploader
+- ERC5219, ERC6944: Contract Resource Requests Customized headers / error code for ERC4804
+- ERC6821: ENS => Address Mapping Standard
+- Homework 1
+  - Find the ownership of an your favor NFT
+  - Find the balance of an account in an ERC-20 contract (USDC / USDT)
+  - Deploy a contract in auto model and say “hello world”
+  - Deploy a contract in manual model and say “hello world”
+- 可以开发一个一键上传或者创建 Web3 站点的合约？
 
 <!-- Content_END -->
