@@ -41,6 +41,8 @@ Web3 URL 残酷共学将基于自愿自主建立「Web3 URL 残酷共学开源�
 - **自由组队：** 报名成功即可开启提前自学，进残酷共学群后即可开始自由项目组队。
 - **线上讨论：** 随时可以在群里发起讨论，共学笔记分享交流。
 - **固定公开课：** 预定共学期间每周一晚 8 - 9 点（北京时间）进行线上公开课及相关分享。
+  - [Web3 URL 第一节公开课回放](https://www.youtube.com/watch?v=hmN77o-ex8I)
+
 - **结营分享：** 预在 2024 年 8 月 4 号后举办第一期「**Web3 URL 残酷共学分享及项目展示**」活动，具体时间信息请关注 [Web3 URL 残酷共学频道](https://t.me/LXDAO/8748)通知。
 
 ### 共学时间与地点
@@ -64,6 +66,7 @@ LXDAO & ETHStorage Host 的 Web3 URL 残酷共学将邀请 [Qi Zhou](https://twi
     - https://web3url.io/#/ 
     - https://docs.web3url.io/ （核心指南）
     - https://eips.ethereum.org/EIPS/eip-4804 ( final )
+    - https://eips.ethereum.org/EIPS/eip-6860
     - https://github.com/ethstorage/awesome-web3 
   
 - **第二阶段：边学边用实战开发（ 两周）**
