@@ -83,7 +83,7 @@ Happy DAO实践者 0技术基础小白 希望能听懂～
 在主流浏览器上装插件；
 开发专属浏览器（例如：evm-browser）
 
-- Homework 部分    
+- Homework 部分（暂未完成）   
 Find the ownership of an your favor NFT    
 Find the balance of an account in an ERC-20 contract (USDC / USDT)    
 Deploy a contract in auto model and say “hello world”    
@@ -94,6 +94,31 @@ Deploy a contract in manual model and say “hello world”
 
 今日学习时间：2h
 
-学习内容小结：回看公开课视频：https://www.youtube.com/watch?v=hmN77o-ex8I
+- 学习内容小结：回看公开课视频：https://www.youtube.com/watch?v=hmN77o-ex8I
+- Homework 部分（暂未完成）  
+Find the ownership of an your favor NFT    
+Find the balance of an account in an ERC-20 contract (USDC / USDT)    
+Deploy a contract in auto model and say “hello world”    
+Deploy a contract in manual model and say “hello world”    
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+
+### 07.18
+
+今日学习时间：1.5h
+
+- 学习内容小结：今日阅读Web3URL白皮书Vision部分 https://docs.web3url.io/（原文链接）
+  - Visoin部分主要介绍了Web3URL的愿景、区块链DAPP的问题、web3://协议解决方案以及一些案例
+  - 
+- Homework 部分（暂未完成）  
+Find the ownership of an your favor NFT    
+Find the balance of an account in an ERC-20 contract (USDC / USDT)    
+Deploy a contract in auto model and say “hello world”    
+Deploy a contract in manual model and say “hello world”    
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+
+
+
+
+
 
 <!-- Content_END -->
