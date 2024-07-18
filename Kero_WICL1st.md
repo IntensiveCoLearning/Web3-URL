@@ -115,4 +115,47 @@ How to upload files or folders using the ethfs-uploader tool:
 
 The Web3Q Galileo Chain seems suspended to produce new blocks for already 23 hours. Waiting for reply...
 
+### 07.17
+
+- 今日学习时间：0.5 hour
+- 学习内容小结：
+  - Continue how to maintain my blog using ETHStorage and Web3-URL?
+
+#### Note
+
+```
+$ npx ethfs-uploader --create --privateKey <..> --chainId 3334
+
+Transaction: 0x50270e7ba71169e54555c3f9a181f2a775541a18f851ad2c4429bfd30e61bee7
+FlatDirectory Address: 0xA10F8D4394F4d2f016411aec53E9A2b73A8CD2f7
+```
+
+```
+$ npx ethfs-uploader /this-is-a-dir w3q-g:0xA10F8D4394F4d2f016411aec53E9A2b73A8CD2f7  --privateKey <..>
+
+providerUrl = https://galileo.web3q.io:8545
+chainId = 3334
+address: 0xA10F8D4394F4d2f016411aec53E9A2b73A8CD2f7
+
+Start upload File.......
+跨链.md, chunkId: 0
+Transaction Id: 0xb6d9f6c99bee830c91571c807b19b89ef2d2f76c589bb3ede8731c01e2bad659
+for-fun.jpeg, chunkId: 0
+Transaction Id: 0x5d920b8f9127de0cfeafaca15208649449b47ac64a3b48f7c26b9ea1d3b894bd
+File 跨链.md chunkId: 0 uploaded!
+File for-fun.jpeg chunkId: 0 uploaded!
+```
+
+Visit https://0xa10f8d4394f4d2f016411aec53e9a2b73a8cd2f7.w3q-g.w3link.io/crosschain.md
+
+#### Questions
+
+ 我上传了一个中文文件名的文件，
+交易为 https://explorer.galileo.web3q.io/tx/0xb6d9f6c99bee830c91571c807b19b89ef2d2f76c589bb3ede8731c01e2bad659/internal-transactions ，
+文件名为 "跨链.md"，
+但是访问 https://0xa10f8d4394f4d2f016411aec53e9a2b73a8cd2f7.w3q-g.w3link.io/跨链.md 结果为空。
+换成英文名就正常返回结果。
+
+看起来是哪儿对中文的支持不完全。
+
 <!-- Content_END -->
