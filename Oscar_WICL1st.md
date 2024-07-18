@@ -126,6 +126,44 @@
 - Question and Ideas
   - token-address：`0x52284158e02425290f6b627aeb5fff65edf058ad` 和contract-address：`0x56B9308EFd014f10423B42B3aDE7eeCFe128B1BD` 之间的连接关系🤔
 
+### 07.18
+
+- 今日学习时间：1 小时
+- 学习内容小结：
+  - [WEB3:// URL STRUCTURE](https://docs.web3url.io/web3-url-structure/base) 协议的框架结构思路学习
+    - Base structure
+    - Standards
+    - Domain name resolution
+    - Resolve mode 解析模式定义了在不同环境下如何处理和解释 Web3 URL，以确保资源的正确定位和访问。
+
+```html
+node . -v 'web3://w3url.eth'
+* Host domain name resolver: ens
+*   Resolver address: 0xc0497E381f536Be9ce14B0dD3817cBcAe57d2F62  <!-- ENS解析的以太坊地址 -->
+*   Resolver chain id: 1  <!-- 以太坊主网 -->
+*   Resolver chain RPC: https://ethereum.publicnode.com <!-- 与以太坊主网交互的RPC端点 ?-->
+*   Domain name being resolved: w3url.eth <!-- 解析的ENS域名 -->
+*   Resolution type: contentContractTxt <!-- 解析类型 -->
+*   contentcontract TXT record: w3q-g:0xEbcA4860ebBe969E9Bc42643fcb437879dBDa9C6
+*   Result address: 0xEbcA4860ebBe969E9Bc42643fcb437879dBDa9C6
+*   Result chain id: 3334
+```
+
+- Homework 
+
+  - Deploy a contract in auto model and say "hello world" 自动模式
+  - Deploy a contract in manual model and say "hello world" 手动模式
+
+- Question and Ideas
+
+  - Web3URL Chrome 插件使用研究 
+
+    - https://github.com/Whitehare2023/web3url
+
+    - https://github.com/ComfyGummy/chrome-web3
+
+
+
 
 
 <!-- Content_END -->
