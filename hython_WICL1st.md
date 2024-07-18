@@ -131,6 +131,11 @@ timezone: Asia/Tokyo
 - 学习内容小结：补习昨天公开课视频
 
 ### 07.17
+- skip 
 
-XXX
+### 07.18
+- 今日学习时间：21:00～22:00 共60分钟
+- 学习内容小结：[EIP4804](https://eips.ethereum.org/EIPS/eip-4804)
+
+
 <!-- Content_END -->
