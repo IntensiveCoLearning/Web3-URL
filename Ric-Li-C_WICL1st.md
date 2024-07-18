@@ -75,22 +75,44 @@ timezone: Asia/Shanghai
 -   学习内容小结：学习资料，了解 Auto Mode 和 Manual Mode
 -   Homework 部分：
 
-            Find the ownership of an your favor NFT
-
-    web3://0x7bc5d353663c4c94fd022d3df0642b56c174b45c/ownerOf/1?returns=(uint256)
-    http://0x7bc5d353663c4c94fd022d3df0642b56c174b45c.w3eth.io/ownerOf/1?returns=(uint256)
+        Find the ownership of an your favor NFT
+            web3://0x7bc5d353663c4c94fd022d3df0642b56c174b45c/ownerOf/1?returns=(uint256)
+            http://0x7bc5d353663c4c94fd022d3df0642b56c174b45c.w3eth.io/ownerOf/1?returns=(uint256)
 
 -   Question and Ideas：Manual Mode 的合约怎么写
 
 ### 07.17
 
+-   今日学习时间：1 小时（看 Telegram 群内消息，查看资料，完成部分作业）
+-   学习内容小结：加深对于 web 3 URL 的理解
+-   Homework 部分：
+
+        Find the balance of ERC-20 contract (USDC / USDT)
+            web3://0xdAC17F958D2ee523a2206206994597C13D831ec7/balanceOf/0xdAC17F958D2ee523a2206206994597C13D831ec7?returns=(uint256)
+            http://0xdAC17F958D2ee523a2206206994597C13D831ec7.w3eth.io/balanceOf/0xdAC17F958D2ee523a2206206994597C13D831ec7?returns=(uint256)
+            https://www.rapidtables.com/convert/number/hex-to-decimal.html?x=2481C9890F
+
+-   Question and Ideas：得到的结果需要解码，能不能直接得到解码之后的结果
+
+### 07.18
+
+-   今日学习时间：1.5 小时（看 Telegram 群内消息并提问，查看资料，完成部分作业）
+-   学习内容小结：Auto Mode 的 ?returns= 怎么写
+-   Homework 部分：
+
+        Deploy a contract in auto model and say “hello world”
+            web3://0x117f7b2C45FD86b69268e067654a559B13EcB6Ff:11155111/Hello
+            https://0x117f7b2C45FD86b69268e067654a559B13EcB6Ff.11155111.w3link.io/Hello
+
+-   Question and Ideas：Nil
+
+### 07.19
+
 -   今日学习时间：
 -   学习内容小结：
 -   Homework 部分：
 
-            Find the balance of ERC-20 contract (USDC / USDT)
-            Deploy a contract in auto model and say “hello world”
-            Deploy a contract in manual model and say “hello world”
+        Deploy a contract in manual model and say “hello world”
 
 -   Question and Ideas：
 
