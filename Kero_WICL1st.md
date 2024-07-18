@@ -115,7 +115,7 @@ How to upload files or folders using the ethfs-uploader tool:
 
 The Web3Q Galileo Chain seems suspended to produce new blocks for already 23 hours. Waiting for reply...
 
-### 07.17
+### 07.18
 
 - 今日学习时间：0.5 hour
 - 学习内容小结：
