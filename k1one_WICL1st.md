@@ -393,11 +393,14 @@ contract AutomationTask is AutomationCompatible {
 
 ### 07.18
 
-
-
+```
 学习时长：0.5h
 
 学习内容小结：学习Web3URL部分的知识，了解相关原理与分析相关合约源码内容，大概了解了合约的实现原理和相关函数的实现
+
+```
+
+
 
 
 
