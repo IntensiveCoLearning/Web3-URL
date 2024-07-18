@@ -94,5 +94,26 @@
   
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 
-XXX
+### 07.17
+
+- 今日学习时间：15:00~16:00
+- 学习内容小结：
+  - 阅读学习了 https://docs.web3url.io/ 解析模式部分：auto mode、Manual mode、Resource request mode
+  - 使用 hardhat 开发智能合约，为  hw1 做准备
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+  - 使用 web3 协议访问的时候，是根据合约有没有实现对应接口来判断的吗？
+```solidity
+    // resource request 模式
+    function resolveMode() external pure returns (bytes32) {
+        return "5219";
+    }
+    // manual
+    function resolveMode() external pure returns (bytes32) {
+        return "manual";
+    }
+    // auto 模式。没有实现 resolveMode 方法
+```
+  - 对于 manual 模式必须实现 fallback 方法吗？  resource request 模式 必须实现 request 方法吗？
+  - 看起来 manual 和 resource request 差不多，为什么要多实现一种模式呢？分别是适用场景是什么？
 <!-- Content_END -->
