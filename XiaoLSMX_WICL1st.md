@@ -75,7 +75,14 @@
 
 - Homework 部分（如果有安排需要填写证明完成）
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+  
 ### 07.17
+- 今日学习时间：1h
+- 学习内容小结：b站网课：《java语言从0开始编写一个区块链》、
+-<img width="145" alt="image" src="https://github.com/user-attachments/assets/95f68fb7-2ace-400d-8377-229b2db028b0">
 
-XXX
-<!-- Content_END -->
+### 07.18
+- 今日学习时间：1h
+- 学习内容小结：b站网课：《java语言从0开始编写一个区块链》、
+-<img width="119" alt="image" src="https://github.com/user-attachments/assets/1aa56318-a8d0-4ca4-974b-c0f6efd7d1ec">
+
