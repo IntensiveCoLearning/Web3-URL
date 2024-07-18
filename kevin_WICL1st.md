@@ -104,5 +104,15 @@
    - Gwei是另一种ETH单位，数值相比之下极小，用于Gas费用计算
    - 在将Gas费用支付给矿工之前，会有基础费用的消耗（burnt）
    - Proof of Work/Proof of Stake（PoW/PoS），中本聪共识？
+ 
+### 07.18
+- 今日学习时间：22:30-23:30
+- 学习内容小结：观看了freeCodeCamp出品的[1小时区块链基础课程](https://www.youtube.com/watch?v=gyMwXuJrbJQ)（剩余29小时🫡）
+- Question and Ideas
+   - 现实的网络采用PoW会产生大量的能耗，它们是必需的吗？
+   - PoS的优点是不像PoW有大量的计算成本，但似乎也被诟病不那么“去中心化”
+   - 为了应对不断上升的Gas，推出了Layer 2的概念，来扩展ETH，那岂不是可以无限套娃，推出L3、L4？GPT-4o从多方面给出了[可行性的解释](https://chatgpt.com/share/af8e4ec7-a4e5-44f9-9e8a-c24114d737a1)
+   - 开始学习 [Remix](https://remix.ethereum.org) 和 [Solidity](https://soliditylang.org) 😍
+
 
 <!-- Content_END -->
