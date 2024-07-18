@@ -234,6 +234,99 @@ for (const index in chunks) {
 
 
 ### 07.17
+在 Manual mode 中，路径信息会传入合约的 `fallback(bytes)` 方法，从而允许合约使用自定义的方式处理请求。这种模式和 web2 的 url 路由是一致的。
 
-XXX
+### 07.17
+
+- 今日学习时间：1 h
+- 学习内容小结：完成 Homework 的前两项
+- Homework 部分
+
+1. 查询 `0x08ba8cbbefa64aaf9df25e57fe3f15ecc277af74` id 为 46 的 NFT 的所有者，调用其 ownerOf 方法即可，参数为 tokenId=46。Web3 url 为
+
+   ```
+   web3://0x08BA8CBbefa64Aaf9DF25e57fE3f15eCC277Af74/ownerOf/46?returns=(address)
+   ```
+
+   返回结果为
+
+   ```
+   ["0xEf0b29B14C735505D181eaa613909345A964927D"]
+   ```
+
+2. 查询 Bitget 地址 `0x1AB4973a48dc892Cd9971ECE8e01DcC7688f8F23 `的 USDT 持有量，调用其 balanceOf 函数即可，参数为 who=0x1AB4973a48dc892Cd9971ECE8e01DcC7688f8F23。Web3 url 为
+
+   ```
+   web3://0xdac17f958d2ee523a2206206994597c13d831ec7/balanceOf/0x1AB4973a48dc892Cd9971ECE8e01DcC7688f8F23?returns=(uint256)
+   ```
+
+   返回结果为
+   
+   ```
+   ["0x1210389c1388"]
+   ```
+   ### 07.18
+
+- https://web3url.io/#/
+
+  - https://cyberbrokers-meta.w3eth.io/renderBroker/5
+  - manual mode 和 auto mode 有什么区别？https://docs.web3url.io/web3-url-structure/resolve-mode/mode-auto
+
+    - https://0x4e1f41613c9084fdb9e34e11fae9412427480e56.w3eth.io/tokenSVG/9352?mime.type=svg 通过 ?mime.type 可以指定 content type 来渲染
+    - manual 模式是通过合约里面返回相应的信息来判断的
+    - 技术实现是使用 fallback 方法进行 url 解析，返回的数据必须是 abi.encoded bytes
+
+    ```
+    fallback(bytes calldata cdata) external returns (bytes memory) {
+        if(cdata.length == 0 || cdata[0] != 0x2f) {
+            return bytes("");
+        }
+
+        // Frontpage call
+        if (cdata.length == 1) {
+          return bytes(abi.encode(indexHTML(1)));
+        }
+        // /index/[uint]
+        else if(cdata.length >= 6 && ToString.compare(string(cdata[1:6]), "index")) {
+            uint page = 1;
+            if(cdata.length >= 8) {
+                page = ToString.stringToUint(string(cdata[7:]));
+            }
+            if(page == 0) {
+                return abi.encode("Not found");
+            }
+            return abi.encode(indexHTML(page));
+        }
+
+        // Default
+        return abi.encode("Not found");
+    }
+    ```
+
+    - manual 默认返回的信息头格式是 Content-type: text/html，如果有后缀，则使用相应的 mime
+    - TODO 这样的话，解析和渲染流程也需要行程标准，让 Native 浏览器进行实现？目前这些逻辑实际上在 gateway 层面
+    -
+
+-
+
+TODO：
+
+- 找到相应的合约看看代码实现
+- 查看对应的 ERC 原文
+  - https://eip.fun/eips/eip-4804
+  - https://eip.fun/eips/eip-6860
+- 查看官网 https://web3url.io/
+- 原生支持的浏览器实现 https://github.com/web3-protocol/evm-browser
+- 第一节课 https://youtu.be/hmN77o-ex8I
+- 查看 https://github.com/ethstorage/awesome-web3
+- EthStorage 是怎么扩容以太坊的，通过很低的 costs
+- ERC5018: Filesystem-Like Interface https://eips.ethereum.org/EIPS/eip-5018 ethfs-uploader to synchronize folder/files https://www.npmjs.com/package/ethfs-uploader
+- ERC5219, ERC6944: Contract Resource Requests Customized headers / error code for ERC4804
+- ERC6821: ENS => Address Mapping Standard
+- Homework 1
+  - Find the ownership of an your favor NFT
+  - Find the balance of an account in an ERC-20 contract (USDC / USDT)
+  - Deploy a contract in auto model and say “hello world”
+  - Deploy a contract in manual model and say “hello world”
+- 可以开发一个一键上传或者创建 Web3 站点的合约？
 <!-- Content_END -->

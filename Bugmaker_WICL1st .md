@@ -143,6 +143,40 @@ fallback函数会在三种情况下被调用：
 Ethers.js 是一个使用Typescript编写的库，用于构建去中心化应用程序（DApps）的前端，或者与以太坊网络进行交互。它抽象了许多复杂性，使开发人员能够简单直观地构建DApp。
 
 ### 07.17
+- 今日学习时间：7.17  4 p.m.--6 p.m.
+- 学习内容小结：完成 筹集合约 
 
+### 07.18
+- 今日学习时间：7.18  10 a.m.--12 a.m.
+- 学习内容小结：Foundry test学校
+
+### 什么是 Foundry
+>Foundry 是一个 Solidity 框架，用于构建、测试、模糊、调试和部署Solidity 智能合约， Foundry 的优势是以 Solidity 作为第一公民，完全使用 Solidity 进行开发与测试，如果不太熟JavaScript，使用 Foundry 是一个非常好的选择，而且 Foundry 构建、测试的执行速度非常快。  
+#### Foundry的主要工具:
+* ***Forge*** 用来进行合约的测试
+* ***Cast*** 很方便的与合约进行交互，发交易，查询链上数据
+* ***Anvil*** 可以模拟一个私有节点
+* ***Chisel*** 可以在命令行快速的有效的实时的写合约，测试合约
+
+#### Foundry测试 forge test
+1. 测试文件统一放在`test`包中，命名方式为`***.t.sol`
+2. 测试方法的命名，是由`test_ `为前缀，后面遵循驼峰命名法。
+3.  测试函数必须为`public`或`external`属性
+4. 继承 `forge-std` 标准库下的 `Test.sol` 合约来编写测试用例。
+	`import {Test, console} from "forge-std/Test.sol";`
+	`import {Counter} from "../src/Counter.sol";`
+4. 进入`test`文件，执行 `forge test` 对所有的`test`文件进行测试。
+5. `forge test --match-path test/Counter.t.sol`,命令，使用`--match-path` 来指定某一路径下的文件来进行测试。
+6. `forge test --match-contract CounterTest --match-test test_Increment`,命令，用 `--match-contract `来指定测试合约的名称，其中 `--match-test` 用来指定调用的测试方法。
+7. `-vv`到`-vvvvv`显示由低到高等级的信息显示程度。
+
+#### Foundry部署&验证 forge create
+`forge create --rpc-url <your_rpc_url> --private-key <your_private_key> --verify src/MyContract.sol:MyContract --constructor-args <constructor_args>`
+* `rpc-url`: 即区块链节点 RPC，例如：https://eth-sepolia.g.alchemy.com/v2/xxxxxxxxx
+* `private-key`: 即钱包私钥，建议创建专门用来开发测试的新钱包。
+* `etherscan-api-key`: 即区块链浏览器的 API KEY TOKEN，用于验证合约。
+* `verify`: 验证合约，即在浏览器中开源合约的代码。
+* `MyContract` : 实际部署的合约，由于一个 solidity 中允许存在多个合约，因此这里指定需要部署的合约名称。
+* `constructor-args`: 合约的构造参数，如果没有，可以不设置该属性。
 XXX
 <!-- Content_END -->

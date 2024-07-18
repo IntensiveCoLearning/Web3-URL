@@ -62,19 +62,44 @@
 
 ### 07.15
 
-举例示范：
+今日学习时间：2h
 
-- 今日学习时间：2h
 - 学习内容小结：了解 ppt 内容 Introduction to Web3:// Access Protocol (CoLearning 2024)
 
 ### 07.16
 
-- 今日学习时间：2h
+今日学习时间：2h
+
 - 学习内容小结：学习[Web3URL 文档](https://docs.web3url.io)部分章节，介绍，背景等。
 - web3:// 是一种新协议，用于访问与 EVM 兼容的区块链中智能合约返回的内容。
 
 ### 07.17
 
-XXX
+今日学习时间：2h
+
+- 学习内容小结：学习[Web3URL 文档](https://docs.web3url.io)部分章节，问题，解决方案，例子。
+- 问题：dApp 服务器/NSP 是中心化的！这意味着去中心化区块链的好处可以很容易地被打破。
+- 解决方案：端到端完全无需信任的去中心化网络。
+- 例子：1、完全去中心化的交易所；2、完全去中心化的社交网络。
+
+- 【从生态村到 Web3，乡村为何上 DAO？】分享会学习
+
+### 07.18
+
+今日学习时间：2h
+
+- 学习内容小结：学习[Web3URL 文档](https://docs.web3url.io)部分章节，URL 结构，域名解析，解析模式。
+- URL 结构：
+
+```
+web3://<contract>[:<chainId>]/<path>
+```
+
+    <contract> 可以是合约地址也可以是域名。
+    chainId 是可选的，并指示区块链的链 ID，用于查询智能合约的位置。
+    path 遵循与传统 HTTP URL 类似的结构
+
+- 域名解析：了解域名解析方式 [web3curl 应用程序](https://github.com/web3-protocol/web3curl-js)
+- 解析模式：自动模式；手动模式；资源请求模式。
 
 <!-- Content_END -->

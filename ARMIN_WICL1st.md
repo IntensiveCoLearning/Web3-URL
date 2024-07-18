@@ -76,6 +76,62 @@
 
 ### 07.17
 
-XXX
+- 今日学习时间：0.5h
+- 学习内容小结：今天比较忙，继续看了https://docs.web3url.io/这个文档
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+
+### 07.18
+
+- 今日学习时间：0.5h
+- 学习内容小结：写了一部分作业
+- Homework 部分：
+
+#### 1. Find the ownership of an your favor NFT
+
+在 Chrome 输入以下 URL：
+
+```
+https://0xed5af388653567af2f388e6224dc7c4b3241c544.w3eth.io/ownerOf/123?returns=(address)
+```
+
+返回值：
+
+```json
+["0x2aE6B0630EBb4D155C6e04fCB16840FFA77760AA"]
+```
+
+#### 2. Find the balance of an account in an ERC-20 contract (USDC / USDT)
+
+在 Chrome 输入以下 URL：
+
+```
+https://0xdac17f958d2ee523a2206206994597c13d831ec7.w3eth.io/balanceOf/0x1648ce7e8Ac365aFc64e6FAAb810A3AB8404C69E?returns=(uint256)
+```
+
+返回值：
+
+```json
+["0x4820900b"]
+```
+
+转换成十进制：
+
+```javascript
+const amount = parseInt(0x4820900b);
+console.log(amount);
+```
+
+返回值：
+
+```
+1210093579
+```
+
+#### 3. Deploy a contract in auto model and say “hello world”
+
+没了解过 auto model 和 manual model，明天查查。
+
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 
 <!-- Content_END -->

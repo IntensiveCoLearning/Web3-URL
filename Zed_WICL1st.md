@@ -110,11 +110,13 @@ timezone: Asia/Shanghai
 
 ### 07.18
 
-- 今日学习时间：XXXX
-- 学习内容小结：XXXX
+- 今日学习时间：2h
+- 学习内容小结：阅读docs.web3url.io
+- [Part 1 - Vision 阅读笔记](https://www.notion.so/Day-7-18-docs-web3url-io-5e5264c51bc243ec9d6e7f30137ea006?pvs=4)
 - Homework 部分（如果有安排需要填写证明完成）
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
-
-
+   - 之前碎片化的看了以下这个docs，感觉理解了之后更清晰一些，比之前清除了一些模模糊糊的感觉
+- TODO
+   - 明天继续按顺序阅读这个docs文档
 
 <!-- Content_END -->

@@ -130,8 +130,53 @@ timezone: Asia/Shanghai
   - ES 要做的就是一条 L2 可以把存储的费用降低
   -
 
+### 07.18
+
+- https://web3url.io/#/
+
+  - https://cyberbrokers-meta.w3eth.io/renderBroker/5
+  - manual mode 和 auto mode 有什么区别？https://docs.web3url.io/web3-url-structure/resolve-mode/mode-auto
+
+    - https://0x4e1f41613c9084fdb9e34e11fae9412427480e56.w3eth.io/tokenSVG/9352?mime.type=svg 通过 ?mime.type 可以指定 content type 来渲染
+    - manual 模式是通过合约里面返回相应的信息来判断的
+    - 技术实现是使用 fallback 方法进行 url 解析，返回的数据必须是 abi.encoded bytes
+
+    ```
+    fallback(bytes calldata cdata) external returns (bytes memory) {
+        if(cdata.length == 0 || cdata[0] != 0x2f) {
+            return bytes("");
+        }
+
+        // Frontpage call
+        if (cdata.length == 1) {
+          return bytes(abi.encode(indexHTML(1)));
+        }
+        // /index/[uint]
+        else if(cdata.length >= 6 && ToString.compare(string(cdata[1:6]), "index")) {
+            uint page = 1;
+            if(cdata.length >= 8) {
+                page = ToString.stringToUint(string(cdata[7:]));
+            }
+            if(page == 0) {
+                return abi.encode("Not found");
+            }
+            return abi.encode(indexHTML(page));
+        }
+
+        // Default
+        return abi.encode("Not found");
+    }
+    ```
+
+    - manual 默认返回的信息头格式是 Content-type: text/html，如果有后缀，则使用相应的 mime
+    - TODO 这样的话，解析和渲染流程也需要行程标准，让 Native 浏览器进行实现？目前这些逻辑实际上在 gateway 层面
+    -
+
+-
+
 TODO：
 
+- 找到相应的合约看看代码实现
 - 查看对应的 ERC 原文
   - https://eip.fun/eips/eip-4804
   - https://eip.fun/eips/eip-6860
