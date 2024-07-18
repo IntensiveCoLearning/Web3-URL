@@ -214,7 +214,38 @@ function resolveMode() external pure returns (bytes32) {
    ["0x1210389c1388"]
    ```
    
-   
+
+### 07.18
+
+- 今日学习时间：1 h
+
+- 学习内容小结：学习了合约的基本编写和部署流程。完成 Homework 1 的第三项
+
+- Homework 部分
+
+  我使用 [remix](https://remix.ethereum.org) 和 Sepolia 测试链进行合约部署，Sepolia 的链 id 为 11155111，web3url 访问时需要指定
+
+  对于 auto mode，只需要编写 sayHello 方法再使用 web3url 调用即可
+
+  编写合约如下
+
+  ```
+  // SPDX-License-Identifier: GPL-3.0
+  
+  pragma solidity >=0.7.0 <0.9.0;
+  
+  contract SayHello_auto {
+      function sayHello() public pure returns (string memory) {
+          return "Hello World";
+      }
+  }
+  ```
+
+  合约地址为 `0xae3a76c0fd59c8af8e183931794c959fcba0baf4`，
+
+  使用 web3curl 访问 url `web3://0xae3a76c0fd59c8af8e183931794c959fcba0baf4:11155111/sayHello`
+  
+  可以得到响应 Hello World
 
 
 
