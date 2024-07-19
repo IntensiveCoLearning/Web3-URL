@@ -119,4 +119,24 @@ timezone: Asia/Shanghai
 - TODO
    - 明天继续按顺序阅读这个docs文档
 
+
+### 07.19
+
+- 今日学习时间：1h
+- 学习内容小结：阅读docs.web3url.io
+- [Part 2.1 - Basic structure 阅读笔记](https://www.notion.so/Day-7-19-800cc3a737ea49d588a34ee549971a51?pvs=4)
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+   - 稍微查看了以下同学的笔记，感觉自己的基础太薄，需要学很久去补一些概念
+- TODO
+   - 明天继续阅读这个docs文档
+
+### 07.20
+
+- 今日学习时间：
+- 学习内容小结：
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+- TODO
+
 <!-- Content_END -->

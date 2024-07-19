@@ -83,7 +83,7 @@ Happy DAO实践者 0技术基础小白 希望能听懂～
 在主流浏览器上装插件；
 开发专属浏览器（例如：evm-browser）
 
-- Homework 部分    
+- Homework 部分（暂未完成）   
 Find the ownership of an your favor NFT    
 Find the balance of an account in an ERC-20 contract (USDC / USDT)    
 Deploy a contract in auto model and say “hello world”    
@@ -94,6 +94,38 @@ Deploy a contract in manual model and say “hello world”
 
 今日学习时间：2h
 
-学习内容小结：回看公开课视频：https://www.youtube.com/watch?v=hmN77o-ex8I
+- 学习内容小结：回看公开课视频：https://www.youtube.com/watch?v=hmN77o-ex8I
+- Homework 部分（暂未完成）  
+Find the ownership of an your favor NFT    
+Find the balance of an account in an ERC-20 contract (USDC / USDT)    
+Deploy a contract in auto model and say “hello world”    
+Deploy a contract in manual model and say “hello world”    
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+
+### 07.18
+
+今日学习时间：1.5h
+
+- 学习内容小结：今日阅读Web3URL白皮书Vision部分 https://docs.web3url.io/（原文链接）
+  - Visoin部分主要介绍了Web3URL的愿景、区块链dApp的问题、web3://协议解决方案以及一些案例
+  - Background段落主要交代了web3叙事以及dapp应用越来越受到关注，以及目前web3用户访问dApp的路径，为了降低用户使用区块链应用门槛，钱包和节点服务提供商（NSP)起到了重要作用，用户通过钱包和区块链进行交互，NSP主要负责用户端和区块链之间的数据传输。
+   ![图片](https://github.com/user-attachments/assets/a07b0619-9e1b-4a19-93a5-f7d1b244230f)
+  - The Problem段落交代了dApp服务器/NSP是中心化的！也就是说dApp服务器/NSP仍然拥有dApp的数据访问权、仍然可以审查区块链的内容、甚至可能提供恶意内容
+  - Our Solution段落提出了解决中心化访问协议问题的方案，使用户可以端到端、完全无需信任的访问去中心化网络，具体操作是用户安装经过验证的扩展（如从 github下载geth），把它作为区块链P2P网络的轻客户端；当用户输入 web3 URL（例如 web3://xxxxx）时，扩展程序将解析该 URL 并将其转换为区块链消息（例如调用智能合约）。然后扩展程序将消息传递到 P2P 网络并查询结果。对于从网络返回的任何结果，扩展程序都会充分验证该结果是可信的。可信结果将返回到 Web 浏览器。结果将主要类似于 HTML 文档，但可能包含更多 web3 URL。
+![图片](https://github.com/user-attachments/assets/7e20bd97-ba14-43ef-8785-7720dd481345)
+1.支持 EVM 和高效二进制大对象 (BLOB) 存储的专用以太坊侧链将取代传统的客户端 / 服务器模型；2.Web3风格的URL标准将取代传统的 DNS / URL 方案；3.充当轻客户端并从 web3 URL 执行 EVM 调用的 Web 浏览器扩展将成为去中心化的 HTTP
+![图片](https://github.com/user-attachments/assets/d649ed66-4456-4022-b606-bc0ecedbba3a)
+
+- Homework 部分（暂未完成）  
+Find the ownership of an your favor NFT    
+Find the balance of an account in an ERC-20 contract (USDC / USDT)    
+Deploy a contract in auto model and say “hello world”    
+Deploy a contract in manual model and say “hello world”    
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+
+
+
+
+
 
 <!-- Content_END -->

@@ -200,5 +200,27 @@ Web3 URL 结构中的解析模式提供了灵活和多样的资源解析方法�
 
 总的来说，Web3 URL结构保留了传统URL的基本形式，同时引入了对去中心化网络的支持，为Web3应用提供了一个统一的资源定位方式。这种设计既考虑了新技术的需求，又保持了与现有Web生态系统的兼容性。
 ### 07.18
+Web3 URL的域名部分可以是以下几种类型之一:
+1. 以太坊名称服务(ENS)域名:
+   - 以.eth结尾
+   - 例如: vitalik.eth
+
+2. 去中心化域名系统(DNS)域名:
+   - 通常以.com, .org等传统顶级域名结尾
+   - 例如: ethereum.org
+
+3. 去中心化身份(DID)域名:
+   - 以did:开头,后跟特定的DID方法
+   - 例如: did:ethr:0x4B0897b0513fdC7C541B6d9D7E929C4e5364D2dB
+
+4. 区块链地址:
+   - 直接使用区块链地址作为域名
+   - 例如: 0x4B0897b0513fdC7C541B6d9D7E929C4e5364D2dB
+
+5. IPFS CID:
+   - 以ipfs/开头,后跟IPFS内容标识符(CID)
+   - 例如: ipfs/QmYwAPJzv5CZsnA625s3Xf2nemtYgPpHdWEz79ojWnPbdG
+
+### 07.19
 
 <!-- Content_END -->

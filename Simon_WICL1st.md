@@ -68,5 +68,11 @@
 
 ### 07.17
 
-XXX
+
+### 07.18
+
+- 今日学习时间：1h  
+- 学习内容小结：学习Rust基础(https://www.hackquest.io/zh/learning-track/b502eb82-9254-45e7-be22-1f460aafb2cf)
+
+### 07.19
 <!-- Content_END -->

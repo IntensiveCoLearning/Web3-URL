@@ -126,5 +126,9 @@ timezone: Asia/Shanghai
 
 ### 07.17
 
-XXX
+- 暂时休息
+
+### 07.18
+
+- 完成部分作业
 <!-- Content_END -->

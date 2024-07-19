@@ -129,4 +129,28 @@ web3curl 'web3://0x4e1f41613c9084fdb9e34e11fae9412427480e56/tokenHTML/9352'
 web3curl 'web3://0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/balanceOf/nemorino.eth?returns=(uint256)'
 ```
 
+### 07.18
+
+- 今日学习时间：0.5h
+- 学习内容小结：
+  - 阅读Web3URL Docs中 解析模式部分的介绍
+
+支持三种解析模式：自动模式、手动模式以及资源请求模式（其中资源请求模式和手动模式在我看来比较类似）
+
+这里也许因为对智能合约不熟悉，只能大概明白三种不同解析模式的大致意思，对于文档中“Resolve mode determination by clients”并不是太理解，解析模式有客户端决定么？
+
+从下面这部分内容来看，只能说可以从客户端看到智能合约的解析模式。
+
+```bash
+web3curl -v 'web3://w3url.eth'
+...
+* Resolve mode determination... 
+> 0xdd473fae
+< 0x6d616e75616c0000000000000000000000000000000000000000000000000000
+* Resolve mode: manual
+...
+```
+
+所以，所谓的解析模式是由访问的智能合约本身决定的？还是有文档中“Resolve mode determination by clients”？？
+
 <!-- Content_END -->

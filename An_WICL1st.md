@@ -79,5 +79,10 @@
 - 今日学习时间：30 min
 - 学习内容小结：了解WEB3 客户端 [笔记](https://pinto-zinnia-ba1.notion.site/WEB3-ab02ac5d1ee3421e98b8d7b651f5037b?pvs=25)
 
+### 07.18
+
+- 今日学习时间：80 min
+- 学习内容小结：Ethers.js 学习 [笔记](https://pinto-zinnia-ba1.notion.site/Ethers-js-8414eb18f782426799ed69ace8e62166?pvs=25)
+
 XXX
 <!-- Content_END -->

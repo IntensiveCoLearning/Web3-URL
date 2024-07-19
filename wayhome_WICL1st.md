@@ -144,5 +144,51 @@
 
 ### 07.18
 
-XXX
+
+- 今日学习时间：1h
+- 学习内容小结：
+   - 智能合约是运行在以太坊链上，位于以太坊区块链上一个**特定地址**的自动执行、控制或文档化法律或逻辑行为的**代码（函数）**和**数据（状态）**
+
+      在以太坊上，智能合约是以 EVM 字节码的形式存储的
+      
+      EVM 是以太坊的运行环境，是一个基于堆栈的虚拟机，它是分布式的，运行在以太坊网络中的每个节点上
+      
+      智能合约的运行：
+      
+      1. **编写和编译**
+      2. **部署**
+      3. **执行**
+      4. **状态变更**
+      5. **Gas消耗**
+      
+      基于 solidity Hello world 版本的 合约
+
+      ```jsx
+      // 指定Solidity的版本
+      pragma solidity ^0.8.0;
+      
+      // 定义一个合约，名为'HelloWorld'
+      contract HelloWorld {
+          // 定义一个状态变量，用于存储一个字符串
+          string public greeting = "Hello, World!";
+      
+          // 定义一个函数，用于改变'greeting'变量的值
+          function setGreeting(string memory _greeting) public {
+              greeting = _greeting;
+          }
+      
+          // 定义一个函数，用于获取当前的'greeting'值
+          function getGreeting() public view returns (string memory) {
+              return greeting;
+          }
+      }
+      ```
+      
+      pragma是一个用于指定编译器版本的关键字。它的作用是确保代码能够在特定版本的编译器下正确编译和执行，以避免潜在的兼容性问题。
+      
+      使用关键字 contract 定义合约，一个 Solidity 的 **.sol** 文件可以包含一个或多个 contract。
+      
+      对于合约的命名，我们建议遵循“大驼峰”的命名规范，“大驼峰”是指每个单词的首字母都大写，例如：MyContract
+      
+      XXX
 <!-- Content_END -->
