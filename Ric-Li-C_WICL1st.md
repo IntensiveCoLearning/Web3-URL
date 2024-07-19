@@ -89,7 +89,9 @@ timezone: Asia/Shanghai
 
         Find the balance of ERC-20 contract (USDC / USDT)
             web3://0xdAC17F958D2ee523a2206206994597C13D831ec7/balanceOf/0xdAC17F958D2ee523a2206206994597C13D831ec7?returns=(uint256)
+
             http://0xdAC17F958D2ee523a2206206994597C13D831ec7.w3eth.io/balanceOf/0xdAC17F958D2ee523a2206206994597C13D831ec7?returns=(uint256)
+
             https://www.rapidtables.com/convert/number/hex-to-decimal.html?x=2481C9890F
 
 -   Question and Ideas：得到的结果需要解码，能不能直接得到解码之后的结果
@@ -108,12 +110,21 @@ timezone: Asia/Shanghai
 
 ### 07.19
 
--   今日学习时间：
--   学习内容小结：
+-   今日学习时间：1 小时（看 Telegram 群内消息，查看资料，完成部分作业）
+-   学习内容小结：学习如何写 Manual Mode 的智能合约
 -   Homework 部分：
 
         Deploy a contract in manual model and say “hello world”
+            web3://0xE6BD29A25A15367C2D58D638e50cdea581299ACf:97/
+            https://0xE6BD29A25A15367C2D58D638e50cdea581299ACf.97.w3link.io/
 
+-   Question and Ideas：evm browser 无法打开 ChainId > 65k 的网络链接
+
+### 07.20
+
+-   今日学习时间：
+-   学习内容小结：
+-   Homework 部分：
 -   Question and Ideas：
 
 <!-- Content_END -->
