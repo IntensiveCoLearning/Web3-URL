@@ -174,13 +174,25 @@ timezone: Asia/Shanghai
 
 -
 
+### 07.19
+
+- https://web3url.io/#/
+  - 工作原理：输入 Web3 协议 URL + ENS、解析合约地址、调用合约返回 HTML、渲染页面
+  - 基本上要支持整个 http 协议的东西
+  - DNS 是去中心化的，基于 ENS
+  - 存储在 L2 Storage 上面
+  - 动态的由智能合约生成
+  - Wanna contribute to the decentralization and run your gateway? Apply a grant for support!
+    - TODO Public Goods Node 可以运行一个，LXDAO 的 gateway
+  -
+
 TODO：
 
+- https://docs.web3url.io/ 官方文档
 - 找到相应的合约看看代码实现
 - 查看对应的 ERC 原文
   - https://eip.fun/eips/eip-4804
   - https://eip.fun/eips/eip-6860
-- 查看官网 https://web3url.io/
 - 原生支持的浏览器实现 https://github.com/web3-protocol/evm-browser
 - 第一节课 https://youtu.be/hmN77o-ex8I
 - 查看 https://github.com/ethstorage/awesome-web3
