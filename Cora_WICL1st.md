@@ -102,4 +102,16 @@ web3://<contract>[:<chainId>]/<path>
 - 域名解析：了解域名解析方式 [web3curl 应用程序](https://github.com/web3-protocol/web3curl-js)
 - 解析模式：自动模式；手动模式；资源请求模式。
 
-<!-- Content_END -->
+### 07.19
+
+今日学习时间：2h
+
+- 学习内容小结：学习[Web3URL 文档](https://docs.web3url.io)部分章节，HTTPS 网关，EVM 浏览器，Chrome 扩展程序，Web3:// Sandbox，Web3curl ，Librairies。
+- HTTPS 网关：w3eth.io 由 EthStorage 团队提供，是以太坊主网和 ENS 的单区块链公共网关。
+- EVM 浏览器：EVM 浏览器是基于 electron/chromium 的基本 Web 浏览器，它通过 web3protocol 库支持 web3:// 该协议。它包括对 Frame.sh 钱包的支持。
+- Chrome 扩展程序：尚不安全，无法提供在 Chrome 网上应用店，可手动编译用于项目演示。
+- Web3:// Sandbox
+- Web3curl：调试
+- Librairies
+
+- <!-- Content_END -->
