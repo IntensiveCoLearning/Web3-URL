@@ -12,11 +12,7 @@
 - 每期残酷共学以 4 周为一个周期，第一周为共学启动报名和熟悉共学规则，第二周到第四周将正式启动共学（为期 21 天），中途不得加入。
 - 共学方向包括不限于：英语、区块链、以太坊、Web3 技术、DAO、加密思潮等，自由自主发起。内容包括不限于：视频、书籍、文章、课程、实战。
 
-报名方式是完全基于 **GitHub** 的流程，通过提交 **PR** 进行申请，合并 PR 之后拥有更新权限，更新到自己的 Markdown 笔记下面。如果你不熟悉 GitHub 和 Git 的操作，请先自行学习。通常还会有一个小型的 TG 交流群方便交流。
-
-关于更多「残酷共学」的介绍请参见：<https://forum.lxdao.io/t/topic/1654>，关于更多正在发生的残酷共学请参见：<https://intensivecolearn.ing/>。
-
-如果你有任何有关残酷共学的疑问或者想法，请到 [残酷共学 Telegram 群](https://t.me/LXDAO/6215) 联系我们。
+报名方式是完全基于 **GitHub** 的流程，通过提交 **PR** 进行申请，合并 PR 之后拥有更新权限，更新到自己的 Markdown 笔记下面。如果你不熟悉 GitHub 和 Git 的操作，请先自行学习。通常还会有一个小型的 TG 交流群方便交流。关于更多「残酷共学」的相关介绍请参见[这里](https://forum.lxdao.io/t/topic/1654)，关于更多正在发生的残酷共学请参见 [IntensiveCoLearning GitHub 页面](https://intensivecolearn.ing/)。
 
 ## Web3 URL 残酷共学
 
@@ -88,7 +84,7 @@ LXDAO & ETHStorage Host 的 Web3 URL 残酷共学将邀请 [Qi Zhou](https://twi
 
   - Step1: 直接 Fork 这个仓库，免费报名。
   - Step2: 复制 Template_WICL1st.md （这个非常重要！）创建你的个人学习笔记，按照文档内提示要求填写你的报名信息，并且重命名为你的名字：YourName_WICL1st.md。
-  - Step3: 创建一个 PR 到当前仓库，本残酷共学助教会对你的 PR 进行 review，review 通过后，你的 PR 会被 merge 到 main 分支。「**Web3 URL 残酷共学记录表**」之后会自动登记你的名字，即报名成功。最后请记得加入 Telegram 群组保持交流：https://t.me/LXDAO/8748 （LXDAO TG #Web3 URL IntensiveCoLearning 频道）。请加入群组并且在群里报到一下方便助教记录。
+  - Step3: 创建一个 PR 到当前仓库，本残酷共学助教会对你的 PR 进行 review，review 通过后，你的 PR 会被 merge 到 main 分支。「**Web3 URL 残酷共学记录表**」之后会自动登记你的名字，即报名成功。最后请记得加入 [Web3 URL 残酷共学频道](https://t.me/LXDAO/8748)保持交流。
 
 
 - **共学证明打卡**：
