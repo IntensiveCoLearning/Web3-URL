@@ -222,5 +222,15 @@ Web3 URL的域名部分可以是以下几种类型之一:
    - 例如: ipfs/QmYwAPJzv5CZsnA625s3Xf2nemtYgPpHdWEz79ojWnPbdG
 
 ### 07.19
-
+网关的工作流程如下：
+客户端发送HTTPS请求到网关
+网关解析Web3 URL
+网关访问相应的Web3资源
+网关将资源转换为HTTP响应
+网关将响应发送回客户端
+### 07.20
+### 07.21
+### 07.22
+### 07.23
+### 07.24
 <!-- Content_END -->
