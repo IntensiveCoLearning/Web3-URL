@@ -137,5 +137,12 @@ timezone: Asia/Tokyo
 - 今日学习时间：21:00～22:00 共60分钟
 - 学习内容小结：[EIP4804](https://eips.ethereum.org/EIPS/eip-4804)
 
-
+### 07.19
+- 今日学习时间：20:00～21:30 共90分钟
+- 学习内容小结：### 07.18
+- 今日学习时间：21:00～22:00 共60分钟
+- 学习内容小结：
+   - [web3url文档](https://docs.web3url.io/)（核心指南）学习中，明天继续
+   - 下载试用了[EVM 浏览器](https://github.com/web3-protocol/evm-browser/releases)
+   - 看了实例 [awesome-web3](https://github.com/ethstorage/awesome-web3)
 <!-- Content_END -->
