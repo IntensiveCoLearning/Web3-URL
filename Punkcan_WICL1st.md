@@ -290,8 +290,31 @@
 
 ### 07.19
 
-- 今日学习时间：
+- 今日学习时间：0.5h
 - 学习内容小结：
+	- 网关
+		- 网关的原理是将http的请求转换成web3protocol-go能处理的web3://
+		- 目前firefox的addon，是先转web3://的链接为https://的链接，然后送给网关去获取需求
+		- 也就是说未来如果有浏览器原生支援，就不需要网关了
+		- 目前有w3link.io多链跟w3eth.io主网单链两个官方项目网关
+		- 不过目前多链网关有支援的范围，不是所有测试网都可以用（之前看还没有支援holesky，目前已经加入支援）
+		- 目前有一款项目方释出的EVM Browser，Chrome extension 对安全需求高，无法上架
+		- https://w3-sandbox.eth.eth.w3link.io/ 是一个sandbox，可以测试完成的web，回传数据的细节，跟Dev视窗相比，比较能清楚分出哪些Web3数据
+		- Web3curl 虽然是用来调试的，可以实践web3://的脚本化
+		- web3curl -v可以列出调试细节
+		- 最后一个（我觉得）比较重要的是[web3protocol-js](https://github.com/web3-protocol/web3protocol-js) ，从源码粗浅的看来，似乎可以让一般https的网站链接获取到web3://的资源，甚至可以跳过网关，因为他这跟EVM节点API交互，而不是跟网关交互
+		- 还有web3protocol-go，这是做网关的关键，不过我不熟悉Go
+		- 
+	- ethfs-uploader
+		- 算是一个档案上传的工具，可以透过npm安装
+		- 算是给不会写合约的用户一个方便的模式
+		- 第一步可以用来创建目录合约，这个合约可以方便你之后上传档案
+		- 上传文件时，呼叫合约为了要辨识是哪一条链，要去查一下链的缩写[the EIP-3770 address](https://eips.ethereum.org/EIPS/eip-3770)，采用EIP-3770 的格式
+		- 格式：w3q-g:0x37DF32c7a3c30D352453dadACc838461d8629016
+			- 但这里我有点不懂，为什么要用缩写？因为缩写不是很好查询
+		- 完整的上传格式范例 npx ethfs-uploader /Users/.../dist w3q-g:0x37DF32c7... --privateKey 0x112233...
+		- 暂时安装不了，无法实操，过两天再弄
+		- 
 - Homework 部分（如果有安排需要填写证明完成）
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 
@@ -317,5 +340,12 @@
 - 尝试布署合约做下两个Homework
 - 研究0x2b51A751d3c7d3554E28DC72C3b032E5f56Aa656的架构
 - 了解网关如何架设
+- Claim EthStorage Testnet tokens(Use a new address)
+- Upload a file via web3box and paste link
+- Write  a blog and paste link
+- Use ethfs-uploader to upload a folder
+- Challenge: Use ERC6944 to return a uncompressed compressed data determine a customized MIME
+- 研究如果使用web3protocol-js，是否可以不用网关就获取数据
+
 
 <!-- Content_END -->
