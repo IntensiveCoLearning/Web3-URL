@@ -155,13 +155,60 @@ node . -v 'web3://w3url.eth'
   - Deploy a contract in manual model and say "hello world" 手动模式
 
 - Question and Ideas
-
   - Web3URL Chrome 插件使用研究 
-
     - https://github.com/Whitehare2023/web3url
-
     - https://github.com/ComfyGummy/chrome-web3
 
+### 07.19
+
+- 今日学习时间：1 小时
+
+- 学习内容小结：
+
+  - WEB3:// CLIENTS 学习了解
+
+    - 三种方式：HTTPS gateways、EVM Browser、Chrome extension
+
+    - Librairies：web3protocol-go、web3protocol-js
+
+    - 两个 Debug 工具：[Web3:// Sandbox](https://w3-sandbox.eth.eth.w3link.io/) （这个比较直观） + Web3curl （单独安装）
+
+      ![rpc-eth](img/rpc-eth.png)
+
+  - 补充学习：
+
+    - [IANA - Uniform Resource Identifier (URI) SCHEMES（统一资源标识符方案）](http://www.iana.org/assignments/uri-schemes)
+
+    - URI （Uniform Resource Identifier，统一资源标识符）。URI 属于 URL 更高层次的抽象，一种字符串文本标准。就是说，URI 属于父类，而 URL 属于 URI 的子类。URL 是 URI 的一个子集。二者的区别在于，URI 表示请求服务器的路径，定义这么一个资源。而 URL 同时说明要如何访问这个资源（http://）。
+
+
+    ```http
+    ftp://ftp.is.co.za/rfc/rfc1808.txt (URL)
+    http://www.ietf.org/rfc/rfc2396.txt (URL)
+    ldap://[2001:db8::7]/c=GB?objectClass?one (URL)
+    mailto:John.Doe@example.com (URL)
+    news:comp.infosystems.www.servers.unix (URL)
+    tel:+1-816-555-1212
+    telnet://192.0.2.16:80/ (URL)
+    urn:oasis:names:specification:docbook:dtd:xml:4.1.2
+    ```
+
+    ```html
+    scheme://host[:port#]/path/.../[;url-params][?query-string][#anchor]
+    scheme //有我们很熟悉的 http、https、ftp 以及著名的 ed2k，迅雷的 thunder 等。
+    host //HTTP 服务器的IP地址或者域名
+    port# //HTTP 服务器的默认端口是 80 (可省略)。如果使用了别的端口必须指明，例如 tomcat 的默认端口是 8080 http://localhost:8080/
+    path //访问资源的路径
+    url-params //所带参数
+    query-string //发送给 http 服务器的数据
+    anchor //锚点定位
+    ```
+
+- Homework 无
+
+- Questions and Ideas
+
+  - RPC gateway 是去中心化的吗？🤔
 
 
 
