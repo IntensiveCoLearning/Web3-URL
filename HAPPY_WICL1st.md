@@ -106,7 +106,7 @@ Deploy a contract in manual model and say “hello world”
 
 今日学习时间：1.5h
 
-- 学习内容小结：今日阅读Web3URL白皮书Vision部分 https://docs.web3url.io/（原文链接）
+- 学习内容小结：今日阅读Web3URL白皮书Vision部分 https://docs.web3url.io/
   - Visoin部分主要介绍了Web3URL的愿景、区块链dApp的问题、web3://协议解决方案以及一些案例
   - Background段落主要交代了web3叙事以及dapp应用越来越受到关注，以及目前web3用户访问dApp的路径，为了降低用户使用区块链应用门槛，钱包和节点服务提供商（NSP)起到了重要作用，用户通过钱包和区块链进行交互，NSP主要负责用户端和区块链之间的数据传输。
    ![图片](https://github.com/user-attachments/assets/a07b0619-9e1b-4a19-93a5-f7d1b244230f)
@@ -127,7 +127,7 @@ Deploy a contract in manual model and say “hello world”
 
 今日学习时间：1h
 
-- 学习内容小结：今日阅读Web3URL白皮书WEB3:// URL STRUCTURE部分https://docs.web3url.io/web3-url-structure/base)（原文链接）
+- 学习内容小结：今日阅读Web3URL白皮书WEB3:// URL STRUCTURE部分https://docs.web3url.io/web3-url-structure/base)
   - 了解WEB3URL的基本结构：web3://<contract>[:<chainId>]/<path>
   - <contract>可以是合约地址，例如 ，0xA5aFC9fE76a28fB12C60954Ed6e2e5f8ceF64Ff2也可以是域名，例如w3url.eth。
   - chainId是可选的，指示查询智能合约的区块链的链 id。web3://0x5a985f13345e820aa9618826b85f74c3986e1463:5/tokenHTML/2例如，在 goerli 区块链（链 id = 5）上查询。
