@@ -247,6 +247,11 @@ function resolveMode() external pure returns (bytes32) {
   
   可以得到响应 Hello World
 
+### 07.19
+
+- 今日学习时间：1 h
+- 学习内容小结：学习了 fallback 方法的机制和编写方法。尝试部署 manual mode 的 web3url 合约。暂时还未成功。
+
 
 
 <!-- Content_END -->
