@@ -73,7 +73,6 @@
 - 学习内容小结：WEB3 URL 解析模式 [笔记](https://pinto-zinnia-ba1.notion.site/9e311050da8844cdb081483cd8249f0e?pvs=25)
 
 
-
 ### 07.17
 
 - 今日学习时间：30 min
@@ -83,6 +82,11 @@
 
 - 今日学习时间：80 min
 - 学习内容小结：Ethers.js 学习 [笔记](https://pinto-zinnia-ba1.notion.site/Ethers-js-8414eb18f782426799ed69ace8e62166?pvs=25)
+
+### 07.19
+
+- 今日学习时间：120 min
+- 学习内容小结：Foundry及使用 学习 [笔记](https://pinto-zinnia-ba1.notion.site/Foundry-a9743d0f2b87468789ffd72f938c6c62?pvs=25)
 
 XXX
 <!-- Content_END -->
