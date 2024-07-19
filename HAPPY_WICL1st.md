@@ -127,7 +127,7 @@ Deploy a contract in manual model and say “hello world”
 
 今日学习时间：1h
 
-- 学习内容小结：今日阅读Web3URL白皮书WEB3:// URL STRUCTURE部分https://docs.web3url.io/web3-url-structure/base)
+- 学习内容小结：今日阅读Web3URL白皮书WEB3:// URL STRUCTURE部分https://docs.web3url.io/web3-url-structure/base
   - 了解WEB3URL的基本结构：web3://<contract>[:<chainId>]/<path>
   - <contract>可以是合约地址，例如 ，0xA5aFC9fE76a28fB12C60954Ed6e2e5f8ceF64Ff2也可以是域名，例如w3url.eth。
   - chainId是可选的，指示查询智能合约的区块链的链 id。web3://0x5a985f13345e820aa9618826b85f74c3986e1463:5/tokenHTML/2例如，在 goerli 区块链（链 id = 5）上查询。
