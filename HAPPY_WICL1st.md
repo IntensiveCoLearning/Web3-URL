@@ -123,7 +123,7 @@ Deploy a contract in auto model and say “hello world”
 Deploy a contract in manual model and say “hello world”    
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 
-### 07.18
+### 07.19
 
 今日学习时间：1h
 
