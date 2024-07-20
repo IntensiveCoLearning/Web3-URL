@@ -254,7 +254,7 @@ Manual Mod 返回数据默认为text/html，如果不是会根据MIME后缀名�
 
 Manual Mod可以很精准的定位资源在合约中的位置，但很明显这种直接将相对位置作为call data的方式是需要特殊支持的，就好像写web框架需要单独的文件服务一样，它更符合我们对于web2资源访问的构思。
 
-### 07.18
+***07.18***
 
 博客地址：[web3-url-colearning-day4 (antigone4224.github.io)](https://antigone4224.github.io/web3-url-colearning-day4)
 
@@ -281,7 +281,7 @@ EthStorage 还为完全链上应用程序（如游戏、社交网络、人工智
 
 ethstorage的愿景是让以太坊网络的存储变得不再昂贵，到了一种可接受的程度，这样通过web3 url许多web2的网络服务也就可以部署在web3上了。
 
-### 07.19
+***07.19***
 
 博客地址：[web3-url-colearning-day5 (antigone4224.github.io)](https://antigone4224.github.io/web3-url-colearning-day5)
 
@@ -306,5 +306,68 @@ https://galileo.web3q.io/file.w3q/0x81fb5c383f192f7fa1f0788e1a06aed26ffac469/b_d
 花费两个测试ETH
 
 ![image-20240719154421408](https://raw.githubusercontent.com/antigone4224/blog-img/main/image-20240719154421408.png)
+
+### 7.20
+
+博客地址：[web3-url-colearning-day6 (antigone4224.github.io)](https://antigone4224.github.io/web3-url-colearning-day6)
+
+今天学习一下[Ethfs](https://docs.ethstorage.io/dapp-developer-guide/tutorials/upload-your-file-folder-with-ethfs-cli)
+
+安装Ethfs-cli
+
+```
+npm install -g ethfs-cli
+ethfs-cli upload -f <directory|file> -a <address> -p <private-key> -r [rpc] -t [upload-type]
+
+```
+
+创建Flat Directory 合约
+
+```
+ethfs-cli create -p privkey
+chainId = 3334
+providerUrl = https://galileo.web3q.io:8545
+FlatDirectory Address: 0x6F3F9E477a931d208c06efE7E6D3af251B000E94
+```
+
+得到
+
+上传第一个文件夹
+
+```
+ethfs-cli upload -f myfolder -a 0x6F3F9E477a931d208c06efE7E6D3af251B000E94 -c 3334 -p dadd64540987deea8210cfadcf50aeeed4ec14950a1f05260f7f59084f3b0727
+providerUrl = https://galileo.web3q.io:8545
+chainId = 3334
+address: 0x6F3F9E477a931d208c06efE7E6D3af251B000E94
+
+Send Success: File: hello.txt, Chunk Id: 0, Transaction hash: 0xa7a48056301a4b1773dff28a825576d6b8e2b2dd700d8a30dbbac77a4ac0450b
+File hello.txt chunkId: 0 uploaded!
+
+
+Total Upload Chunk Count: 1
+Total Upload File Size: 0.005859375 KB
+Total Cost: 0.0 ETHethfs-cli upload -f myfolder -a 0x6F3F9E477a931d208c06efE7E6D3af251B000E94 -c 3334 -p dadd64540987deea8210cfadcf50aeeed4ec14950a1f05260f7f59084f3b0727
+providerUrl = https://galileo.web3q.io:8545
+chainId = 3334
+address: 0x6F3F9E477a931d208c06efE7E6D3af251B000E94
+
+Send Success: File: hello.txt, Chunk Id: 0, Transaction hash: 0xa7a48056301a4b1773dff28a825576d6b8e2b2dd700d8a30dbbac77a4ac0450b
+File hello.txt chunkId: 0 uploaded!
+
+
+Total Upload Chunk Count: 1
+Total Upload File Size: 0.005859375 KB
+Total Cost: 0.0 ETH
+```
+
+成功上传
+
+web3://0x6F3F9E477a931d208c06efE7E6D3af251B000E94:3334/hello.txt
+
+![image-20240720184338899](https://raw.githubusercontent.com/antigone4224/blog-img/main/image-20240720184338899.png)
+
+![image-20240720184656521](https://raw.githubusercontent.com/antigone4224/blog-img/main/image-20240720184656521.png)
+
+
 
 <!-- Content_END -->
