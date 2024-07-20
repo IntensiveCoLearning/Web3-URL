@@ -6,19 +6,19 @@
 
 ---
 
-# [ Simon ]
+# [ 你的名字 ]
 
 1. **自我介绍：**
 
-   Simon，练习时长2年半的时长的前端开发，希望能学习Web3 URL，更深入了解Web3的世界
+   RuoYan [ 前web2游戏开发者，转行web3开发，有链游开发经验，希望学习Web3 URL ]
 
 2. **组队期待：**
 
-   想参与一些比较COOL的项目
+   希望一起做个链上德扑 [ 需要前端开发同学和合约同学，欢迎一起搞点东西 ]
 
 3. **你认为你会完成本次 Web3 URL 的残酷学习吗？**
 
-   Yes 100%
+   Yes
 
 ---
 
@@ -55,24 +55,17 @@
 
 ## 笔记证明 Notes Proof
 <!-- Content_START --> 
-
 ### 07.15
 
-- 今日学习时间：1h  
-- 学习内容小结：初步了解WEB3 URL，解析模式
+- 今日学习时间：70minute
+- 学习内容小结：复习整理web3url理论基础，详细在[学习笔记](https://github.com/cmu-ruoyan-lgl/myLearnNote/tree/main/Lxdao%3Aweb3-url-colearning)
 
 ### 07.16
 
-- 今日学习时间：1h  
-- 学习内容小结：回顾昨天的回放，学习EIP6860协议，学习[Web3URL 文档](https://docs.web3url.io)
+- 今日学习时间：100minute
+- 学习内容小结：听讲座，看以太坊黄皮书。
 
 ### 07.17
 
-
-### 07.18
-
-- 今日学习时间：1h  
-- 学习内容小结：学习Rust基础(https://www.hackquest.io/zh/learning-track/b502eb82-9254-45e7-be22-1f460aafb2cf)
-
-### 07.19
+XXX
 <!-- Content_END -->

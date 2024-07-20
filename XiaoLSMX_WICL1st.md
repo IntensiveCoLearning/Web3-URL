@@ -6,19 +6,19 @@
 
 ---
 
-# [ Simon ]
+# [ 你的名字 ]
 
 1. **自我介绍：**
-
-   Simon，练习时长2年半的时长的前端开发，希望能学习Web3 URL，更深入了解Web3的世界
+   肖清之，准大二学生，目前就读于温州肯恩大学，计算机科学与技术专业。今年一月开始学习相关知识并在币圈二级市场有过投资经历。目前学习web3领域知识比较漫无目的qwq不过最终是想在元宇宙领域有所建树。希望在共学中学习更多 web3 技术，认识志同道合的朋友。 
 
 2. **组队期待：**
 
-   想参与一些比较COOL的项目
+   会一些java和python，并有过简单的项目经历。有轻量代码需求的可组队~
+   其他的我也可以帮忙
 
-3. **你认为你会完成本次 Web3 URL 的残酷学习吗？**
+4. **你认为你会完成本次 Web3 URL 的残酷学习吗？**
 
-   Yes 100%
+   暑假期间时间比较宽裕，希望能全情投入完成。
 
 ---
 
@@ -55,24 +55,34 @@
 
 ## 笔记证明 Notes Proof
 <!-- Content_START --> 
-
 ### 07.15
 
-- 今日学习时间：1h  
-- 学习内容小结：初步了解WEB3 URL，解析模式
+举例示范：
+
+- 今日学习时间：1h
+- 学习内容小结：b站网课：《java语言从0开始编写一个区块链》
+- <img width="164" alt="image" src="https://github.com/user-attachments/assets/5742745a-65c8-45c5-8b68-e9af65fe055c">
+
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+
+
 
 ### 07.16
+- 今日学习时间：1h
+- 学习内容小结：b站网课：《java语言从0开始编写一个区块链》、
+- <img width="197" alt="image" src="https://github.com/user-attachments/assets/9c841370-f4c3-48c5-a2cc-c6512af51cfe">
 
-- 今日学习时间：1h  
-- 学习内容小结：回顾昨天的回放，学习EIP6860协议，学习[Web3URL 文档](https://docs.web3url.io)
-
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+  
 ### 07.17
-
+- 今日学习时间：1h
+- 学习内容小结：b站网课：《java语言从0开始编写一个区块链》
+-<img width="145" alt="image" src="https://github.com/user-attachments/assets/95f68fb7-2ace-400d-8377-229b2db028b0">
 
 ### 07.18
+- 今日学习时间：1h
+- 学习内容小结：b站网课：《java语言从0开始编写一个区块链》
+-<img width="119" alt="image" src="https://github.com/user-attachments/assets/1aa56318-a8d0-4ca4-974b-c0f6efd7d1ec">
 
-- 今日学习时间：1h  
-- 学习内容小结：学习Rust基础(https://www.hackquest.io/zh/learning-track/b502eb82-9254-45e7-be22-1f460aafb2cf)
-
-### 07.19
-<!-- Content_END -->

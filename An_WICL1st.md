@@ -6,19 +6,19 @@
 
 ---
 
-# [ Simon ]
+# An
 
 1. **自我介绍：**
 
-   Simon，练习时长2年半的时长的前端开发，希望能学习Web3 URL，更深入了解Web3的世界
+   Web Developer and Game Developer
 
 2. **组队期待：**
 
-   想参与一些比较COOL的项目
+   暂无想法
 
 3. **你认为你会完成本次 Web3 URL 的残酷学习吗？**
 
-   Yes 100%
+   Maybe 90%
 
 ---
 
@@ -55,24 +55,38 @@
 
 ## 笔记证明 Notes Proof
 <!-- Content_START --> 
+举例示范：
+
+- 今日学习时间：XXXX
+- 学习内容小结：XXXX
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 
 ### 07.15
+- 今日学习时间：60 min
+- 学习内容小结：WEB3 URL 介绍和结构、测试例子[笔记](https://pinto-zinnia-ba1.notion.site/Web-URL-9120a5e5456f48d1be74c5b33166d5a1)
 
-- 今日学习时间：1h  
-- 学习内容小结：初步了解WEB3 URL，解析模式
+
 
 ### 07.16
+- 今日学习时间：40 min
+- 学习内容小结：WEB3 URL 解析模式 [笔记](https://pinto-zinnia-ba1.notion.site/9e311050da8844cdb081483cd8249f0e?pvs=25)
 
-- 今日学习时间：1h  
-- 学习内容小结：回顾昨天的回放，学习EIP6860协议，学习[Web3URL 文档](https://docs.web3url.io)
 
 ### 07.17
 
+- 今日学习时间：30 min
+- 学习内容小结：了解WEB3 客户端 [笔记](https://pinto-zinnia-ba1.notion.site/WEB3-ab02ac5d1ee3421e98b8d7b651f5037b?pvs=25)
 
 ### 07.18
 
-- 今日学习时间：1h  
-- 学习内容小结：学习Rust基础(https://www.hackquest.io/zh/learning-track/b502eb82-9254-45e7-be22-1f460aafb2cf)
+- 今日学习时间：80 min
+- 学习内容小结：Ethers.js 学习 [笔记](https://pinto-zinnia-ba1.notion.site/Ethers-js-8414eb18f782426799ed69ace8e62166?pvs=25)
 
 ### 07.19
+
+- 今日学习时间：120 min
+- 学习内容小结：Foundry及使用 学习 [笔记](https://pinto-zinnia-ba1.notion.site/Foundry-a9743d0f2b87468789ffd72f938c6c62?pvs=25)
+
+XXX
 <!-- Content_END -->
