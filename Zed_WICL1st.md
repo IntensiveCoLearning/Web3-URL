@@ -112,7 +112,7 @@ timezone: Asia/Shanghai
 
 - 今日学习时间：2h
 - 学习内容小结：阅读docs.web3url.io
-- [Part 1 - Vision 阅读笔记](https://www.notion.so/Day-7-18-docs-web3url-io-5e5264c51bc243ec9d6e7f30137ea006?pvs=4)
+   - [Part 1 - Vision 阅读笔记](https://www.notion.so/Day-7-18-docs-web3url-io-5e5264c51bc243ec9d6e7f30137ea006?pvs=4)
 - Homework 部分（如果有安排需要填写证明完成）
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
    - 之前碎片化的看了以下这个docs，感觉理解了之后更清晰一些，比之前清除了一些模模糊糊的感觉
@@ -124,7 +124,7 @@ timezone: Asia/Shanghai
 
 - 今日学习时间：1h
 - 学习内容小结：阅读docs.web3url.io
-- [Part 2.1 - Basic structure 阅读笔记](https://www.notion.so/Day-7-19-800cc3a737ea49d588a34ee549971a51?pvs=4)
+   - [Part 2.1 - Basic structure 阅读笔记](https://www.notion.so/Day-7-19-800cc3a737ea49d588a34ee549971a51?pvs=4)
 - Homework 部分（如果有安排需要填写证明完成）
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
    - 稍微查看了以下同学的笔记，感觉自己的基础太薄，需要学很久去补一些概念
@@ -132,6 +132,27 @@ timezone: Asia/Shanghai
    - 明天继续阅读这个docs文档
 
 ### 07.20
+
+- 今日学习时间：2h
+- 学习内容小结：
+   - [Part 2.2/2.3 - Structure 阅读笔记](https://www.notion.so/Day-7-20-4143c4bc41464a949e2f3763df0dbf62?pvs=4)
+- Homework 部分（如果有安排需要填写证明完成）
+   - [hw1 q3 second try fail](https://www.notion.so/hw1-q3-second-try-7d18b9c7126543448e26742aca6b5adc?pvs=4)
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+   - 有认真做好笔记，认真做好阅读。虽然基础弱但有认真补。
+- TODO
+   - 明天继续阅读这个docs文档
+   - 继续尝试完成作业
+
+### 07.21
+
+- 今日学习时间：
+- 学习内容小结：
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+- TODO
+
+### 07.22
 
 - 今日学习时间：
 - 学习内容小结：
