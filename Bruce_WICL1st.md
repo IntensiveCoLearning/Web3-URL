@@ -203,21 +203,36 @@ timezone: Asia/Shanghai
   - TODO 默认没有参数的 calldata 是 0x 还是 0x2F？
   - web3://cyberbrokers-meta.eth/renderBroker/9999
     - "Calldata" = "0x" + keccak("view(uint256)")[0:4] + abi.encode(uint256(9999)). 为什么是 view(uint256) method？而不是 renderBroker 方法？
+    - Update：https://eip.fun/eips/eip-6860 在这里的文档写的比较清楚，应该是 renderBroker 方法
   - TODO 可以跟 bodhi 之类的智能合约都联合起来，前端可以免除？
   - TODO 博客换肤功能，可以通过部署新的合约，然后将 ens 指向新的合约实现
   - TODO ENS Blog，直接基于 ENS 开发博客系统
   - TODO returns 可以支持 GraphQL 查询语句进行组装，这样不就成了 The GraphQL 了吗
     - TODO 有什么链上的数据是比较适合用合约调用和读取的？
+    - 可能会极大增加客户端的复杂度，可能是个 bad idea
   - returns attribute in query tells the format of the returned data. If not specified, the returned message data will be parsed in "(bytes32)" and MIME will be set based on the suffix of the last argument. If returns is "()", the returned data will be parsed in raw bytes in JSON. Otherwise, the returned message will be parsed in the specified returns attribute in JSON. If multiple returns attributes are present, the value of the last returns attribute will be applied. Note that returnTypes is the alias of returns, but it is not recommended to use and is mainly for backward-compatible purpose.
   - Example 4，这里的 to 0x9e081Df45E0D167636DB9C61C7ce719A58d82E3b 是如何确定的？
   - TODO maximum likelihood 的方法，其实会导致 Native 浏览器实现的复杂性，这一点需要纳入考虑，至少把规则写清楚而去比较确定
+
+### 7.21
+
+- https://eip.fun/eips/eip-6860
+  - TODO 通过 rendering 智能合约，实现对某些 dapp 的调用，例如 Uniswap，然后通过 Web3 URL 进行解析和渲染，可以自己搭建和部署，本地一键启动，这样实现抗审查，比如对于龙卷风以及前端、DNS、Web Server 可能的被污染情况。写一篇文章：解决 Web3 应用抗审查的终极方案，全链上
+  - TODO Web3 APP 应用市场，纯粹的全链上应用，创造 fully-onchain dapp 这个概念
+  - TODO 感觉里面关于解析规则的表达和关键词 mPathNoscheme 似乎不是很好理解，需要查看一下 RFC 3986 等标准，看看是否是标准的表达方式，然后或许可以通过一些例子使其更加易懂，提交之后可以变成作者
+  - TODO Resolve mode 是否需要存在两种模式？
+    - manual mode 主要用于将合约按照 html 渲染，会这样调用 "To" = contractAddress and "Calldata" = "0x2F"，MIME type 是 `text/html`
+    - TODO To 和 From 在合约调用的区别是什么来着？记不清了
+  - TODO 用智能合约实现一个 CRUD 的 RESTful API demo，如何实现权限控制？
+  - Resolve 的逻辑感觉可以写的更加清晰，比如拆解出来几个必要的元素，然后通过实际例子，列出来。目前使用了偏口语的描述
+  - TODO 对于 NFT Metadata 来说，可以指向这个获得直接的 Web 内容，如果是 ipfs:// 还需要额外的一些工作，没法直接转换成 Web 访问，Web3 URL 支持 IPFS 吗？
+  - TODO 标准缺少 Web3 URL gateway 的实现细节，gateway 的客户端应该也有多种语言的实现，比如 Python、JS、Rust、Go 等
 
 TODO：
 
 - https://docs.web3url.io/ 官方文档
 - 找到相应的合约看看代码实现
 - 查看对应的 ERC 原文
-  - https://eip.fun/eips/eip-4804
   - https://eip.fun/eips/eip-6860
 - 原生支持的浏览器实现 https://github.com/web3-protocol/evm-browser
 - 第一节课 https://youtu.be/hmN77o-ex8I
