@@ -135,7 +135,7 @@
   
 ### 07.20
 
-- 今日学习时间：23:30~11:45
+- 今日学习时间：23:30~23:45
 - 学习内容小结：
   - 粗略看了一下 awesome-web3 https://github.com/ethstorage/awesome-web3 列出的资源
 - Homework 部分（如果有安排需要填写证明完成）
