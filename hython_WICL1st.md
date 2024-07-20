@@ -145,4 +145,10 @@ timezone: Asia/Tokyo
    - [web3url文档](https://docs.web3url.io/)（核心指南）学习中，明天继续
    - 下载试用了[EVM 浏览器](https://github.com/web3-protocol/evm-browser/releases)
    - 看了实例 [awesome-web3](https://github.com/ethstorage/awesome-web3)
+ 
+### 07.20
+- 今日学习时间：20:30～21:20 共50分钟
+- 学习内容小结：
+   - [web3url文档](https://docs.web3url.io/)（核心指南）
+
 <!-- Content_END -->
