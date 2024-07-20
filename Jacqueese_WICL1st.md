@@ -339,4 +339,11 @@ TODO：
    - 稍微查看了以下同学的笔记，感觉自己的基础太薄，需要学很久去补一些概念
 - TODO
    - 明天继续阅读这个docs文档
+
+### 07.20
+
+- 今日学习时间：0.5 hour
+- 学习内容小结：
+  - Read codebase https://github.com/web3-protocol/web3protocol-js
+  - Read codebase https://github.com/web3-protocol/web3curl-js
 <!-- Content_END -->
