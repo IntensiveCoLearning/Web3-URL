@@ -122,9 +122,9 @@ timezone: Asia/Shanghai
 
 ### 07.20
 
--   今日学习时间：
--   学习内容小结：
--   Homework 部分：
--   Question and Ideas：
+-   今日学习时间：1 小时（看 Telegram 群内消息，查看资料）
+-   学习内容小结：研究写 Manual Mode 的智能合约时，怎么写 html 代码
+-   Homework 部分：Nil
+-   Question and Ideas：写 Manual Mode 的智能合约时，怎么写 html 代码
 
 <!-- Content_END -->
