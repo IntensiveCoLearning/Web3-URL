@@ -120,7 +120,7 @@
         - web3-contract-address：0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48
         - web3-host-domain-name-resolver：ens
         - web3-mode-auto-method：balanceOf
-        - ![web3-mode-auto-method](/Users/luffythinker/Web3-URL/img/web3-mode-auto-method.png)
+        - ![web3-mode-auto-method](img/web3-mode-auto-method.png)
 
 
 - Question and Ideas
