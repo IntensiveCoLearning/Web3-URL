@@ -132,4 +132,13 @@
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
   - 希望能把现在的几个模块梳理一下相互之间的关系：wbox, sandbox, w3ns 等
   - 域名里面 为什么一会是 web3q、web3eth、web3url 相互之间各种连接？ 有什么约束吗
+  
+### 07.20
+
+- 今日学习时间：23:30~11:45
+- 学习内容小结：
+  - 粗略看了一下 awesome-web3 https://github.com/ethstorage/awesome-web3 列出的资源
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+
 <!-- Content_END -->
