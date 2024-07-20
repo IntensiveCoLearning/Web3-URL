@@ -186,6 +186,32 @@ timezone: Asia/Shanghai
     - TODO Public Goods Node 可以运行一个，LXDAO 的 gateway
   -
 
+### 7.20
+
+- https://docs.web3url.io/web3-clients/https-gateway#w3link.io-all-blockchains-public-gateway
+  - gateway 格式 https://xxxx.eth.1.w3link.io/xxx?returns=(string)
+- https://docs.web3url.io/
+  - TODO Web3 URL 应该针对 NFT 等合约创建一个标准的 Web 智能合约库，这样可以让 NFT 或者 Defi 协议等自动天然的支持交易页面的渲染，完全上链。当然，次之就是通过合约调用的方式，做一个独立的合约也可以
+    - 感觉目前常见的 Web server 组件和功能，都可以智能合约化，比如部署一个智能合约博客、论坛、推特等。但是编辑功能可能需要检查
+  - TODO 可以用一些插件可以支持将网站内容或者静态内容发布到链上，或者做一个 mirror？
+    - 从这个角度来看，EthStorage 和 AR 或者 IPFS 的区别是什么？如何实现以太坊主网合约调用 EthStorage 的数据？如何实现 L2 之间的通信？
+  - TODO 可以创建一个 Web3 URL playground 和生成器，类似 GraphQL 这样
+  - https://docs.web3url.io/#id-2-categories-of-smart-contracts 标题的 2 一般是 Two？一开始以为是序号
+  - TODO Web3 URL gateway 应该也支持写入的场景，无非就是增加 POST 和 PUT method，然后传入相关参数调用合约，同时支付相应 L2 的 gas。从某种角度来说，Web3 URL 实现了以太坊等链的读写一致性
+    - 写入的实现？似乎有点麻烦，可能需要 SDK 生成签名等，Web3 URL 接收进行代理发送到网络，也可能需要类似 bundler 的角色，实现 gas fee 等代付，代付的话又会出现内容所属权或者抗审查的问题
+- https://eip.fun/eips/eip-4804
+  - TODO 默认没有参数的 calldata 是 0x 还是 0x2F？
+  - web3://cyberbrokers-meta.eth/renderBroker/9999
+    - "Calldata" = "0x" + keccak("view(uint256)")[0:4] + abi.encode(uint256(9999)). 为什么是 view(uint256) method？而不是 renderBroker 方法？
+  - TODO 可以跟 bodhi 之类的智能合约都联合起来，前端可以免除？
+  - TODO 博客换肤功能，可以通过部署新的合约，然后将 ens 指向新的合约实现
+  - TODO ENS Blog，直接基于 ENS 开发博客系统
+  - TODO returns 可以支持 GraphQL 查询语句进行组装，这样不就成了 The GraphQL 了吗
+    - TODO 有什么链上的数据是比较适合用合约调用和读取的？
+  - returns attribute in query tells the format of the returned data. If not specified, the returned message data will be parsed in "(bytes32)" and MIME will be set based on the suffix of the last argument. If returns is "()", the returned data will be parsed in raw bytes in JSON. Otherwise, the returned message will be parsed in the specified returns attribute in JSON. If multiple returns attributes are present, the value of the last returns attribute will be applied. Note that returnTypes is the alias of returns, but it is not recommended to use and is mainly for backward-compatible purpose.
+  - Example 4，这里的 to 0x9e081Df45E0D167636DB9C61C7ce719A58d82E3b 是如何确定的？
+  - TODO maximum likelihood 的方法，其实会导致 Native 浏览器实现的复杂性，这一点需要纳入考虑，至少把规则写清楚而去比较确定
+
 TODO：
 
 - https://docs.web3url.io/ 官方文档
