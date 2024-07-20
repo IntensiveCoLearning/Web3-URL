@@ -136,5 +136,9 @@ timezone: Asia/Shanghai
 - 今日学习时间：0.5h
 - 学习内容小结：对于智能合约安全进行了主要的学习，了解了ETH的分叉历史以及安全案例，写出安全的Solidity代码至关重要，本协议调用的智能合约是否存在容易被黑客盯上的点呢，会造成怎么样的后果呢，中心化的网关是否在这一点上能够防范这一点？
 - Question and Ideas: 暂无
+### 07.20
+- 今日学习时间：0.5h
+- 学习内容小结：学习了文档https://docs.web3url.io/，并且对于提案https://eips.ethereum.org/EIPS/eip-4804进行了学习。
+- Question and Ideas: 
 XXX
 <!-- Content_END -->
