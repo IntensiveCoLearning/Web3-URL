@@ -192,7 +192,7 @@ node . -v 'web3://w3url.eth'
     telnet://192.0.2.16:80/ (URL)
     urn:oasis:names:specification:docbook:dtd:xml:4.1.2
     ```
-
+    
     ```html
     scheme://host[:port#]/path/.../[;url-params][?query-string][#anchor]
     scheme //有我们很熟悉的 http、https、ftp 以及著名的 ed2k，迅雷的 thunder 等。
@@ -209,6 +209,41 @@ node . -v 'web3://w3url.eth'
 - Questions and Ideas
 
   - RPC gateway 是去中心化的吗？🤔
+
+### 07.20
+
+- 今日学习时间：1 小时
+
+- 学习内容小结：
+
+  - 学习用 [Solidity](https://soliditylang.org/) 简单编写合约，简单使用 [Remix IDE](http://remix.ethereum.org/) 部署合约。
+
+- Homework 
+
+  - 完成作业 3 ：Deploy a contract in auto mode and say "hello world"
+
+    -  auto mode：The smart contract is generic and has not implemented a interface defined by the `web3://` protocol. In this case, we will craft the URL path in a specific way to indicate the name, arguments and return signature of the method we want to call on the contract.
+
+      直接写方法即可，不用单独 Declare a smart contract as manual mode 。🤔
+
+    ```solidity
+    // SPDX-License-Identifier: GPL-3.0
+    pragma solidity >=0.8.2 <0.9.0;
+    contract HelloWeb3 {
+        string public greeting = "Hello Web3!";
+        function getGreeting() public view returns (string memory) {
+            return greeting;
+        }
+    }
+    ```
+
+  - 目前木有 Sepolia Testnet 代币暂未部署。
+
+    ![Remix_helloweb3](img/Remix_helloweb3.png)
+
+- Questions and Ideas
+
+
 
 
 
