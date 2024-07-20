@@ -116,4 +116,20 @@
 ```
   - 对于 manual 模式必须实现 fallback 方法吗？  resource request 模式 必须实现 request 方法吗？
   - 看起来 manual 和 resource request 差不多，为什么要多实现一种模式呢？分别是适用场景是什么？
+  
+### 07.19
+
+- 今日学习时间：10:00~11:00
+- 学习内容小结：
+  - 简单书写了 auto 和 manual 解析模式的合约，了解 w3q 测试网络，获取一些测试 token, 待部署
+  - 学习 https://docs.web3url.io/ 文档的 FlatDirectory 和 network 模块
+  - 初步体验  Wbox 和 ethstorage https://galileo.web3q.io/file.w3q/0x2ec78d4677fba1b5a589c66e75b0f6e180d8a66f/IMG_202406136562_1024x1024.jpg
+- Homework 部分（如果有安排需要填写证明完成）
+  - hw2- Claim EthStorage Testnet tokens
+  ![test token](https://pic.wenjunjiang.com/202407191607587.png)
+  - hw2 Upload a file via web3box and paste link
+  ![file link](https://galileo.web3q.io/file.w3q/0x2ec78d4677fba1b5a589c66e75b0f6e180d8a66f/IMG_202406136562_1024x1024.jpg)
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+  - 希望能把现在的几个模块梳理一下相互之间的关系：wbox, sandbox, w3ns 等
+  - 域名里面 为什么一会是 web3q、web3eth、web3url 相互之间各种连接？ 有什么约束吗
 <!-- Content_END -->

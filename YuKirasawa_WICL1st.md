@@ -247,6 +247,57 @@ function resolveMode() external pure returns (bytes32) {
   
   可以得到响应 Hello World
 
+### 07.19
+
+- 今日学习时间：1 h
+- 学习内容小结：学习了 fallback 方法的机制和编写方法。尝试部署 manual mode 的 web3url 合约。暂时还未成功。
+
+### 07.20
+
+- 今日学习时间：1 h
+
+- 学习内容小结：完成 Homework 1 的第四项
+
+- Homework 部分
+
+  部署 manual mode 的合约，需要先通过 `resolveMode` 方法声明，再编写 `fallback` 处理请求。
+
+  ```
+  // SPDX-License-Identifier: GPL-3.0
+  
+  pragma solidity ^0.8.18;
+  
+  contract Hello {
+      function resolveMode() external pure returns (bytes32) {
+          return "manual";
+      }
+  
+      function sayHello() public pure returns (string memory) {
+          return "Hello World";
+      }
+  
+      fallback(bytes calldata cdata) external returns (bytes memory) {
+          if(cdata.length == 0) {
+              return bytes("");
+          }
+          if(cdata[0] != 0x2f) {
+              return abi.encode("Incorrect path");
+          }
+  
+          if (cdata.length == 1) {
+              return abi.encode(sayHello());
+          }
+  
+          // Default
+          return abi.encode("Not found");
+      }
+  }
+  ```
+
+  合约地址为 `0x35ffD0786ae4F845C7473A1f25C6BFd200585806`
+
+  使用 web3curl 访问 url `web3://0x35ffD0786ae4F845C7473A1f25C6BFd200585806:11155111` 可以得到响应 Hello World
+
 
 
 <!-- Content_END -->

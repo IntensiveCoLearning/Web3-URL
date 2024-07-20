@@ -236,7 +236,7 @@ for (const index in chunks) {
 ### 07.17
 在 Manual mode 中，路径信息会传入合约的 `fallback(bytes)` 方法，从而允许合约使用自定义的方式处理请求。这种模式和 web2 的 url 路由是一致的。
 
-### 07.17
+### 07.18
 
 - 今日学习时间：1 h
 - 学习内容小结：完成 Homework 的前两项
@@ -329,4 +329,14 @@ TODO：
   - Deploy a contract in auto model and say “hello world”
   - Deploy a contract in manual model and say “hello world”
 - 可以开发一个一键上传或者创建 Web3 站点的合约？
+
+### 07.19
+- 今日学习时间：1h
+- 学习内容小结：阅读docs.web3url.io
+- [Part 2.1 - Basic structure 阅读笔记](https://www.notion.so/Day-7-19-800cc3a737ea49d588a34ee549971a51?pvs=4)
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+   - 稍微查看了以下同学的笔记，感觉自己的基础太薄，需要学很久去补一些概念
+- TODO
+   - 明天继续阅读这个docs文档
 <!-- Content_END -->

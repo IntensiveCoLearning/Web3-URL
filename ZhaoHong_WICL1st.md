@@ -90,6 +90,15 @@ https://l3ob.notion.site/Web3-URL-1-0cdfdb7041d94b6eab6b64d43b9a511c
 
 剩下两个留着明天再做。
 
-### 07.18
+### 07.19
+
+- Homework
+  - Deploy a contract in auto model and say “hello world”
+    - https://0xcced993cea00aa983adc6ab9a6c1348f470da703.11155111.w3link.io/greet?returns=(string)
+  - Deploy a contract in manual model and say “hello world”
+    - https://0x401407b9884fdf0978ae166e9f233d884390dc55.11155111.w3link.io/
+
+### 07.20
+
 
 <!-- Content_END -->

@@ -164,5 +164,14 @@ Visit https://0xa10f8d4394f4d2f016411aec53e9a2b73a8cd2f7.w3q-g.w3link.io/crossch
 - 学习内容小结：
   - https://eips.ethereum.org/EIPS/eip-4804
   - https://eips.ethereum.org/EIPS/eip-6860
+ 
+### 07.20
+
+- 今日学习时间：0.5 hour
+- 学习内容小结：
+  - Read codebase https://github.com/web3-protocol/web3protocol-js
+  - Read codebase https://github.com/web3-protocol/web3curl-js
+  - Read codebase https://github.com/web3-protocol/web3protocol-go
+
 
 <!-- Content_END -->

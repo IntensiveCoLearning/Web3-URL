@@ -153,4 +153,10 @@ web3curl -v 'web3://w3url.eth'
 
 所以，所谓的解析模式是由访问的智能合约本身决定的？还是有文档中“Resolve mode determination by clients”？？
 
+### 07.19
+
+- 今日学习时间：0h
+- 学习内容小结：
+  - 跟明天预定1h，填充今日学习时间。
+
 <!-- Content_END -->

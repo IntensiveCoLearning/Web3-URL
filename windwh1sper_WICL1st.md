@@ -91,4 +91,16 @@ timezone: Asia/Shanghai
 -   Homework 
 
 
+
+### 07.19
+
+
+-   今日学习时间：22:00-23:00
+-   学习内容小结：学习web3：//工作原理：输入 Web3 协议 URL + ENS、解析合约地址、调用合约返回 HTML、渲染页面、EthStorage 是怎么扩容以太坊的
+-   Homework 
+
+
+
+
+
 <!-- Content_END -->

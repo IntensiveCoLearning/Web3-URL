@@ -148,7 +148,7 @@ Ethers.js 是一个使用Typescript编写的库，用于构建去中心化应用
 
 ### 07.18
 - 今日学习时间：7.18  10 a.m.--12 a.m.
-- 学习内容小结：Foundry test学校
+- 学习内容小结：Foundry test学习
 
 ### 什么是 Foundry
 >Foundry 是一个 Solidity 框架，用于构建、测试、模糊、调试和部署Solidity 智能合约， Foundry 的优势是以 Solidity 作为第一公民，完全使用 Solidity 进行开发与测试，如果不太熟JavaScript，使用 Foundry 是一个非常好的选择，而且 Foundry 构建、测试的执行速度非常快。  
@@ -178,5 +178,25 @@ Ethers.js 是一个使用Typescript编写的库，用于构建去中心化应用
 * `verify`: 验证合约，即在浏览器中开源合约的代码。
 * `MyContract` : 实际部署的合约，由于一个 solidity 中允许存在多个合约，因此这里指定需要部署的合约名称。
 * `constructor-args`: 合约的构造参数，如果没有，可以不设置该属性。
+### 07.20
+- 今日学习时间：7.120  10 a.m.--12 a.m.
+- 学习内容小结：Foundry test cheatCode&cast 学习
+#### Foundry cast命令
+* `cast chain-id ` 使用 cast chain-id 命令可以快速获取当前链的 ID，这是识别和确认你正在正确的区块链上操作的一个关键步骤。例如，在部署合约或验证交易时，确保链 ID 的准确性至关重要。
+* `cast client`  获取当前客户端的版本。
+* `cast gas-price` cast gas-price 命令为开发者提供了一个快速获取当前 gas 价格的途径，这对于估算交易成本非常有用。了解当前的 gas 价格可以帮助开发者更精确地设定交易的 gas limit，避免过高的交易费用或因 gas 不足导致的交易失败。
+* `cast block-number` 使用 cast block-number 命令可以查询最新的区块号。这是追踪区块链当前状态的基本操作，非常有用于确定网络的最新交易和智能合约的活动状态。
+* `cast basefee` cast basefee 命令允许你获取指定区块的基础费用。London 升级后，基础费用成为交易费用的一个组成部分，理解这一点对于估算交易成本非常重要。
+* `cast block` 通过 cast block 命令，我们可以获取到指定区块的详细信息，如区块高度、时间戳、交易数等。这个命令是深入理解区块链状态变化的强大工具。
+* `cast age` cast age 命令用于获取指定区块的时间戳，即区块生成的具体时间。这可以帮助开发者跟踪事件的具体发生时间，并分析区块链数据的时间序列。
+* `cast balance` cast balance 命令用于获取特定以太坊账户地址或 ENS 名称的当前余额，单位是 wei。这个命令是日常区块链操作中经常使用的，无论是在开发智能合约、执行交易前的检查，还是简单地监控账户状态。
+
+#### Foundry CheatCode
+* `vm.prank` 在进行权限相关的测试时，我们经常需要模拟不同用户的行为。通过`vm.prank`函数，我们可以暂时切换调用者身份。
+  例如有`onlyOwner（）`修饰时，使用`vm.prank`即可通过称为合约非所有者进行调用尝试。
+* `vm.expectRevert` 测试合约在特定条件下是否正确还原是合约安全性验证的重要部分。`vm.expectRevert`允许我们指定一个特定的错误类型或信息，然后执行可能触发该错误的操作。如果合约按预期还原，则测试通过。
+* `vm.expectEmit` 智能合约中的事件提供了一种在区块链上记录信息的方式。在测试中验证特定事件是否被正确触发及其参数是否符合预期，对于确保合约行为的正确性至关重要。`vm.expectEmit`允许我们预先指定期望的事件特征，并验证合约操作中是否触发了相应的事件。
+  `vm.expectEmit(true, true, false, true);`
+  前三个参数分别对应事件的indexed部分，最后一个为data部分。若是一个事件不足三个indexed，则对应的参数位置为false。date部分若有两个及以上数量的参数，需要全部匹配才会返回true。
 XXX
 <!-- Content_END -->
