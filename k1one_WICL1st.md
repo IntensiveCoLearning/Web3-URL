@@ -114,7 +114,7 @@ contract PaymentSplit{
   ```
       uint256 public totalShares; // 总份额
       uint256 public totalReleased; // 总支付
-
+  
       mapping(address => uint256) public shares; // 每个受益人的份额
       mapping(address => uint256) public released; // 支付给每个受益人的金额
       address[] public payees; // 受益人数组
@@ -237,7 +237,7 @@ contract PaymentSplit{
           start = block.timestamp;
           duration = durationSeconds;
       }
-
+  
       /**
        * @dev 受益人提取已释放的代币。
        * 调用vestedAmount()函数计算可提取的代币数量，然后transfer给受益人。
@@ -252,7 +252,7 @@ contract PaymentSplit{
           emit ERC20Released(token, releasable);
           IERC20(token).transfer(beneficiary, releasable);
       }
-
+  
       /**
        * @dev 根据线性释放公式，计算已经释放的数量。开发者可以通过修改这个函数，自定义释放方式。
        * @param token: 代币地址
@@ -272,7 +272,7 @@ contract PaymentSplit{
       }
   ```
 
-  ​
+  
 
 ### 07.17
 
@@ -284,7 +284,7 @@ contract PaymentSplit{
 
 * 试想一个小游戏，数组 health 用于存储 10 个角色的 HP（healthPoint）
  * HP 初始值为 1000，每次攻击（fight）会降低 100。
- * ​
+ * 
  * 同时满足以下两个条件，角色就可以通过 Automation 补充为 1000：
  * 1. 如果生命值不足 1000
  * 2. 经过某个时间间隔 interval
@@ -396,6 +396,16 @@ contract AutomationTask is AutomationCompatible {
 学习时长：0.5h
 
 学习内容小结：学习Web3URL部分的知识，了解相关原理与分析相关合约源码内容，大概了解了合约的实现原理和相关函数的实现
+
+### 07.19
+
+无
+
+### 07.20
+
+学习时长：1h
+
+学习内容小结：Web3URL协议的框架结构和Web3:// CLIENTS 学习了解
 
 <!-- Content_END -->
 
