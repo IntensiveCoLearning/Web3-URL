@@ -6,19 +6,19 @@
 
 ---
 
-# [ Simon ]
+# [ 你的名字 ]
 
 1. **自我介绍：**
 
-   Simon，练习时长2年半的时长的前端开发，希望能学习Web3 URL，更深入了解Web3的世界
+    Akagi201, 目前专注 EVM Execution Layer 与 HFT trading, 想了解 Web3 URL EIP 以及应用.
 
 2. **组队期待：**
 
-   想参与一些比较COOL的项目
+    无组队打算
 
 3. **你认为你会完成本次 Web3 URL 的残酷学习吗？**
 
-   Yes 100%
+    Yes
 
 ---
 
@@ -55,24 +55,22 @@
 
 ## 笔记证明 Notes Proof
 <!-- Content_START --> 
-
 ### 07.15
 
-- 今日学习时间：1h  
-- 学习内容小结：初步了解WEB3 URL，解析模式
+举例示范：
+
+- 今日学习时间：XXXX
+- 学习内容小结：XXXX
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+
+
 
 ### 07.16
 
-- 今日学习时间：1h  
-- 学习内容小结：回顾昨天的回放，学习EIP6860协议，学习[Web3URL 文档](https://docs.web3url.io)
+XXX
 
 ### 07.17
 
-
-### 07.18
-
-- 今日学习时间：1h  
-- 学习内容小结：学习Rust基础(https://www.hackquest.io/zh/learning-track/b502eb82-9254-45e7-be22-1f460aafb2cf)
-
-### 07.19
+XXX
 <!-- Content_END -->

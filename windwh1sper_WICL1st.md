@@ -1,3 +1,7 @@
+---
+timezone: Asia/Shanghai
+---
+
 # Web3 URL 残酷共学第 1 期残酷指引
 
 > ⚠️ 正式开始前请确保你在身体上和精神上都处于合适的状态，请刻意练习，残酷面对 🆒。为方便检索 The First Web3 URL Intensive CoLearning 简写为 WICL1st，第 2 期即为WICL2nd，第 3 期即为 WICL3rd，以此类推。
@@ -6,19 +10,19 @@
 
 ---
 
-# [ Simon ]
+# [ 你的名字 ]
 
 1. **自我介绍：**
 
-   Simon，练习时长2年半的时长的前端开发，希望能学习Web3 URL，更深入了解Web3的世界
+   我是windwh1sper，大三学生，有一定编程基础，希望能学习Web3开发，并积累项目实践经验。
 
 2. **组队期待：**
 
-   想参与一些比较COOL的项目
+   暂时没有
 
 3. **你认为你会完成本次 Web3 URL 的残酷学习吗？**
 
-   Yes 100%
+   Maybe 80% 
 
 ---
 
@@ -55,24 +59,48 @@
 
 ## 笔记证明 Notes Proof
 <!-- Content_START --> 
-
 ### 07.15
 
-- 今日学习时间：1h  
-- 学习内容小结：初步了解WEB3 URL，解析模式
+
+
+- 今日学习时间：21:00-22:30
+- 学习内容小结：
+  1.了解了ERC4804的工作方式，能为 Web2 用户提供一种直接访问 Web3 内容的简单方式；
+  2.尝试访问链上网站并使用Dapps，例如W3Box、W3Drive、vitalikblog等；
+  3.了解了如何使用HTTP 网关访问 web3：//，如何使用 web3：// ，并尝试构建自己的 Dapp。
+- Homework 
+- Question and Ideas
+  在ERC4804中大量使用Web3 URL是否会增加链上的负载；如何确保用户输入的URL不会被恶意利用进行攻击？
+
 
 ### 07.16
 
-- 今日学习时间：1h  
-- 学习内容小结：回顾昨天的回放，学习EIP6860协议，学习[Web3URL 文档](https://docs.web3url.io)
+- 今日学习时间：21:00-22:00
+- 学习内容小结：
+  1.了解了传统 HTTPS URL 的基础结构以及标准，学习搭建dweb程序的方法
+  2.按照https://tutorial.w3q.w3q-g.w3link.io/#/的教程构建了一个自己的dWeb程序并进行浏览，目前在尝试增加新的功能，但遇到了一些代码上的困难，正在尝试解决
+- Question and Ideas
+  
+
 
 ### 07.17
 
 
-### 07.18
+-   今日学习时间：22:00-23:00
+-   学习内容小结：看 Telegram 群内消息，查看资料，学习了合约的基本编写和部署流程，完成部分作业
+-   Homework 
 
-- 今日学习时间：1h  
-- 学习内容小结：学习Rust基础(https://www.hackquest.io/zh/learning-track/b502eb82-9254-45e7-be22-1f460aafb2cf)
+
 
 ### 07.19
+
+
+-   今日学习时间：22:00-23:00
+-   学习内容小结：学习web3：//工作原理：输入 Web3 协议 URL + ENS、解析合约地址、调用合约返回 HTML、渲染页面、EthStorage 是怎么扩容以太坊的
+-   Homework 
+
+
+
+
+
 <!-- Content_END -->

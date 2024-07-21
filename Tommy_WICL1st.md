@@ -65,19 +65,23 @@ timezone: Asia/Shanghai
 
 ---
 
-# [ 你的名字 ]
+# [ Tommy ]
 
 1. **自我介绍：**
 
-   XXX [ 包括你的昵称、职业、擅长方向以及残酷共学 Web3 URL 的原因或期待，以确保大家都能清楚地理解你的情况，同时增进大家的互相了解 ]
+  目前在国内一家大型公司工作，主业操作系统，会写web后端和一定的智能合约（Solidity），喜欢钻研技术，热爱web3。加入残酷共学是因为一方面想要通过组队挑战，完成对技术的能力的探索，另一方面是能够在社交中，认识更多优秀的小伙伴，后续能够碰撞出更多的合作机会。
 
 2. **组队期待：**
 
-   XXX [ 包括你想预计的项目参与或开发方向、需要什么角色的小伙伴、其它你想在这里分享的想法，具体组队可在电报频道群沟通 ]
+  预计的项目方向：硕博导师黑白名单信息共享平台
 
+  需要什么角色的小伙伴：需要前端小伙伴
+
+  其他想法：可以详细讨论项目细节
+  
 3. **你认为你会完成本次 Web3 URL 的残酷学习吗？**
 
-   XXX [ Yes 100% or Maybe xx% ]
+   Yes 100%
 
 ---
 
@@ -92,6 +96,27 @@ timezone: Asia/Shanghai
   - 课前学习：了解残酷共学流程，GitHub 协作共学基础；Web3:// 协议课前学习。
 
 - **7 月 15 日 - 7 月 21 日**：
+
+- 0715:
+  gateway 访问方式：
+    https://cyberbrokers-meta.w3eth.io/renderBroker/8
+  Find the ownership of an your favor NFT
+    favor NFT: https://cyberbrokers-meta.w3eth.io/renderBroker/1
+    contract_address: 0x8bb9A8BaeEc177aE55Ac410c429CbBBBb9198caC
+    
+- 0716:
+  Find the balance of ERC-20 contract (USDC / USDT)
+    
+    contract: 0xdAC17F958D2ee523a2206206994597C13D831ec7 
+    0x83a9DF865268DF58B9521A87316a36C0f467835B
+    balanceOf: 0
+
+  Deploy a contract in auto model and say “hello world”
+
+
+  Deploy a contract in manual model and say “hello world”
+
+  
 
   - **7 月 15 日 周一晚 8 点- 9 点（北京时间）：** 第 1 次公开课分享
   - **本周共学内容：** 涉及 Web3://  的背景和演进历史；支持 Web3://  协议的访问方式 (gateway 和 EVM browser)来浏览以太坊上面的数据；熟悉使用 Web3://  和 EthStorage 早期测试网来部署简单的去中心化网站。
@@ -121,13 +146,36 @@ timezone: Asia/Shanghai
 - 今日学习时间：XXXX
 - 学习内容小结：XXXX
 - Homework 部分（如果有安排需要填写证明完成）
-- Questions and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+
+
 
 ### 07.16
 
-XXX
+- 今日学习时间：1.5h
+- 学习内容小结：
+  Find the balance of ERC-20 contract (USDC / USDT)
+    
+    contract: 0xdAC17F958D2ee523a2206206994597C13D831ec7 
+    0x83a9DF865268DF58B9521A87316a36C0f467835B
+    balanceOf: 0
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 
 ### 07.17
 
-XXX
+- 今日学习时间：1h
+- 学习内容小结：XXXX
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+
+### 07.18
+
+- 今日学习时间：1h
+- 学习内容小结：搭建了一个智能合约，将其代码编译并运行起来
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+
+
+
 <!-- Content_END -->
