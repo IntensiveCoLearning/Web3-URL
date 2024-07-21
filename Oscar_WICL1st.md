@@ -284,7 +284,7 @@ node . -v 'web3://w3url.eth'
           return greeting;
           }
       fallback(bytes calldata cdata) external returns (bytes memory) {
-      // 检查路径是否为空或不以 / 开头：
+      // 检查路径是否为空或不以'/'开头：
           if (cdata.length == 0 || cdata[0] != 0x2f) {
               return bytes("");
           }
@@ -303,7 +303,7 @@ node . -v 'web3://w3url.eth'
 
   直接访问``web3://0x5f975e35433a95d83bc183f4bec22d2fa0619269:3334`` 正常。
 
-  ![getGreeting_manual](/Users/luffythinker/Web3-URL/img/getGreeting_manual.png)
+  ![getGreeting_manual](img/getGreeting_manual.png)
 
 
 
