@@ -127,4 +127,11 @@ timezone: Asia/Shanghai
 -   Homework 部分：Nil
 -   Question and Ideas：写 Manual Mode 的智能合约时，怎么写 html 代码
 
+### 07.21
+
+-   今日学习时间：1 小时（看 Telegram 群内消息，查看其他同学笔记和 Medium 资料）
+-   学习内容小结：学习 EIP-4804; 研究写 Manual Mode 的智能合约时，怎么写 html 代码
+-   Homework 部分：Nil
+-   Question and Ideas：看不懂 EIP-4804，很多疑问
+
 <!-- Content_END -->
