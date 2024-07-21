@@ -57,9 +57,9 @@ LXDAO & ETHStorage Host 的 Web3 URL 残酷共学将邀请 [Qi Zhou](https://twi
     - [Introducing web3:// - Decentralized Access Protocol for EVM](https://www.youtube.com/watch?v=h31q2ZMwHkQ)
     
   - **7 月 15 日 - 7 月 21 日：** Web3:// 协议基础知识和高级开发工具操作教学指导，互动答疑，边学边用。
-    - [Introduction to Web3:// Access Protocol (CoLearning 2024)](https://docs.google.com/presentation/d/1egJUKJrjC9wjkmOF9sLBkTSwHpd6hl8FXkWehPW7kFk/edit#slide=id.g1754f50a55c_0_11) 
+    - [Introduction to Web3:// Access Protocol](https://docs.google.com/presentation/d/1egJUKJrjC9wjkmOF9sLBkTSwHpd6hl8FXkWehPW7kFk/edit#slide=id.g1754f50a55c_0_11)  (CoLearning 2024)
     
-    - https://web3url.io/#/ 
+    - https://web3url.io/#/ （Homepage）
     - https://docs.web3url.io/ （核心指南）
     - https://eips.ethereum.org/EIPS/eip-4804 ( final )
     - https://eips.ethereum.org/EIPS/eip-6860

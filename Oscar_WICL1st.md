@@ -227,21 +227,83 @@ node . -v 'web3://w3url.eth'
       直接写方法即可，不用单独 Declare a smart contract as manual mode 。🤔
 
     ```solidity
-    // SPDX-License-Identifier: GPL-3.0
-    pragma solidity >=0.8.2 <0.9.0;
+    // SPDX-License-Identifier: MIT
+    
+    pragma solidity >=0.7.0 <0.9.0;
     contract HelloWeb3 {
-        string public greeting = "Hello Web3!";
+        string public greeting = "Hello Web3! from Oscar";
         function getGreeting() public view returns (string memory) {
             return greeting;
         }
     }
     ```
 
-  - 目前木有 Sepolia Testnet 代币暂未部署。
+  - 领取 W3Q 测试币：部署合约成功，[合约地址详情](https://explorer.galileo.web3q.io/tx/0x0c28db6ee94d92b82f9d7075e2bcfa562541e3af479ccf07802867bf0176e70f/internal-transactions)：0xc89bd91d4814b940a335d5f632dc3988782c7237
 
-    ![Remix_helloweb3](img/Remix_helloweb3.png)
+    ![Remix_helloweb3](img/Remix_hello_web3.png)
+    
+    ⚠️Galileo Testnet W3Q 的链 id 为3334，访问时需要指定``:3334``，auto mode 模式需要 指定``/getGreeting`` ，不然访问会失败。🤔
+    
+    ``web3://0xc89bd91d4814b940a335d5f632dc3988782c7237:3334/getGreeting``
+    
+    具体见下图：
+    
+    ![getGreeting](img/getGreeting_auto.png)
 
-- Questions and Ideas
+### 07.21
+
+- 今日学习时间：1 小时
+
+- 学习内容小结：
+  - **ETHSTORAGE Networks ** 了解学习 EthStorage sidechain is fully EVM-compatible, [Galileo Testnet](https://docs.web3url.io/ethstorage-information/networks) 设置。
+
+  - EthStorage POA Explorer：https://explorer.galileo.web3q.io
+
+  - ethereum-magicians.org：[EIP-4804: Web3 URL to EVM Call Message Translation](https://ethereum-magicians.org/t/eip-4804-web3-url-to-evm-call-message-translation/8300)
+  
+  - **[FlatDirectory](https://docs.web3url.io/advanced-topics/flatdirectory) ：** ERC-5018 提议的 FlatDirectory 是用于文件系统目录的标准接口，允许在基于 EVM 的区块链上的任何二进制对象被其他 dApp 重新使用。该标准允许在智能合约中实现文件系统目录的标准 API。该标准提供了基本功能，可以读取/写入任何大小的二进制对象，并且如果对象过大而无法在单个交易中处理，则允许进行对象的分块读写。
+  
+    
+  
+- Homework ：Deploy a contract in manual model and say "hello world" 
+
+  - A `manual` resolve mode smart contract is designed for the `web3://` protocol. In this case, any path is valid, and the smart contract will usually returned some content for at least the root path. 
+
+  ```solidity
+  // SPDX-License-Identifier: MIT
+  
+  pragma solidity >=0.7.0 <0.9.0;
+  
+  contract HelloWeb3 {
+      string public greeting = "Hello Web3! from Oscar";
+      
+      function resolveMode() external pure returns (bytes32) {
+          return "manual";
+      }
+      function getGreeting() public view returns (string memory) {
+          return greeting;
+          }
+      fallback(bytes calldata cdata) external returns (bytes memory) {
+      // 检查路径是否为空或不以 / 开头：
+          if (cdata.length == 0 || cdata[0] != 0x2f) {
+              return bytes("");
+          }
+          // 仅包含 '/'
+          if (cdata.length == 1) {
+              return abi.encode(getGreeting());
+          }
+          return abi.encode("Not found");
+      }
+  }
+  ```
+
+  部署合约成功，[合约地址详情](https://explorer.galileo.web3q.io/tx/0x340be88ad1b319d9310c76d25ce1ec1bdf5b91e5be8b7a93e21d41b34145d28a/internal-transactions)：0x5f975e35433a95d83bc183f4bec22d2fa0619269
+
+  ⚠️Galileo Testnet W3Q 的链 id 为3334，访问时需要指定``:3334``，在 manual mode 模式`` any path is valid`` 🤔。
+
+  直接访问``web3://0x5f975e35433a95d83bc183f4bec22d2fa0619269:3334`` 正常。
+
+  ![getGreeting_manual](/Users/luffythinker/Web3-URL/img/getGreeting_manual.png)
 
 
 
