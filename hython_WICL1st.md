@@ -151,4 +151,9 @@ timezone: Asia/Tokyo
 - 学习内容小结：
    - [web3url文档](https://docs.web3url.io/)（核心指南）
 
+### 07.21
+- 今日学习时间：21:30～22:20 共50分钟
+- 学习内容小结：
+   - [web3url文档](https://docs.web3url.io/)（核心指南）
+   - demo合约开发测试
 <!-- Content_END -->
