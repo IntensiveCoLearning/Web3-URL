@@ -95,4 +95,31 @@
 
 * 学习内容小结：进一步完善项目源码，准备在每天尝试部署至web3URL上。
 
+### 07.21
+
+* 今日学习时间：2h
+
+* 学习内容小结：编写最终项目，并完成Homework1.
+
+* Homework 部分（如果有安排需要填写证明完成）
+
+1.查询0xe1dc516b1486aba548eecd2947a11273518434a4 460
+
+```
+web3://0xe1dc516b1486aba548eecd2947a11273518434a4/ownerOf/460?returns=(address)
+```
+
+结果：["0xCaE710A61fec7515E258c7C34f9d405A8E25588d"]
+
+2.查询0xCaE710A61fec7515E258c7C34f9d405A8E25588d的USDT
+
+```
+web3://0xdac17f958d2ee523a2206206994597c13d831ec7/balanceOf/0xCaE710A61fec7515E258c7C34f9d405A8E25588d?returns=(uint256)
+```
+
+结果：["0x0"]
+
+3.尝试部署合约，但是卡在W3Q测试币获取。。。。
+
+
 <!-- Content_END -->
