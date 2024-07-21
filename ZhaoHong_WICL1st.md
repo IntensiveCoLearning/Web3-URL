@@ -100,5 +100,15 @@ https://l3ob.notion.site/Web3-URL-1-0cdfdb7041d94b6eab6b64d43b9a511c
 
 ### 07.20
 
+- Homework
+  - Claim EthStorage Testnet tokens
+    - 0x9CBd3D6A36cf2d45442fD35Dc160c97f658F8B18
+  - Upload a file via web3box and paste link
+   - https://galileo.web3q.io/file.w3q/0x9cbd3d6a36cf2d45442fd35dc160c97f658f8b18/WechatIMG153.jpg
+  - Write  a blog and paste link
+   - https://w3-blog.w3eth.io/#/blog/0xfaf99Fb2Ffaab74F5262756D6CC55f1598d4298e/0
+
+### 07.21
+
 
 <!-- Content_END -->
