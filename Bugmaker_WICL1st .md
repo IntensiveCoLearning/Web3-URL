@@ -179,7 +179,7 @@ Ethers.js 是一个使用Typescript编写的库，用于构建去中心化应用
 * `MyContract` : 实际部署的合约，由于一个 solidity 中允许存在多个合约，因此这里指定需要部署的合约名称。
 * `constructor-args`: 合约的构造参数，如果没有，可以不设置该属性。
 ### 07.20
-- 今日学习时间：7.120  10 a.m.--12 a.m.
+- 今日学习时间：7.20  10 a.m.--12 a.m.
 - 学习内容小结：Foundry test cheatCode&cast 学习
 #### Foundry cast命令
 * `cast chain-id ` 使用 cast chain-id 命令可以快速获取当前链的 ID，这是识别和确认你正在正确的区块链上操作的一个关键步骤。例如，在部署合约或验证交易时，确保链 ID 的准确性至关重要。
@@ -199,4 +199,69 @@ Ethers.js 是一个使用Typescript编写的库，用于构建去中心化应用
   `vm.expectEmit(true, true, false, true);`
   前三个参数分别对应事件的indexed部分，最后一个为data部分。若是一个事件不足三个indexed，则对应的参数位置为false。date部分若有两个及以上数量的参数，需要全部匹配才会返回true。
 XXX
+### 07.20
+- 今日学习时间：7.21  8 p.m.--10 p.m.
+- 学习内容小结：Foundry FussTest 学习
+#### Fuzz Test
+Fuzz Testing（模糊测试）是一种自动化的软件测试技术，通过自动生成大量随机输入数据来测试程序。在智能合约的开发中，Fuzz Testing 被用来发现合约中潜在的漏洞和异常行为。本课将介绍如何进行智能合约的 Fuzz Testing。
+测试用例
+用于取款和存款的合约
+```sol
+pragma solidity 0.8.10;
+
+contract Safe {
+    receive() external payable {}
+
+    function withdraw() external {
+        payable(msg.sender).transfer(address(this).balance);
+    }
+}
+```
+##### 单元测试
+单元测试关注于测试代码中特定的功能点。通过编写测试用例，可以验证给定条件下，代码的行为是否符合预期。
+```sol
+import "forge-std/Test.sol";
+
+contract SafeTest is Test {
+    Safe safe;
+
+    function setUp() public {
+        safe = new Safe();
+    }
+
+    function test_Withdraw() public {
+        payable(address(safe)).transfer(1 ether);
+        uint256 preBalance = address(this).balance;
+        safe.withdraw();
+        uint256 postBalance = address(this).balance;
+        assertEq(preBalance + 1 ether, postBalance);
+    }
+}
+```
+##### 属性测试
+与单元测试不同，属性测试不是测试特定的输入和输出，而是验证一般性的属性或行为是否为真。属性测试通过随机生成大量的输入数据来测试代码，以确保在各种情况下代码的行为都符合预期。  
+
+修改测试函数，引入`FussTest`
+```sol
+function testFuzz_Withdraw(uint256 amount) public {
+    payable(address(safe)).transfer(amount);
+    uint256 preBalance = address(this).balance;
+    safe.withdraw();
+    uint256 postBalance = address(this).balance;
+    assertEq(preBalance + amount, postBalance);
+}
+```
+*排除特定情况* 使用`vm.assume`作弊码，可以排除某些不希望进行测试的特定情况。例如，如果不想测试低于0.1 `ETH` 的取款，可以如下编写：
+```sol
+
+function testFuzz_Withdraw(uint96 amount) public {
+    vm.assume(amount > 0.1 ether);
+    // 测试逻辑...
+}
+```
+##### 结果分析
+* runs：测试运行的次数，默认情况下，Fuzz 测试会生成256个场景。
+* μ（mu）：所有 Fuzz 运行中使用的平均 gas 量。
+* ~（tilde）：所有Fuzz运行中使用的中位数 gas 量。
+
 <!-- Content_END -->

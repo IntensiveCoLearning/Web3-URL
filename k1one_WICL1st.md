@@ -1,3 +1,7 @@
+
+
+
+
 # Web3 URL 残酷共学第 1 期残酷指引
 
 > ⚠️ 正式开始前请确保你在身体上和精神上都处于合适的状态，请刻意练习，残酷面对 🆒。为方便检索 The First Web3 URL Intensive CoLearning 简写为 WICL1st，第 2 期即为WICL2nd，第 3 期即为 WICL3rd，以此类推。
@@ -114,7 +118,7 @@ contract PaymentSplit{
   ```
       uint256 public totalShares; // 总份额
       uint256 public totalReleased; // 总支付
-  
+
       mapping(address => uint256) public shares; // 每个受益人的份额
       mapping(address => uint256) public released; // 支付给每个受益人的金额
       address[] public payees; // 受益人数组
@@ -237,7 +241,7 @@ contract PaymentSplit{
           start = block.timestamp;
           duration = durationSeconds;
       }
-  
+
       /**
        * @dev 受益人提取已释放的代币。
        * 调用vestedAmount()函数计算可提取的代币数量，然后transfer给受益人。
@@ -252,7 +256,7 @@ contract PaymentSplit{
           emit ERC20Released(token, releasable);
           IERC20(token).transfer(beneficiary, releasable);
       }
-  
+
       /**
        * @dev 根据线性释放公式，计算已经释放的数量。开发者可以通过修改这个函数，自定义释放方式。
        * @param token: 代币地址
@@ -272,7 +276,6 @@ contract PaymentSplit{
       }
   ```
 
-  
 
 ### 07.17
 
@@ -284,7 +287,7 @@ contract PaymentSplit{
 
 * 试想一个小游戏，数组 health 用于存储 10 个角色的 HP（healthPoint）
  * HP 初始值为 1000，每次攻击（fight）会降低 100。
- * 
+ * ​
  * 同时满足以下两个条件，角色就可以通过 Automation 补充为 1000：
  * 1. 如果生命值不足 1000
  * 2. 经过某个时间间隔 interval
@@ -406,6 +409,52 @@ contract AutomationTask is AutomationCompatible {
 学习时长：1h
 
 学习内容小结：Web3URL协议的框架结构和Web3:// CLIENTS 学习了解
+
+### 07.21
+
+学习时长：2h
+
+学习内容小结：学习和熟悉了WEB3URL的使用
+
+Homework 部分：
+
+1.查询0x42069abfe407c60cf4ae4112bedead391dba1cdb 1312
+
+```
+web3://0x42069abfe407c60cf4ae4112bedead391dba1cdb/ownerOf/1312?returns=(address)
+```
+
+查询结果："0x3e720f62DB92cfc9f486c9D739E7753fEAc83Faa"
+
+2.查询地址为0xDc2BFea46CD671699013B5230850c1DB034690b0的USDT余额
+
+```
+web3://0xdac17f958d2ee523a2206206994597c13d831ec7/balanceOf/0xDc2BFea46CD671699013B5230850c1DB034690b0?returns=(uint256)
+```
+
+查询结果："0x0"
+
+3.auto-model:
+
+合约地址：0x72e52647818Bd2F49A0CbB51255317209617eBd1
+
+```
+web3://0x72e52647818Bd2F49A0CbB51255317209617eBd1:11155111/sayHello
+```
+
+结果：Hello World
+
+4.manual model:
+
+合约地址：0x299C58F990e832D6748CB0Aea0A9c71118c8700D
+
+```
+web3://0x299C58F990e832D6748CB0Aea0A9c71118c8700D:11155111
+```
+
+结果：Hello World
+
+
 
 <!-- Content_END -->
 
