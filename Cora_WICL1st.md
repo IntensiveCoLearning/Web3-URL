@@ -123,4 +123,13 @@ web3://<contract>[:<chainId>]/<path>
 
 - 参加 LXDAO 中文社区周会
 
+### 07.21
+
+今日学习时间：2h
+
+- 学习内容小结：学习[Web3URL 文档](https://docs.web3url.io)部分章节
+- 使用 ethfs-uploader 上传您的第一个文件/文件夹 (失败了)
+
+- 参加 LXDAO 中文社区周会
+
 - <!-- Content_END -->
