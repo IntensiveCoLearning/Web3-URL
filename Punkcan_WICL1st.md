@@ -343,17 +343,88 @@
 	- 注册W3NS：punkcan.w3q 完成，之前的失败应该是网络原因
 	- Web handler 应该是填写Web3URL要用来呈现http输出的合约地址，暂时还没设定
 	- ethfs-uploader安装一直出现「安全提示」，无法完成安装，正在解决中
-	- 正在写合约，未完成
-	
+
 - Homework 部分（如果有安排需要填写证明完成）
+
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 
 
 ### 07.22
 
-- 今日学习时间：
+- 今日学习时间：1h
 - 学习内容小结：
+	- 先解决了 npm i ethfs-uploader 的问题，基本上就是把相关套件通通移除后，重新npm cache clean --force，重新update，再进行安装
+		- W3Q网路不支援最新的EVM，编译一直出错，后来直接降到柏林后成功
+	- 正在写合约
+		- Automode: https://0xe5182111d079103e8c02e8f284cde8b47b91f566.3334.w3eth.io/automode
+	- 解析fallback的范例
+		```js
+					fallback(bytes calldata cdata) external returns (bytes memory) {
+					// 检查传入的数据长度是否为0，或者数据的第一个字节是否不等于0x2f（即'/'字符）
+					// 如果任一条件满足，则返回一个空的字节序列
+					
+					if (cdata.length == 0 || cdata[0] != 0x2f) {
+					
+					return bytes("");
+					
+					}
+					// 如果请求只包含一个'/'字符，返回首页内容
+					
+					// 调用indexHTML(1)生成首页的HTML内容，并将其编码为字节序列返回
+					
+					if (cdata.length == 1) {
+					
+					return bytes(abi.encode(indexHTML(1)));
+					
+					}
+					
+					  
+					
+					// 检查是否为形如'/index/[uint]'的请求
+					
+					else if (
+					
+					cdata.length >= 6 && ToString.compare(string(cdata[1:6]), "index")
+					
+					) {
+					
+					uint page = 1;
+					
+					// 如果路径后有更多字符，尝试解析页码
+					
+					if (cdata.length >= 8) {
+					
+					page = ToString.stringToUint(string(cdata[7:]));
+					
+					}
+					
+					// 如果解析页码为0，返回"Not found"
+					
+					if (page == 0) {
+					
+					return abi.encode("Not found");
+					
+					}
+					
+					// 否则，调用indexHTML(page)获取指定页码的HTML内容，并编码返回
+					
+					return abi.encode(indexHTML(page));
+					
+					}
+					
+					  
+					
+					// 如果以上条件均不满足，返回"Not found"
+					
+					return abi.encode("Not found");
+					
+					}
+		```
+
+	
 - Homework 部分（如果有安排需要填写证明完成）
+	- https://0xe5182111d079103e8c02e8f284cde8b47b91f566.3334.w3eth.io/automode
+	
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 
 
