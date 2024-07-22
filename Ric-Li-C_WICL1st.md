@@ -137,9 +137,11 @@ timezone: Asia/Shanghai
 ### 07.22
 
 -   今日学习时间：3 小时
-    1 小时看 Telegram 群内消息并求 w3q 测试币，查看 EthStorage 资料；
-    1 小时参加会议；
-    1 小时尝试写含 html 代码的 Manual Mode 的智能合约。
+
+        1 小时看 Telegram 群内消息并求 w3q 测试币，查看 EthStorage 资料；
+        1 小时参加会议；
+        1 小时尝试写含 html 代码的 Manual Mode 的智能合约。
+
 -   学习内容小结：学习 EthStorage 相关
 -   Homework 部分：
 
