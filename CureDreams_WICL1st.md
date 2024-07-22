@@ -140,5 +140,13 @@ timezone: Asia/Shanghai
 - 今日学习时间：0.5h
 - 学习内容小结：学习了文档https://docs.web3url.io/，并且对于提案https://eips.ethereum.org/EIPS/eip-4804进行了学习。
 - Question and Ideas: 
+### 07.21
+- 今日学习时间：请假
+- 学习内容小结：
+- Question and Ideas: 
+### 07.22
+- 今日学习时间：请假
+- 学习内容小结：
+- Question and Ideas: 
 XXX
 <!-- Content_END -->
