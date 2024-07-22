@@ -335,7 +335,7 @@ FlatDirectory Address: 0x6F3F9E477a931d208c06efE7E6D3af251B000E94
 上传第一个文件夹
 
 ```
-ethfs-cli upload -f myfolder -a 0x6F3F9E477a931d208c06efE7E6D3af251B000E94 -c 3334 -p dadd64540987deea8210cfadcf50aeeed4ec14950a1f05260f7f59084f3b0727
+ethfs-cli upload -f myfolder -a 0x6F3F9E477a931d208c06efE7E6D3af251B000E94 -c 3334 -p privkey
 providerUrl = https://galileo.web3q.io:8545
 chainId = 3334
 address: 0x6F3F9E477a931d208c06efE7E6D3af251B000E94
@@ -370,7 +370,7 @@ web3://0x6F3F9E477a931d208c06efE7E6D3af251B000E94:3334/hello.txt
 
 ### 7.21
 
-博客链接：[web3-url-colearning-day6 (antigone4224.github.io)](https://antigone4224.github.io/web3-url-colearning-day7)
+博客链接：[web3-url-colearning-day7 (antigone4224.github.io)](https://antigone4224.github.io/web3-url-colearning-day7)
 
 # Use eth-blob-uploader to upload files via blobs
 
@@ -386,8 +386,6 @@ npm i -g eth-blob-uploader
 
 
 
-​	```
-
 ```
 eth-blob-uploader -r <rpc> -p <private-key> -f <file-path> -t <to-address>
 ```
@@ -396,30 +394,60 @@ eth-blob-uploader -r <rpc> -p <private-key> -f <file-path> -t <to-address>
 
 ![img](https://raw.githubusercontent.com/antigone4224/blog-img/main/6717783cf38ace1ee982d5e11e757b09.png)
 
-# Use eth-blob-uploader to upload files via blobs
+### 7.22
 
-##  Use eth-blob-uploader to upload files via blobs
+博客链接：[web3-url-colearning-day8 (antigone4224.github.io)](https://antigone4224.github.io/web3-url-colearning-day8)
 
-##  测试一下blob上传的命令行工具（
+今天就是听课，解答了我之前的一些疑问。。
 
-
-
-````
-npm i -g eth-blob-uploader
-````
-
-
-
-​	```
+1.manual mod的路由实现问题，老师给了个[示范项目](https://github.com/QuarkChain/evm-large-storage/blob/main/contracts/examples/FlatDirectoryFactory.sol)
 
 ```
-eth-blob-uploader -r <rpc> -p <private-key> -f <file-path> -t <to-address>
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.0;
+
+import "../W3RC3.sol";
+
+contract FlatDirectory is W3RC3 {
+    bytes public defaultFile = "";
+
+    constructor(uint8 slotLimit) W3RC3(slotLimit) {}
+
+    function resolveMode() external pure virtual returns (bytes32) {
+        return "manual";
+    }
+
+    fallback(bytes calldata pathinfo) external returns (bytes memory)  {
+        bytes memory content;
+        if (pathinfo.length == 0) {
+            // TODO: redirect to "/"?
+            return bytes("");
+        } else if (pathinfo[0] != 0x2f) {
+            // Should not happen since manual mode will have prefix "/" like "/....."
+            return bytes("incorrect path");
+        }
+
+        if (pathinfo[pathinfo.length - 1] == 0x2f) {
+            (content, ) = read(bytes.concat(pathinfo[1:], defaultFile));
+        } else {
+            (content, ) = read(pathinfo[1:]);
+        }
+
+        StorageHelper.returnBytesInplace(content);
+    }
+
+    function setDefault(bytes memory _defaultFile) public virtual {
+        require(msg.sender == owner, "must from owner");
+        defaultFile = _defaultFile;
+    }
+}
 ```
 
-上传文件（
+感觉跟很古早的cgi开发很像。。。路由解析还是自己写代码实现的。。我本来以为会有个类似的框架啥的（（
 
-![img](https://raw.githubusercontent.com/antigone4224/blog-img/main/6717783cf38ace1ee982d5e11e757b09.png)
+2.ethfs-cli FlatDirectory文件上传的问题，并不会像正常文件系统一样保存目录的信息，，所有文件都放在一个文件夹中
 
-
+3.web3-url跟正常的url一样，支持相对路径引用。。这点我都没有注意。
 
 <!-- Content_END -->
