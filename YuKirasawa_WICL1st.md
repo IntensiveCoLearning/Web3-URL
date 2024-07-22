@@ -306,4 +306,28 @@ function resolveMode() external pure returns (bytes32) {
 
 以太坊合约的访问方式有两种，一种是只读访问，一种是读写访问。其中只读访问只读取链上数据，而不对链上数据进行修改，因此不需要链上的交易操作，也不需要使用钱包签名。而读写访问可以对链上数据进行修改，因此需要通过向以太坊网络发送交易实现，也需要使用钱包对要进行的交易进行签名。在前面对 web3url 进行访问的时候，我们并没有使用钱包，因此上面的 web3url 访问操作都是只读访问。
 
+### 07.22
+
+- 今日学习时间：1 h
+
+- 学习内容小结：学习了一些 ENS 的基础知识。
+
+ENS (Ethereum name service) 是一个与 DNS 类似的 web3 网络的域名服务系统。比如当访问 `web3://w3url.eth`，域名 w3url.eth 就会先被 ENS 解析为实际的合约地址，再进行合约的访问。
+
+在 web3curl 中，可以看到一部分 ens 解析的流程
+
+```
+* Host domain name resolver: ens
+*   Domain name being resolved: w3url.eth
+*   Resolution chain id: 1
+*   Resolution type: contentContractTxt
+*   contentcontract TXT record: w3q-g:0xEbcA4860ebBe969E9Bc42643fcb437879dBDa9C6
+*   Result address: 0xEbcA4860ebBe969E9Bc42643fcb437879dBDa9C6
+*   Result chain id: 3334
+* Contract address: 0xEbcA4860ebBe969E9Bc42643fcb437879dBDa9C6
+* Contract chain id: 3334
+```
+
+由于没有指定 chainId，默认使用 eth 主网进行 ens 解析。解析过程中查询到了 contentContractTxt 记录，这是 ERC-6821 定义的适用于 web3url 的解析记录。这个记录可以包含由 ERC-3770 定义的包含链信息的地址，正如上面解析过程中得到的 `w3q-g:0xEbcA4860ebBe969E9Bc42643fcb437879dBDa9C6`，这样的记录可以使客户端自动确定这个域名对应的合约所在的 chainId。
+
 <!-- Content_END -->
