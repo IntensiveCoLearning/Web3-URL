@@ -102,7 +102,7 @@ timezone: Asia/Shanghai
 -   学习内容小结：Auto Mode 的 ?returns= 怎么写
 -   Homework 部分：
 
-        Deploy a contract in auto model and say “hello world”
+        Deploy a contract in auto mode and say “hello world”
             web3://0x117f7b2C45FD86b69268e067654a559B13EcB6Ff:11155111/Hello
             https://0x117f7b2C45FD86b69268e067654a559B13EcB6Ff.11155111.w3link.io/Hello
 
@@ -114,7 +114,7 @@ timezone: Asia/Shanghai
 -   学习内容小结：学习如何写 Manual Mode 的智能合约
 -   Homework 部分：
 
-        Deploy a contract in manual model and say “hello world”
+        Deploy a contract in manual mode and say “hello world”
             web3://0xE6BD29A25A15367C2D58D638e50cdea581299ACf:97/
             https://0xE6BD29A25A15367C2D58D638e50cdea581299ACf.97.w3link.io/
 
@@ -136,9 +136,18 @@ timezone: Asia/Shanghai
 
 ### 07.22
 
--   今日学习时间：1 小时（看 Telegram 群内消息并求 w3q 测试币，查看 EthStorage 资料）
+-   今日学习时间：3 小时
+    1 小时看 Telegram 群内消息并求 w3q 测试币，查看 EthStorage 资料；
+    1 小时参加会议；
+    1 小时尝试写含 html 代码的 Manual Mode 的智能合约。
 -   学习内容小结：学习 EthStorage 相关
--   Homework 部分：Nil
--   Question and Ideas：web3:// 是如何 parse 页面代码并展示页面的；是否支持 javascript；如何支持
+-   Homework 部分：
+
+        Deploy a contract in manual mode (containing HTML codes)
+            web3://0x6eecc8c147eb21a83c5f9e4956fbd4575d3ff942:11155111/
+            https://0x6eecc8c147eb21a83c5f9e4956fbd4575d3ff942.11155111.w3link.io/
+            (The javascript button does not seem to be working, need to look into this)
+
+-   Question and Ideas：尝试把自己的 react project 用 ethfs 上传到 web3url
 
 <!-- Content_END -->
