@@ -147,15 +147,19 @@ timezone: Asia/Shanghai
 - Homework 部分（如果有安排需要填写证明完成）
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 - TODO
-   - hw1q3q4
+   - 看看有没有人能帮助一下把hw1q3q4给完成一下
 
 ### 07.22
 
-- 今日学习时间：
+- 今日学习时间：3h
 - 学习内容小结：
+   - [Day 7.22 - test on ethStorage](https://gigantic-bandicoot-5c1.notion.site/Day-7-22-test-on-ethStorage-5865d9f798b543248f63308b4c4c1b12)
+   - [Day 7.22 - 阅读笔记ethStorage](https://gigantic-bandicoot-5c1.notion.site/Day-7-22-ethStorage-5d699e5b547c4c0780547953e4974aac)
 - Homework 部分（如果有安排需要填写证明完成）
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 - TODO
+   - 看看有没有人能帮助一下把hw1q3q4给完成一下
+   - ethStorage不太会
 
 ### 07.23
 

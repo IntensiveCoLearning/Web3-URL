@@ -346,4 +346,9 @@ TODO：
 - 学习内容小结：
   - Read codebase https://github.com/web3-protocol/web3protocol-js
   - Read codebase https://github.com/web3-protocol/web3curl-js
+
+  ### 07.21
+
+- 今日学习时间：60 min
+- 学习内容小结：学习EthStorage[笔记](https://pinto-zinnia-ba1.notion.site/EthStorage-5c9b378b51ae4c8aa8ebbc6f18be02d5?pvs=25)
 <!-- Content_END -->
