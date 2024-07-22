@@ -128,8 +128,11 @@ web3://<contract>[:<chainId>]/<path>
 今日学习时间：2h
 
 - 学习内容小结：学习[Web3URL 文档](https://docs.web3url.io)部分章节
-- 使用 ethfs-uploader 上传您的第一个文件/文件夹 (失败了)
+- 使用 ethfs-sdk 上传您的第一个文件
 
-- 参加 LXDAO 中文社区周会
+### 07.22
 
+今日学习时间：1h
+
+- 学习内容小结：查看 ERC-4804,ERC-6860 内容
 - <!-- Content_END -->
