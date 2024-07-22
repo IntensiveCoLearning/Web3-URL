@@ -335,7 +335,7 @@ FlatDirectory Address: 0x6F3F9E477a931d208c06efE7E6D3af251B000E94
 上传第一个文件夹
 
 ```
-ethfs-cli upload -f myfolder -a 0x6F3F9E477a931d208c06efE7E6D3af251B000E94 -c 3334 -p dadd64540987deea8210cfadcf50aeeed4ec14950a1f05260f7f59084f3b0727
+ethfs-cli upload -f myfolder -a 0x6F3F9E477a931d208c06efE7E6D3af251B000E94 -c 3334 -p privkey
 providerUrl = https://galileo.web3q.io:8545
 chainId = 3334
 address: 0x6F3F9E477a931d208c06efE7E6D3af251B000E94
@@ -370,7 +370,7 @@ web3://0x6F3F9E477a931d208c06efE7E6D3af251B000E94:3334/hello.txt
 
 ### 7.21
 
-博客链接：[web3-url-colearning-day6 (antigone4224.github.io)](https://antigone4224.github.io/web3-url-colearning-day7)
+博客链接：[web3-url-colearning-day7 (antigone4224.github.io)](https://antigone4224.github.io/web3-url-colearning-day7)
 
 # Use eth-blob-uploader to upload files via blobs
 
@@ -385,32 +385,6 @@ npm i -g eth-blob-uploader
 ````
 
 
-
-​	```
-
-```
-eth-blob-uploader -r <rpc> -p <private-key> -f <file-path> -t <to-address>
-```
-
-上传文件（
-
-![img](https://raw.githubusercontent.com/antigone4224/blog-img/main/6717783cf38ace1ee982d5e11e757b09.png)
-
-# Use eth-blob-uploader to upload files via blobs
-
-##  Use eth-blob-uploader to upload files via blobs
-
-##  测试一下blob上传的命令行工具（
-
-
-
-````
-npm i -g eth-blob-uploader
-````
-
-
-
-​	```
 
 ```
 eth-blob-uploader -r <rpc> -p <private-key> -f <file-path> -t <to-address>
