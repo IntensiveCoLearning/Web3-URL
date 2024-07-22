@@ -134,4 +134,11 @@ timezone: Asia/Shanghai
 -   Homework 部分：Nil
 -   Question and Ideas：看不懂 EIP-4804，很多疑问
 
+### 07.22
+
+-   今日学习时间：1 小时（看 Telegram 群内消息并求 w3q 测试币，查看 EthStorage 资料）
+-   学习内容小结：学习 EthStorage 相关
+-   Homework 部分：Nil
+-   Question and Ideas：web3:// 是如何 parse 页面代码并展示页面的；是否支持 javascript；如何支持
+
 <!-- Content_END -->
