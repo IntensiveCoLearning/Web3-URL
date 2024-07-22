@@ -173,5 +173,12 @@ Visit https://0xa10f8d4394f4d2f016411aec53e9a2b73a8cd2f7.w3q-g.w3link.io/crossch
   - Read codebase https://github.com/web3-protocol/web3curl-js
   - Read codebase https://github.com/web3-protocol/web3protocol-go
 
+### 07.22
+
+- 今日学习时间：1 hour
+- 学习内容小结： 主要在启动项目 web3url.rust --- 一个 Rust 版本的 Web3Url SDK
+
+> This project aims to provide a Rust SDK for [web3url](https://docs.web3url.io/), heavily inspired by [web3protocol-js](https://github.com/web3-protocol/web3protocol-js).
+
 
 <!-- Content_END -->
