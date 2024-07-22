@@ -151,4 +151,14 @@
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
   - 对于 ethStorage 的技术实现是怎么样的？
 
+### 07.22
+
+- 今日学习时间：16:30~17:30
+- 学习内容小结：
+  - 安装学习使用 web3curl ![web3curl](https://pic.wenjunjiang.com/web3curl_ns.png)
+  - 学习 name service 并注册 W3NS name ![w3ns](https://pic.wenjunjiang.com/202407221717571.png)
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+  - 在 w3q 上注册的 name 不是在 galileo 测试链上吗？ 现在无法使用 web3curl 解析 ![name](https://pic.wenjunjiang.com/202407221756350.png)
+
 <!-- Content_END -->
