@@ -255,15 +255,13 @@ node . -v 'web3://w3url.eth'
 - 今日学习时间：1 小时
 
 - 学习内容小结：
-  - **ETHSTORAGE Networks ** 了解学习 EthStorage sidechain is fully EVM-compatible, [Galileo Testnet](https://docs.web3url.io/ethstorage-information/networks) 设置。
+  - ETHSTORAGE Networks ：了解学习 EthStorage sidechain is fully EVM-compatible, [Galileo Testnet](https://docs.web3url.io/ethstorage-information/networks) 设置。
 
   - EthStorage POA Explorer：https://explorer.galileo.web3q.io
 
   - ethereum-magicians.org：[EIP-4804: Web3 URL to EVM Call Message Translation](https://ethereum-magicians.org/t/eip-4804-web3-url-to-evm-call-message-translation/8300)
   
   - **[FlatDirectory](https://docs.web3url.io/advanced-topics/flatdirectory) ：** ERC-5018 提议的 FlatDirectory 是用于文件系统目录的标准接口，允许在基于 EVM 的区块链上的任何二进制对象被其他 dApp 重新使用。该标准允许在智能合约中实现文件系统目录的标准 API。该标准提供了基本功能，可以读取/写入任何大小的二进制对象，并且如果对象过大而无法在单个交易中处理，则允许进行对象的分块读写。
-  
-    
   
 - Homework ：Deploy a contract in manual model and say "hello world" 
 
@@ -300,12 +298,33 @@ node . -v 'web3://w3url.eth'
   部署合约成功，[合约地址详情](https://explorer.galileo.web3q.io/tx/0x340be88ad1b319d9310c76d25ce1ec1bdf5b91e5be8b7a93e21d41b34145d28a/internal-transactions)：0x5f975e35433a95d83bc183f4bec22d2fa0619269
 
   ⚠️Galileo Testnet W3Q 的链 id 为3334，访问时需要指定``:3334``，在 manual mode 模式`` any path is valid`` 🤔。
-
   直接访问``web3://0x5f975e35433a95d83bc183f4bec22d2fa0619269:3334`` 正常。
-
   ![getGreeting_manual](img/getGreeting_manual.png)
 
 
+### 07.22
+- 今日学习时间：2 小时
+- 学习内容小结：
+  - 第二节公开课学习，后续看回放在具体实操
+    - 待研究学习：
+      - https://github.com/ethstorage/web3url-website
+      - https://github.com/ethstorage/evm-large-storage/blob/master/contracts/examples/FlatDirectory.sol
+
+  - 基于 Web3:// 应用场景思考
+    - Sample Applications 参考
+      - Tutorial: https://tutorial.w3q.w3q-g.w3link.io/
+      - W3NS: https://w3ns.w3q.w3q-g.w3link.io/
+      - Blog platform: https://dblog.w3q.w3q-g.w3link.io/
+      - W3Box: https://w3box.w3q.w3q-g.w3link.io/
+      - W3Drive: https://w3drive.w3q.w3q-g.w3link.io/
+      - W3Mail: https://w3mail.w3q.w3q-g.w3link.io/
+      - QRobot: https://qrobot.w3q.w3q-g.w3link.io/
+
+    - 天涯论坛、维基百科、GitHub、个人博客
+    - 好玩的一个 Web3 网页🤔
+    - 与 Nostr 网络结合 
+
+      
 
 
 
