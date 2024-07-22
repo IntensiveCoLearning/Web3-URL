@@ -243,4 +243,11 @@ Hello World
 - Homework 部分（如果有安排需要填写证明完成）
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 
+### 07.22
+
+- 今日学习时间：1h
+- 学习内容小结：看了一下https://github.com/ethstorage/awesome-web3中的项目，想挑战一下独立完成项目
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+
 <!-- Content_END -->
