@@ -99,6 +99,33 @@ https://l3ob.notion.site/Web3-URL-1-0cdfdb7041d94b6eab6b64d43b9a511c
   - Deploy a contract in manual model and say “hello world”
     - https://0x401407b9884fdf0978ae166e9f233d884390dc55.11155111.w3link.io/
 
+```
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity ^0.8.0;
+
+contract HelloWorld {
+    function greet() public pure returns (string memory){
+        return "hello world";
+    }
+
+    function resolveMode() external pure returns (bytes32) {
+        return "manual";
+    }
+
+    fallback(bytes calldata cdata) external returns (bytes memory) {
+        if(cdata.length == 0 || cdata[0] != 0x2f) {
+            return bytes("");
+        }
+
+        if (cdata.length == 1) {
+          return bytes(abi.encode("hello world"));
+        }
+
+        return abi.encode("Not found");
+    }
+}
+```
+
 ### 07.20
 
 - Homework
@@ -136,5 +163,158 @@ function request(string[] memory resource, KeyValue[] memory params) external vi
 ```
 
 遇到一个问题，接口的body是string类型，而文件数据应该是bytes类型，要如何兼容呢？
+
+### 07.24
+
+接上面，测试下来返回 bytes memory 的数据是可以兼容的。
+
+```
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.0;
+
+import "https://raw.githubusercontent.com/ethstorage/evm-large-storage/master/contracts/ERC5018.sol";
+
+contract FlatDirectoryWithResourceRequest is ERC5018 {
+    struct KeyValue {
+        string key;
+        string value;
+    }
+
+    bytes public defaultFile = "";
+
+    constructor(uint8 slotLimit, uint32 maxChunkSize, address storageAddress) ERC5018(slotLimit, maxChunkSize, storageAddress) {}
+
+    function resolveMode() external pure virtual returns (bytes32) {
+        return "5219";
+    }
+
+    // 比较两个字符串是否相等
+    function compareStrings(string memory a, string memory b) private pure returns (bool) {
+        // 将字符串转换为字节数组
+        bytes memory bytesA = bytes(a);
+        bytes memory bytesB = bytes(b);
+        
+        // 比较长度
+        if (bytesA.length != bytesB.length) {
+            return false;
+        }
+        
+        // 比较每个字节
+        for (uint i = 0; i < bytesA.length; i++) {
+            if (bytesA[i] != bytesB[i]) {
+                return false;
+            }
+        }
+        
+        return true;
+    }
+
+    function joinStrings(string[] memory strings) public pure returns (string memory) {
+        // Step 1: 计算连接后的字符串的总长度
+        uint totalLength = 0;
+        for (uint i = 0; i < strings.length; i++) {
+            totalLength += bytes(strings[i]).length;
+        }
+        
+        // 加上分隔符的长度
+        totalLength += strings.length - 1;
+
+        // Step 2: 创建一个新的字节数组并拼接字符串
+        bytes memory result = new bytes(totalLength);
+        uint k = 0;
+        for (uint i = 0; i < strings.length; i++) {
+            bytes memory strBytes = bytes(strings[i]);
+            for (uint j = 0; j < strBytes.length; j++) {
+                result[k++] = strBytes[j];
+            }
+            // 添加分隔符，但不在最后一个字符串后添加
+            if (i < strings.length - 1) {
+                result[k++] = '/';
+            }
+        }
+
+        return string(result);
+    }
+
+    function request(string[] memory resource, KeyValue[] memory params) external view returns (uint statusCode, bytes memory body, KeyValue[] memory headers) {
+        string memory pathinfo;
+        uint chunks = 0;
+        
+        if(resource.length > 0) {
+            pathinfo = joinStrings(resource);
+            chunks = countChunks(bytes(pathinfo));
+
+            // /test.txt
+            if(compareStrings(pathinfo, "test.txt")) {
+                body = bytes("hello world");
+                statusCode = 200;
+                headers = new KeyValue[](2);
+                headers[0].key = "Content-Type";
+                headers[0].value = "application/octet-stream";
+                headers[1].key = "Content-Disposition";
+                headers[1].value = "attachment; filename=\"test.txt\"";
+            } else if(compareStrings(pathinfo, "index.html.gz/decompress")) {
+                statusCode = 200;
+                (body, ) = read(bytes("index.html.gz"));
+                headers = new KeyValue[](3);
+                headers[0].key = "Content-Type";
+                headers[0].value = "application/octet-stream";
+                headers[1].key = "Content-Disposition";
+                headers[1].value = "attachment; filename=\"index.html\"";
+                headers[2].key = "Content-Encoding";
+                headers[2].value = "gzip";
+            } else if (chunks > 0) {
+                statusCode = 200;
+                (body, ) = read(bytes(pathinfo));
+            } else {
+                statusCode = 404;
+                body = bytes("Not Found");
+            }
+        } else {
+            statusCode = 200;
+            headers = new KeyValue[](2);
+            headers[0].key = "Content-type";
+            headers[0].value = "text/html; charset=utf-8";
+            headers[1].key = "Content-Encoding";
+            headers[1].value = "gzip";
+
+            (body, ) = read(bytes("index.html.gz"));
+        }
+    }
+
+    fallback(bytes calldata pathinfo) external returns (bytes memory)  {
+        bytes memory content;
+        if (pathinfo.length == 0) {
+            // TODO: redirect to "/"?
+            return bytes("");
+        } else if (pathinfo[0] != 0x2f) {
+            // Should not happen since manual mode will have prefix "/" like "/....."
+            return bytes("incorrect path");
+        }
+
+        if (pathinfo[pathinfo.length - 1] == 0x2f) {
+            (content, ) = read(bytes.concat(pathinfo[1:], defaultFile));
+        } else {
+            (content, ) = read(pathinfo[1:]);
+        }
+
+        StorageHelper.returnBytesInplace(content);
+    }
+
+    function setDefault(bytes memory _defaultFile) public onlyOwner virtual {
+        defaultFile = _defaultFile;
+    }
+}
+```
+
+https://0x12194f1f2e7eecb33dbf68bc74f909f51262b72d.3334.w3link.io/
+
+- return a uncompressed compressed data 
+  - https://0x12194f1f2e7eecb33dbf68bc74f909f51262b72d.3334.w3link.io/index.html.gz/decompress
+
+- determine a customized MIME
+  - https://0x12194f1f2e7eecb33dbf68bc74f909f51262b72d.3334.w3link.io/test.txt
+
 
 <!-- Content_END -->
