@@ -98,4 +98,9 @@ XXX
 - 今日学习时间：1h
 - 学习内容小结：尝试用 ethfs-sdk 写上传demo。
 
+### 07.23
+
+- 今日学习时间：1h
+- 学习内容小结：大致看了下 Arweave 的文档，体验了一下基于 Arweave 的 akord 服务，存储费用非常便宜
+
 <!-- Content_END -->

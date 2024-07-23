@@ -330,4 +330,26 @@ ENS (Ethereum name service) 是一个与 DNS 类似的 web3 网络的域名服�
 
 由于没有指定 chainId，默认使用 eth 主网进行 ens 解析。解析过程中查询到了 contentContractTxt 记录，这是 ERC-6821 定义的适用于 web3url 的解析记录。这个记录可以包含由 ERC-3770 定义的包含链信息的地址，正如上面解析过程中得到的 `w3q-g:0xEbcA4860ebBe969E9Bc42643fcb437879dBDa9C6`，这样的记录可以使客户端自动确定这个域名对应的合约所在的 chainId。
 
+### 07.23
+
+- 今日学习时间：1 h
+
+- 学习内容小结：完成 Homework 2 的第一项，并对 web3box 的结构进行一些分析。
+
+- Homework 部分
+
+  在 web3box 上上传文件非常简单，只需要在浏览器上访问 `https://w3-box.w3eth.io/#/`，连接钱包，选择上传文件并使用钱包签名即可。上传成功后网页会给出访问文件的 url `https://galileo.web3q.io/file.w3q/0xdf33654b75055f14d0af487efc52744a0d89ef49/ico.jpg`. 使用浏览器访问即可查看该文件。
+
+  web3box  主要由三个合约组成：`0x1499a319278e81390d2f32afa3ab08617d5e8c0d` (即 w3-box.eth 或 w3box.w3q) 是存储和展示网页前端的合约,`0x731cd5311e9bad1e99e7f1081a91a38c02b5f47d` 是 web3box 的后端，也就是 [SimpleW3box.sol](https://github.com/ethstorage/w3box/blob/main/contracts/SimpleW3box.sol) 所部署的合约，实现了一些用户接口并调用文件存储合约完成相关操作，`0x37926Ea3020C114B4042F0ca86Ee5587A2b20D11` (即) 是最终的文件存储合约，实现了文件存储并使用 manual mode 解析和处理文件访问请求。
+
+  下面尝试使用 web3url 访问上述合约的一些方法。
+
+  访问 `web3://0x731cd5311e9bad1e99e7f1081a91a38c02b5f47d:3334/getAuthorFiles/0xdf33654b75055f14d0af487efc52744a0d89ef49?returns=(uint256[],bytes[],bytes[],string[])` 可以得到该地址在合约上存储的文件列表。返回的结果为 
+
+  ````
+  [["0x669f9038"],["0x69636f2e6a7067"],["0x696d6167652f6a706567"],["https://galileo.web3q.io/file.w3q/0xdf33654b75055f14d0af487efc52744a0d89ef49/ico.jpg"]]
+  ````
+
+  访问 `web3://0x37926Ea3020C114B4042F0ca86Ee5587A2b20D11:3334/0xdf33654b75055f14d0af487efc52744a0d89ef49/ico.jpg` 可以得到上面上传的图片。
+
 <!-- Content_END -->
