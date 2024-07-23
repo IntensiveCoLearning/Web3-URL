@@ -94,6 +94,7 @@ https://l3ob.notion.site/Web3-URL-1-0cdfdb7041d94b6eab6b64d43b9a511c
 
 - Homework
   - Deploy a contract in auto model and say “hello world”
+    - https://0xcced993cea00aa983adc6ab9a6c1348f470da703.11155111.w3link.io/greet
     - https://0xcced993cea00aa983adc6ab9a6c1348f470da703.11155111.w3link.io/greet?returns=(string)
   - Deploy a contract in manual model and say “hello world”
     - https://0x401407b9884fdf0978ae166e9f233d884390dc55.11155111.w3link.io/
@@ -104,9 +105,9 @@ https://l3ob.notion.site/Web3-URL-1-0cdfdb7041d94b6eab6b64d43b9a511c
   - Claim EthStorage Testnet tokens
     - 0x9CBd3D6A36cf2d45442fD35Dc160c97f658F8B18
   - Upload a file via web3box and paste link
-   - https://galileo.web3q.io/file.w3q/0x9cbd3d6a36cf2d45442fd35dc160c97f658f8b18/WechatIMG153.jpg
+    - https://galileo.web3q.io/file.w3q/0x9cbd3d6a36cf2d45442fd35dc160c97f658f8b18/WechatIMG153.jpg
   - Write  a blog and paste link
-   - https://w3-blog.w3eth.io/#/blog/0xfaf99Fb2Ffaab74F5262756D6CC55f1598d4298e/0
+    - https://w3-blog.w3eth.io/#/blog/0xfaf99Fb2Ffaab74F5262756D6CC55f1598d4298e/0
 
 ### 07.22
 
@@ -125,5 +126,15 @@ https://0x005d3a77b67e951540810e29ac3ba46be9e61282.3334.w3link.io/index.html
 
 ### 07.23
 
+- Homework
+  - Challenge: Use ERC6944 to
+    - return a uncompressed compressed data 
+    - determine a customized MIME
+
+```
+function request(string[] memory resource, KeyValue[] memory params) external view returns (uint statusCode, string memory body, KeyValue[] memory headers);
+```
+
+遇到一个问题，接口的body是string类型，而文件数据应该是bytes类型，要如何兼容呢？
 
 <!-- Content_END -->
