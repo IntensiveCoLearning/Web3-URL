@@ -152,4 +152,11 @@ timezone: Asia/Shanghai
 
 -   Question and Ideas：尝试把自己的 react project 用 ethfs 上传到 web3url
 
+### 07.23
+
+-   今日学习时间：1 小时（看 Telegram 群内消息并提问，查看资料）
+-   学习内容小结：学习 ERC-6944
+-   Homework 部分：Nil
+-   Question and Ideas：搞清楚 EIP-4804， EIP-5219 和 ERC-6944
+
 <!-- Content_END -->
