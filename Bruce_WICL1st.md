@@ -247,5 +247,6 @@ TODO：
   - Deploy a contract in auto model and say “hello world”
   - Deploy a contract in manual model and say “hello world”
 - 可以开发一个一键上传或者创建 Web3 站点的合约？
+- https://youtu.be/z207TQYNSdM 第二期视频
 
 <!-- Content_END -->
