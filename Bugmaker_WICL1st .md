@@ -280,4 +280,108 @@ function testFuzz_Withdraw(uint96 amount) public {
 3. 设置断言检查：在每次操作后检查不变性条件。
 4. 报告结果：输出测试结果，指出是否有任何不变性条件被违反。
 简单来说，就是操作后设置断言，检查不变性是否发生改变。
+
+### 07.23
+- 今日学习时间：7.23  4 p.m.--7 p.m.
+- 学习内容小结：Foundry 实现NFT
+#### 通过Foundry实现NFT
+引用solmate-ERC721、oppenzeppelin中Strings、Ownable实现
+
+```sol
+// SPDX-License-Identifier: SEE LICENSE IN LICENSE
+pragma solidity 0.8.20;
+
+import "solmate/tokens/ERC721.sol";
+import "openzeppelin-contracts/contracts/utils/Strings.sol";
+import "openzeppelin-contracts/contracts/access/Ownable.sol";
+
+contract NFT is ERC721, Ownable {
+    using Strings for uint256;
+
+    uint256 public currentTokenId;
+    uint256 public constant MAX_CAPACITY = 10_000;
+    uint256 public constant MINT_PRICE = 0.05 ether;
+
+    string public baseURI;
+
+    error MintPriceNotPaid();
+    error MaxSupply();
+    error NonExistentTokenURI(); 
+
+    constructor(string memory _name, string memory _symbol, string memory _baseURI) 
+        ERC721(_name, _symbol)
+        Ownable(msg.sender) 
+    {
+        baseURI = _baseURI;
+    }
+
+    function tokenURI(uint256 tokenId)
+        public
+        view
+        virtual
+        override
+        returns (string memory)
+    {
+        if (ownerOf(tokenId) == address(0)) {
+            revert NonExistentTokenURI();
+        }
+        if (bytes(baseURI).length > 0) {
+            return string(abi.encodePacked(baseURI, tokenId.toString()));
+        } else {
+            return "";
+        }
+    }
+
+    function mintTo(address recipient) 
+        public
+        payable
+        returns (uint256)
+    {
+        uint256 newItemId = ++currentTokenId;
+        if (msg.value != MINT_PRICE) {
+            revert MintPriceNotPaid();
+        }
+        if (newItemId > MAX_CAPACITY) {
+            revert MaxSupply();
+        }
+        _safeMint(recipient, newItemId);
+        return newItemId;
+    }
+
+    function setBaseURI(string memory _baseURI) external onlyOwner {
+        baseURI = _baseURI;
+    }
+}
+
+```
+
+测试代码
+```sol
+pragma solidity 0.8.20;
+
+import "forge-std/Test.sol";
+import "../src/NFT.sol";
+
+contract NFTTest is Test {
+    NFT private nft;
+
+    function setUp() public {
+        nft = new NFT("NFT_tutorial", "TUT", "baseUri");
+    }
+
+    function test_RevertMintWithoutValue() public {
+        vm.expectRevert(NFT.MintPriceNotPaid.selector);
+        nft.mintTo{value: 0 ether}(address(1));
+    }
+
+    function test_MintPricePaid() public {
+        nft.mintTo{value: 0.05 ether}(address(1));
+    }
+
+    function test_RevertMintToZeroAddress() public {
+        vm.expectRevert("INVALID_RECIPIENT");
+        nft.mintTo{value: 0.05 ether}(address(0));
+    }
+}
+```
 <!-- Content_END -->
