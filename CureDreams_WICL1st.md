@@ -148,5 +148,41 @@ timezone: Asia/Shanghai
 - 今日学习时间：请假
 - 学习内容小结：
 - Question and Ideas: 
-XXX
-<!-- Content_END -->
+
+### 07.22
+
+- 今日学习时间：完成Homework1中前两项结合实践：
+
+#### HW1：查看Milady的所属权
+
+1. 首先在ethscan上查找相应的NFT合约地址，并且找到相应的ABI文件：
+
+   ![image-20240723231822753](C:\Users\10478\AppData\Roaming\Typora\typora-user-images\image-20240723231822753.png)
+
+2. 根据文件中的函数，找到相应的所有权函数ownerOf，查看到输入为unit256，输出为adress：
+
+   ![image-20240723232019414](C:\Users\10478\AppData\Roaming\Typora\typora-user-images\image-20240723232019414.png)
+
+3. 根据该合约的mode，判断为是Auto Mode，所以构造如下的访问方式：
+
+   ```
+   0x5af0d9827e0c53e4799bb226655a1de152a425a5.w3eth.io/ownerOf/101?returns=(address)
+   ```
+
+   原web3格式是：
+
+   ```
+   web3://0x5af0d9827e0c53e4799bb226655a1de152a425a5/ownerOf/101?returns=(address)
+   ```
+
+   注意到，后面的returns不能缺省。
+
+   ![image-20240723232358569](C:\Users\10478\AppData\Roaming\Typora\typora-user-images\image-20240723232358569.png)
+
+#### HW2
+
+​	类似的，找到相应地址，构造相应参数，并且转换为网关方式即可访问。
+
+- 学习内容小结：
+- Question and Ideas: 
+  <!-- Content_END -->
