@@ -108,7 +108,22 @@ https://l3ob.notion.site/Web3-URL-1-0cdfdb7041d94b6eab6b64d43b9a511c
   - Write  a blog and paste link
    - https://w3-blog.w3eth.io/#/blog/0xfaf99Fb2Ffaab74F5262756D6CC55f1598d4298e/0
 
-### 07.21
+### 07.22
+
+- Homework
+  - Use ethfs-uploader to upload a folder
+
+```bash
+ethfs-cli create -p $KEY -c 3334
+# FlatDirectory Address: 0x005d3A77B67e951540810e29ac3ba46bE9e61282
+
+ethfs-cli upload -f dist -a 0x005d3A77B67e951540810e29ac3ba46bE9e61282 -c 3334 -p $KEY
+```
+
+https://0x005d3a77b67e951540810e29ac3ba46be9e61282.3334.w3link.io/index.html
+
+
+### 07.23
 
 
 <!-- Content_END -->
