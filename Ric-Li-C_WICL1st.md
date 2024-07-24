@@ -159,4 +159,14 @@ timezone: Asia/Shanghai
 -   Homework 部分：Nil
 -   Question and Ideas：搞清楚 EIP-4804， EIP-5219 和 ERC-6944
 
+### 07.24
+
+-   今日学习时间：1 小时（看 Telegram 群内消息并提问，查看资料）
+-   学习内容小结：学习 EthStorage 相关资料
+-   Homework 部分：
+
+        Claim EthStorage Testnet tokens - done
+
+-   Question and Ideas：搞清楚如何按照 ERC-6944 写智能合约
+
 <!-- Content_END -->
