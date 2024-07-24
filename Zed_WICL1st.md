@@ -163,6 +163,28 @@ timezone: Asia/Shanghai
 
 ### 07.23
 
+- 今日学习时间：3h
+- 学习内容小结：
+   - 完成hw1q3
+   - 和punkcan探讨做什么合约，聊到魔改pooltogether，发现绕不开策略中心化，后改到赌博默示录中的石头剪刀布。
+   - 整理聊天内容成文本：[Web3 E-Card](https://www.notion.so/Web3-E-Card-6bcf5fc4ac2b4e36a801deb66af5c937?pvs=4)
+   - 感兴趣的朋友可以一起看看讨论
+- Homework 部分（如果有安排需要填写证明完成）
+   - hw 1 q3：
+         - web3://0x1b02245206dc41bf6bc368b8f29a934fa0b8fb33:3334/getMessage
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+- TODO
+
+### 07.24
+
+- 今日学习时间：
+- 学习内容小结：
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+- TODO
+
+### 07.25
+
 - 今日学习时间：
 - 学习内容小结：
 - Homework 部分（如果有安排需要填写证明完成）

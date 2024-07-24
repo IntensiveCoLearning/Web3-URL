@@ -359,66 +359,36 @@
 		- Automode: https://0xe5182111d079103e8c02e8f284cde8b47b91f566.3334.w3eth.io/automode
 	- 解析fallback的范例
 		```js
-					fallback(bytes calldata cdata) external returns (bytes memory) {
-					// 检查传入的数据长度是否为0，或者数据的第一个字节是否不等于0x2f（即'/'字符）
-					// 如果任一条件满足，则返回一个空的字节序列
-					
-					if (cdata.length == 0 || cdata[0] != 0x2f) {
-					
-					return bytes("");
-					
-					}
-					// 如果请求只包含一个'/'字符，返回首页内容
-					
-					// 调用indexHTML(1)生成首页的HTML内容，并将其编码为字节序列返回
-					
-					if (cdata.length == 1) {
-					
-					return bytes(abi.encode(indexHTML(1)));
-					
-					}
-					
-					  
-					
-					// 检查是否为形如'/index/[uint]'的请求
-					
-					else if (
-					
-					cdata.length >= 6 && ToString.compare(string(cdata[1:6]), "index")
-					
-					) {
-					
-					uint page = 1;
-					
-					// 如果路径后有更多字符，尝试解析页码
-					
-					if (cdata.length >= 8) {
-					
-					page = ToString.stringToUint(string(cdata[7:]));
-					
-					}
-					
-					// 如果解析页码为0，返回"Not found"
-					
-					if (page == 0) {
-					
-					return abi.encode("Not found");
-					
-					}
-					
-					// 否则，调用indexHTML(page)获取指定页码的HTML内容，并编码返回
-					
-					return abi.encode(indexHTML(page));
-					
-					}
-					
-					  
-					
-					// 如果以上条件均不满足，返回"Not found"
-					
-					return abi.encode("Not found");
-					
-					}
+		fallback(bytes calldata cdata) external returns (bytes memory) {
+		// 检查传入的数据长度是否为0，或者数据的第一个字节是否不等于0x2f（即'/'字符）
+		// 如果任一条件满足，则返回一个空的字节序列
+		if (cdata.length == 0 || cdata[0] != 0x2f) {
+			return bytes("");
+		}
+		// 如果请求只包含一个'/'字符，返回首页内容
+		// 调用indexHTML(1)生成首页的HTML内容，并将其编码为字节序列返回
+		if (cdata.length == 1) {
+			return bytes(abi.encode(indexHTML(1)));
+		}
+		// 检查是否为形如'/index/[uint]'的请求
+		else if (
+			cdata.length >= 6 && ToString.compare(string(cdata[1:6]), "index")
+		) {
+		uint page = 1;
+		// 如果路径后有更多字符，尝试解析页码
+		if (cdata.length >= 8) {
+			page = ToString.stringToUint(string(cdata[7:]));
+		}
+		// 如果解析页码为0，返回"Not found"
+		if (page == 0) {
+			return abi.encode("Not found");
+		}
+		// 否则，调用indexHTML(page)获取指定页码的HTML内容，并编码返回
+			return abi.encode(indexHTML(page));
+		}
+		// 如果以上条件均不满足，返回"Not found"
+			return abi.encode("Not found");
+		}
 		```
 
 	
@@ -431,14 +401,85 @@
 
 ### 07.23
 
+- 今日学习时间：0.5h
+- 学习内容小结：
+	- 完成第一阶段最后一项作业，Manual合约
+	- 完成测试，并注册多个W3NS，准备规划项目
+- Homework 部分（如果有安排需要填写证明完成）
+	- https://0x91122cb8e0111ac58ef46278c0a65378692f3563.3334.w3eth.io/index/
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+
+
+### 07.24
+
+- 今日学习时间：0.5h
+- 学习内容小结：
+	- 实作ethfs-cli的各项指令，不过这个有点太简单就不写细节了
+	- 本地网关架设....这个也有点简单，不过这个我觉得可以写成一个一键安装的套件，最好有GUI，这样大家可以在自己本机开网关
+	- 讨论项目进行
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+
+
+### 07.25
+
 - 今日学习时间：
 - 学习内容小结：
 - Homework 部分（如果有安排需要填写证明完成）
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 
+
+### 07.26
+
+- 今日学习时间：
+- 学习内容小结：
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+
+
+### 07.27
+
+- 今日学习时间：
+- 学习内容小结：
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+
+
+### 07.28
+
+- 今日学习时间：
+- 学习内容小结：
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+
+
+### 07.29
+
+- 今日学习时间：
+- 学习内容小结：
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+
+
+### 07.30
+
+- 今日学习时间：
+- 学习内容小结：
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+
+
+### 07.31
+
+- 今日学习时间：
+- 学习内容小结：
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+
+
 ### ToDo
 
-- 尝试布署合约做下两个Homework
+
 - 研究0x2b51A751d3c7d3554E28DC72C3b032E5f56Aa656的架构
 - 了解网关如何架设
 - Claim EthStorage Testnet tokens(Use a new address)

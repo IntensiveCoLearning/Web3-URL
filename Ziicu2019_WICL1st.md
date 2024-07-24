@@ -174,5 +174,12 @@ web3curl -v 'web3://w3url.eth'
 
 - 今日学习时间：0h
 - 学习内容小结
+
+### 07.23
+
+- 今日学习时间：1.5h
+- 学习内容小结
+  - 重新观看[第二次公开课](https://www.youtube.com/watch?v=z207TQYNSdM)
+  - 根据教程尝试留言墙案例代码实现。
   
 <!-- Content_END -->

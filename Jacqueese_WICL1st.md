@@ -390,4 +390,11 @@ TODO：
     具体见下图：
     
     ![getGreeting](img/getGreeting_auto.png)
+
+
+### 07.23
+- 今日学习时间：20:30-21:00
+- 学习内容小结：观看了freeCodeCamp出品的[30分钟区块链基础课程](https://www.youtube.com/watch?v=gyMwXuJrbJQ)（剩余28.5小时🫡）
+- Question and Ideas
+
 <!-- Content_END -->

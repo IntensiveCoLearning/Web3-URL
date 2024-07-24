@@ -103,5 +103,12 @@
 - 今日学习时间：40 min
 - 学习内容小结：阅读DBlog源码[笔记](https://pinto-zinnia-ba1.notion.site/DBlog-cbcfbcbd972a46a894ae74c72e74de25)
 
+
+### 07.23
+
+- 今日学习时间：70 min
+- 学习内容小结：看[第二次公开课](https://www.youtube.com/watch?v=z207TQYNSdM)
+
+
 XXX
 <!-- Content_END -->

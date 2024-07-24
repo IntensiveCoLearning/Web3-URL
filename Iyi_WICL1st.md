@@ -161,4 +161,13 @@
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
   - 在 w3q 上注册的 name 不是在 galileo 测试链上吗？ 现在无法使用 web3curl 解析 ![name](https://pic.wenjunjiang.com/202407221756350.png)
 
+### 07.23
+
+- 今日学习时间：17:00~18:15
+- 学习内容小结
+  - 把 https://docs.web3url.io/ 文档全部读一遍
+  - 阅读 参加的组队项目资料信息
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+
 <!-- Content_END -->

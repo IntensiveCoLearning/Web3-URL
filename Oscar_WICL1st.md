@@ -180,29 +180,30 @@ node . -v 'web3://w3url.eth'
     - [IANA - Uniform Resource Identifier (URI) SCHEMES（统一资源标识符方案）](http://www.iana.org/assignments/uri-schemes)
 
     - URI （Uniform Resource Identifier，统一资源标识符）。URI 属于 URL 更高层次的抽象，一种字符串文本标准。就是说，URI 属于父类，而 URL 属于 URI 的子类。URL 是 URI 的一个子集。二者的区别在于，URI 表示请求服务器的路径，定义这么一个资源。而 URL 同时说明要如何访问这个资源（http://）。
-
-
-    ```http
-    ftp://ftp.is.co.za/rfc/rfc1808.txt (URL)
-    http://www.ietf.org/rfc/rfc2396.txt (URL)
-    ldap://[2001:db8::7]/c=GB?objectClass?one (URL)
-    mailto:John.Doe@example.com (URL)
-    news:comp.infosystems.www.servers.unix (URL)
-    tel:+1-816-555-1212
-    telnet://192.0.2.16:80/ (URL)
-    urn:oasis:names:specification:docbook:dtd:xml:4.1.2
-    ```
     
-    ```html
-    scheme://host[:port#]/path/.../[;url-params][?query-string][#anchor]
-    scheme //有我们很熟悉的 http、https、ftp 以及著名的 ed2k，迅雷的 thunder 等。
-    host //HTTP 服务器的IP地址或者域名
-    port# //HTTP 服务器的默认端口是 80 (可省略)。如果使用了别的端口必须指明，例如 tomcat 的默认端口是 8080 http://localhost:8080/
-    path //访问资源的路径
-    url-params //所带参数
-    query-string //发送给 http 服务器的数据
-    anchor //锚点定位
-    ```
+      ```http
+      ftp://ftp.is.co.za/rfc/rfc1808.txt (URL)
+      http://www.ietf.org/rfc/rfc2396.txt (URL)
+      ldap://[2001:db8::7]/c=GB?objectClass?one (URL)
+      mailto:John.Doe@example.com (URL)
+      news:comp.infosystems.www.servers.unix (URL)
+      tel:+1-816-555-1212
+      telnet://192.0.2.16:80/ (URL)
+      urn:oasis:names:specification:docbook:dtd:xml:4.1.2
+      ```
+    
+      ```http
+      scheme://host[:port#]/path/.../[;url-params][?query-string][#anchor]
+      scheme //有我们很熟悉的 http、https、ftp 以及著名的 ed2k，迅雷的 thunder 等。
+      host //HTTP 服务器的IP地址或者域名
+      port# //HTTP 服务器的默认端口是 80 (可省略)。如果使用了别的端口必须指明，例如     tomcat 的默认端口是 8080 http://localhost:8080/
+      path //访问资源的路径
+      url-params //所带参数
+      query-string //发送给 http 服务器的数据
+      anchor //锚点定位
+      ```
+    
+      
 
 - Homework 无
 
@@ -306,10 +307,7 @@ node . -v 'web3://w3url.eth'
 - 今日学习时间：2 小时
 - 学习内容小结：
   - 第二节公开课学习，后续看回放在具体实操
-    - 待研究学习：
-      - https://github.com/ethstorage/web3url-website
-      - https://github.com/ethstorage/evm-large-storage/blob/master/contracts/examples/FlatDirectory.sol
-
+    
   - 基于 Web3:// 应用场景思考
     - Sample Applications 参考
       - Tutorial: https://tutorial.w3q.w3q-g.w3link.io/
@@ -319,10 +317,27 @@ node . -v 'web3://w3url.eth'
       - W3Drive: https://w3drive.w3q.w3q-g.w3link.io/
       - W3Mail: https://w3mail.w3q.w3q-g.w3link.io/
       - QRobot: https://qrobot.w3q.w3q-g.w3link.io/
-
+  
     - 天涯论坛、维基百科、GitHub、个人博客
     - 好玩的一个 Web3 网页🤔
     - 与 Nostr 网络结合 
+  
+
+### 07.23
+
+- 今日学习时间：1 小时
+
+- 学习内容小结：
+
+  - 去中心化存储应用及 gas 开销了解
+
+    - 下载的命令行工具 web3curl 通过 Web3://  协议下载数据了解学习
+    - 批量上传工具 ethfs-uploader 批量上传网页数据 了解学习
+    - https://github.com/ethstorage/evm-large-storage/blob/master/contracts/examples/FlatDirectory.sol  待学习
+
+  - Manual 模式搭建网站了解学习：
+
+    -  https://github.com/ethstorage/web3url-website 为例学习去中心化全链网站，前端页面如何从合约渲染出来。
 
       
 

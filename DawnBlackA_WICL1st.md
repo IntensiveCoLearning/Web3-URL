@@ -127,5 +127,11 @@ web3://0xdac17f958d2ee523a2206206994597c13d831ec7/balanceOf/0xCaE710A61fec7515E2
 
 * 学习内容小结：参与腾讯会议，了解了auto model就是将前端部分也编写在后端合约中，通过方法返回，从而转为前端显示。manual model通过ethfs-uploader上传前端文件，就可以直接通过web3url访问。在我的理解里，web3url就是一个链上服务器，可以将我们部署的前端永久运行。
 
+### 07.23
+
+* 今日学习时间：2h
+
+* 学习内容小结：写一个html前端，用于输入参数，生成对应的foundry指令，方便使用foundry与合约交互、部署验证合约。完成了一个基础demo，明天尝试上传部署web3url。
+
 
 <!-- Content_END -->
