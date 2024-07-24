@@ -134,4 +134,10 @@ web3://0xdac17f958d2ee523a2206206994597c13d831ec7/balanceOf/0xCaE710A61fec7515E2
 * 学习内容小结：写一个html前端，用于输入参数，生成对应的foundry指令，方便使用foundry与合约交互、部署验证合约。完成了一个基础demo，明天尝试上传部署web3url。
 
 
+### 07.24
+
+* 今日学习时间：1h
+
+* 学习内容小结：尝试用auto model将编写的项目部署，将项目向合约转化。
+
 <!-- Content_END -->
