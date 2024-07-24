@@ -384,4 +384,7 @@ contract NFTTest is Test {
     }
 }
 ```
+### 07.24
+- 今日学习时间：7.24  4 p.m.--5 p.m.
+- 学习内容小结：学习GPU代币合约漏洞
 <!-- Content_END -->
