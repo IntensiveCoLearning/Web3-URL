@@ -459,4 +459,8 @@ contract FlatDirectory is W3RC3 {
 4.类似于annas archive和zlib的网络图书馆。。
 具体的构想我会在把这些设想完善之后写到博客里
 
+### 7.24
+今天加入了暗黑石头剪刀布的组队中，大概讨论了一下项目的架构，牌的生成和验证，以及后面用ethfs的云盘作为拓展来防止不交牌导致的流局等等。。
+项目notion链接https://gigantic-bandicoot-5c1.notion.site/Web3-E-Card-6bcf5fc4ac2b4e36a801deb66af5c937
+
 <!-- Content_END -->
