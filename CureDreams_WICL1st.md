@@ -149,7 +149,7 @@ timezone: Asia/Shanghai
 - 学习内容小结：
 - Question and Ideas: 
 
-### 07.22
+### 07.23
 
 - 今日学习时间：完成Homework1中前两项结合实践：
 
@@ -185,4 +185,10 @@ timezone: Asia/Shanghai
 
 - 学习内容小结：
 - Question and Ideas: 
-  <!-- Content_END -->
+
+### 07.24
+
+- 今日学习时间：70mins
+- 学习内容小结：今日复习了第二次公开课，并且尝试构思组队内容。
+- Question and Ideas: 
+- <!-- Content_END -->
