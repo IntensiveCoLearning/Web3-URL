@@ -237,5 +237,6 @@ Web3 URL的域名部分可以是以下几种类型之一:
 - 通过web3url访问合约参数
 - 尝试注册一个域名，但是还没实现一个可升级的合约，等下次在注册ens域名吧
 ### 07.23
+- 使用remix开发调试sol总是不便利，重新鼓捣了wsl2 fedora环境，使用foundry练习在w3q练习合约，并编写了一篇[博客](https://blog.ithuo.net/posts/foundry-beginners-guide-developing-testing-and-deploying-smart-contracts-on-w3q-network/)，内容包括环境配置，合约开发，测试，部署，验证，交互和常见的问题排查方式
 ### 07.24
 <!-- Content_END -->
