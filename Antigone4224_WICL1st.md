@@ -459,4 +459,12 @@ contract FlatDirectory is W3RC3 {
 4.类似于annas archive和zlib的网络图书馆。。
 具体的构想我会在把这些设想完善之后写到博客里
 
+### 7.24
+今天加入了暗黑石头剪刀布的组队中，大概讨论了一下项目的架构，牌的生成和验证，以及后面用ethfs的云盘作为拓展来防止不交牌导致的流局等等。。
+项目notion链接https://gigantic-bandicoot-5c1.notion.site/Web3-E-Card-6bcf5fc4ac2b4e36a801deb66af5c937
+
+### 7.25
+今天项目建立了github仓库：https://github.com/OutlawVoyage/OutlawVoyage
+继续完善一些关于对局的细节部分，讨论了一下对局中怎么交换卡牌，以及明确了成员的工作时间等。。后续几天应该就可以开始贡献代码了。。
+
 <!-- Content_END -->
