@@ -169,4 +169,11 @@ timezone: Asia/Tokyo
    - 第二周公开课视频复习
    - 参考实际项目web3url-website官网github的代码实现
 
+### 07.24
+- 参加 edcon side event skip
+
+### 07.23
+- 今日学习时间：22:00～22:40 共40分钟
+- 学习内容小结：
+   - 查看组队信息， 联系同学，构思demo dapp
 <!-- Content_END -->
