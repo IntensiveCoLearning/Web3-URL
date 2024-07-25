@@ -149,4 +149,10 @@ web3://<contract>[:<chainId>]/<path>
 
 - 学习内容小结：查看[残酷共学公开课 2](https://www.youtube.com/watch?v=z207TQYNSdM&ab_channel=LXDAO)
 
+### 07.25
+
+今日学习时间：1h
+
+- 学习内容小结：跑了一下https://github.com/ethstorage/awesome-web3的[Hello Web3 项目](https://github.com/ethstorage/hello-web3)
+
 - <!-- Content_END -->
