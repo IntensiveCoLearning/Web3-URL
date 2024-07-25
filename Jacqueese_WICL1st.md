@@ -397,4 +397,13 @@ TODO：
 - 学习内容小结：观看了freeCodeCamp出品的[30分钟区块链基础课程](https://www.youtube.com/watch?v=gyMwXuJrbJQ)（剩余28.5小时🫡）
 - Question and Ideas
 
+
+### 07.24
+
+
+-   今日学习时间：1 小时（看 Telegram 群内消息并提问，查看资料）
+-   学习内容小结：学习 ERC-6944
+-   Homework 部分：Nil
+
+
 <!-- Content_END -->

@@ -254,7 +254,6 @@ node . -v 'web3://w3url.eth'
 ### 07.21
 
 - 今日学习时间：1 小时
-
 - 学习内容小结：
   - ETHSTORAGE Networks ：了解学习 EthStorage sidechain is fully EVM-compatible, [Galileo Testnet](https://docs.web3url.io/ethstorage-information/networks) 设置。
 
@@ -306,7 +305,7 @@ node . -v 'web3://w3url.eth'
 ### 07.22
 - 今日学习时间：2 小时
 - 学习内容小结：
-  - 第二节公开课学习，后续看回放在具体实操
+  - [第二节公开课](https://www.youtube.com/watch?v=z207TQYNSdM)学习，后续看回放在具体实操
     
   - 基于 Web3:// 应用场景思考
     - Sample Applications 参考
@@ -326,20 +325,70 @@ node . -v 'web3://w3url.eth'
 ### 07.23
 
 - 今日学习时间：1 小时
-
 - 学习内容小结：
-
   - 去中心化存储应用及 gas 开销了解
-
-    - 下载的命令行工具 web3curl 通过 Web3://  协议下载数据了解学习
-    - 批量上传工具 ethfs-uploader 批量上传网页数据 了解学习
+    - 下载的命令行工具 [web3curl](https://docs.web3url.io/web3-clients/web3curl) 通过 Web3://  协议下载数据了解学习
+    - 批量上传工具 [ethfs-uploader](https://docs.web3url.io/tutorials-on-ethstorage-early-testnet/upload-your-first-file-folder-with-ethfs-uploader) 批量上传网页数据 了解学习
     - https://github.com/ethstorage/evm-large-storage/blob/master/contracts/examples/FlatDirectory.sol  待学习
 
   - Manual 模式搭建网站了解学习：
 
     -  https://github.com/ethstorage/web3url-website 为例学习去中心化全链网站，前端页面如何从合约渲染出来。
 
-      
+
+### 07.24
+
+- 今日学习时间：1 小时
+- 学习内容小结：
+  - 去中心化留言墙 demo 熟悉
+    - 合约[部署](https://explorer.galileo.web3q.io/tx/0x51c9d279e82b3e62e75a0aad357492b242882179a95c440089847e988b6fbe20/internal-transactions)：``0x236993aa25b16e2cadd73f64350a38d310bce596``
+    - 合约访问：
+      - auto 模式，gateway 方式查看：
+        - ``web3://0x236993aa25b16e2cadd73f64350a38d310bce596:3334/homepage``
+      - manual 模式：适合更复杂的交互
+    - 合约交互：addPost()方法
+    - 合约升级：比如新增“增删改查”功能，需要在升级模式对合约进行升级
+      - 测试很重要：不然很耗 Gas 
+
+    ```solidity
+    // SPDX-License-Identifier: GPL-3.0
+    
+    pragma solidity >=0.8.2 <0.9.0;
+    
+    contract Wall{
+        string[] posts;
+        function addPost(string memory post) public {
+            posts.push(post);
+        }
+        function getPosts() public view returns(string[] memory){
+            return posts;
+        }
+    
+        function homepage() public view returns(string memory){
+            string memory page = "<HTML><h1> Welcome </h1>";
+            
+            for (uint256 i = 0; i < posts.length; i++) {
+                page = string.concat(page, "<p>");
+                page = string.concat(page, posts[i]);
+                page = string.concat(page, "</p>");
+            }
+            page = string.concat(page, "</HTML>");
+            return page;
+        }
+    }
+    
+    ```
+
+    - web3curl 测试：结构熟悉
+
+      ![web3curl-homepage](img/web3curl-homepage.png)
+
+  - [ethfs-cli](https://github.com/ethstorage/ethfs-cli) 了解学习
+
+    - 通过智能合约实现批量上传文件到以太坊存储
+    - 修改了以太坊存储逻辑，激励机制
+    - [FlatDirectory](https://docs.web3url.io/advanced-topics/flatdirectory) 路由实现了解
+    - 架设自己网关？ 待学习
 
 
 

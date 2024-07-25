@@ -181,4 +181,9 @@ Visit https://0xa10f8d4394f4d2f016411aec53e9a2b73a8cd2f7.w3q-g.w3link.io/crossch
 > This project aims to provide a Rust SDK for [web3url](https://docs.web3url.io/), heavily inspired by [web3protocol-js](https://github.com/web3-protocol/web3protocol-js).
 
 
+### 07.24
+
+- 今日学习时间：0.5 hour
+- 学习内容小结：work on web3url.rust
+
 <!-- Content_END -->

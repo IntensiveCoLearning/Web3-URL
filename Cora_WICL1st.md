@@ -142,4 +142,11 @@ web3://<contract>[:<chainId>]/<path>
 
 - 学习内容小结：看示例应用程序
 - 思考 做什么内容的 web3:// 协议应用项目
+
+### 07.24
+
+今日学习时间：1h
+
+- 学习内容小结：查看[残酷共学公开课 2](https://www.youtube.com/watch?v=z207TQYNSdM&ab_channel=LXDAO)
+
 - <!-- Content_END -->
