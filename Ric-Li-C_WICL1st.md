@@ -169,4 +169,15 @@ timezone: Asia/Shanghai
 
 -   Question and Ideas：搞清楚如何按照 ERC-6944 写智能合约
 
+### 07.25
+
+-   今日学习时间：1 小时（看 Telegram 群内消息并提问，查看资料）
+-   学习内容小结：继续学习 EthStorage 相关资料
+-   Homework 部分：
+
+        Upload a file via web3box and paste link
+            https://0x6C00359069c658A42129DC54E801E47bDFf0Db27.3336.w3link.io/0x4d395fec86e88b85b087f58b16972de58fb9d920/Square.png
+
+-   Question and Ideas：上传一个文件，为什么需要 approve 9 次？
+
 <!-- Content_END -->
