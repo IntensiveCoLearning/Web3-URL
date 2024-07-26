@@ -180,4 +180,14 @@ timezone: Asia/Shanghai
 
 -   Question and Ideas：上传一个文件，为什么需要 approve 9 次？
 
+### 07.26
+
+-   今日学习时间：2 小时（看 Telegram 群内消息，看 github Discussion 并提问，查看资料，尝试 ethfs-uploader）
+-   学习内容小结：尝试 ethfs-uploader 并 debug
+-   Homework 部分：
+
+        Use ethfs-uploader to upload a folder - 上载文件成功，但是却无法显示
+
+-   Question and Ideas：通过 ethfs-uploader 上传成功的文件去哪里了
+
 <!-- Content_END -->
