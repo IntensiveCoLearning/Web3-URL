@@ -155,4 +155,12 @@ web3://<contract>[:<chainId>]/<path>
 
 - 学习内容小结：跑了一下https://github.com/ethstorage/awesome-web3的[Hello Web3 项目](https://github.com/ethstorage/hello-web3)
 
-- <!-- Content_END -->
+### 07.26
+
+今日学习时间：1h
+
+- 学习内容小结：使用 ethfs-uploader 上传您的第一个文件/文件夹失败了问题解决了部分。
+  - 问题一：FlatDirectory 获取失败；
+  - 原因：由于没有测试币。
+  - 解决方案：感谢 Max 同学赠予~
+  <!-- Content_END -->
