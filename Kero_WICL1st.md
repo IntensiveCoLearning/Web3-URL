@@ -224,10 +224,12 @@ function get_metadata(name) -> (length_of_chunks, size_of_file)
 但是上述这套设计没有考虑到 “何时该新开 chunk”。要把情况都考虑到的话还是挺花时间的，暂时就这样，不深入了。
 
 
-另外，有个问题，
-[ERC5018](https://eips.ethereum.org/EIPS/eip-5018) 定义的 fallback read 接口 `fallback(bytes calldata prefixedName) external returns (bytes memory data)` 似乎没在 [evm-large-storage contracts/IERC5018.sol](https://github.com/ethstorage/evm-large-storage/blob/18d4d2b696a50f048dd61d4288ca13b63f0d3985/contracts/IERC5018.sol#L4) 定义。
+#### Contracts Notes
 
-这个接口是未来要移除吗？
-我也不太理解这个接口的用途，似乎跟 filesystem interfaces 不太相关。
+- [`ERC5018.sol`](https://github.com/ethstorage/evm-large-storage/blob/b393f054eaca3ef383f9cf9486c774fa76c881f8/contracts/ERC5018.sol) 的多数工作量是做多种模式的兼容，算是一个大而全 filesystem-like contract
+- [`FlatDirectory.sol`](https://github.com/ethstorage/evm-large-storage/blob/e51778c7d2dbb9d6f6dc6f8e22b0a71da166b6cd/contracts/examples/FlatDirectory.sol) 约等于 [ERC5018.sol](https://github.com/ethstorage/evm-large-storage/blob/b393f054eaca3ef383f9cf9486c774fa76c881f8/contracts/ERC5018.sol)，只是加上了个 `fallback` 函数而已。
+- `SimpleFlatDirectory.sol` 不是 ERC5018 规范的合约，是使用 `StorageManager.sol` 而搞的文件系统。可能这个合约是为了展示 web3url 的用途。
+- `SimpleNameService.sol` 可能这个合约是为了展示 web3url 的用途。
+- `SimpleW2box.sol` 可能这个合约是为了展示 web3url 的用途。
 
 <!-- Content_END -->
