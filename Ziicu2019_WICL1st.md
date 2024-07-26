@@ -181,5 +181,16 @@ web3curl -v 'web3://w3url.eth'
 - 学习内容小结
   - 重新观看[第二次公开课](https://www.youtube.com/watch?v=z207TQYNSdM)
   - 根据教程尝试留言墙案例代码实现。
+
+### 07.24
+
+- 今日学习时间：0h
+- 学习内容小结
+
+### 07.25
+
+- 今日学习时间：1h
+- 学习内容小结：
+  - 根据第二次公开课教程尝试[ethfs-cli](https://github.com/ethstorage/ethfs-cli)工具的使用。
   
 <!-- Content_END -->

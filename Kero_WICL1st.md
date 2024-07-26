@@ -186,4 +186,9 @@ Visit https://0xa10f8d4394f4d2f016411aec53e9a2b73a8cd2f7.w3q-g.w3link.io/crossch
 - 今日学习时间：0.5 hour
 - 学习内容小结：work on web3url.rust
 
+### 07.25
+
+- 今日学习时间：0.5 hour
+- 学习内容小结：决定终止 web3url.rust 项目，将精力转为开启 web3url-on-starknet 新项目。除了决定转变项目外，今天的主要学习内容是深入学习 web3protocol-js，以及翻阅现有的 web3url example projects，为后续集成 web3url-on-starknet 做前期准备
+
 <!-- Content_END -->
