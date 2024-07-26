@@ -239,4 +239,29 @@ Web3 URL的域名部分可以是以下几种类型之一:
 ### 07.23
 - 使用remix开发调试sol总是不便利，重新鼓捣了wsl2 fedora环境，使用foundry练习在w3q练习合约，并编写了一篇[博客](https://blog.ithuo.net/posts/foundry-beginners-guide-developing-testing-and-deploying-smart-contracts-on-w3q-network/)，内容包括环境配置，合约开发，测试，部署，验证，交互和常见的问题排查方式
 ### 07.24
+#### 使用ethfs-uploader上传文件
+1. 运行EthFS Uploader：使用命令`yarn start`启动应用程序
+2. 连接钱包：
+   - 点击"Connect Wallet"按钮
+   - 选择Goerli测试网
+   - 确保钱包中有足够的GoerliETH用于支付gas费用
+3. 选择上传内容：
+   - 可以选择上传单个文件或整个文件夹
+   - 支持拖拽上传
+4. 设置上传参数：
+   - **文件名**：默认为原始文件名，可修改
+   - **存储时间**：可选择1天、1周、1个月或1年
+   - **副本数量**：可选择1-3个副本
+5. 确认上传：
+   - 检查预估的gas费用
+   - 点击"Upload"按钮开始上传过程
+6. 上传完成：
+   - 上传成功后，界面会显示上传的文件信息
+   - 提供了文件的Web3 URL，可用于访问已上传的内容
+  
+### 7.25
+- 构建本地的node项目上传到ethstorage网络但未成功，明天继续尝试
+### 7.26
+### 7.27
+### 7.28
 <!-- Content_END -->

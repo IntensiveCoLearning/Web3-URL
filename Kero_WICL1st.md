@@ -191,4 +191,45 @@ Visit https://0xa10f8d4394f4d2f016411aec53e9a2b73a8cd2f7.w3q-g.w3link.io/crossch
 - 今日学习时间：0.5 hour
 - 学习内容小结：决定终止 web3url.rust 项目，将精力转为开启 web3url-on-starknet 新项目。除了决定转变项目外，今天的主要学习内容是深入学习 web3protocol-js，以及翻阅现有的 web3url example projects，为后续集成 web3url-on-starknet 做前期准备
 
+### 07.26
+
+- 今日学习时间：2 hours
+- 学习内容小结：Read ERC5018 and associated contracts
+
+#### ERC5018 Notes
+
+一些智能合约需要类似于 filesystem 的操作，比如创建/读取/更改/删除文件。ERC 5018 规范化了一套 filesystem interfaces，用于规范化此类智能合约的接口。同时，由于区块链的交易大小有限制，ERC 5018 为了支持操作大文件，设计了 "dynamic-sized-chunks" 到 "file" 的映射关系。
+这套设计不那么像 Unix filesystem，原因是
+1. 受到区块链的交易体积的限制；
+2. 兼容区块链的不同存储方式
+	1. local contract storage via SLOAD/SSTORE; and
+	2. contract-code-based via CREATE/CREATE2/EXTCODECOPY.
+	3. even outside storage
+3. 为了灵活性甚至还把 chunk 设计为 dynamic-sized（或者叫 undefined-sized）
+
+直观上感觉 ERC5018 的 interfaces 设计得有点 “不伦不类”，是 chunk-based 和 file-based 的混合体，虽然能解决应用的问题，但直观上这个设计略显混乱。但在理解了它所要考虑的因素比较复杂后，我倒也找不到更好的方式。
+如果我设计的话，我可能会先设计一套 file-chunks interfaces 和 file-metadata interfaces 结合：
+
+```
+function create(name, opts = {default_chunk_size})
+function read(name, range)
+function append(name, data)
+function write(name, offset, data)
+function writeAndTrunkate(name, offset, data)
+function trunkate(name, offset)
+
+function get_metadata(name) -> (length_of_chunks, size_of_file)
+```
+
+但是上述这套设计没有考虑到 “何时该新开 chunk”。要把情况都考虑到的话还是挺花时间的，暂时就这样，不深入了。
+
+
+#### Contracts Notes
+
+- [`ERC5018.sol`](https://github.com/ethstorage/evm-large-storage/blob/b393f054eaca3ef383f9cf9486c774fa76c881f8/contracts/ERC5018.sol) 的多数工作量是做多种模式的兼容，算是一个大而全 filesystem-like contract
+- [`FlatDirectory.sol`](https://github.com/ethstorage/evm-large-storage/blob/e51778c7d2dbb9d6f6dc6f8e22b0a71da166b6cd/contracts/examples/FlatDirectory.sol) 约等于 [ERC5018.sol](https://github.com/ethstorage/evm-large-storage/blob/b393f054eaca3ef383f9cf9486c774fa76c881f8/contracts/ERC5018.sol)，只是加上了个 `fallback` 函数而已。
+- `SimpleFlatDirectory.sol` 不是 ERC5018 规范的合约，是使用 `StorageManager.sol` 而搞的文件系统。可能这个合约是为了展示 web3url 的用途。
+- `SimpleNameService.sol` 可能这个合约是为了展示 web3url 的用途。
+- `SimpleW2box.sol` 可能这个合约是为了展示 web3url 的用途。
+
 <!-- Content_END -->
