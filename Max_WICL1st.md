@@ -103,4 +103,15 @@ XXX
 - 今日学习时间：1h
 - 学习内容小结：大致看了下 Arweave 的文档，体验了一下基于 Arweave 的 akord 服务，存储费用非常便宜
 
+### 07.24
+
+XXX
+
+### 07.25
+
+- 今日学习时间：1h
+- 学习内容小结：
+   - 跑了下 web3url-website 的代码，web3protocol 是拿来解析web3url存储的链上数据的
+   - 试了下用 ethstorage-sdk 上传文件，没跑起来
+   - 
 <!-- Content_END -->

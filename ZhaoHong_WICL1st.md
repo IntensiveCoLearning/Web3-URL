@@ -316,5 +316,18 @@ https://0x12194f1f2e7eecb33dbf68bc74f909f51262b72d.3334.w3link.io/
 - determine a customized MIME
   - https://0x12194f1f2e7eecb33dbf68bc74f909f51262b72d.3334.w3link.io/test.txt
 
+### 07.25
+
+w3box：从 https://github.com/ethstorage/awesome-web3 中选取第一个 app 来学习。
+
+访问地址：https://w3-box.w3eth.io/
+
+查了一下使用的是夸克链测试链，领水：https://qkc-l2-faucet.eth.sep.w3link.io/
+
+上传了一个小文件，花费很少，文件地址：https://0x6c00359069c658a42129dc54e801e47bdff0db27.3336.w3link.io/0x9cbd3d6a36cf2d45442fd35dc160c97f658f8b18/IDecentralizedApp.sol
+
+再测试稍大一点的文件（2M+）无法上传
+
+下一步准备看看代码排查一下问题：https://github.com/ethstorage/w3box
 
 <!-- Content_END -->

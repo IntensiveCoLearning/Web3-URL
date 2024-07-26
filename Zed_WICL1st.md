@@ -197,10 +197,20 @@ timezone: Asia/Shanghai
 
 ### 07.26
 
+- 今日学习时间：好多时间
+- 学习内容小结：
+   - 终于组到了前端
+   - 更新[Web3 E-Card](https://www.notion.so/Web3-E-Card-6bcf5fc4ac2b4e36a801deb66af5c937?pvs=4)
+   - 小组讨论进行中
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+- TODO
+
+### 07.27
+
 - 今日学习时间：
 - 学习内容小结：
 - Homework 部分（如果有安排需要填写证明完成）
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 - TODO
-
 <!-- Content_END -->
