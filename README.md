@@ -56,16 +56,14 @@ LXDAO & ETHStorage Host 的 Web3 URL 残酷共学将邀请 [Qi Zhou](https://twi
   - **7 月 8 日 - 7 月 14 日：** 了解残酷共学流程，GitHub 协作共学基础，Web3:// 协议课前学习。
     - [On the Future of Web3 — Paving the Way to End-to-End Fully-Decentralized Web by Qi Zhou](https://www.youtube.com/watch?v=rRI-3RV_JHw)
     - [Introducing web3:// - Decentralized Access Protocol for EVM](https://www.youtube.com/watch?v=h31q2ZMwHkQ)
-    
   - **7 月 15 日 - 7 月 21 日：** Web3:// 协议基础知识和高级开发工具操作教学指导，互动答疑，边学边用。
     - [Introduction to Web3:// Access Protocol](https://docs.google.com/presentation/d/1egJUKJrjC9wjkmOF9sLBkTSwHpd6hl8FXkWehPW7kFk/edit#slide=id.g1754f50a55c_0_11)  (CoLearning 2024)
-    
-    - https://web3url.io/#/ （Homepage）
+    - https://web3url.io/#/ （Web3:// Homepage）
     - https://docs.web3url.io/ （核心指南）
     - https://eips.ethereum.org/EIPS/eip-4804 ( final )
-    - https://eips.ethereum.org/EIPS/eip-6860
-    - https://github.com/ethstorage/awesome-web3 
-  
+    - https://eips.ethereum.org/EIPS/eip-6860 （Draft）
+    - https://github.com/ethstorage/awesome-web3 （应用参考）
+    - https://docs.ethstorage.io/ （扩展学习）
 - **第二阶段：边学边用实战开发（ 两周）**
   - **7 月 22 日 - 8 月 4 日：** 一边学习理论，一边结合具体应用场景实践开发。
     - 掌握 web3:// 高级开发工具。

@@ -418,6 +418,21 @@ node . -v 'web3://w3url.eth'
       - **智能合约设计**：设计灵活可扩展的智能合约，支持多个音频文件调用，比如 50 个和 1000 个区别🤔。
       - **区块链/及存储选择**：未来基于项目需求，选择合适的链。
 
+  
+  ### 07.25
+  
+  - 今日学习时间：1 小时
+  
+  - 学习内容小结：
+  
+    - EthStorage：是一个模块化的去中心化存储二层，提供由数据可用性（DA）驱动的可编程键值存储。它为 Rollups 提供了长期的数据可用性（DA）解决方案，并为完全链上应用程序如游戏、社交网络、人工智能等开辟了新的可能性。
+      - EIP-4844 引入了数据块，增强了像 Rollups 这样的二层扩展解决方案的吞吐量和效率。然而，这些数据块的数据只能暂时使用，意味着几周后会被丢弃。这产生了一个重要影响：二层无法无条件地从一层推导出最新状态。如果某一数据无法再从一层获取，Rollup 可能无法同步链。
+      - 有了 EthStorage 作为长期数据可用性解决方案，二层随时可以从它们的数据可用性层（Ethereum DA, Celestia, EigenDA, etc. + EthStorage）推导出所需的信息。
+  
+    - 了解学习 [How EthStorage Works](https://docs.ethstorage.io/readme/how-ethstorage-works)
+  
+    ![HowEthStorageWorks](/Users/luffythinker/Web3-URL/img/HowEthStorageWorks.png)
+  
     
 
 
