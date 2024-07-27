@@ -368,4 +368,10 @@ ENS (Ethereum name service) 是一个与 DNS 类似的 web3 网络的域名服�
 
 由于 web3box 对上传的文件提供的 url 是在以地址命名的文件夹内，且文件不会进行重命名，就可以使用在 web3box 中的 html 等文件中使用相对路径访问。编写了简单的 html 文件进行验证。web3url 为 `web3://0x37926Ea3020C114B4042F0ca86Ee5587A2b20D11:3334/0xdf33654b75055f14d0af487efc52744a0d89ef49/index.html`。使用浏览器访问，可以发现确实可以加载出 html 中引用的相对路径图片。
 
+### 07.26
+
+- 今日学习时间：0.5 h
+
+- 学习内容小结：简单了解了在网页前端通过 javascript 连接 metamask 的方法。
+
 <!-- Content_END -->
