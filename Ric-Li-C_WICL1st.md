@@ -190,4 +190,11 @@ timezone: Asia/Shanghai
 
 -   Question and Ideas：通过 ethfs-uploader 上传成功的文件去哪里了
 
+### 07.27
+
+-   今日学习时间：1 小时（看 github Discussion 和 Telegram 群内消息，查看资料）
+-   学习内容小结：研究 ethfs-uploader 代码
+-   Homework 部分：Nil
+-   Question and Ideas：EthStorage Blog 似乎有不少问题
+
 <!-- Content_END -->
