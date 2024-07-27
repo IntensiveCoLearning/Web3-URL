@@ -395,15 +395,22 @@ TODO：
 ### 07.23
 - 今日学习时间：20:30-21:00
 - 学习内容小结：观看了freeCodeCamp出品的[30分钟区块链基础课程](https://www.youtube.com/watch?v=gyMwXuJrbJQ)（剩余28.5小时🫡）
-- Question and Ideas
+- Question and Ideas### 07.19
+网关的工作流程如下：
+客户端发送HTTPS请求到网关
+网关解析Web3 URL
+网关访问相应的Web3资源
+网关将资源转换为HTTP响应
+网关将响应发送回客户端
 
 
-### 07.24
+### 07.27
 
 
 -   今日学习时间：1 小时（看 Telegram 群内消息并提问，查看资料）
 -   学习内容小结：学习 ERC-6944
 -   Homework 部分：Nil
+
 
 
 <!-- Content_END -->
