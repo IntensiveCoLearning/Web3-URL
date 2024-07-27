@@ -484,4 +484,7 @@ contract EtherStore is ReentrancyGuard {
 ### 07.26
 - 今日学习时间：7.26  5 p.m.--6 p.m.
 - 学习内容小结：学习闪电贷和合约账户漏洞
+### 07.27
+- 今日学习时间：7.27  9 p.m.--12 p.m.
+- 学习内容小结：学习闪电贷漏洞
 <!-- Content_END -->
