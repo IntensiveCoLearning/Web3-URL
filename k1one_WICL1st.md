@@ -472,5 +472,13 @@ web3://0x299C58F990e832D6748CB0Aea0A9c71118c8700D:11155111
 
 学习内容小结：了解并学习EthStorage相关知识
 
+### 07.27
+
+学习时长：2h
+
+学习内容小结：尝试学习[ethfs-cli](https://github.com/ethstorage/ethfs-cli)工具的使用
+
+
+
 <!-- Content_END -->
 
