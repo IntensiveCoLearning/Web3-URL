@@ -374,4 +374,23 @@ ENS (Ethereum name service) 是一个与 DNS 类似的 web3 网络的域名服�
 
 - 学习内容小结：简单了解了在网页前端通过 javascript 连接 metamask 的方法。
 
+### 07.27
+
+- 今日学习时间：1 h
+
+- 学习内容小结：了解了 ens 的相关的合约调用过程。
+
+与 dns 类似，ens 同样需要域名解析服务将域名转换为地址，在 ens 中这个过程是由合约完成的。目前最常用的公共解析合约是 `0x231b0Ee14048e9dCcD1d247744d114a4EB5E8E63`. 大多数情况下，ens 合约处理的域名是经过 namehash 后的定长散列值。域名的 namehash 作为合约参数时常称为 node，例如查询域名对应地址的接口定义就会接收 node 参数。
+
+```
+function addr(
+    bytes32 node,
+    uint256 coinType
+) external view returns (bytes memory);
+```
+
+对于 web3url 使用的域名，一般会涉及 ETH 主网之外的链 (比如 EthStorage)。 为了支持在 ens 中查询出不同链上的地址，ens 陆续提出了多种解决方案。[ENSIP-7](https://docs.ens.domains/ensip/7) 提出了将多个信息条目编码在 `contenthash` 函数的返回值中。EIP-2304 定义的 `addr` 函数 (接口如上面所示) 允许使用 `coinType` 参数指定查询的地址的所在链，这个设计包含在[ENSIP-9](https://docs.ens.domains/ensip/9)中。
+
+此外，[ERC-6821](https://eips.ethereum.org/EIPS/eip-6821)提出了另一种基于[ENSIP-5](https://docs.ens.domains/ensip/5)文本记录 (Text Records) 的字段 `contentcontract` 使用[ERC-3770](https://eips.ethereum.org/EIPS/eip-3770)表示包含所在链信息的地址。通过访问解析合约的 `text` 函数，并将 `key` 参数设置为 `contentcontract` 就可以获取到相应的地址。
+
 <!-- Content_END -->
