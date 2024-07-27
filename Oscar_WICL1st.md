@@ -401,7 +401,6 @@ node . -v 'web3://w3url.eth'
     - ![web3serve](img/web3serve.png)
 
   - [Web3:// Talks](https://github.com/IntensiveCoLearning/Web3-URL/discussions/153) 项目构思，Web3Talks
-
     - **可能涉及的核心功能**：
       1. 声音录制与分享：简单点直接上传已录制好的声音
       2. 去中心化存储：Ethstorage 存储？
@@ -412,29 +411,54 @@ node . -v 'web3://w3url.eth'
       - 简洁直观的界面
       - 多语言支持
       - 功能明确：记录+呈现+互动🦋
-      - 用户反馈机制：实现常规的用户调查和反馈收集，以便持续优化用户参与体验和功能。
+      - 用户反馈机制：用户调查和反馈收集，优化参与体验和功能。
     - **技术方案**
-      - **音频处理**：选择适合的音频编码和存储技术，优化数据压缩和存取效率。
-      - **智能合约设计**：设计灵活可扩展的智能合约，支持多个音频文件调用，比如 50 个和 1000 个区别🤔。
+      - **音频处理**：适合的音频编码和存储技术，优化数据压缩和存取效率。
+      - **智能合约设计**：灵活可扩展的智能合约，支持多个音频文件调用，比如 50 个和 1000 个区别🤔。
       - **区块链/及存储选择**：未来基于项目需求，选择合适的链。
 
-  
-  ### 07.25
-  
-  - 今日学习时间：1 小时
-  
-  - 学习内容小结：
-  
-    - EthStorage：是一个模块化的去中心化存储二层，提供由数据可用性（DA）驱动的可编程键值存储。它为 Rollups 提供了长期的数据可用性（DA）解决方案，并为完全链上应用程序如游戏、社交网络、人工智能等开辟了新的可能性。
-      - EIP-4844 引入了数据块，增强了像 Rollups 这样的二层扩展解决方案的吞吐量和效率。然而，这些数据块的数据只能暂时使用，意味着几周后会被丢弃。这产生了一个重要影响：二层无法无条件地从一层推导出最新状态。如果某一数据无法再从一层获取，Rollup 可能无法同步链。
-      - 有了 EthStorage 作为长期数据可用性解决方案，二层随时可以从它们的数据可用性层（Ethereum DA, Celestia, EigenDA, etc. + EthStorage）推导出所需的信息。
-  
-    - 了解学习 [How EthStorage Works](https://docs.ethstorage.io/readme/how-ethstorage-works)
-  
-    ![HowEthStorageWorks](/Users/luffythinker/Web3-URL/img/HowEthStorageWorks.png)
-  
-    
 
+
+### 07.26
+
+- 今日学习时间：1 小时
+
+- 学习内容小结：
+
+  - EthStorage：是一个模块化的去中心化存储二层，提供由数据可用性（DA）驱动的可编程键值存储。它为 Rollups 提供了长期的数据可用性（DA）解决方案，并为完全链上应用程序如游戏、社交网络、人工智能等开辟了新的可能性。
+    - EIP-4844 引入了数据块，增强了像 Rollups 这样的二层扩展解决方案的吞吐量和效率。然而，这些数据块的数据只能暂时使用，意味着几周后会被丢弃。这产生了一个重要影响：二层无法无条件地从一层推导出最新状态。如果某一数据无法再从一层获取，Rollup 可能无法同步链。
+    - 有了 EthStorage 作为长期数据可用性解决方案，二层随时可以从它们的数据可用性层（Ethereum DA, Celestia, EigenDA, etc. + EthStorage）推导出所需的信息。
+
+  - 了解学习 [How EthStorage Works](https://docs.ethstorage.io/readme/how-ethstorage-works)
+
+  ![HowEthStorageWorks](img/HowEthStorageWorks.png)
+
+
+### 07.27
+
+- 今日学习时间：1 小时
+
+- 学习内容小结：
+
+  - [Portal Network](https://github.com/ethereum/portal-network-specs) 了解学习
+    - 由多个点对点网络组成，这些网络共同提供必要的数据和功能，以支持标准的 JSON-RPC API。这些网络特别设计主要目的是以确保 clients 在使用这些网络时能最小化「**网络带宽、CPU、RAM 和硬盘资源**」的消耗。🤔
+  
+    - 了解 [Shishui: Ethereum Portal Network Client written in Go](https://github.com/optimism-java/shisui)
+  
+  - https://w3url.w3eth.io/#/ 拆解
+    - 源码学习了解 https://github.com/ethstorage/web3url-website  
+  
+    - VUE结构，基于 Web3:// + Web3Q Galileo 测试网实现
+  
+  - [Web3:// Talks](https://github.com/IntensiveCoLearning/Web3-URL/discussions/153) 项目改为 Web3:// Sounds
+    - demo UI 设计思考中
+    - 与 Derick 交流，他完成合约开发这块
+
+### 07.28
+
+- 今日学习时间：
+
+- 学习内容小结：
 
 
 
