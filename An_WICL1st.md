@@ -114,5 +114,11 @@
 - 今日学习时间：30 min
 - 学习内容小结：看[一些示例应用](https://pinto-zinnia-ba1.notion.site/8cab5017dbc9460dbbecfaa2d4fd059a?pvs=25)
 
+
+### 07.27
+
+- 今日学习时间：120 min
+- 学习内容小结：复习公开课[1](https://www.youtube.com/watch?v=hmN77o-ex8I)[2](https://www.youtube.com/watch?v=z207TQYNSdM)
+
 XXX
 <!-- Content_END -->
