@@ -204,5 +204,10 @@ web3curl -v 'web3://w3url.eth'
 - 今日学习时间：0.5h
 - 学习内容小结：
   - 继续尝试[ethfs-cli](https://github.com/ethstorage/ethfs-cli)工具的使用。
+
+### 07.28
+
+- 今日学习时间：0h
+- 学习内容小结
   
 <!-- Content_END -->
