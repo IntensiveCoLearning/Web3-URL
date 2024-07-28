@@ -457,8 +457,86 @@
 
 ### 07.28
 
-- 今日学习时间：
+- 今日学习时间：1h
 - 学习内容小结：
+	- 分析了两个TerraformNavigator的合约，一个5219 mode  一个manual mode
+		- manual 采用fallback的模式，5129采用了function来处理，例如request
+		- 5219 设置了设置响应头，但manual则是直接回传数据
+		- 针对request进行了理解
+			```
+			function request(
+			    string[] memory resource, 
+			    KeyValue[] memory params
+			) external view returns (
+				uint statusCode, 
+				string memory body, 
+				KeyValue[] memory headers) {
+			
+			// 如果 resource 数组为空，则表示请求的是主页
+			    if(resource.length == 0) {
+			        body = indexHTML(1);  // 生成第一页的 HTML 内容
+			        statusCode = 200;  // 设置状态码为 200（成功）
+			        headers = new KeyValue ;
+			        headers[0].key = "Content-type";  // 设置响应头
+			        headers[0].value = "text/html";  // 内容类型为 text/html
+			    }
+			 // 处理 /index/[uint] 路径
+			    else if(resource.length >= 1 && resource.length <= 2 && ToString.compare(resource[0], "index")) {
+			        uint page = 1;
+			        if(resource.length == 2) {
+			            page = ToString.stringToUint(resource[1]);  // 将第二个元素转换为页码
+			        }
+			        if(page == 0) {
+			            statusCode = 404;  // 如果页码为 0，设置状态码为 404（未找到）
+			        }
+			        else {
+			            body = indexHTML(page);  // 生成对应页码的 HTML 内容
+			            statusCode = 200;  // 设置状态码为 200（成功）
+			            headers = new KeyValue ;
+			            headers[0].key = "Content-type";  // 设置响应头
+			            headers[0].value = "text/html";  // 内容类型为 text/html
+			        }
+			    }
+			// 处理 /view/[uint] 路径
+			    else if(resource.length == 2 && ToString.compare(resource[0], "view")) {
+			        uint terraformsTotalSupply = ITerraforms(terraformsAddress).totalSupply();  // 获取 Terraforms 的总供应量
+			
+			        uint tokenId = ToString.stringToUint(resource[1]);  // 将第二个元素转换为 tokenId
+			        if(tokenId == 0 || tokenId > terraformsTotalSupply) {
+			            statusCode = 404;  // 如果 tokenId 为 0 或大于总供应量，设置状态码为 404（未找到）
+			        }
+			        else {
+			            body = viewHTML(tokenId);  // 生成对应 tokenId 的 HTML 内容
+			            statusCode = 200;  // 设置状态码为 200（成功）
+			            headers = new KeyValue ;
+			            headers[0].key = "Content-type";  // 设置响应头
+			            headers[0].value = "text/html";  // 内容类型为 text/html
+			        }
+			    }
+			// 处理 /view/[uint]/svg 路径，代理 SVG 请求直到 ERC-7087 被接受
+			    else if(resource.length == 3 && ToString.compare(resource[0], "view") && ToString.compare(resource[2], "svg")) {
+			        uint terraformsTotalSupply = ITerraforms(terraformsAddress).totalSupply();  // 获取 Terraforms 的总供应量
+			
+			        uint tokenId = ToString.stringToUint(resource[1]);  // 将第二个元素转换为 tokenId
+			        if(tokenId == 0 || tokenId > terraformsTotalSupply) {
+			            statusCode = 404;  // 如果 tokenId 为 0 或大于总供应量，设置状态码为 404（未找到）
+			        }
+			        else {
+			            body = ITerraforms(terraformsAddress).tokenSVG(tokenId);  // 获取对应 tokenId 的 SVG 数据
+			            statusCode = 200;  // 设置状态码为 200（成功）
+			            headers = new KeyValue ;
+			            headers[0].key = "Content-type";  // 设置响应头
+			            headers[0].value = "image/svg+xml";  // 内容类型为 image/svg+xml
+			        }
+			    }
+			    else {
+			        statusCode = 404;  // 如果上述条件都不满足，设置状态码为 404（未找到）
+			    }
+			}
+
+			```
+		- 
+	- 
 - Homework 部分（如果有安排需要填写证明完成）
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 
@@ -490,9 +568,7 @@
 ### ToDo
 
 
-- 研究0x2b51A751d3c7d3554E28DC72C3b032E5f56Aa656的架构
-- 了解网关如何架设
-- Claim EthStorage Testnet tokens(Use a new address)
+
 - Upload a file via web3box and paste link
 - Write  a blog and paste link
 - Use ethfs-uploader to upload a folder
