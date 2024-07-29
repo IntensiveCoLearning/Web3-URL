@@ -543,9 +543,15 @@
 
 ### 07.29
 
-- 今日学习时间：
+- 今日学习时间：0.5
 - 学习内容小结：
+	- 主要是处理一下作业，作业累积有点多
+	- ethfs-uploader还是装不上，原因不明
 - Homework 部分（如果有安排需要填写证明完成）
+	- Upload a file via web3box and paste link
+		- https://galileo.web3q.io/file.w3q/0xe08635b4793d7e64d4ce51a023e1167ff75e4204/%E5%85%AD%E9%81%93%E9%87%91%E5%88%9A%E5%92%92.png
+	- Write  a blog and paste link
+		- https://dblog.w3q.w3q-g.w3link.io/#/blog/punkcan.w3q/0
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 
 
@@ -569,8 +575,8 @@
 
 
 
-- Upload a file via web3box and paste link
-- Write  a blog and paste link
+- 
+- 
 - Use ethfs-uploader to upload a folder
 - Challenge: Use ERC6944 to return a uncompressed compressed data determine a customized MIME
 - 研究如果使用web3protocol-js，是否可以不用网关就获取数据
