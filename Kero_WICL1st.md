@@ -247,4 +247,16 @@ function get_metadata(name) -> (length_of_chunks, size_of_file)
 
 总的来说，虽然不是绝对必须，但在大多数情况下，使用Node.js来运行和管理React项目会更加高效和方便。
 
+### 07.28
+
+- 今日学习时间：4 hour
+- 学习内容小结：基于 React + Next + wagmi 开发 web3url on-chain blog
+
+#### Note
+
+好像 https://github.com/web3-protocol/web3protocol-js 是一个后端库，不适用于前端，反正对于我这种没有网站开发经验的人来说，不知道怎么在前端项目里适用 web3protocol-js。
+
+还是自己包装个库吧，不折腾 web3protocol-js 了。
+
+
 <!-- Content_END -->
