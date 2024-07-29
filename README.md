@@ -40,7 +40,7 @@ Web3 URL 残酷共学将基于自愿自主建立「Web3 URL 残酷共学开源�
   - [Web3 URL 第一节公开课回放](https://www.youtube.com/watch?v=hmN77o-ex8I)
   - [Web3 URL 第二节公开课回放](https://www.youtube.com/watch?v=z207TQYNSdM)
   
-- **结营分享：** 预在 2024 年 8 月 4 号后举办第一期「**Web3 URL 残酷共学分享及项目展示**」活动，具体时间信息请关注 [Web3 URL 残酷共学频道](https://t.me/LXDAO/8748)通知。
+- **结营分享：** 预在 2024 年 8 月 9 号举办第 1 期线上「**Web3 URL Demo Day**」分享活动，具体时间信息请关注 [Web3 URL 残酷共学频道](https://t.me/LXDAO/8748)通知。
 
 ### 共学时间与地点
 
