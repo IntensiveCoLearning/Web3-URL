@@ -120,5 +120,13 @@
 - 今日学习时间：120 min
 - 学习内容小结：复习公开课[1](https://www.youtube.com/watch?v=hmN77o-ex8I)[2](https://www.youtube.com/watch?v=z207TQYNSdM)
 
+
+### 07.28
+
+- 今日学习时间：30 min
+- 学习内容小结：浏览一下discussions[discussions](https://github.com/IntensiveCoLearning/Web3-URL/discussions)
+
+
+
 XXX
 <!-- Content_END -->

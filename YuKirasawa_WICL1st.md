@@ -393,4 +393,10 @@ function addr(
 
 此外，[ERC-6821](https://eips.ethereum.org/EIPS/eip-6821)提出了另一种基于[ENSIP-5](https://docs.ens.domains/ensip/5)文本记录 (Text Records) 的字段 `contentcontract` 使用[ERC-3770](https://eips.ethereum.org/EIPS/eip-3770)表示包含所在链信息的地址。通过访问解析合约的 `text` 函数，并将 `key` 参数设置为 `contentcontract` 就可以获取到相应的地址。
 
+### 07.28
+
+- 今日学习时间：0.5 h
+
+- 学习内容小结：读了一下 [web3drive](https://github.com/ethstorage/w3drive/tree/master) 的代码，大概理解了如何在 EthStorage 上存储私有数据。
+
 <!-- Content_END -->

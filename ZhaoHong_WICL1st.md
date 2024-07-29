@@ -330,4 +330,9 @@ w3box：从 https://github.com/ethstorage/awesome-web3 中选取第一个 app �
 
 下一步准备看看代码排查一下问题：https://github.com/ethstorage/w3box
 
+### 07.26
+
+项目想法：
+https://github.com/IntensiveCoLearning/Web3-URL/discussions/166
+
 <!-- Content_END -->

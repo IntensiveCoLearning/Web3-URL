@@ -207,4 +207,21 @@ timezone: Asia/Shanghai
 
 -   Question and Ideas：ethfs-cli upload 成功之后，查看文件遇到错误 execution reverted: get() must be called on ES node
 
+### 07.29
+
+-   今日学习时间：1 小时（看 github Discussion 和 Telegram 群内消息，查看资料）
+-   学习内容小结：研究 ERC6944
+-   Homework 部分：
+
+        Use ethfs-uploader to upload a folder:
+            https://0xf31805632f3cf8e2be4759abc61ede19fe295aa4.3333.w3link.io/welcome.html
+
+-   Question and Ideas：
+
+        ethfs-cli upload 时显示的 Total Cost 不准确，显示为
+            Total Upload Chunk Count: 3
+            Total Upload File Size: 198.6171875 KB
+            Total Cost: 0.004388404755433746 ETH
+        ，但实际 cost 为 0.5012 ETH
+
 <!-- Content_END -->
