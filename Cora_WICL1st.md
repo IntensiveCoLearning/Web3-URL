@@ -184,4 +184,14 @@ web3://<contract>[:<chainId>]/<path>
 今日学习时间：1h
 
 - 学习内容小结：查看讨论中项目，寻找灵感。一个是 Outlaw Voyage,一个是 Web3:// Sounds。尝试加入学习~
-<!-- Content_END -->
+
+  ### 07.29
+
+今日学习时间：4h
+
+- 学习内容小结：
+  - 加入 Web3:// Sounds 项目；
+  - 初始化前端完成；
+  - 参加项目 demo 同频会；
+  - 参加残酷共学公开课#3。
+  <!-- Content_END -->
