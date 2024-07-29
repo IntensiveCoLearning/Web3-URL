@@ -499,6 +499,8 @@ contract FlatDirectory is W3RC3 {
     - [ ]  前端开发工程师：实现前端界面，允许用户进行交易和查看结算结果。
 
 我负责后端开发工程师c的工作。。
+### 7.28
+今天在折腾合约开发部署环境的问题，gpt建议的truffle，我看了下已经停止维护了，，consensys建议使用hardhat，项目结构也差不多，也考虑了foundry，但hardhat可以前后端一起测试。还在等大家一起商量出项目具体的开发测试环境。
 
 
 <!-- Content_END -->

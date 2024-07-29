@@ -232,4 +232,19 @@ function get_metadata(name) -> (length_of_chunks, size_of_file)
 - `SimpleNameService.sol` 可能这个合约是为了展示 web3url 的用途。
 - `SimpleW2box.sol` 可能这个合约是为了展示 web3url 的用途。
 
+### 07.28
+
+- 今日学习时间：0.5 hour
+- 学习内容小结：如何区分 client side 和 server side 代码；一个 React 项目是如何运行的（dist）；
+
+#### Note by ChatGPT4
+
+运行React项目时使用到Node.js主要是因为Node.js提供了npm（Node Package Manager），这是一个包管理工具，用于安装和管理项目依赖。React项目通常会依赖许多外部库和工具，例如React本身、React-DOM以及可能的路由和状态管理库等，这些都可以通过npm轻松安装和更新。
+
+此外，Node.js环境支持使用Webpack、Babel等工具来构建和打包JavaScript代码。这些工具可以帮助开发者将React的JSX语法转换为浏览器能理解的JavaScript代码，同时还可以优化应用的性能，比如通过压缩文件来减少加载时间。
+
+虽然理论上你可以不使用Node.js直接在浏览器中使用React（例如通过CDN直接引入React库），但这种方式通常只适用于非常简单的项目。对于大多数现代的、复杂的React应用来说，使用Node.js及其生态系统中的工具是非常必要的，因为它们提供了构建、测试、开发和部署等一系列自动化和优化功能，极大地提高了开发效率和项目的可维护性。
+
+总的来说，虽然不是绝对必须，但在大多数情况下，使用Node.js来运行和管理React项目会更加高效和方便。
+
 <!-- Content_END -->
