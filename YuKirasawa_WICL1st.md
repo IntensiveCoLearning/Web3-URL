@@ -443,4 +443,31 @@ web3://0xae3a76c0fd59c8af8e183931794c959fcba0baf4:3334/
 
 由于没有完全上传所有文件，使用浏览器访问时会报错
 
+### 07.30
+
+- 今日学习时间：1 h
+- 学习内容小结：使用 ethfs-cli 删除文件和 refund。
+
+删除文件
+
+```
+npx ethfs-cli remove -f modules/Image.js -a 0xAe3A76c0Fd59C8af8e183931794c959fCba0BaF4 -c 3334 -p 0x...
+
+Removing file modules/Image.js
+Transaction Id: 0x64a4c16fdb487fea3767e7d4eb7e00aee6cce3da6ddf98bd4eef1251e55b3d90
+Remove file: modules/Image.js succeeded
+domainBalance: 710000000000000000000, accountBalance: 39284297009767386778, balanceChange: 569504000000000
+```
+
+删除文件后会返还上传时支付的 W3Q，balance 变化会体现在合约地址上，使用 refund 操作可以将合约地址上的余额提取到创建者的地址上。
+
+```
+npx ethfs-cli refund -a 0xAe3A76c0Fd59C8af8e183931794c959fCba0BaF4 -c 3334 -p 0x...
+
+Transaction Id: 0xeb09d1473fb59f9298c7a3b2126efeca08652a302cfc064de9cfd24467bee346
+Refund succeeds
+```
+
+之后就可以在创建者的地址上看到余额变化。
+
 <!-- Content_END -->
