@@ -399,4 +399,48 @@ function addr(
 
 - 学习内容小结：读了一下 [web3drive](https://github.com/ethstorage/w3drive/tree/master) 的代码，大概理解了如何在 EthStorage 上存储私有数据。
 
+### 07.29
+
+- 今日学习时间：1 h
+- 学习内容小结：使用 ethfs-cli 上传了一个文件夹。
+
+首先创建一个合约
+
+```
+npx ethfs-cli create -c 3334 -p 0x...
+chainId = 3334
+providerUrl = https://galileo.web3q.io:8545
+FlatDirectory Address: 0xAe3A76c0Fd59C8af8e183931794c959fCba0BaF4
+```
+
+这个合约地址就是后面可以用 web3url 访问的地址
+
+上传指定文件夹，这里尝试上传一个开源的工具网站 CyberChef
+
+```
+npx ethfs-cli upload -f ../to_upload/CyberChef_v9.21.0  -a 0xAe3A76c0Fd59C8af8e183931794c959fCba0BaF4 -c 3334 -p 0x...
+```
+
+由于错误估计了上传需要的测试币，快把测试币用完也没有完全传上去
+
+设置默认路径，即直接访问 `/` 时响应的文件
+
+```
+npx ethfs-cli default -f CyberChef_v9.21.0.html  -a 0xAe3A76c0Fd59C8af8e183931794c959fCba0BaF4 -c 3334 -p 0x...
+providerUrl = https://galileo.web3q.io:8545
+chainId = 3334
+address: 0xAe3A76c0Fd59C8af8e183931794c959fCba0BaF4
+
+Transaction Id: 0x3a006d25c1f8096d9c5f33a046df21d2cb80cd5e631e8f7c5a880a0a4d03ca71
+Set succeeds
+```
+
+这样就可以直接通过合约地址访问网站首页
+
+```
+web3://0xae3a76c0fd59c8af8e183931794c959fcba0baf4:3334/
+```
+
+由于没有完全上传所有文件，使用浏览器访问时会报错
+
 <!-- Content_END -->

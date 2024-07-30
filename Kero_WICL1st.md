@@ -247,7 +247,7 @@ function get_metadata(name) -> (length_of_chunks, size_of_file)
 
 总的来说，虽然不是绝对必须，但在大多数情况下，使用Node.js来运行和管理React项目会更加高效和方便。
 
-### 07.28
+### 07.29
 
 - 今日学习时间：4 hour
 - 学习内容小结：基于 React + Next + wagmi 开发 web3url on-chain blog
