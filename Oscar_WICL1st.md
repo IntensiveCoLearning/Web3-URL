@@ -468,8 +468,24 @@ node . -v 'web3://w3url.eth'
 
 ### 07.29
 
-- 今日学习时间：1 小时
+- 今日学习时间：2 小时
 - 学习内容小结：
+  - [Web3:// Sounds](https://github.com/luffythink/Web3Sounds) 小组会议 idea demo 同频
+    - 定位公共产品，永久记录工具
+    - 音频文件存储费用和维护问题，谁上传谁具有删除权限
+    - 产品原型图，前期 demo 化繁为简，目前涉及 3 个页面：首页、上传音频文件页面、用户中心页面
+    - 音频文件格式（待定）与大小（前期1M以内，暂不考虑文件压缩）确定
+    - 音频存储，前期 20个音频文件统一放到一个文件夹合约地址，申请一个 ENS 域名
+  - Web3 URL 第三次公开课听课
+    - The Portal Network
+    - 可以去 [ethereum-magicians](https://ethereum-magicians.org/t/eip-4804-web3-url-to-evm-call-message-translation/8300) 提更多关于Web3 URL 的想法
+    - Get free [testnet tokens](https://faucets.chain.link/). No cost, and multiple assets available. 
+
+### 07.30
+
+- 今日学习时间：
+- 学习内容小结：
+
 
 
 
