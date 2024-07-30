@@ -483,7 +483,19 @@ node . -v 'web3://w3url.eth'
 
 ### 07.30
 
-- 今日学习时间：
+- 今日学习时间：1h
+
+- 学习内容小结：
+
+  - 继续学习 [ethfs-cli](https://github.com/ethstorage/ethfs-cli) + [FlatDirectory](https://docs.web3url.io/advanced-topics/flatdirectory) + [ERC-5018](https://eips.ethereum.org/EIPS/eip-5018): Filesystem-like Interface for Contracts
+
+    标准接口允许任何二进制对象在基于EVM的区块链上被其他去中心化应用程序（dApp）重用。通过EIP-4804，我们能够使用 HTTP 风格的 URI 在区块链上定位 Web3 资源。Web3 资源的一个应用是基于相对路径引用的网页内容，如 HTML/SVG。该标准提出了一种基于合约的目录，以简化本地网页内容与链上网页内容之间的映射。此外，通过在网页内容中引用的相对路径和 EIP-4804，用户将能够在本地和链上获得一致的网页内容视图。
+
+  - [Web3:// Sounds](https://github.com/luffythink/Web3Sounds) demo UI 原型图ing
+
+### 07.31
+
+- 今日学习时间：1h
 - 学习内容小结：
 
 
