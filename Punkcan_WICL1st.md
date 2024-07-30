@@ -557,8 +557,11 @@
 
 ### 07.30
 
-- 今日学习时间：
+- 今日学习时间：0.5h
 - 学习内容小结：
+	- 修改项目的一些问题
+	- 确认项目分工后的细节
+	- 
 - Homework 部分（如果有安排需要填写证明完成）
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 
@@ -573,11 +576,6 @@
 
 ### ToDo
 
-
-
-- 
-- 
-- Use ethfs-uploader to upload a folder
 - Challenge: Use ERC6944 to return a uncompressed compressed data determine a customized MIME
 - 研究如果使用web3protocol-js，是否可以不用网关就获取数据
 
