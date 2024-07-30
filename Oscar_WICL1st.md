@@ -468,8 +468,36 @@ node . -v 'web3://w3url.eth'
 
 ### 07.29
 
-- 今日学习时间：1 小时
+- 今日学习时间：2 小时
 - 学习内容小结：
+  - [Web3:// Sounds](https://github.com/luffythink/Web3Sounds) 小组会议 idea demo 同频
+    - 定位公共产品，永久记录工具
+    - 音频文件存储费用和维护问题，谁上传谁具有删除权限
+    - 产品原型图，前期 demo 化繁为简，目前涉及 3 个页面：首页、上传音频文件页面、用户中心页面
+    - 音频文件格式（待定）与大小（前期1M以内，暂不考虑文件压缩）确定
+    - 音频存储，前期 20个音频文件统一放到一个文件夹合约地址，申请一个 ENS 域名
+  - Web3 URL 第三次公开课听课
+    - The Portal Network
+    - 可以去 [ethereum-magicians](https://ethereum-magicians.org/t/eip-4804-web3-url-to-evm-call-message-translation/8300) 提更多关于Web3 URL 的想法
+    - Get free [testnet tokens](https://faucets.chain.link/). No cost, and multiple assets available. 
+
+### 07.30
+
+- 今日学习时间：1h
+
+- 学习内容小结：
+
+  - 继续学习 [ethfs-cli](https://github.com/ethstorage/ethfs-cli) + [FlatDirectory](https://docs.web3url.io/advanced-topics/flatdirectory) + [ERC-5018](https://eips.ethereum.org/EIPS/eip-5018): Filesystem-like Interface for Contracts
+
+    标准接口允许任何二进制对象在基于EVM的区块链上被其他去中心化应用程序（dApp）重用。通过EIP-4804，我们能够使用 HTTP 风格的 URI 在区块链上定位 Web3 资源。Web3 资源的一个应用是基于相对路径引用的网页内容，如 HTML/SVG。该标准提出了一种基于合约的目录，以简化本地网页内容与链上网页内容之间的映射。此外，通过在网页内容中引用的相对路径和 EIP-4804，用户将能够在本地和链上获得一致的网页内容视图。
+
+  - [Web3:// Sounds](https://github.com/luffythink/Web3Sounds) demo UI 原型图ing
+
+### 07.31
+
+- 今日学习时间：1h
+- 学习内容小结：
+
 
 
 
