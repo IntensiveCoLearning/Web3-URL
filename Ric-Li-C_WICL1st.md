@@ -231,4 +231,11 @@ timezone: Asia/Shanghai
 -   Homework 部分：Nil
 -   Question and Ideas：Nil
 
+### 07.31
+
+-   今日学习时间：1 小时（看第 3 节公开课）
+-   学习内容小结：研究 eth storage
+-   Homework 部分：Nil
+-   Question and Ideas：Nil
+
 <!-- Content_END -->
