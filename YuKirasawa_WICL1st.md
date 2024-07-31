@@ -399,4 +399,240 @@ function addr(
 
 - 学习内容小结：读了一下 [web3drive](https://github.com/ethstorage/w3drive/tree/master) 的代码，大概理解了如何在 EthStorage 上存储私有数据。
 
+### 07.29
+
+- 今日学习时间：1 h
+- 学习内容小结：使用 ethfs-cli 上传了一个文件夹。
+
+首先创建一个合约
+
+```
+npx ethfs-cli create -c 3334 -p 0x...
+chainId = 3334
+providerUrl = https://galileo.web3q.io:8545
+FlatDirectory Address: 0xAe3A76c0Fd59C8af8e183931794c959fCba0BaF4
+```
+
+这个合约地址就是后面可以用 web3url 访问的地址
+
+上传指定文件夹，这里尝试上传一个开源的工具网站 CyberChef
+
+```
+npx ethfs-cli upload -f ../to_upload/CyberChef_v9.21.0  -a 0xAe3A76c0Fd59C8af8e183931794c959fCba0BaF4 -c 3334 -p 0x...
+```
+
+由于错误估计了上传需要的测试币，快把测试币用完也没有完全传上去
+
+设置默认路径，即直接访问 `/` 时响应的文件
+
+```
+npx ethfs-cli default -f CyberChef_v9.21.0.html  -a 0xAe3A76c0Fd59C8af8e183931794c959fCba0BaF4 -c 3334 -p 0x...
+providerUrl = https://galileo.web3q.io:8545
+chainId = 3334
+address: 0xAe3A76c0Fd59C8af8e183931794c959fCba0BaF4
+
+Transaction Id: 0x3a006d25c1f8096d9c5f33a046df21d2cb80cd5e631e8f7c5a880a0a4d03ca71
+Set succeeds
+```
+
+这样就可以直接通过合约地址访问网站首页
+
+```
+web3://0xae3a76c0fd59c8af8e183931794c959fcba0baf4:3334/
+```
+
+由于没有完全上传所有文件，使用浏览器访问时会报错
+
+### 07.30
+
+- 今日学习时间：1 h
+- 学习内容小结：使用 ethfs-cli 删除文件和 refund。
+
+删除文件
+
+```
+npx ethfs-cli remove -f modules/Image.js -a 0xAe3A76c0Fd59C8af8e183931794c959fCba0BaF4 -c 3334 -p 0x...
+
+Removing file modules/Image.js
+Transaction Id: 0x64a4c16fdb487fea3767e7d4eb7e00aee6cce3da6ddf98bd4eef1251e55b3d90
+Remove file: modules/Image.js succeeded
+domainBalance: 710000000000000000000, accountBalance: 39284297009767386778, balanceChange: 569504000000000
+```
+
+删除文件后会返还上传时支付的 W3Q，balance 变化会体现在合约地址上，使用 refund 操作可以将合约地址上的余额提取到创建者的地址上。
+
+```
+npx ethfs-cli refund -a 0xAe3A76c0Fd59C8af8e183931794c959fCba0BaF4 -c 3334 -p 0x...
+
+Transaction Id: 0xeb09d1473fb59f9298c7a3b2126efeca08652a302cfc064de9cfd24467bee346
+Refund succeeds
+```
+
+之后就可以在创建者的地址上看到余额变化。
+
+### 07.31
+
+- 今日学习时间：1 h
+- 学习内容小结：尝试编写了 resourceRequest resolve mode 的 web3url 合约。
+
+resourceRequest resolve mode 是 auto mode 和 manual mode 外的另一种 web3url 的解析方式。
+
+它对 web3url 的处理接口为
+
+```
+struct KeyValue {
+    string key;
+    string value;
+}
+
+interface IDecentralizedApp {
+    /// @notice                     Send an HTTP GET-like request to this contract
+    /// @param  resource            The resource to request (e.g. "/asdf/1234" turns in to `["asdf", "1234"]`)
+    /// @param  params              The query parameters. (e.g. "?asdf=1234&foo=bar" turns in to `[{ key: "asdf", value: "1234" }, { key: "foo", value: "bar" }]`)
+    /// @return statusCode          The HTTP status code (e.g. 200)
+    /// @return body                The body of the response
+    /// @return headers             A list of header names (e.g. [{ key: "Content-Type", value: "application/json" }])
+    function request(string[] memory resource, KeyValue[] memory params) external view returns (uint statusCode, string memory body, KeyValue[] memory headers);
+}
+```
+
+例如 web3url 中的 `/gzip.js?12=34` 会解析为参数 `resource=["gzip.js"],params=[["12","34"]]`，且返回值接口被设置为与 http 兼容的形式。
+
+编写合约代码如下
+
+```
+// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity ^0.8.18;
+
+struct KeyValue {
+    string key;
+    string value;
+}
+
+contract Hello {
+    function resolveMode() external pure returns (bytes32) {
+        return "5219";
+    }
+
+    function isEqual(bytes memory a, bytes memory b)
+        private
+        pure
+        returns (bool)
+    {
+        if (a.length != b.length) {
+            return false;
+        }
+
+        for (uint256 i = 0; i < a.length; i++) {
+            if (a[i] != b[i]) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    function request(string[] memory resource, KeyValue[] memory params)
+        external
+        pure
+        returns (
+            uint256 statusCode,
+            bytes memory body,
+            KeyValue[] memory headers
+        )
+    {
+        if (resource.length == 1) {
+            if (isEqual(bytes(resource[0]), bytes("a.txt"))) {
+                // compress data
+                body = hex"1f8b0800eb4aaa6602ff0bc9c82c5600a24485b4cc9c5485f2cc920c85e4fcdc82a2d4e2e2ccfc3c3d00c55e612e20000000";
+                statusCode = 200;
+                headers = new KeyValue[](2);
+                headers[0].key = "Content-Type";
+                headers[0].value = "text/plain";
+                headers[1].key = "Content-Encoding";
+                headers[1].value = "gzip";
+            } else if (isEqual(bytes(resource[0]), bytes("a.js"))) {
+                // set Content-Type
+                statusCode = 200;
+                body = bytes('console.log("This is a js file.");');
+                headers = new KeyValue[](1);
+                headers[0].key = "Content-Type";
+                headers[0].value = "application/javascript";
+            } else {
+                statusCode = 404;
+                body = bytes("Not Found");
+            }
+        } else {
+            statusCode = 404;
+            body = bytes("Not Found");
+        }
+    }
+}
+```
+
+部署的地址为 `web3://0x6ef267986a6acd841013dfd4971bc3715dfaf526:11155111`
+
+访问 `web3://0x6ef267986a6acd841013dfd4971bc3715dfaf526:11155111/a.txt` 
+
+响应如下
+
+```
+> 0xdd473fae
+* RPC provider used: https://rpc.sepolia.org
+< 0x3532313900000000000000000000000000000000000000000000000000000000
+* Resolve mode: resourceRequest
+*
+* Path parsing... 
+* Contract call mode: method
+* Method name: request
+* Method arguments types: [{"type":"string[]"},{"type":"tuple[]","components":[{"type":"string"},{"type":"string"}]}]
+* Method arguments values: [["a.txt"],[]]
+* Contract return processing: decodeErc5219Request
+*
+* Calling contract ...
+* Contract address: 0x6ef267986a6acd841013dfd4971bc3715dfaf526
+> 0x1374c46000000000000000000000000000000000000000000000000000000000...0000000000000000000000000000000000000000000000000000000000000000
+* RPC provider used: https://rpc.sepolia.org
+< 0x00000000000000000000000000000000000000000000000000000000000000c8...677a697000000000000000000000000000000000000000000000000000000000
+*
+* Decoding contract return ...
+* HTTP Status code: 200
+* HTTP Headers: 
+*   Content-Type: text/plain
+This is a file with compression.
+```
+
+可以看出压缩编码的文件可以正确解压展示。
+
+访问 `web3://0x6ef267986a6acd841013dfd4971bc3715dfaf526:11155111/a.js`
+
+```
+> 0xdd473fae
+* RPC provider used: https://rpc.sepolia.org
+< 0x3532313900000000000000000000000000000000000000000000000000000000
+* Resolve mode: resourceRequest
+*
+* Path parsing... 
+* Contract call mode: method
+* Method name: request
+* Method arguments types: [{"type":"string[]"},{"type":"tuple[]","components":[{"type":"string"},{"type":"string"}]}]
+* Method arguments values: [["a.js"],[]]
+* Contract return processing: decodeErc5219Request
+*
+* Calling contract ...
+* Contract address: 0x6ef267986a6acd841013dfd4971bc3715dfaf526
+> 0x1374c46000000000000000000000000000000000000000000000000000000000...0000000000000000000000000000000000000000000000000000000000000000
+* RPC provider used: https://rpc.sepolia.org
+< 0x00000000000000000000000000000000000000000000000000000000000000c8...6170706c69636174696f6e2f6a61766173637269707400000000000000000000
+*
+* Decoding contract return ...
+* HTTP Status code: 200
+* HTTP Headers: 
+*   Content-Type: application/javascript
+console.log("This is a js file.");
+```
+
+同样可以得到预期结果。
+
 <!-- Content_END -->

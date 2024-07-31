@@ -247,7 +247,7 @@ function get_metadata(name) -> (length_of_chunks, size_of_file)
 
 总的来说，虽然不是绝对必须，但在大多数情况下，使用Node.js来运行和管理React项目会更加高效和方便。
 
-### 07.28
+### 07.29
 
 - 今日学习时间：4 hour
 - 学习内容小结：基于 React + Next + wagmi 开发 web3url on-chain blog
@@ -258,5 +258,9 @@ function get_metadata(name) -> (length_of_chunks, size_of_file)
 
 还是自己包装个库吧，不折腾 web3protocol-js 了。
 
+### 07.31
+
+- 今日学习时间：4 hour
+- 学习内容小结：实现 ERC6860 协议的解析器 [ERC6860Parser](https://github.com/keroro520/dsite/blob/main/src/web3url/erc6860.ts)
 
 <!-- Content_END -->
