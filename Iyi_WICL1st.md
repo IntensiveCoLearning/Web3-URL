@@ -228,5 +228,13 @@
   - 编写项目合约代码
 - Homework 部分（如果有安排需要填写证明完成）
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
+
+### 07.31
+
+- 今日学习时间：1h
+- 学习内容小结
+  - 看录制的视频 学习视频公开课 #3 https://www.youtube.com/watch?v=ehFEfsSyuwk&ab_channel=LXDAO
+- Homework 部分（如果有安排需要填写证明完成）
+- Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
   
 <!-- Content_END -->
