@@ -258,5 +258,9 @@ function get_metadata(name) -> (length_of_chunks, size_of_file)
 
 还是自己包装个库吧，不折腾 web3protocol-js 了。
 
+### 07.31
+
+- 今日学习时间：4 hour
+- 学习内容小结：实现 ERC6860 协议的解析器 [ERC6860Parser](https://github.com/keroro520/dsite/blob/main/src/web3url/erc6860.ts)
 
 <!-- Content_END -->

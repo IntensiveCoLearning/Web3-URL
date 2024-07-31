@@ -75,7 +75,6 @@
 ### 07.16
 
 - 今日学习时间：2 小时
-
 - 学习内容小结：
   - 学习了解以太坊改进提案 [EIP-4804](https://eips.ethereum.org/EIPS/eip-4804) 和  [EIP-6860](https://eips.ethereum.org/EIPS/eip-6860)：
     - ERC-4804，也称为“Web3 URL到EVM调用消息转换”，旨在为以太坊网络定义一种新的 URL 类型的标准。
@@ -84,7 +83,6 @@
   - 通过访问 `web3://cyberbrokers-meta.eth/renderBroker/5`跳转 https://cyberbrokers-meta.w3eth.io/renderBroker/5 学习了解背后数据是如何被调用及被呈现。
   
     - 根据请求的网络对象位置（如以太坊或其他区块链）将请求分发到不同的 Gateway
-  
     - Gateway 通过调用 ENS 把 cyberbrokers 所映射的合约地址来去定位。🤔
   
       ![cyberbrokers](img/cyberbrokers.png)
@@ -95,7 +93,6 @@
   
 - Homework 部分 
   - 暂无
-  
 - Question and Ideas
   - 并不是所有的东西都需要去中心化，去中心和中心化如何平衡？
 
@@ -150,7 +147,6 @@ node . -v 'web3://w3url.eth'
 ```
 
 - Homework 
-
   - Deploy a contract in auto model and say "hello world" 自动模式
   - Deploy a contract in manual model and say "hello world" 手动模式
 
@@ -162,21 +158,14 @@ node . -v 'web3://w3url.eth'
 ### 07.19
 
 - 今日学习时间：1 小时
-
 - 学习内容小结：
-
   - WEB3:// CLIENTS 学习了解
-
     - 三种方式：HTTPS gateways、EVM Browser、Chrome extension
-
     - Librairies：web3protocol-go、web3protocol-js
-
     - 两个 Debug 工具：[Web3:// Sandbox](https://w3-sandbox.eth.eth.w3link.io/) （这个比较直观） + Web3curl （单独安装）
-
       ![rpc-eth](img/rpc-eth.png)
 
   - 补充学习：
-
     - [IANA - Uniform Resource Identifier (URI) SCHEMES（统一资源标识符方案）](http://www.iana.org/assignments/uri-schemes)
 
     - URI （Uniform Resource Identifier，统一资源标识符）。URI 属于 URL 更高层次的抽象，一种字符串文本标准。就是说，URI 属于父类，而 URL 属于 URI 的子类。URL 是 URI 的一个子集。二者的区别在于，URI 表示请求服务器的路径，定义这么一个资源。而 URL 同时说明要如何访问这个资源（http://）。
@@ -202,25 +191,18 @@ node . -v 'web3://w3url.eth'
       query-string //发送给 http 服务器的数据
       anchor //锚点定位
       ```
-    
-      
 
 - Homework 无
-
 - Questions and Ideas
-
   - RPC gateway 是去中心化的吗？🤔
 
 ### 07.20
 
 - 今日学习时间：1 小时
-
 - 学习内容小结：
-
   - 学习用 [Solidity](https://soliditylang.org/) 简单编写合约，简单使用 [Remix IDE](http://remix.ethereum.org/) 部署合约。
 
 - Homework 
-
   - 完成作业 3 ：Deploy a contract in auto mode and say "hello world"
 
     -  auto mode：The smart contract is generic and has not implemented a interface defined by the `web3://` protocol. In this case, we will craft the URL path in a specific way to indicate the name, arguments and return signature of the method we want to call on the contract.
@@ -393,9 +375,7 @@ node . -v 'web3://w3url.eth'
 ### 07.25
 
 - 今日学习时间：1 小时
-
 - 学习内容小结：
-
   - 结合自己理解画了一个 web3url 与智能合约交互图：不一定对
 
     - ![web3serve](img/web3serve.png)
@@ -422,7 +402,6 @@ node . -v 'web3://w3url.eth'
 ### 07.26
 
 - 今日学习时间：1 小时
-
 - 学习内容小结：
 
   - EthStorage：是一个模块化的去中心化存储二层，提供由数据可用性（DA）驱动的可编程键值存储。它为 Rollups 提供了长期的数据可用性（DA）解决方案，并为完全链上应用程序如游戏、社交网络、人工智能等开辟了新的可能性。
@@ -437,7 +416,6 @@ node . -v 'web3://w3url.eth'
 ### 07.27
 
 - 今日学习时间：1 小时
-
 - 学习内容小结：
 
   - [Portal Network](https://github.com/ethereum/portal-network-specs) 了解学习
@@ -484,20 +462,37 @@ node . -v 'web3://w3url.eth'
 ### 07.30
 
 - 今日学习时间：1h
-
 - 学习内容小结：
-
   - 继续学习 [ethfs-cli](https://github.com/ethstorage/ethfs-cli) + [FlatDirectory](https://docs.web3url.io/advanced-topics/flatdirectory) + [ERC-5018](https://eips.ethereum.org/EIPS/eip-5018): Filesystem-like Interface for Contracts
 
     标准接口允许任何二进制对象在基于EVM的区块链上被其他去中心化应用程序（dApp）重用。通过EIP-4804，我们能够使用 HTTP 风格的 URI 在区块链上定位 Web3 资源。Web3 资源的一个应用是基于相对路径引用的网页内容，如 HTML/SVG。该标准提出了一种基于合约的目录，以简化本地网页内容与链上网页内容之间的映射。此外，通过在网页内容中引用的相对路径和 EIP-4804，用户将能够在本地和链上获得一致的网页内容视图。
 
-  - [Web3:// Sounds](https://github.com/luffythink/Web3Sounds) demo UI 原型图ing
+  - [Web3:// Sounds](https://github.com/luffythink/Web3Sounds) demo UI 原型图 ing
 
 ### 07.31
 
 - 今日学习时间：1h
 - 学习内容小结：
-
+  - [Web3:// Sounds](https://github.com/luffythink/Web3Sounds) logo 设计
+  - EVM 去中心存储问题拆解🤔：
+  
+    - **数据安全性问题**：EVM 中存储的数据可能包含重要的智能合约状态、用户资产等信息，需要确保这些数据的安全性，防止未经授权的访问或篡改。
+    - **数据可用性问题**：保证 EVM 中的数据随时可用是至关重要的，避免因硬件故障或网络问题导致数据不可访问的情况。
+    - **性能问题**：EVM 需要能够快速响应读写操作，特别是在高负载的情况下，需要保证足够的性能以支持大量的交易处理。
+    - **成本问题**：存储大量数据可能会带来昂贵的存储成本，尤其是在公共区块链上，存储费用可能会成为一个重要的考虑因素。
+  - 解决这些问题的方法可以包括：
+  
+    - **加密和权限控制**：使用加密技术保护数据的机密性，并实施严格的权限控制，确保只有授权的用户和智能合约可以访问特定的数据。
+    - **备份和恢复策略**：实施有效的数据备份策略，包括定期备份和灾难恢复计划，以应对硬件故障或意外事件。
+    - **优化存储结构**：通过优化智能合约设计和存储模式，可以减少存储空间的使用，降低成本并提升性能。
+    - **分布式存储**：考虑使用分布式存储技术，如 IPFS（InterPlanetary File System）或分布式数据库，来提高数据的可用性和抗故障能力。
+    - **网络和硬件优化**：确保EVM所在的网络基础设施和硬件设备具备足够的带宽和处理能力，以支持高性能和稳定的服务。
+  
+  - 一些其他学习资料：
+    - freeCodeCamp出品的 [ 1 小时区块链基础课程](https://www.youtube.com/watch?v=gyMwXuJrbJQ)
+    - [Chainlink Automation](https://docs.chain.link/chainlink-automation) 提供一个安全可靠的去中心化网络，用于自动化智能合约。它利用外部节点运营商保障多个区块链生态系统中数十亿美元的价值。通过集成Chainlink Automation，开发者可以简化智能合约操作，加速创新，并降低与集中式基础设施设置、维护和风险相关的成本。
+  
+    
 
 
 
