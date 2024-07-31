@@ -35,11 +35,11 @@ Web3 URL 残酷共学将基于自愿自主建立「Web3 URL 残酷共学开源�
 
 - **共学打卡：** 必须每天围绕指定的 Web3 URL 残酷共学内容进行学习，根据残酷共学计划完成学习证明。基于每个人的基础不一样，我们不限制你的笔记内容，但必须完成指定的 Homework（具体参照 Template_WICL1st.md 残酷指引）。
 - **自由组队：** 报名成功即可开启提前自学，进残酷共学群后即可开始自由项目组队。
-- **线上讨论：** 随时可以在群里发起讨论，共学笔记分享交流。
+- **线上讨论：** 随时可以在电报频道发起讨论，共学笔记分享交流。
 - **固定公开课：** 共学期间每周一晚 9 - 10 点（北京时间）进行线上公开课及相关分享。
-  - [Web3 URL 第一节公开课回放](https://www.youtube.com/watch?v=hmN77o-ex8I)
-  - [Web3 URL 第二节公开课回放](https://www.youtube.com/watch?v=z207TQYNSdM)
-  
+  - [Web3 URL 第一节公开课记录](https://www.youtube.com/watch?v=hmN77o-ex8I)
+  - [Web3 URL 第二节公开课记录](https://www.youtube.com/watch?v=z207TQYNSdM)
+  - [Web3 URL 第三节公开课记录](https://www.youtube.com/watch?v=ehFEfsSyuwk)
 - **结营分享：** 预在 2024 年 8 月 9 号举办第 1 期线上「**Web3 URL Demo Day**」分享活动，具体时间信息请关注 [Web3 URL 残酷共学频道](https://t.me/LXDAO/8748)通知。
 
 ### 共学时间与地点
