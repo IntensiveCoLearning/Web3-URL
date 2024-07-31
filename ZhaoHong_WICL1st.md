@@ -335,4 +335,9 @@ w3box：从 https://github.com/ethstorage/awesome-web3 中选取第一个 app �
 项目想法：
 https://github.com/IntensiveCoLearning/Web3-URL/discussions/166
 
+### 07.31
+
+回顾了第三周公开课，介绍了以太坊存储成本计算，通过存储32k数据的opcode消耗的gas*gasPrice可算出。
+使用ethstorage将文件hash保存到链上，并提供存储证明，期望将成本控制在以太坊的千分之一。
+
 <!-- Content_END -->
