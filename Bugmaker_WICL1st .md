@@ -496,4 +496,7 @@ contract EtherStore is ReentrancyGuard {
 ### 07.30
 - 今日学习时间：7.30  7 p.m.--12 p.m.
 - 学习内容小结：完成常见的Defi漏洞的学习
+### 07.31
+- 今日学习时间：7.31  5 p.m.--10 p.m.
+- 学习内容小结：学习Node.js
 <!-- Content_END -->
