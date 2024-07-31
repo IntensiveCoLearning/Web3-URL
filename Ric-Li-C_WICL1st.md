@@ -224,4 +224,11 @@ timezone: Asia/Shanghai
             Total Cost: 0.004388404755433746 ETH
         ，但实际 cost 为 0.5012 ETH
 
+### 07.30
+
+-   今日学习时间：1 小时（看 github Discussion 和 Telegram 群内消息，查看资料）
+-   学习内容小结：研究 ERC6944
+-   Homework 部分：Nil
+-   Question and Ideas：Nil
+
 <!-- Content_END -->
