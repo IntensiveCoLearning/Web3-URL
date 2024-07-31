@@ -470,4 +470,169 @@ Refund succeeds
 
 之后就可以在创建者的地址上看到余额变化。
 
+### 07.31
+
+- 今日学习时间：1 h
+- 学习内容小结：尝试编写了 resourceRequest resolve mode 的 web3url 合约。
+
+resourceRequest resolve mode 是 auto mode 和 manual mode 外的另一种 web3url 的解析方式。
+
+它对 web3url 的处理接口为
+
+```
+struct KeyValue {
+    string key;
+    string value;
+}
+
+interface IDecentralizedApp {
+    /// @notice                     Send an HTTP GET-like request to this contract
+    /// @param  resource            The resource to request (e.g. "/asdf/1234" turns in to `["asdf", "1234"]`)
+    /// @param  params              The query parameters. (e.g. "?asdf=1234&foo=bar" turns in to `[{ key: "asdf", value: "1234" }, { key: "foo", value: "bar" }]`)
+    /// @return statusCode          The HTTP status code (e.g. 200)
+    /// @return body                The body of the response
+    /// @return headers             A list of header names (e.g. [{ key: "Content-Type", value: "application/json" }])
+    function request(string[] memory resource, KeyValue[] memory params) external view returns (uint statusCode, string memory body, KeyValue[] memory headers);
+}
+```
+
+例如 web3url 中的 `/gzip.js?12=34` 会解析为参数 `resource=["gzip.js"],params=[["12","34"]]`，且返回值接口被设置为与 http 兼容的形式。
+
+编写合约代码如下
+
+```
+// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity ^0.8.18;
+
+struct KeyValue {
+    string key;
+    string value;
+}
+
+contract Hello {
+    function resolveMode() external pure returns (bytes32) {
+        return "5219";
+    }
+
+    function isEqual(bytes memory a, bytes memory b)
+        private
+        pure
+        returns (bool)
+    {
+        if (a.length != b.length) {
+            return false;
+        }
+
+        for (uint256 i = 0; i < a.length; i++) {
+            if (a[i] != b[i]) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    function request(string[] memory resource, KeyValue[] memory params)
+        external
+        pure
+        returns (
+            uint256 statusCode,
+            bytes memory body,
+            KeyValue[] memory headers
+        )
+    {
+        if (resource.length == 1) {
+            if (isEqual(bytes(resource[0]), bytes("a.txt"))) {
+                // compress data
+                body = hex"1f8b0800eb4aaa6602ff0bc9c82c5600a24485b4cc9c5485f2cc920c85e4fcdc82a2d4e2e2ccfc3c3d00c55e612e20000000";
+                statusCode = 200;
+                headers = new KeyValue[](2);
+                headers[0].key = "Content-Type";
+                headers[0].value = "text/plain";
+                headers[1].key = "Content-Encoding";
+                headers[1].value = "gzip";
+            } else if (isEqual(bytes(resource[0]), bytes("a.js"))) {
+                // set Content-Type
+                statusCode = 200;
+                body = bytes('console.log("This is a js file.");');
+                headers = new KeyValue[](1);
+                headers[0].key = "Content-Type";
+                headers[0].value = "application/javascript";
+            } else {
+                statusCode = 404;
+                body = bytes("Not Found");
+            }
+        } else {
+            statusCode = 404;
+            body = bytes("Not Found");
+        }
+    }
+}
+```
+
+部署的地址为 `web3://0x6ef267986a6acd841013dfd4971bc3715dfaf526:11155111`
+
+访问 `web3://0x6ef267986a6acd841013dfd4971bc3715dfaf526:11155111/a.txt` 
+
+响应如下
+
+```
+> 0xdd473fae
+* RPC provider used: https://rpc.sepolia.org
+< 0x3532313900000000000000000000000000000000000000000000000000000000
+* Resolve mode: resourceRequest
+*
+* Path parsing... 
+* Contract call mode: method
+* Method name: request
+* Method arguments types: [{"type":"string[]"},{"type":"tuple[]","components":[{"type":"string"},{"type":"string"}]}]
+* Method arguments values: [["a.txt"],[]]
+* Contract return processing: decodeErc5219Request
+*
+* Calling contract ...
+* Contract address: 0x6ef267986a6acd841013dfd4971bc3715dfaf526
+> 0x1374c46000000000000000000000000000000000000000000000000000000000...0000000000000000000000000000000000000000000000000000000000000000
+* RPC provider used: https://rpc.sepolia.org
+< 0x00000000000000000000000000000000000000000000000000000000000000c8...677a697000000000000000000000000000000000000000000000000000000000
+*
+* Decoding contract return ...
+* HTTP Status code: 200
+* HTTP Headers: 
+*   Content-Type: text/plain
+This is a file with compression.
+```
+
+可以看出压缩编码的文件可以正确解压展示。
+
+访问 `web3://0x6ef267986a6acd841013dfd4971bc3715dfaf526:11155111/a.js`
+
+```
+> 0xdd473fae
+* RPC provider used: https://rpc.sepolia.org
+< 0x3532313900000000000000000000000000000000000000000000000000000000
+* Resolve mode: resourceRequest
+*
+* Path parsing... 
+* Contract call mode: method
+* Method name: request
+* Method arguments types: [{"type":"string[]"},{"type":"tuple[]","components":[{"type":"string"},{"type":"string"}]}]
+* Method arguments values: [["a.js"],[]]
+* Contract return processing: decodeErc5219Request
+*
+* Calling contract ...
+* Contract address: 0x6ef267986a6acd841013dfd4971bc3715dfaf526
+> 0x1374c46000000000000000000000000000000000000000000000000000000000...0000000000000000000000000000000000000000000000000000000000000000
+* RPC provider used: https://rpc.sepolia.org
+< 0x00000000000000000000000000000000000000000000000000000000000000c8...6170706c69636174696f6e2f6a61766173637269707400000000000000000000
+*
+* Decoding contract return ...
+* HTTP Status code: 200
+* HTTP Headers: 
+*   Content-Type: application/javascript
+console.log("This is a js file.");
+```
+
+同样可以得到预期结果。
+
 <!-- Content_END -->
