@@ -61,7 +61,7 @@ LXDAO & ETHStorage Host 的 Web3 URL 残酷共学将邀请 [Qi Zhou](https://twi
     - https://web3url.io/#/ （Web3:// Homepage）
     - https://docs.web3url.io/ （核心指南）
     - https://eips.ethereum.org/EIPS/eip-4804 ( final )
-    - https://eips.ethereum.org/EIPS/eip-6860 （Draft）
+    - https://eips.ethereum.org/EIPS/eip-6860 （draft）
     - https://github.com/ethstorage/awesome-web3 （应用参考）
     - https://docs.ethstorage.io/ （扩展学习）
 - **第二阶段：边学边用实战开发（ 两周）**
