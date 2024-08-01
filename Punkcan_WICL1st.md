@@ -585,6 +585,12 @@
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 
 
+### 07.31
+
+- 今日学习时间：0.5h
+- 学习内容小结：
+	- 检查项目代码并进行测试
+
 ### ToDo
 
 - Challenge: Use ERC6944 to return a uncompressed compressed data determine a customized MIME
