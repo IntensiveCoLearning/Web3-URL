@@ -173,4 +173,8 @@
 - 今日学习时间：1h
 - Homework
   - 在编写的过程中发现，目前gateway没有办法支持array和tuple，正在尝试添加
+- ### 07.31
+- 今日学习时间：1h
+- Homework
+  - 编写代码中
 <!-- Content_END -->
