@@ -234,6 +234,11 @@
       msg.sender与tx.origin的区别
       
       - 可以想象一个场景，我这个用户调用了函数A，则A又调用了B，B又调用了C。A，B，C是三个不同合约中的函数。我的钱包地址为0x123。对于函数C，msg.sender是函数B的合约地址，而tx.origin则是0x123，也就是我的钱包地址，因为tx.origin表示最初初始化整个调用链的账户地址。
-      
-      XXX
+
+### 07.20
+
+
+- 今日学习时间：1h
+- 学习内容小结：
+      搭建 solidity 的开发环境，部署 hello world
 <!-- Content_END -->

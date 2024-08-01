@@ -173,5 +173,94 @@ Visit https://0xa10f8d4394f4d2f016411aec53e9a2b73a8cd2f7.w3q-g.w3link.io/crossch
   - Read codebase https://github.com/web3-protocol/web3curl-js
   - Read codebase https://github.com/web3-protocol/web3protocol-go
 
+### 07.22
+
+- 今日学习时间：1 hour
+- 学习内容小结： 主要在启动项目 web3url.rust --- 一个 Rust 版本的 Web3Url SDK
+
+> This project aims to provide a Rust SDK for [web3url](https://docs.web3url.io/), heavily inspired by [web3protocol-js](https://github.com/web3-protocol/web3protocol-js).
+
+
+### 07.24
+
+- 今日学习时间：0.5 hour
+- 学习内容小结：work on web3url.rust
+
+### 07.25
+
+- 今日学习时间：0.5 hour
+- 学习内容小结：决定终止 web3url.rust 项目，将精力转为开启 web3url-on-starknet 新项目。除了决定转变项目外，今天的主要学习内容是深入学习 web3protocol-js，以及翻阅现有的 web3url example projects，为后续集成 web3url-on-starknet 做前期准备
+
+### 07.26
+
+- 今日学习时间：2 hours
+- 学习内容小结：Read ERC5018 and associated contracts
+
+#### ERC5018 Notes
+
+一些智能合约需要类似于 filesystem 的操作，比如创建/读取/更改/删除文件。ERC 5018 规范化了一套 filesystem interfaces，用于规范化此类智能合约的接口。同时，由于区块链的交易大小有限制，ERC 5018 为了支持操作大文件，设计了 "dynamic-sized-chunks" 到 "file" 的映射关系。
+这套设计不那么像 Unix filesystem，原因是
+1. 受到区块链的交易体积的限制；
+2. 兼容区块链的不同存储方式
+	1. local contract storage via SLOAD/SSTORE; and
+	2. contract-code-based via CREATE/CREATE2/EXTCODECOPY.
+	3. even outside storage
+3. 为了灵活性甚至还把 chunk 设计为 dynamic-sized（或者叫 undefined-sized）
+
+直观上感觉 ERC5018 的 interfaces 设计得有点 “不伦不类”，是 chunk-based 和 file-based 的混合体，虽然能解决应用的问题，但直观上这个设计略显混乱。但在理解了它所要考虑的因素比较复杂后，我倒也找不到更好的方式。
+如果我设计的话，我可能会先设计一套 file-chunks interfaces 和 file-metadata interfaces 结合：
+
+```
+function create(name, opts = {default_chunk_size})
+function read(name, range)
+function append(name, data)
+function write(name, offset, data)
+function writeAndTrunkate(name, offset, data)
+function trunkate(name, offset)
+
+function get_metadata(name) -> (length_of_chunks, size_of_file)
+```
+
+但是上述这套设计没有考虑到 “何时该新开 chunk”。要把情况都考虑到的话还是挺花时间的，暂时就这样，不深入了。
+
+
+#### Contracts Notes
+
+- [`ERC5018.sol`](https://github.com/ethstorage/evm-large-storage/blob/b393f054eaca3ef383f9cf9486c774fa76c881f8/contracts/ERC5018.sol) 的多数工作量是做多种模式的兼容，算是一个大而全 filesystem-like contract
+- [`FlatDirectory.sol`](https://github.com/ethstorage/evm-large-storage/blob/e51778c7d2dbb9d6f6dc6f8e22b0a71da166b6cd/contracts/examples/FlatDirectory.sol) 约等于 [ERC5018.sol](https://github.com/ethstorage/evm-large-storage/blob/b393f054eaca3ef383f9cf9486c774fa76c881f8/contracts/ERC5018.sol)，只是加上了个 `fallback` 函数而已。
+- `SimpleFlatDirectory.sol` 不是 ERC5018 规范的合约，是使用 `StorageManager.sol` 而搞的文件系统。可能这个合约是为了展示 web3url 的用途。
+- `SimpleNameService.sol` 可能这个合约是为了展示 web3url 的用途。
+- `SimpleW2box.sol` 可能这个合约是为了展示 web3url 的用途。
+
+### 07.28
+
+- 今日学习时间：0.5 hour
+- 学习内容小结：如何区分 client side 和 server side 代码；一个 React 项目是如何运行的（dist）；
+
+#### Note by ChatGPT4
+
+运行React项目时使用到Node.js主要是因为Node.js提供了npm（Node Package Manager），这是一个包管理工具，用于安装和管理项目依赖。React项目通常会依赖许多外部库和工具，例如React本身、React-DOM以及可能的路由和状态管理库等，这些都可以通过npm轻松安装和更新。
+
+此外，Node.js环境支持使用Webpack、Babel等工具来构建和打包JavaScript代码。这些工具可以帮助开发者将React的JSX语法转换为浏览器能理解的JavaScript代码，同时还可以优化应用的性能，比如通过压缩文件来减少加载时间。
+
+虽然理论上你可以不使用Node.js直接在浏览器中使用React（例如通过CDN直接引入React库），但这种方式通常只适用于非常简单的项目。对于大多数现代的、复杂的React应用来说，使用Node.js及其生态系统中的工具是非常必要的，因为它们提供了构建、测试、开发和部署等一系列自动化和优化功能，极大地提高了开发效率和项目的可维护性。
+
+总的来说，虽然不是绝对必须，但在大多数情况下，使用Node.js来运行和管理React项目会更加高效和方便。
+
+### 07.29
+
+- 今日学习时间：4 hour
+- 学习内容小结：基于 React + Next + wagmi 开发 web3url on-chain blog
+
+#### Note
+
+好像 https://github.com/web3-protocol/web3protocol-js 是一个后端库，不适用于前端，反正对于我这种没有网站开发经验的人来说，不知道怎么在前端项目里适用 web3protocol-js。
+
+还是自己包装个库吧，不折腾 web3protocol-js 了。
+
+### 07.31
+
+- 今日学习时间：4 hour
+- 学习内容小结：实现 ERC6860 协议的解析器 [ERC6860Parser](https://github.com/keroro520/dsite/blob/main/src/web3url/erc6860.ts)
 
 <!-- Content_END -->

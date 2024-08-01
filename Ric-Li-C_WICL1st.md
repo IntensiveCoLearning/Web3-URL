@@ -102,7 +102,7 @@ timezone: Asia/Shanghai
 -   学习内容小结：Auto Mode 的 ?returns= 怎么写
 -   Homework 部分：
 
-        Deploy a contract in auto model and say “hello world”
+        Deploy a contract in auto mode and say “hello world”
             web3://0x117f7b2C45FD86b69268e067654a559B13EcB6Ff:11155111/Hello
             https://0x117f7b2C45FD86b69268e067654a559B13EcB6Ff.11155111.w3link.io/Hello
 
@@ -114,7 +114,7 @@ timezone: Asia/Shanghai
 -   学习内容小结：学习如何写 Manual Mode 的智能合约
 -   Homework 部分：
 
-        Deploy a contract in manual model and say “hello world”
+        Deploy a contract in manual mode and say “hello world”
             web3://0xE6BD29A25A15367C2D58D638e50cdea581299ACf:97/
             https://0xE6BD29A25A15367C2D58D638e50cdea581299ACf.97.w3link.io/
 
@@ -126,5 +126,116 @@ timezone: Asia/Shanghai
 -   学习内容小结：研究写 Manual Mode 的智能合约时，怎么写 html 代码
 -   Homework 部分：Nil
 -   Question and Ideas：写 Manual Mode 的智能合约时，怎么写 html 代码
+
+### 07.21
+
+-   今日学习时间：1 小时（看 Telegram 群内消息，查看其他同学笔记和 Medium 资料）
+-   学习内容小结：学习 EIP-4804; 研究写 Manual Mode 的智能合约时，怎么写 html 代码
+-   Homework 部分：Nil
+-   Question and Ideas：看不懂 EIP-4804，很多疑问
+
+### 07.22
+
+-   今日学习时间：3 小时
+
+        1 小时看 Telegram 群内消息并求 w3q 测试币，查看 EthStorage 资料；
+        1 小时参加会议；
+        1 小时尝试写含 html 代码的 Manual Mode 的智能合约。
+
+-   学习内容小结：学习 EthStorage 相关
+-   Homework 部分：
+
+        Deploy a contract in manual mode (containing HTML codes)
+            web3://0x6eecc8c147eb21a83c5f9e4956fbd4575d3ff942:11155111/
+            https://0x6eecc8c147eb21a83c5f9e4956fbd4575d3ff942.11155111.w3link.io/
+            (The javascript button does not seem to be working, need to look into this)
+
+-   Question and Ideas：尝试把自己的 react project 用 ethfs 上传到 web3url
+
+### 07.23
+
+-   今日学习时间：1 小时（看 Telegram 群内消息并提问，查看资料）
+-   学习内容小结：学习 ERC-6944
+-   Homework 部分：Nil
+-   Question and Ideas：搞清楚 EIP-4804， EIP-5219 和 ERC-6944
+
+### 07.24
+
+-   今日学习时间：1 小时（看 Telegram 群内消息并提问，查看资料）
+-   学习内容小结：学习 EthStorage 相关资料
+-   Homework 部分：
+
+        Claim EthStorage Testnet tokens - done
+
+-   Question and Ideas：搞清楚如何按照 ERC-6944 写智能合约
+
+### 07.25
+
+-   今日学习时间：1 小时（看 Telegram 群内消息并提问，查看资料）
+-   学习内容小结：继续学习 EthStorage 相关资料
+-   Homework 部分：
+
+        Upload a file via web3box and paste link
+            https://0x6C00359069c658A42129DC54E801E47bDFf0Db27.3336.w3link.io/0x4d395fec86e88b85b087f58b16972de58fb9d920/Square.png
+
+-   Question and Ideas：上传一个文件，为什么需要 approve 9 次？
+
+### 07.26
+
+-   今日学习时间：2 小时（看 Telegram 群内消息，看 github Discussion 并提问，查看资料，尝试 ethfs-uploader）
+-   学习内容小结：尝试 ethfs-uploader 并 debug
+-   Homework 部分：
+
+        Use ethfs-uploader to upload a folder - 上载文件成功，但是却无法显示
+
+-   Question and Ideas：通过 ethfs-uploader 上传成功的文件去哪里了
+
+### 07.27
+
+-   今日学习时间：1 小时（看 github Discussion 和 Telegram 群内消息，查看资料）
+-   学习内容小结：研究 ethfs-uploader 代码
+-   Homework 部分：Nil
+-   Question and Ideas：EthStorage Blog 似乎有不少问题
+
+### 07.28
+
+-   今日学习时间：1 小时（看 github Discussion 和 Telegram 群内消息，查看资料）
+-   学习内容小结：研究 ethfs-uploader 相关内容
+-   Homework 部分：
+
+        Registered w3q domain: https://w3ns.w3q.w3q-g.w3link.io/#/domains/ric.w3q
+
+-   Question and Ideas：ethfs-cli upload 成功之后，查看文件遇到错误 execution reverted: get() must be called on ES node
+
+### 07.29
+
+-   今日学习时间：1 小时（看 github Discussion 和 Telegram 群内消息，查看资料）
+-   学习内容小结：研究 ERC6944
+-   Homework 部分：
+
+        Use ethfs-uploader to upload a folder:
+            https://0xf31805632f3cf8e2be4759abc61ede19fe295aa4.3333.w3link.io/welcome.html
+
+-   Question and Ideas：
+
+        ethfs-cli upload 时显示的 Total Cost 不准确，显示为
+            Total Upload Chunk Count: 3
+            Total Upload File Size: 198.6171875 KB
+            Total Cost: 0.004388404755433746 ETH
+        ，但实际 cost 为 0.5012 ETH
+
+### 07.30
+
+-   今日学习时间：1 小时（看 github Discussion 和 Telegram 群内消息，查看资料）
+-   学习内容小结：研究 ERC6944
+-   Homework 部分：Nil
+-   Question and Ideas：Nil
+
+### 07.31
+
+-   今日学习时间：1 小时（看第 3 节公开课）
+-   学习内容小结：研究 eth storage
+-   Homework 部分：Nil
+-   Question and Ideas：Nil
 
 <!-- Content_END -->
