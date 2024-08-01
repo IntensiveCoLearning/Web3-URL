@@ -255,7 +255,7 @@ timezone: Asia/Shanghai
 - TODO
    - 准备demo present
 
-### 08.1
+### 08.01
 
 - 今日学习时间：
 - 学习内容小结：
@@ -267,7 +267,7 @@ timezone: Asia/Shanghai
 - TODO
    - 准备demo present
 
-### 08.2
+### 08.02
 
 - 今日学习时间：
 - 学习内容小结：
@@ -275,7 +275,7 @@ timezone: Asia/Shanghai
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 - TODO
 
-### 08.3
+### 08.03
 
 - 今日学习时间：
 - 学习内容小结：
@@ -283,7 +283,7 @@ timezone: Asia/Shanghai
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 - TODO
 
-### 08.4
+### 08.04
 
 - 今日学习时间：
 - 学习内容小结：
