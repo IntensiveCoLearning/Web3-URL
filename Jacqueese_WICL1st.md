@@ -346,4 +346,71 @@ TODO：
 - 学习内容小结：
   - Read codebase https://github.com/web3-protocol/web3protocol-js
   - Read codebase https://github.com/web3-protocol/web3curl-js
+
+  ### 07.21
+
+- 今日学习时间：60 min
+- 学习内容小结：学习EthStorage[笔记](https://pinto-zinnia-ba1.notion.site/EthStorage-5c9b378b51ae4c8aa8ebbc6f18be02d5?pvs=25)
+### 07.22
+
+- 今日学习时间：1 小时
+
+- 学习内容小结：
+
+  - 学习用 [Solidity](https://soliditylang.org/) 简单编写合约，简单使用 [Remix IDE](http://remix.ethereum.org/) 部署合约。
+
+- Homework 
+
+  - 完成作业 3 ：Deploy a contract in auto mode and say "hello world"
+
+    -  auto mode：The smart contract is generic and has not implemented a interface defined by the `web3://` protocol. In this case, we will craft the URL path in a specific way to indicate the name, arguments and return signature of the method we want to call on the contract.
+
+      直接写方法即可，不用单独 Declare a smart contract as manual mode 。🤔
+
+    ```solidity
+    // SPDX-License-Identifier: MIT
+    
+    pragma solidity >=0.7.0 <0.9.0;
+    contract HelloWeb3 {
+        string public greeting = "Hello Web3! from Oscar";
+        function getGreeting() public view returns (string memory) {
+            return greeting;
+        }
+    }
+    ```
+
+  - 领取 W3Q 测试币：部署合约成功，[合约地址详情](https://explorer.galileo.web3q.io/tx/0x0c28db6ee94d92b82f9d7075e2bcfa562541e3af479ccf07802867bf0176e70f/internal-transactions)：0xc89bd91d4814b940a335d5f632dc3988782c7237
+
+    ![Remix_helloweb3](img/Remix_hello_web3.png)
+    
+    ⚠️Galileo Testnet W3Q 的链 id 为3334，访问时需要指定``:3334``，auto mode 模式需要 指定``/getGreeting`` ，不然访问会失败。🤔
+    
+    ``web3://0xc89bd91d4814b940a335d5f632dc3988782c7237:3334/getGreeting``
+    
+    具体见下图：
+    
+    ![getGreeting](img/getGreeting_auto.png)
+
+
+### 07.23
+- 今日学习时间：20:30-21:00
+- 学习内容小结：观看了freeCodeCamp出品的[30分钟区块链基础课程](https://www.youtube.com/watch?v=gyMwXuJrbJQ)（剩余28.5小时🫡）
+- Question and Ideas### 07.19
+网关的工作流程如下：
+客户端发送HTTPS请求到网关
+网关解析Web3 URL
+网关访问相应的Web3资源
+网关将资源转换为HTTP响应
+网关将响应发送回客户端
+
+
+### 07.27
+
+
+-   今日学习时间：1 小时（看 Telegram 群内消息并提问，查看资料）
+-   学习内容小结：学习 ERC-6944
+-   Homework 部分：Nil
+
+
+
 <!-- Content_END -->

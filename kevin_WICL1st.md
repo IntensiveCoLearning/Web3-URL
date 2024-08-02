@@ -113,6 +113,26 @@
    - PoS的优点是不像PoW有大量的计算成本，但似乎也被诟病不那么“去中心化”
    - 为了应对不断上升的Gas，推出了Layer 2的概念，来扩展ETH，那岂不是可以无限套娃，推出L3、L4？GPT-4o从多方面给出了[可行性的解释](https://chatgpt.com/share/af8e4ec7-a4e5-44f9-9e8a-c24114d737a1)
    - 开始学习 [Remix](https://remix.ethereum.org) 和 [Solidity](https://soliditylang.org) 😍
+ 
+### 07.19
+- 今日学习时间：请假
+- 学习内容小结：
+- Question and Ideas
 
+### 07.20
+- 今日学习时间：请假
+- 学习内容小结：
+- Question and Ideas
+
+### 07.21
+- 今日学习时间：21:30-22:00
+- 学习内容小结：观看了freeCodeCamp出品的[30分钟区块链基础课程](https://www.youtube.com/watch?v=gyMwXuJrbJQ)（剩余28.5小时🫡）
+- Question and Ideas
+
+### 07.22
+- 今日学习时间：22:30-23:00
+- 学习内容小结：观看了freeCodeCamp出品的[30分钟区块链基础课程](https://www.youtube.com/watch?v=gyMwXuJrbJQ)（剩余28小时🫡）
+- Question and Ideas
+  - 51%的节点确认之后，交易才有效，有刚好50%的情况发生吗？
 
 <!-- Content_END -->

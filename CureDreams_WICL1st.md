@@ -136,5 +136,59 @@ timezone: Asia/Shanghai
 - 今日学习时间：0.5h
 - 学习内容小结：对于智能合约安全进行了主要的学习，了解了ETH的分叉历史以及安全案例，写出安全的Solidity代码至关重要，本协议调用的智能合约是否存在容易被黑客盯上的点呢，会造成怎么样的后果呢，中心化的网关是否在这一点上能够防范这一点？
 - Question and Ideas: 暂无
-XXX
-<!-- Content_END -->
+### 07.20
+- 今日学习时间：0.5h
+- 学习内容小结：学习了文档https://docs.web3url.io/，并且对于提案https://eips.ethereum.org/EIPS/eip-4804进行了学习。
+- Question and Ideas: 
+### 07.21
+- 今日学习时间：请假
+- 学习内容小结：
+- Question and Ideas: 
+### 07.22
+- 今日学习时间：请假
+- 学习内容小结：
+- Question and Ideas: 
+
+### 07.23
+
+- 今日学习时间：完成Homework1中前两项结合实践：
+
+#### HW1：查看Milady的所属权
+
+1. 首先在ethscan上查找相应的NFT合约地址，并且找到相应的ABI文件：
+
+   ![image-20240723231822753](C:\Users\10478\AppData\Roaming\Typora\typora-user-images\image-20240723231822753.png)
+
+2. 根据文件中的函数，找到相应的所有权函数ownerOf，查看到输入为unit256，输出为adress：
+
+   ![image-20240723232019414](C:\Users\10478\AppData\Roaming\Typora\typora-user-images\image-20240723232019414.png)
+
+3. 根据该合约的mode，判断为是Auto Mode，所以构造如下的访问方式：
+
+   ```
+   0x5af0d9827e0c53e4799bb226655a1de152a425a5.w3eth.io/ownerOf/101?returns=(address)
+   ```
+
+   原web3格式是：
+
+   ```
+   web3://0x5af0d9827e0c53e4799bb226655a1de152a425a5/ownerOf/101?returns=(address)
+   ```
+
+   注意到，后面的returns不能缺省。
+
+   ![image-20240723232358569](C:\Users\10478\AppData\Roaming\Typora\typora-user-images\image-20240723232358569.png)
+
+#### HW2
+
+​	类似的，找到相应地址，构造相应参数，并且转换为网关方式即可访问。
+
+- 学习内容小结：
+- Question and Ideas: 
+
+### 07.24
+
+- 今日学习时间：70mins
+- 学习内容小结：今日复习了第二次公开课，并且尝试构思组队内容。
+- Question and Ideas: 
+- <!-- Content_END -->

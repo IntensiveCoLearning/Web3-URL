@@ -88,5 +88,45 @@
 - 今日学习时间：120 min
 - 学习内容小结：Foundry及使用 学习 [笔记](https://pinto-zinnia-ba1.notion.site/Foundry-a9743d0f2b87468789ffd72f938c6c62?pvs=25)
 
+### 07.20
+
+- 今日学习时间：60 min
+- 学习内容小结：学习EthStorage[笔记](https://pinto-zinnia-ba1.notion.site/EthStorage-5c9b378b51ae4c8aa8ebbc6f18be02d5?pvs=25)
+
+### 07.21
+
+- 今日学习时间：30 min
+- 学习内容小结：了解Web3相关案例[笔记](https://pinto-zinnia-ba1.notion.site/Web3-33ed359240a14d8cb65f691419f45325?pvs=25)
+
+### 07.22
+
+- 今日学习时间：40 min
+- 学习内容小结：阅读DBlog源码[笔记](https://pinto-zinnia-ba1.notion.site/DBlog-cbcfbcbd972a46a894ae74c72e74de25)
+
+
+### 07.23
+
+- 今日学习时间：70 min
+- 学习内容小结：看[第二次公开课](https://www.youtube.com/watch?v=z207TQYNSdM)
+
+### 07.24
+
+- 今日学习时间：30 min
+- 学习内容小结：看[一些示例应用](https://pinto-zinnia-ba1.notion.site/8cab5017dbc9460dbbecfaa2d4fd059a?pvs=25)
+
+
+### 07.27
+
+- 今日学习时间：120 min
+- 学习内容小结：复习公开课[1](https://www.youtube.com/watch?v=hmN77o-ex8I)[2](https://www.youtube.com/watch?v=z207TQYNSdM)
+
+
+### 07.28
+
+- 今日学习时间：30 min
+- 学习内容小结：浏览一下discussions[discussions](https://github.com/IntensiveCoLearning/Web3-URL/discussions)
+
+
+
 XXX
 <!-- Content_END -->

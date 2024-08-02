@@ -87,6 +87,12 @@ https://precious-lemming-5db.notion.site/web3URL7-16-3ad00039f6c845309b60138c589
 [https://precious-lemming-5db.notion.site/web3URL7-16-3ad00039f6c845309b60138c5896375d
 ](https://www.notion.so/web3url-7-18-1c5ebeed4cae4227bab8477fdd5cbce7)
 
+### 07.21
+- 今日学习时间：30min
+- 学习内容小结： 
+  Demo 尝试接入
+[https://precious-lemming-5db.notion.site/web3URL7-16-3ad00039f6c845309b60138c5896375d
+](https://www.notion.so/web3url-7-18-1c5ebeed4cae4227bab8477fdd5cbce7)
 
 XXX
 <!-- Content_END -->
