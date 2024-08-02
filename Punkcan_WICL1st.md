@@ -591,6 +591,12 @@
 - 学习内容小结：
 	- 检查项目代码并进行测试
 
+### 08.01
+
+- 今日学习时间：1h
+- 学习内容小结：
+	- 修正项目所需要的代码，将变量增加Get的Function
+
 ### ToDo
 
 - Challenge: Use ERC6944 to return a uncompressed compressed data determine a customized MIME
