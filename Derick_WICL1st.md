@@ -284,5 +284,9 @@ Web3 URL的域名部分可以是以下几种类型之一:
 - 链上验证： 智能合约会验证这些证明，确保数据确实被存储在网络中。
 - 动态存储： 数据可以被随时更新和删除，EthStorage 会自动生成新的数据可用性证明。
 ### 7.31
-- 学习FlatDirectory合约，分析里面的实现，
+- 学习FlatDirectory合约，分析里面的实现
+### 8.1
+### 8.2
+- 才注意到有homework，
+- 完成homework 1 部署合约创建文件  https://0xa4a53bfa26d0f5b8fabf789d09bc19bec6222b10.w3q-g.w3link.io/test.html
 <!-- Content_END -->
