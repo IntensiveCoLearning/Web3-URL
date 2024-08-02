@@ -502,4 +502,7 @@ contract EtherStore is ReentrancyGuard {
 ### 08.01
 - 今日学习时间：8.1  4 p.m.--9 p.m.
 - 学习内容小结：学习Node.js、npm
+### 08.02
+- 今日学习时间：8.2  4 p.m.--10 p.m.
+- 学习内容小结：学习hardhat
 <!-- Content_END -->
