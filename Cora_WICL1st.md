@@ -213,7 +213,15 @@ web3://<contract>[:<chainId>]/<path>
 今日学习时间：3h
 
 - 学习内容小结：
+
   - 首页开发
   - 前端部署到 vercel,访问地址https://web3-sounds.vercel.app
   - 参加[Layer2 与 Eclipse 丨 SVM 在 EVM 生态中的应用]会议
+
+  ### 08.02
+
+  今日学习时间：2h
+
+- 学习内容小结：
+  - 链接钱包功能开发，已部署
   <!-- Content_END -->
