@@ -177,11 +177,11 @@
 - 今日学习时间：1h
 - Homework
   - 编写代码中
-- ### 08.1
+- ### 08.01
 - 今日学习时间：1h
 - Homework
   - 编写代码中
-- ### 08.2
+- ### 08.02
 - 今日学习时间：1h
 - Homework
   - https://github.com/web3-protocol/web3protocol-go/pull/1 因为协议的一些缺失，作业暂时搁置，完善协议中
