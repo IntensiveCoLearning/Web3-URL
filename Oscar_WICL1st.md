@@ -524,7 +524,28 @@ node . -v 'web3://w3url.eth'
   - [去中心存储](https://news.marsbit.co/20220806170407328297.html)相关应用了解 : 
     -  IPFS （InterPlanetary File System）、 Arweave 、EthStorage 定位区别
 
+### 08.03
 
-  
+- 今日学习时间：1h
+- 学习内容小结：
+  - [Web3:// Sounds](https://github.com/luffythink/Web3Sounds)  声音 Map 算法，如何呈现有趣的声音图景/地图？
+    - 时间维度：年、月、日、0-24点
+    - 声音分类：
+      - 男、女、自然的声音
+      - 对话、演讲、呐喊、音乐、搞笑、表白、诗词等等
+    - 声音时长：1 分钟、3分钟、10分钟🤔
+
+  - 以太坊数据存储开销问题
+    - https://www.evm.codes 以太坊虚拟机操作码互动参考是一个工具，帮助开发者了解和使用以太坊中的操作码（opcodes）。操作码是指令集，用于在以太坊智能合约中执行特定的操作，比如数学运算、数据存储和流程控制。这个参考可以提供操作码的详细信息、用法和示例，帮助开发者更好地编写和优化他们的合约代码。
+
+    - 相比OP rollup、ZK rollup，更多是计算扩容，EthStorage 更多是存储扩容。🤔
+      ![EthStorage](img/EthStorage.png)
+
+### 08.04
+
+
+
+
+
 
 <!-- Content_END -->
