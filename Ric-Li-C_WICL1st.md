@@ -238,4 +238,19 @@ timezone: Asia/Shanghai
 -   Homework 部分：Nil
 -   Question and Ideas：Nil
 
+### 08.03
+
+-   今日学习时间：1 小时（看 github Discussion 和 Telegram 群内消息，查看资料）
+-   学习内容小结：决定 Demo 项目
+-   Homework 部分：
+
+        Given current BLOB gas cost, what is the cost to upload 1GB data in BLOB?
+            1024 * 1024 * 1024 / 32 * 20000 * (3 * 10 ** 9) / 1e18 = 2013.26592 ETH
+                1 GB = 1024 MB = 1024 * 1024 KB = 1024 * 1024 * 1024 bytes;
+                SSTORE command stores 32-byte value;
+                SSTORE command's base_dynamic_gas = 200000 (for new data);
+                assume current gas price = 3 Gwei (3 * 10 ** 9 wei).
+
+-   Question and Ideas：Solidity contract 有上限，能用 contract 存储 1GB data 么？
+
 <!-- Content_END -->
