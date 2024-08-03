@@ -492,8 +492,39 @@ node . -v 'web3://w3url.eth'
     - freeCodeCamp出品的 [ 1 小时区块链基础课程](https://www.youtube.com/watch?v=gyMwXuJrbJQ)
     - [Chainlink Automation](https://docs.chain.link/chainlink-automation) 提供一个安全可靠的去中心化网络，用于自动化智能合约。它利用外部节点运营商保障多个区块链生态系统中数十亿美元的价值。通过集成Chainlink Automation，开发者可以简化智能合约操作，加速创新，并降低与集中式基础设施设置、维护和风险相关的成本。
   
-    
+
+### 08.01
+
+- 今日学习时间：2h
+- 学习内容小结：
+
+  - [第三节公开课](https://www.youtube.com/watch?v=ehFEfsSyuwk&themeRefresh=1) 知识点消化
+  - [Web3:// Sounds](https://github.com/luffythink/Web3Sounds)  
+    - demo / logo 设计更新
+    - 思考：前端放到一个智能合约，音频文件放到一个智能合约，通过 web3:// 实现调用。Web3:// 是只支持状态数据还是blob中的数据？🤔如果只是纯调用的话只支持状态数据，如果和 ETHstorage 结合，就可以支持 blob 中的数据。
+    - 部署参考：
+      - https://github.com/ethstorage/web3url-website/tree/master
+      - https://github.com/ethstorage/dblog
+      - https://docs.web3url.io/tutorials-on-ethstorage-early-testnet/upload-your-first-file-with-ethfs-sdk
+
+### 08.02
+
+- 今日学习时间：1h
+
+- 学习内容小结：
+
+  - [Web3:// Sounds](https://github.com/luffythink/Web3Sounds)  
+    - 声音在图景上如何有趣分布？
+      - 声音图景或者叫「声音 Map 」背后的推荐算法。
+      - 简单版本和未来理想版本，如何有趣有意思。
+    - 永久记录每一个人的声音：
+      - 换一种表达：就是把某种声音传到区块链上，其它人都删不掉，同时大家都能很轻松的访问它。
+      - 困惑点：声音如何正确引导，是符合大家理想愿景的。
+
+  - [去中心存储](https://news.marsbit.co/20220806170407328297.html)相关应用了解 : 
+    -  IPFS （InterPlanetary File System）、 Arweave 、EthStorage 定位区别
 
 
+  
 
 <!-- Content_END -->

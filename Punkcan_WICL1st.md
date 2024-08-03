@@ -585,6 +585,33 @@
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 
 
+### 08.01
+
+- 今日学习时间：0.5h
+- 学习内容小结：
+	- 检查项目代码并进行测试
+
+### 08.02
+
+- 今日学习时间：1h
+- 学习内容小结：
+	- 修正项目所需要的代码，将变量增加Get的Function
+
+### 08.03
+
+- 今日学习时间：1h
+- 学习内容小结：
+	- 测通项目合约
+	- 修改bug
+
+### 08.04
+
+- 今日学习时间：
+- 学习内容小结：
+	- 
+	- 
+
+
 ### ToDo
 
 - Challenge: Use ERC6944 to return a uncompressed compressed data determine a customized MIME
