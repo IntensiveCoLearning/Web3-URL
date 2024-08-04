@@ -543,8 +543,30 @@ node . -v 'web3://w3url.eth'
 
 ### 08.04
 
+- 今日学习时间：2h
 
+- 学习内容小结：
+  - [Web3:// Sounds](https://github.com/luffythink/Web3Sounds)  昨晚项目小组讨论交流回顾，确定功能清单实现优先级
+  
+- 学习总结：回顾 WICL 第一期残酷共学
 
+  - 又一次 21 DAYS 残酷之旅：系统学习了 ``What  "web3://" ？Why  "web3://“？How to Access EVM with web3:// ？ `` 到 `` Why Ethstorage`` 。接下来非常期待在这样的去中心化访问协议 + 去中心化低成本存储的组合下，实现更多实用有趣的全链应用，让更多 Web2 用户能用上且用好。
+  - 期间看了很多小伙伴的笔记/ Disscusion 的讨论交流，非常受启发，丰富了看问题的视角，最后期待一下本次残酷共学的 DemoDay 分享。❤️
+    - 三次公开课：值得配合 PPT 回顾 Step-by-step 学习
+      - [Web3 URL 第一节公开课记录](https://www.youtube.com/watch?v=hmN77o-ex8I)
+      - [Web3 URL 第二节公开课记录](https://www.youtube.com/watch?v=z207TQYNSdM)
+      - [Web3 URL 第三节公开课记录](https://www.youtube.com/watch?v=ehFEfsSyuwk)
+    - 有意思的话题或 QA：
+      - [对 Web3URL 的新理解，以及是不是可以结合 ZK？](https://github.com/IntensiveCoLearning/Web3-URL/discussions/130)
+      - [基于 web3:// 哪些应用场景是当前最需要的或频率最高的？](https://github.com/IntensiveCoLearning/Web3-URL/discussions/118)
+      - [一个用来储存的 EVM，会面临什么问题？](https://github.com/IntensiveCoLearning/Web3-URL/discussions/90)
+      - [关于 Web3 URL 或者 EIP-4804 有什么改进建议，可以去这里贡献](https://github.com/IntensiveCoLearning/Web3-URL/discussions/203)
+      - [Web3 URL Idea and Demo](https://github.com/IntensiveCoLearning/Web3-URL/discussions/categories/ideas-and-project-teams) 
+  
+  - 这句话非常棒： Transforming Ethereum into the Unstoppable Decentralized Web Server.👍 
+  
+  ![w3serve](/Users/luffythinker/Web3-URL/img/w3serve.png)
+  ![HowEthStorageWorks](img/HowEthStorageWorks.png)
 
 
 
