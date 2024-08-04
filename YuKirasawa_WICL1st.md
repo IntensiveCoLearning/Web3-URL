@@ -640,4 +640,9 @@ console.log("This is a js file.");
 - 今日学习时间：0.5 h
 - 学习内容小结：大致了解了 EthStorage 工作原理。
 
+### 08.04
+
+- 今日学习时间：1 h
+- 学习内容小结：阅读了一下  [ethstorage-sdk](https://github.com/ethstorage/ethstorage-sdk/tree/main) 的源码，大致了解了如何用 js 接口进行 EthStorage 相关的合约操作。
+
 <!-- Content_END -->
