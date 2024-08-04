@@ -635,4 +635,9 @@ console.log("This is a js file.");
 
 同样可以得到预期结果。
 
+### 08.03
+
+- 今日学习时间：0.5 h
+- 学习内容小结：大致了解了 EthStorage 工作原理。
+
 <!-- Content_END -->

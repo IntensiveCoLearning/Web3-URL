@@ -253,4 +253,11 @@ timezone: Asia/Shanghai
 
 -   Question and Ideas：Solidity contract 有上限，能用 contract 存储 1GB data 么？
 
+### 08.04
+
+-   今日学习时间：3 小时（在 github Discussion 提问，看 github Discussion 和 Telegram 群内消息，查看资料, debug）
+-   学习内容小结：尝试用 ethfs-cli 上传文件
+-   Homework 部分：Nil
+-   Question and Ideas：用 ethfs-cli 上传图像，遇到 replacement fee too low 错误
+
 <!-- Content_END -->
