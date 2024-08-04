@@ -189,4 +189,8 @@
 - 今日学习时间：1h
 - Homework
   - 按照大佬的意见修改了一些内容，等待回复中
+- ### 08.04
+- 今日学习时间：1h
+- Homework
+  - 继续编写Web3Url binding代码中
 <!-- Content_END -->
