@@ -289,6 +289,7 @@ timezone: Asia/Shanghai
 
 - 今日学习时间：
 - 学习内容小结：
+   - 准备DEMO DAY PPT
 - Homework 部分（如果有安排需要填写证明完成）
 - Question and Ideas（有什么疑问/或者想法，可以记在这里，也可以分享到共学频道群讨论交流）
 - TODO
