@@ -230,6 +230,15 @@ web3://<contract>[:<chainId>]/<path>
 今日学习时间：3h
 
 - 学习内容小结：
-  - 文件上传功能开发，遇到一些关于
+  - 文件上传功能开发，遇到一些问题
+    - Error: unknown account #0 (operation="getAddress", code=UNSUPPORTED_OPERATION, version=providers/5.7.0)
   - 项目会议
+
+### 08.04
+
+今日学习时间：2h
+
+- 学习内容小结：
+  - 文件上传功能开发
+  - 整理会议纪要
   <!-- Content_END -->
