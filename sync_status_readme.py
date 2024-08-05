@@ -1,5 +1,7 @@
 import os
+import subprocess
 import re
+import requests
 from datetime import datetime, timedelta
 import pytz
 import logging
@@ -10,13 +12,15 @@ START_DATE = datetime.fromisoformat(os.environ.get(
 END_DATE = datetime.fromisoformat(os.environ.get(
     'END_DATE', '2024-08-04T23:59:59+00:00')).replace(tzinfo=pytz.UTC)
 DEFAULT_TIMEZONE = 'Asia/Shanghai'
-FILE_SUFFIX = os.environ.get('FILE_SUFFIX', '_WICL1st.md')
+FILE_SUFFIX = os.environ.get('FILE_SUFFIX', '_EICL1st.md')
 README_FILE = 'README.md'
-FIELD_NAME = os.environ.get('FIELD_NAME', 'WICL1st· Name')
+FIELD_NAME = os.environ.get('FIELD_NAME', 'EICL1st· Name')
 Content_START_MARKER = "<!-- Content_START -->"
 Content_END_MARKER = "<!-- Content_END -->"
 TABLE_START_MARKER = "<!-- START_COMMIT_TABLE -->"
 TABLE_END_MARKER = "<!-- END_COMMIT_TABLE -->"
+GITHUB_REPOSITORY_OWNER = os.environ.get('GITHUB_REPOSITORY_OWNER')
+GITHUB_REPOSITORY = os.environ.get('GITHUB_REPOSITORY')
 
 # Configure logging
 logging.basicConfig(level=logging.INFO,
@@ -80,7 +84,7 @@ def extract_content_between_markers(file_content):
     start_index = file_content.find(Content_START_MARKER)
     end_index = file_content.find(Content_END_MARKER)
     if start_index == -1 or end_index == -1:
-        logging.warning("EICL1st markers not found in the file")
+        logging.warning("Content_START_MARKER markers not found in the file")
         return ""
     return file_content[start_index + len(Content_START_MARKER):end_index].strip()
 
@@ -92,7 +96,8 @@ def find_date_in_content(content, local_date):
         r'###\s*' +
         local_date.strftime("%m.%d").lstrip('0').replace('.0', '.'),
         r'###\s*' + local_date.strftime("%Y/%m/%d"),
-        r'###\s*' + local_date.strftime("%m/%d").lstrip('0').replace('/0', '/'),
+        r'###\s*' +
+        local_date.strftime("%m/%d").lstrip('0').replace('/0', '/'),
         r'###\s*' + local_date.strftime("%m.%d").zfill(5)
     ]
     combined_pattern = '|'.join(date_patterns)
@@ -193,7 +198,7 @@ def check_weekly_status(user_status, date, user_tz):
 
 
 def get_all_user_files():
-    return [f.split('_')[0] for f in os.listdir('.')
+    return [f[:-len(FILE_SUFFIX)] for f in os.listdir('.')
             if f.endswith(FILE_SUFFIX) and not f.startswith('Template')]
 
 
@@ -218,20 +223,6 @@ def update_readme(content):
         existing_users = set()
         table_rows = content[start_index +
                              len(TABLE_START_MARKER):end_index].strip().split('\n')[2:]
-
-        # for row in table_rows:
-        #     match = re.match(r'\|\s*([^|]+)\s*\|', row)
-        #     if match:
-        #         display_name = match.group(1).strip()
-        #         existing_users.add(display_name)
-        #         new_table.append(generate_user_row(display_name))
-        #     else:
-        #         logging.warning(f"Skipping invalid row: {row}")
-
-        # new_users = set(get_all_user_files()) - existing_users
-        # for user in new_users:
-        #     new_table.append(generate_user_row(user))
-        #     logging.info(f"Added new user: {user}")
 
         for row in table_rows:
             match = re.match(r'\|\s*([^|]+)\s*\|', row)
@@ -300,10 +291,81 @@ def generate_user_row(user):
     return new_row + '\n'
 
 
+def get_repo_info():
+    if 'GITHUB_REPOSITORY' in os.environ:
+        # 在GitHub Actions环境中
+        full_repo = os.environ['GITHUB_REPOSITORY']
+        owner, repo = full_repo.split('/')
+    else:
+        # 在本地环境中
+        try:
+            remote_url = subprocess.check_output(
+                ['git', 'config', '--get', 'remote.origin.url']).decode('utf-8').strip()
+            if remote_url.startswith('https://github.com/'):
+                owner, repo = remote_url.split('/')[-2:]
+            elif remote_url.startswith('git@github.com:'):
+                owner, repo = remote_url.split(':')[-1].split('/')
+            else:
+                raise ValueError("Unsupported remote URL format")
+            repo = re.sub(r'\.git$', '', repo)
+        except subprocess.CalledProcessError:
+            logging.error(
+                "Failed to get repository information from git config")
+            return None, None
+    return owner, repo
+
+
+def get_fork_count():
+    owner, repo = get_repo_info()
+    if not owner or not repo:
+        logging.error("Failed to get repository information")
+        return None
+
+    api_url = f"https://api.github.com/repos/{owner}/{repo}"
+
+    try:
+        response = requests.get(api_url)
+        response.raise_for_status()
+        repo_data = response.json()
+        return repo_data['forks_count']
+    except requests.RequestException as e:
+        logging.error(f"Error fetching fork count: {e}")
+        return None
+
+
+def calculate_statistics(content):
+    start_index = content.find(TABLE_START_MARKER)
+    end_index = content.find(TABLE_END_MARKER)
+    if start_index == -1 or end_index == -1:
+        logging.error("Error: Couldn't find the table markers in README.md")
+        return None
+
+    table_content = content[start_index +
+                            len(TABLE_START_MARKER):end_index].strip()
+    rows = table_content.split('\n')[2:]  # Skip header and separator rows
+
+    total_participants = len(rows)
+    eliminated_participants = sum(1 for row in rows if '❌' in row)
+    completed_participants = total_participants - eliminated_participants
+    elimination_rate = (eliminated_participants /
+                        total_participants) * 100 if total_participants > 0 else 0
+    fork_count = get_fork_count()
+
+    return {
+        'total_participants': total_participants,
+        'completed_participants': completed_participants,
+        'eliminated_participants': eliminated_participants,
+        'elimination_rate': elimination_rate,
+        'fork_count': fork_count
+    }
+
+
 def main():
     try:
         print_variables(
             'START_DATE', 'END_DATE', 'DEFAULT_TIMEZONE',
+            GITHUB_REPOSITORY_OWNER=GITHUB_REPOSITORY,
+            GITHUB_REPOSITORY=GITHUB_REPOSITORY,
             FILE_SUFFIX=FILE_SUFFIX,
             README_FILE=README_FILE,
             FIELD_NAME=FIELD_NAME,
@@ -315,6 +377,41 @@ def main():
         with open(README_FILE, 'r', encoding='utf-8') as file:
             content = file.read()
         new_content = update_readme(content)
+        current_date = datetime.now(pytz.UTC)
+        if current_date > END_DATE:
+            stats = calculate_statistics(new_content)
+            if stats:
+                stats_content = f"\n\n## 统计数据\n\n"
+                stats_content += f"- 总参与人数: {stats['total_participants']}\n"
+                stats_content += f"- 完成人数: {stats['completed_participants']}\n"
+                stats_content += f"- 淘汰人数: {stats['eliminated_participants']}\n"
+                stats_content += f"- 淘汰率: {stats['elimination_rate']:.2f}%\n"
+                stats_content += f"- Fork人数: {stats['fork_count']}\n"
+            # 将统计数据添加到文件末尾
+            # 在<!-- END_COMMIT_TABLE -->标记后插入统计数据
+                # 检查是否已存在统计数据
+                stats_start = new_content.find("\n## 统计数据\n")
+                if stats_start != -1:
+                    # 如果存在，替换现有的统计数据
+                    stats_end = new_content.find("\n##", stats_start + 1)
+                    if stats_end == -1:
+                        stats_end = len(new_content)
+                    new_content = new_content[:stats_start] + \
+                        stats_content + new_content[stats_end:]
+                else:
+                    # 如果不存在，在<!-- END_COMMIT_TABLE -->标记后插入统计数据
+                    end_table_marker = "<!-- END_COMMIT_TABLE -->"
+                    end_table_index = new_content.find(end_table_marker)
+                    if end_table_index != -1:
+                        insert_position = end_table_index + \
+                            len(end_table_marker)
+                        new_content = new_content[:insert_position] + \
+                            "\n" + stats_content + \
+                            new_content[insert_position:]
+                    else:
+                        logging.warning(
+                            "<!-- END_COMMIT_TABLE --> marker not found. Appending stats to the end.")
+                        new_content += "\n" + stats_content
         with open(README_FILE, 'w', encoding='utf-8') as file:
             file.write(new_content)
         logging.info("README.md has been successfully updated.")
