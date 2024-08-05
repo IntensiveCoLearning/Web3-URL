@@ -289,4 +289,10 @@ Web3 URL的域名部分可以是以下几种类型之一:
 ### 8.2
 - 才注意到有homework，
 - 完成homework 1 部署合约创建文件  https://0xa4a53bfa26d0f5b8fabf789d09bc19bec6222b10.w3q-g.w3link.io/test.html
+### 8.3
+- 编写共学小组的项目设计，合约开发
+### 8.4
+- 验证合约内容，调整合约ABI
+
+
 <!-- Content_END -->
