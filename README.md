@@ -157,6 +157,8 @@ LXDAO & ETHStorage Host 的 Web3 URL 残酷共学将邀请 [Qi Zhou](https://twi
 <!-- END_COMMIT_TABLE -->
 
 
+
+
 ## 统计数据
 
 - 总参与人数: 55
@@ -165,6 +167,3 @@ LXDAO & ETHStorage Host 的 Web3 URL 残酷共学将邀请 [Qi Zhou](https://twi
 - 淘汰人数: 43
 - 淘汰率: 78.18%
 - Fork人数: 74
-
-![ICL](img/WICL.JPG)
-总之，学习到知识是最大的奖励。希望频率相同的人在 LXDAO & ETHStorage  残酷氛围之下相互鼓励与学习交流，找到适合自己的 Web3 URL 精进节奏，加入进来试试吧。
