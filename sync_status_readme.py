@@ -407,29 +407,31 @@ def main():
                 stats_content += f"- Fork人数: {stats['fork_count']}\n"
             # 将统计数据添加到文件末尾
             # 在<!-- END_COMMIT_TABLE -->标记后插入统计数据
-                # 检查是否已存在统计数据
-                stats_start = new_content.find("\n## 统计数据\n")
-                if stats_start != -1:
-                    # 如果存在，替换现有的统计数据
-                    stats_end = new_content.find("\n##", stats_start + 1)
-                    if stats_end == -1:
-                        stats_end = len(new_content)
-                    new_content = new_content[:stats_start] + \
-                        stats_content + new_content[stats_end:]
+                stats_start = new_content.find(
+                    "<!-- STATISTICALDATA_START -->")
+                stats_end = new_content.find("<!-- STATISTICALDATA_END -->")
+
+                if stats_start != -1 and stats_end != -1:
+                    # Replace existing statistical data
+                    new_content = new_content[:stats_start] + "<!-- STATISTICALDATA_START -->\n" + stats_content + \
+                        "<!-- STATISTICALDATA_END -->" + \
+                        new_content[stats_end +
+                                    len("<!-- STATISTICALDATA_END -->"):]
                 else:
-                    # 如果不存在，在<!-- END_COMMIT_TABLE -->标记后插入统计数据
+                    # Add new statistical data after <!-- END_COMMIT_TABLE -->
                     end_table_marker = "<!-- END_COMMIT_TABLE -->"
                     end_table_index = new_content.find(end_table_marker)
                     if end_table_index != -1:
                         insert_position = end_table_index + \
                             len(end_table_marker)
-                        new_content = new_content[:insert_position] + \
-                            "\n" + stats_content + \
+                        new_content = new_content[:insert_position] + "\n\n<!-- STATISTICALDATA_START -->\n" + \
+                            stats_content + "<!-- STATISTICALDATA_END -->" + \
                             new_content[insert_position:]
                     else:
                         logging.warning(
                             "<!-- END_COMMIT_TABLE --> marker not found. Appending stats to the end.")
-                        new_content += "\n" + stats_content
+                        new_content += "\n\n<!-- STATISTICALDATA_START -->\n" + \
+                            stats_content + "<!-- STATISTICALDATA_END -->"
         with open(README_FILE, 'w', encoding='utf-8') as file:
             file.write(new_content)
         logging.info("README.md has been successfully updated.")
