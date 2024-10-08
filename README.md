@@ -214,6 +214,7 @@ LXDAO & ETHStorage Host 的 Web3 URL 残酷共学将邀请 [Qi Zhou](https://twi
 
 
 
+
 <!-- STATISTICALDATA_START -->
 
 
@@ -224,6 +225,6 @@ LXDAO & ETHStorage Host 的 Web3 URL 残酷共学将邀请 [Qi Zhou](https://twi
 - 全勤用户: Oscar, Punkcan, Box, Zedz, Cora, Iyi
 - 淘汰人数: 43
 - 淘汰率: 78.18%
-- Fork人数: 71
+- Fork人数: 72
 <!-- STATISTICALDATA_END -->
 ![ICL](img/WICL.JPG)
