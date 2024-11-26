@@ -107,7 +107,7 @@ Web3 URL 残酷共学将基于自愿自主建立「Web3 URL 残酷共学开源�
 
 ---
 
-## Web3 URL 残酷共学记录表
+## 残酷共学打卡记录表
 
 ✅ = Done ⭕️ = Missed ❌ = Failed
 
