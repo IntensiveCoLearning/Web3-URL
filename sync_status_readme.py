@@ -8,13 +8,13 @@ import logging
 
 # Constants
 START_DATE = datetime.fromisoformat(os.environ.get(
-    'START_DATE', '2024-07-15T00:00:00+00:00')).replace(tzinfo=pytz.UTC)
+    'START_DATE', '2024-06-24T00:00:00+00:00')).replace(tzinfo=pytz.UTC)
 END_DATE = datetime.fromisoformat(os.environ.get(
-    'END_DATE', '2024-08-04T23:59:59+00:00')).replace(tzinfo=pytz.UTC)
+    'END_DATE', '2024-07-14T23:59:59+00:00')).replace(tzinfo=pytz.UTC)
 DEFAULT_TIMEZONE = 'Asia/Shanghai'
-FILE_SUFFIX = os.environ.get('FILE_SUFFIX', '_EICL1st.md')
+FILE_SUFFIX = os.environ.get('FILE_SUFFIX', '.md')
 README_FILE = 'README.md'
-FIELD_NAME = os.environ.get('FIELD_NAME', 'EICL1st· Name')
+FIELD_NAME = os.environ.get('FIELD_NAME', 'Name')
 Content_START_MARKER = "<!-- Content_START -->"
 Content_END_MARKER = "<!-- Content_END -->"
 TABLE_START_MARKER = "<!-- START_COMMIT_TABLE -->"
@@ -198,8 +198,10 @@ def check_weekly_status(user_status, date, user_tz):
 
 
 def get_all_user_files():
+    exclude_prefixes = ('template', 'readme')
     return [f[:-len(FILE_SUFFIX)] for f in os.listdir('.')
-            if f.endswith(FILE_SUFFIX) and not f.startswith('Template')]
+            if f.lower().endswith(FILE_SUFFIX.lower()) 
+            and not f.lower().startswith(exclude_prefixes)]
 
 
 def update_readme(content):
@@ -349,6 +351,7 @@ def calculate_statistics(content):
     eliminated_participants = 0
     completed_participants = 0
     perfect_attendance_users = []
+    completed_users = []
 
     for row in rows:
         user_name = row.split('|')[1].strip()
@@ -359,9 +362,11 @@ def calculate_statistics(content):
             eliminated_participants += 1
         elif all(status == '✅' for status in statuses):
             completed_participants += 1
+            completed_users.append(user_name)
             perfect_attendance_users.append(user_name)
         elif all(status in ['✅', '⭕️', ' '] for status in statuses):
             completed_participants += 1
+            completed_users.append(user_name)
 
     elimination_rate = (eliminated_participants /
                         total_participants) * 100 if total_participants > 0 else 0
@@ -373,7 +378,8 @@ def calculate_statistics(content):
         'eliminated_participants': eliminated_participants,
         'elimination_rate': elimination_rate,
         'fork_count': fork_count,
-        'perfect_attendance_users': perfect_attendance_users
+        'perfect_attendance_users': perfect_attendance_users,
+        'completed_users': completed_users
     }
 
 
@@ -401,6 +407,7 @@ def main():
                 stats_content = f"\n\n## 统计数据\n\n"
                 stats_content += f"- 总参与人数: {stats['total_participants']}\n"
                 stats_content += f"- 完成人数: {stats['completed_participants']}\n"
+                stats_content += f"- 完成用户: {', '.join(stats['completed_users'])}\n"
                 stats_content += f"- 全勤用户: {', '.join(stats['perfect_attendance_users'])}\n"
                 stats_content += f"- 淘汰人数: {stats['eliminated_participants']}\n"
                 stats_content += f"- 淘汰率: {stats['elimination_rate']:.2f}%\n"
