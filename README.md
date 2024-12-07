@@ -195,6 +195,7 @@ Web3 URL 残酷共学将基于自愿自主建立「Web3 URL 残酷共学开源�
 
 
 
+
 <!-- STATISTICALDATA_START -->
 
 
@@ -202,6 +203,7 @@ Web3 URL 残酷共学将基于自愿自主建立「Web3 URL 残酷共学开源�
 
 - 总参与人数: 55
 - 完成人数: 12
+- 完成用户: Oscar, YuKirasawa, Punkcan, Ric-Li-C, hython, Box, Zedz, Antigone4224, Cora, Ziicu2019, Iyi, Derick
 - 全勤用户: Oscar, Punkcan, Box, Zedz, Cora, Iyi
 - 淘汰人数: 43
 - 淘汰率: 78.18%
