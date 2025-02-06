@@ -231,6 +231,7 @@ Web3 URL 残酷共学将基于自愿自主建立「Web3 URL 残酷共学开源�
 
 
 
+
 <!-- STATISTICALDATA_START -->
 
 
@@ -242,6 +243,6 @@ Web3 URL 残酷共学将基于自愿自主建立「Web3 URL 残酷共学开源�
 - 全勤用户: zedz, luffythink, jjeejj, nishuzumi, CHENFANGC, punkcanyang
 - 淘汰人数: 43
 - 淘汰率: 76.79%
-- Fork人数: 74
+- Fork人数: 72
 <!-- STATISTICALDATA_END -->
   ![ICL](img/WICL.JPG)
