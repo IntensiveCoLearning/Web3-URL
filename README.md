@@ -120,15 +120,15 @@ Web3 URL 残酷共学将基于自愿自主建立「Web3 URL 残酷共学开源�
 | [wodeche](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/wodeche.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | |
 | [MRzzz-cyber](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/MRzzz-cyber.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | |
 | [Coooder-Crypto](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/Coooder-Crypto.md) | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | |
-| [ARMIN76L](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/ARMIN76L.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ |   | ⭕️ | ❌ | | | | | | | |
+| [ARMIN76L](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/ARMIN76L.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ |   | ❌ | | | | | | | |
 | [ziicu2019](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/ziicu2019.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ |
 | [zhuyansen](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/zhuyansen.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | |
 | [windwh1sper](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/windwh1sper.md) | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ❌ | | | | | | | | | | | | | | |
 | [jjeejj](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/jjeejj.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| [Jacqueese](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/Jacqueese.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ |   | ✅ | ❌ | | | | | | | |
+| [Jacqueese](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/Jacqueese.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | |
 | [nishuzumi](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/nishuzumi.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [TotieTao](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/TotieTao.md) | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | |
-| [coderprepares](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/coderprepares.md) | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ⭕️ | ⭕️ | ✅ | ❌ | | | |
+| [coderprepares](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/coderprepares.md) | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ |   | ⭕️ | ⭕️ | ⭕️ | ✅ | ❌ | | | |
 | [HeliosLz](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/HeliosLz.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | |
 | [wayhome](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/wayhome.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [0xdiymax](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/0xdiymax.md) | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | |
@@ -138,8 +138,8 @@ Web3 URL 残酷共学将基于自愿自主建立「Web3 URL 残酷共学开源�
 | [muxin-web3](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/muxin-web3.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | |
 | [PINKPIG-17](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/PINKPIG-17.md) | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ |
 | [xiaoyuanxun](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/xiaoyuanxun.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | |
-| [keroro520](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/keroro520.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ❌ | | |
-| [CureDreams](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/CureDreams.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ |   | ⭕️ | ❌ | | | | | | | |
+| [keroro520](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/keroro520.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ✅ | ✅ | ✅ |   | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ❌ | | |
+| [CureDreams](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/CureDreams.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ |   | ❌ | | | | | | | |
 | [flytiny](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/flytiny.md) | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | |
 | [ztm0929](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/ztm0929.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | |
 | [coconal](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/coconal.md) | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | |
@@ -150,7 +150,7 @@ Web3 URL 残酷共学将基于自愿自主建立「Web3 URL 残酷共学开源�
 | [CHENFANGC](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/CHENFANGC.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [DerickIT](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/DerickIT.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ |
 | [mon1y](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/mon1y.md) | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | |
-| [An](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/An.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ |   | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | |
+| [An](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/An.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | |
 | [alive-z](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/alive-z.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | |
 | [Akagi201](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/Akagi201.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | |
 | [Herschel123](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/Herschel123.md) | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | |
@@ -171,6 +171,7 @@ Web3 URL 残酷共学将基于自愿自主建立「Web3 URL 残酷共学开源�
 | [cherry-yl-sh](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/cherry-yl-sh.md) | ✅ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [monnaliya](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/monnaliya.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
