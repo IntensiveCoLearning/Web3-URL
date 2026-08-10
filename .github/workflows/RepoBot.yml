@@ -174,7 +174,7 @@ jobs:
           
               console.log('API response:', response.data);
 
-              const updateUserNotesResp = await axios.get(https://api.intensivecolearn.ing/api/programs/updateStudynotes?owner=${owner}&repo=${repo}&userGitId=${user.id}`);
+              const updateUserNotesResp = await axios.get(`https://api.intensivecolearn.ing/api/programs/updateStudynotes?owner=${owner}&repo=${repo}&userGitId=${user.id}`);
 
               console.log('updateUserNotesRespAPI response:', updateUserNotesResp.data);
 
