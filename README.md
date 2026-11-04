@@ -121,7 +121,7 @@ Web3 URL 残酷共学将基于自愿自主建立「Web3 URL 残酷共学开源�
 | [MRzzz-cyber](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/MRzzz-cyber.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | |
 | [Coooder-Crypto](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/Coooder-Crypto.md) | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | |
 | [ARMIN76L](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/ARMIN76L.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | |
-| [ziicu2019](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/ziicu2019.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ |
+| [ziicu2019](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/ziicu2019.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ |   |
 | [zhuyansen](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/zhuyansen.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | |
 | [windwh1sper](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/windwh1sper.md) | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ❌ | | | | | | | | | | | | | | |
 | [jjeejj](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/jjeejj.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -136,7 +136,7 @@ Web3 URL 残酷共学将基于自愿自主建立「Web3 URL 残酷共学开源�
 | [CheneyWong](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/CheneyWong.md) | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ❌ | | | | | | | | | | | | | | | |
 | [notthere-2023](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/notthere-2023.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | |
 | [muxin-web3](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/muxin-web3.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | |
-| [PINKPIG-17](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/PINKPIG-17.md) | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ |
+| [PINKPIG-17](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/PINKPIG-17.md) | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |   |
 | [xiaoyuanxun](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/xiaoyuanxun.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | |
 | [keroro520](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/keroro520.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ❌ | | |
 | [CureDreams](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/CureDreams.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | |
@@ -159,7 +159,7 @@ Web3 URL 残酷共学将基于自愿自主建立「Web3 URL 残酷共学开源�
 | [linghuccc](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/linghuccc.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ |
 | [joyc](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/joyc.md) | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ |
 | [huanghaox](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/huanghaox.md) | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ❌ | | | | | | | | | | | | | | | |
-| [antigone4224](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/antigone4224.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ⭕️ |
+| [antigone4224](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/antigone4224.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ |   |
 | [QingzhiXiao](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/QingzhiXiao.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | |
 | [YuKirasawa](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/YuKirasawa.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ |
 | [K1ones](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/K1ones.md) | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ❌ | | | | | | | |
@@ -171,6 +171,7 @@ Web3 URL 残酷共学将基于自愿自主建立「Web3 URL 残酷共学开源�
 | [cherry-yl-sh](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/cherry-yl-sh.md) | ✅ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [monnaliya](https://github.com/IntensiveCoLearning/Web3-URL/blob/main/monnaliya.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
